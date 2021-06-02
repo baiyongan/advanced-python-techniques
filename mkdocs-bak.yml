@@ -1,0 +1,41 @@
+# Project information
+site_name: Advanced Python Techniques
+site_url: http://bya.cool/advanced-python-techniques
+site_author: Bai Yongan
+site_description: >-
+  Summary of core skills and knowledge points of python programming.
+  A practical programming guide for intermediate programmers focusing on the python grammar itself.
+
+# Repository
+repo_name: baiyongan/advanced-python-techniques
+repo_url: https://github.com/baiyongan/advanced-python-techniques
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2021 - 2023 Bai Yongan
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: false
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/baiyongan
+
+# Page tree
+nav:
+  - index.md
+  - Section A:
+    - License: license.md
+    - Releases:
+      - Changelog: changelog.md
+
+  - Section B:
+    - License: license.md
+
+  - Section C:
+    - License: license.md
