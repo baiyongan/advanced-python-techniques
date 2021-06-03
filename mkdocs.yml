@@ -1,5 +1,5 @@
 # Site information
-site_name: From Pythoneer to Pythonista
+site_name: Pythoneer to Pythonista
 site_url: http://bya.cool/advanced-python-techniques
 site_author: Bai Yongan
 site_description: >-
@@ -83,9 +83,16 @@ extra_javascript:
 # Page tree
 nav:
 - index.md
-- Section A:
+- Fluent Python:
+  - Chapter1:
+    - Article001: fluent_python/article001.md
+- Python 核心技术:
+  - Chapter1:
+    - Article002: core_python/article002.md
+- Python Web:
+  - Chapter3:
+    - Article007: web_python/article007.md
+- Miscellaneous:
   - Releases: release-notes.md
-- Section B:
   - License: license.md
-- Section C:
   - To do list: todolist.md
