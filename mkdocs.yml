@@ -1,11 +1,20 @@
-# Project information
-site_name: Advanced Python Techniques
+# Site information
+site_name: From Pythoneer to Pythonista
 site_url: http://bya.cool/advanced-python-techniques
 site_author: Bai Yongan
 site_description: >-
   Summary of core skills and knowledge points of python programming.
   A practical programming guide for intermediate programmers focusing on the python grammar itself.
 
+# Repository
+repo_name: advanced-python-techniques
+repo_url: https://github.com/baiyongan/advanced-python-techniques
+edit_uri: ''
+
+# Copyright
+copyright: Copyright &copy; 2021 - Bai Yongan
+
+# Theme configuration
 theme:
   name: material
   custom_dir: overrides
@@ -32,28 +41,19 @@ theme:
   logo: img/icon-white.svg
   favicon: img/favicon.png
   language: en
-# Repository
-repo_name: baiyongan/advanced-python-techniques
-repo_url: https://github.com/baiyongan/advanced-python-techniques
-edit_uri: ''
+
+# Analysis
 google_analytics:
 - UA-133183413-1
 - auto
+
+# Plugins
 plugins:
 - search
 - markdownextradata:
     data: data
-nav:
-- index.md
-- Section A:
-  - Releases: release-notes.md
 
-- Section B:
-  - License: license.md
-
-- Section C:
-  - To do list: todolist.md
-
+# Extensions
 markdown_extensions:
 - toc:
     permalink: true
@@ -71,6 +71,7 @@ markdown_extensions:
       format: !!python/name:pymdownx.superfences.fence_div_format ''
 - pymdownx.tabbed
 
+# Customization
 extra_css:
 - css/termynal.css
 - css/custom.css
@@ -78,3 +79,13 @@ extra_javascript:
 - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
 - js/termynal.js
 - js/custom.js
+
+# Page tree
+nav:
+- index.md
+- Section A:
+  - Releases: release-notes.md
+- Section B:
+  - License: license.md
+- Section C:
+  - To do list: todolist.md
