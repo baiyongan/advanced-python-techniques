@@ -79,9 +79,6 @@ extra_javascript:
 nav:
 - index.md
 
-- Fluent Python:
-  - python_book/index.md
-
 - Python 核心专题:
   - 01 一切皆对象: 
     - python 中的一切皆对象: python_topic/chapter01/article0101.md
@@ -198,8 +195,14 @@ nav:
     - aiohttp 实现高并发爬虫: python_topic/chapter12/article1208.md
     - 本章小结: python_topic/chapter12/article1209.md  
 
+- Python 进阶书籍:
+  - Fluent Python: python_book/fluent_python/index.md
+  - Python Cookbook: python_book/python_cookbook/index.md
+
 - Python Web:
-  - python_web/index.md
+  - Dash: python_web/plotly_dash/index.md
+  - Flask: python_web/flask/index.md
+  - Django: python_web/django/index.md
 
 - Exploration:
   - python_explore/index.md
