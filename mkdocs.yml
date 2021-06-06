@@ -12,7 +12,7 @@ repo_url: https://github.com/baiyongan/advanced-python-techniques
 edit_uri: ''
 
 # Copyright
-copyright: Copyright &copy; 2021 - Bai Yongan
+copyright: Copyright &copy; 2021 - present Bai Yongan
 
 # Theme configuration
 theme:
@@ -196,6 +196,7 @@ nav:
     - 本章小结: python_topic/chapter12/article1209.md  
 
 - Python 进阶书籍:
+  - Intermediate Python: python_book/intermediate_python/index.md
   - Fluent Python: python_book/fluent_python/index.md
   - Python Cookbook: python_book/python_cookbook/index.md
 
@@ -203,6 +204,26 @@ nav:
   - Dash: python_web/plotly_dash/index.md
   - Flask: python_web/flask/index.md
   - Django: python_web/django/index.md
+
+- Project Tutorial:
+  - Performance Marketing Report:
+    - introduction: project_tutorial/performance_marketing_report/01_introduction.md
+    - environment: project_tutorial/performance_marketing_report/02_environment.md
+    - dash basics: project_tutorial/performance_marketing_report/03_dash_basics.md
+    - multi-page: project_tutorial/performance_marketing_report/04_multi-page_application.md
+    - data-selector: project_tutorial/performance_marketing_report/05_data_selector_element.md
+    - first data table: project_tutorial/performance_marketing_report/06_first_data_table.md
+    - download link: project_tutorial/performance_marketing_report/07_donwload_link.md
+    - second data table: project_tutorial/performance_marketing_report/08_second_data_table.md
+    - update graph function: project_tutorial/performance_marketing_report/09_update_graphs_function.md
+    - update graph function: project_tutorial/performance_marketing_report/10_update_graph_functions.md
+    - plotly graph tools: project_tutorial/performance_marketing_report/11_plotly_graph_tools.md
+    - deployment: project_tutorial/performance_marketing_report/12_deploy_application.md
+    - wrapping up: project_tutorial/performance_marketing_report/13_wrapping_up.md
+    - resources: project_tutorial/performance_marketing_report/14_resources.md
+    
+  - Chiana's Census Data Analysis: 
+    - introduction: project_tutorial/china_census_analysis/01_introduction.md
 
 - Exploration:
   - python_explore/index.md
