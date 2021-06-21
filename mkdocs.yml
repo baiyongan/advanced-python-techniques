@@ -1,5 +1,5 @@
 # Site information
-site_name: Pythoneer to Pythonista
+site_name: Pythonista to Pythoneer
 site_url: http://bya.cool/advanced-python-techniques
 site_author: Bai Yongan
 site_description: >-
@@ -79,167 +79,176 @@ extra_javascript:
 nav:
 - README.md
 
-- Python 基础:
-  - Python 基础: python_basic/index.md
+- 方向路线:
+  - Python Roadmap: part01_learning_roadmap/index.md
 
-- Python 专题:
+- 语法规范:  
+  - Python 语法规范: part02_grammar_and_norm/index.md
+
+- 开发工具:
+  - 开发工具列表: part03_development_tool/index.md
+
+- 功能模块:
+  - Python 模块: part04_python_module/index.md
+
+- 专题总结:
+
   - 01 一切皆对象: 
-    - python 中的一切皆对象: python_topic/chapter01/article0101.md
-    - object、type和class: python_topic/chapter01/article0102.md
-    - python 中的内置类型: python_topic/chapter01/article0103.md
-    - 本章小结: python_topic/chapter01/article0104.md
+    - python 中的一切皆对象: part05_topic_summary/chapter01/article0101.md
+    - object、type和class: part05_topic_summary/chapter01/article0102.md
+    - python 中的内置类型: part05_topic_summary/chapter01/article0103.md
+    - 本章小结: part05_topic_summary/chapter01/article0104.md
 
   - 02 魔法函数: 
-    - 魔法函数简介: python_topic/chapter02/article0201.md
-    - python 数据模型对 python 的影响: python_topic/chapter02/article0202.md
-    - python 魔法函数一览: python_topic/chapter02/article0203.md
-    - len 函数的特殊性: python_topic/chapter02/article0204.md
-    - 本章小结: python_topic/chapter02/article0205.md
+    - 魔法函数简介: part05_topic_summary/chapter02/article0201.md
+    - python 数据模型对 python 的影响: part05_topic_summary/chapter02/article0202.md
+    - python 魔法函数一览: part05_topic_summary/chapter02/article0203.md
+    - len 函数的特殊性: part05_topic_summary/chapter02/article0204.md
+    - 本章小结: part05_topic_summary/chapter02/article0205.md
 
   - 03 类和对象: 
-    - 鸭子类型和多态: python_topic/chapter03/article0301.md
-    - 抽象基类（abc模块）: python_topic/chapter03/article0302.md
-    - isinstance 和 type 的区别: python_topic/chapter03/article0303.md
-    - 类变量和实例变量: python_topic/chapter03/article0304.md
-    - 类和实例属性的查找顺序: python_topic/chapter03/article0305.md
-    - 类方法、静态方法和实例方法: python_topic/chapter03/article0306.md
-    - 数据封装和私有属性: python_topic/chapter03/article0307.md
-    - python 对象的自省机制: python_topic/chapter03/article0308.md
-    - super 真的是调用父类么？: python_topic/chapter03/article0309.md
-    - mixin 继承案例——django rest framework: python_topic/chapter03/article0310.md
-    - python 中的 with 语句: python_topic/chapter03/article0311.md
-    - contextlib 简化上下文管理器: python_topic/chapter03/article0312.md
-    - 本章小结: python_topic/chapter03/article0313.md
+    - 鸭子类型和多态: part05_topic_summary/chapter03/article0301.md
+    - 抽象基类（abc模块）: part05_topic_summary/chapter03/article0302.md
+    - isinstance 和 type 的区别: part05_topic_summary/chapter03/article0303.md
+    - 类变量和实例变量: part05_topic_summary/chapter03/article0304.md
+    - 类和实例属性的查找顺序: part05_topic_summary/chapter03/article0305.md
+    - 类方法、静态方法和实例方法: part05_topic_summary/chapter03/article0306.md
+    - 数据封装和私有属性: part05_topic_summary/chapter03/article0307.md
+    - python 对象的自省机制: part05_topic_summary/chapter03/article0308.md
+    - super 真的是调用父类么？: part05_topic_summary/chapter03/article0309.md
+    - mixin 继承案例——django rest framework: part05_topic_summary/chapter03/article0310.md
+    - python 中的 with 语句: part05_topic_summary/chapter03/article0311.md
+    - contextlib 简化上下文管理器: part05_topic_summary/chapter03/article0312.md
+    - 本章小结: part05_topic_summary/chapter03/article0313.md
 
   - 04 自定义序列类: 
-    - python 中的序列分类: python_topic/chapter04/article0401.md
-    - python 中序列类型的 abd 继承关系: python_topic/chapter04/article0402.md
-    - list 中 extend 方法区别: python_topic/chapter04/article0403.md
-    - 实现可切片的对象: python_topic/chapter04/article0404.md
-    - bisect 维护已排序序列: python_topic/chapter04/article0405.md
-    - 什么时候不应该使用列表？: python_topic/chapter04/article0406.md
-    - 列表推导式、生成器表达式、字典推导式: python_topic/chapter04/article0407.md
-    - 本章小结: python_topic/chapter04/article0408.md
+    - python 中的序列分类: part05_topic_summary/chapter04/article0401.md
+    - python 中序列类型的 abd 继承关系: part05_topic_summary/chapter04/article0402.md
+    - list 中 extend 方法区别: part05_topic_summary/chapter04/article0403.md
+    - 实现可切片的对象: part05_topic_summary/chapter04/article0404.md
+    - bisect 维护已排序序列: part05_topic_summary/chapter04/article0405.md
+    - 什么时候不应该使用列表？: part05_topic_summary/chapter04/article0406.md
+    - 列表推导式、生成器表达式、字典推导式: part05_topic_summary/chapter04/article0407.md
+    - 本章小结: part05_topic_summary/chapter04/article0408.md
 
   - 05 python 中的 set 和 dict: 
-    - dict 的 abc 继承关系: python_topic/chapter05/article0501.md
-    - dict 的常用方法: python_topic/chapter05/article0502.md
-    - dict 的子类: python_topic/chapter05/article0503.md
-    - set 和 frozenset: python_topic/chapter05/article0504.md
-    - dict 和 set 的实现原理: python_topic/chapter05/article0505.md
-    - 本章小结: python_topic/chapter05/article0506.md
+    - dict 的 abc 继承关系: part05_topic_summary/chapter05/article0501.md
+    - dict 的常用方法: part05_topic_summary/chapter05/article0502.md
+    - dict 的子类: part05_topic_summary/chapter05/article0503.md
+    - set 和 frozenset: part05_topic_summary/chapter05/article0504.md
+    - dict 和 set 的实现原理: part05_topic_summary/chapter05/article0505.md
+    - 本章小结: part05_topic_summary/chapter05/article0506.md
 
   - 06 对象引用、可变性和垃圾回收: 
-    - pythoon 中的变量是什么？: python_topic/chapter06/article0601.md
-    - == 和 is 的区别: python_topic/chapter06/article0602.md
-    - del 语句和垃圾回收: python_topic/chapter06/article0603.md
-    - 一个经典的参数错误: python_topic/chapter06/article0604.md
-    - 本章小结: python_topic/chapter06/article0605.md
+    - pythoon 中的变量是什么？: part05_topic_summary/chapter06/article0601.md
+    - == 和 is 的区别: part05_topic_summary/chapter06/article0602.md
+    - del 语句和垃圾回收: part05_topic_summary/chapter06/article0603.md
+    - 一个经典的参数错误: part05_topic_summary/chapter06/article0604.md
+    - 本章小结: part05_topic_summary/chapter06/article0605.md
 
   - 07 元类编程: 
-    - property 动态属性: python_topic/chapter07/article0701.md
-    - __getattr__、__getattribute__ 魔法函数: python_topic/chapter07/article0702.md
-    - 属性描述符和属性查找过程: python_topic/chapter07/article0703.md
-    - __new__ 和 __init__ 的区别: python_topic/chapter07/article0704.md
-    - 自定义元类: python_topic/chapter07/article0705.md
-    - 通过元类实现 orm: python_topic/chapter07/article0706.md
-    - 本章小结: python_topic/chapter07/article0707.md
+    - property 动态属性: part05_topic_summary/chapter07/article0701.md
+    - __getattr__、__getattribute__ 魔法函数: part05_topic_summary/chapter07/article0702.md
+    - 属性描述符和属性查找过程: part05_topic_summary/chapter07/article0703.md
+    - __new__ 和 __init__ 的区别: part05_topic_summary/chapter07/article0704.md
+    - 自定义元类: part05_topic_summary/chapter07/article0705.md
+    - 通过元类实现 orm: part05_topic_summary/chapter07/article0706.md
+    - 本章小结: part05_topic_summary/chapter07/article0707.md
 
   - 08 迭代器和生成器: 
-    - python 中的迭代协议: python_topic/chapter08/article0801.md
-    - 什么是迭代器和可迭代对象: python_topic/chapter08/article0802.md
-    - 生成器函数的使用: python_topic/chapter08/article0803.md
-    - python 是如何实现生成器的: python_topic/chapter08/article0804.md
-    - 生成器在 UserList 中的应用: python_topic/chapter08/article0805.md
-    - 生成器如何读取大文件: python_topic/chapter08/article0806.md
-    - 本章小结: python_topic/chapter08/article0807.md
+    - python 中的迭代协议: part05_topic_summary/chapter08/article0801.md
+    - 什么是迭代器和可迭代对象: part05_topic_summary/chapter08/article0802.md
+    - 生成器函数的使用: part05_topic_summary/chapter08/article0803.md
+    - python 是如何实现生成器的: part05_topic_summary/chapter08/article0804.md
+    - 生成器在 UserList 中的应用: part05_topic_summary/chapter08/article0805.md
+    - 生成器如何读取大文件: part05_topic_summary/chapter08/article0806.md
+    - 本章小结: part05_topic_summary/chapter08/article0807.md
 
   - 09 python socket 编程: 
-    - HTTP、Socket、TCP 概念: python_topic/chapter09/article0901.md
-    - socket 和 server 实现通信: python_topic/chapter09/article0902.md
-    - socket 实现聊天和多用户连接: python_topic/chapter09/article0903.md
-    - socket 模拟 http 请求: python_topic/chapter09/article0904.md
-    - 本章小结: python_topic/chapter09/article0905.md
+    - HTTP、Socket、TCP 概念: part05_topic_summary/chapter09/article0901.md
+    - socket 和 server 实现通信: part05_topic_summary/chapter09/article0902.md
+    - socket 实现聊天和多用户连接: part05_topic_summary/chapter09/article0903.md
+    - socket 模拟 http 请求: part05_topic_summary/chapter09/article0904.md
+    - 本章小结: part05_topic_summary/chapter09/article0905.md
 
   - 10 多线程、多进程和线程池编程: 
-    - python 中的 GIL: python_topic/chapter10/article1001.md
-    - 多线程编程 —— threading: python_topic/chapter10/article1002.md
-    - 线程间通信 —— 共享变量和 Queue: python_topic/chapter10/article1003.md
-    - 线程同步 —— Lock、RLock: python_topic/chapter10/article1004.md
-    - 线程同步 —— condition 使用及源码分析: python_topic/chapter10/article1005.md
-    - 线程同步 —— Semaphore 使用及源码分析: python_topic/chapter10/article1006.md
-    - ThreadPoolExecutor 线程池: python_topic/chapter10/article1007.md
-    - ThreadPoolExecutor 源码分析: python_topic/chapter10/article1008.md
-    - 多线程和多进程对比: python_topic/chapter10/article1009.md
-    - multiprocessing 多进程编程: python_topic/chapter10/article1010.md
-    - 进程间通信 —— Queue、Pipe、Manager: python_topic/chapter10/article1011.md
-    - 本章小结: python_topic/chapter10/article1012.md
+    - python 中的 GIL: part05_topic_summary/chapter10/article1001.md
+    - 多线程编程 —— threading: part05_topic_summary/chapter10/article1002.md
+    - 线程间通信 —— 共享变量和 Queue: part05_topic_summary/chapter10/article1003.md
+    - 线程同步 —— Lock、RLock: part05_topic_summary/chapter10/article1004.md
+    - 线程同步 —— condition 使用及源码分析: part05_topic_summary/chapter10/article1005.md
+    - 线程同步 —— Semaphore 使用及源码分析: part05_topic_summary/chapter10/article1006.md
+    - ThreadPoolExecutor 线程池: part05_topic_summary/chapter10/article1007.md
+    - ThreadPoolExecutor 源码分析: part05_topic_summary/chapter10/article1008.md
+    - 多线程和多进程对比: part05_topic_summary/chapter10/article1009.md
+    - multiprocessing 多进程编程: part05_topic_summary/chapter10/article1010.md
+    - 进程间通信 —— Queue、Pipe、Manager: part05_topic_summary/chapter10/article1011.md
+    - 本章小结: part05_topic_summary/chapter10/article1012.md
 
   - 11 协程和异步 io: 
-    - 并发、并行、同步、异步、阻塞、非阻塞: python_topic/chapter11/article1101.md
-    - IO 多路复用 (select、poll 和 epoll): python_topic/chapter11/article1102.md
-    - select+回调+事件循环获取 html: python_topic/chapter11/article1103.md
-    - 回调之痛: python_topic/chapter11/article1104.md
-    - 协程是什么: python_topic/chapter11/article1105.md
-    - 生成器进阶 send、close 和 throw 方法: python_topic/chapter11/article1106.md
-    - 生成器进阶 yield from: python_topic/chapter11/article1107.md
-    - 生成器实现协程: python_topic/chapter11/article1108.md
-    - async和await: python_topic/chapter11/article1109.md
-    - 本章小结: python_topic/chapter11/article1110.md 
+    - 并发、并行、同步、异步、阻塞、非阻塞: part05_topic_summary/chapter11/article1101.md
+    - IO 多路复用 (select、poll 和 epoll): part05_topic_summary/chapter11/article1102.md
+    - select+回调+事件循环获取 html: part05_topic_summary/chapter11/article1103.md
+    - 回调之痛: part05_topic_summary/chapter11/article1104.md
+    - 协程是什么: part05_topic_summary/chapter11/article1105.md
+    - 生成器进阶 send、close 和 throw 方法: part05_topic_summary/chapter11/article1106.md
+    - 生成器进阶 yield from: part05_topic_summary/chapter11/article1107.md
+    - 生成器实现协程: part05_topic_summary/chapter11/article1108.md
+    - async和await: part05_topic_summary/chapter11/article1109.md
+    - 本章小结: part05_topic_summary/chapter11/article1110.md 
 
   - 12 asyncio 并发编程: 
-    - 事件循环: python_topic/chapter12/article1201.md
-    - task 取消和子协程调用原理: python_topic/chapter12/article1202.md
-    - call_soon、call_at、call_later、call_soon_threadsafe: python_topic/chapter12/article1203.md
-    - ThreadPollExecutor 和 asycio 完成阻塞 IO 请求: python_topic/chapter12/article1204.md
-    - asyncio 模拟 http 请求: python_topic/chapter12/article1205.md
-    - future 和 task: python_topic/chapter12/article1206.md
-    - asyncio 同步和通信: python_topic/chapter12/article1207.md
-    - aiohttp 实现高并发爬虫: python_topic/chapter12/article1208.md
-    - 本章小结: python_topic/chapter12/article1209.md  
+    - 事件循环: part05_topic_summary/chapter12/article1201.md
+    - task 取消和子协程调用原理: part05_topic_summary/chapter12/article1202.md
+    - call_soon、call_at、call_later、call_soon_threadsafe: part05_topic_summary/chapter12/article1203.md
+    - ThreadPollExecutor 和 asycio 完成阻塞 IO 请求: part05_topic_summary/chapter12/article1204.md
+    - asyncio 模拟 http 请求: part05_topic_summary/chapter12/article1205.md
+    - future 和 task: part05_topic_summary/chapter12/article1206.md
+    - asyncio 同步和通信: part05_topic_summary/chapter12/article1207.md
+    - aiohttp 实现高并发爬虫: part05_topic_summary/chapter12/article1208.md
+    - 本章小结: part05_topic_summary/chapter12/article1209.md  
 
-- Python 进阶:
-  - Intermediate Python: python_intermediate/intermediate_python/index.md
-  - Fluent Python: python_intermediate/fluent_python/index.md
-  - Python Cookbook: python_intermediate/python_cookbook/index.md
+- 进阶阅读:
+  - Intermediate Python: part06_intermediate_reading/intermediate_python/index.md
+  - Fluent Python: part06_intermediate_reading/fluent_python/index.md
+  - Python Cookbook: part06_intermediate_reading/python_cookbook/index.md
 
-- Python 高级:
-  - python_advanced/index.md
-
-- Python Web:
-  - Dash: python_web/plotly_dash/index.md
-  - Flask: python_web/flask/index.md
-  - Django: python_web/django/index.md
-  - Tornado: python_web/tornado/index.md
-  - FastAPI: python_web/fastapi/index.md
-
-- Python 数据分析:
-  - 概要: python_data_analysis/index.md
-
-- Python 项目:
+- 工程实践:
+  - Dash: part07_python_in_action/python_web/plotly_dash/index.md
+  - Flask: part07_python_in_action/python_web/flask/index.md
+  - Django: part07_python_in_action/python_web/django/index.md
+  - Tornado: part07_python_in_action/python_web/tornado/index.md
+  - FastAPI: part07_python_in_action/python_web/fastapi/index.md
+  
   - Performance Marketing Report:
-    - introduction: python_in_action/performance_marketing_report/01_introduction.md
-    - environment: python_in_action/performance_marketing_report/02_environment.md
-    - dash basics: python_in_action/performance_marketing_report/03_dash_basics.md
-    - multi-page: python_in_action/performance_marketing_report/04_multi-page_application.md
-    - data-selector: python_in_action/performance_marketing_report/05_data_selector_element.md
-    - first data table: python_in_action/performance_marketing_report/06_first_data_table.md
-    - download link: python_in_action/performance_marketing_report/07_donwload_link.md
-    - second data table: python_in_action/performance_marketing_report/08_second_data_table.md
-    - update graph function: python_in_action/performance_marketing_report/09_update_graphs_function.md
-    - update graph function: python_in_action/performance_marketing_report/10_update_graph_functions.md
-    - plotly graph tools: python_in_action/performance_marketing_report/11_plotly_graph_tools.md
-    - deployment: python_in_action/performance_marketing_report/12_deploy_application.md
-    - wrapping up: python_in_action/performance_marketing_report/13_wrapping_up.md
-    - resources: python_in_action/performance_marketing_report/14_resources.md
+    - introduction: part07_python_in_action/performance_marketing_report/01_introduction.md
+    - environment: part07_python_in_action/performance_marketing_report/02_environment.md
+    - dash basics: part07_python_in_action/performance_marketing_report/03_dash_basics.md
+    - multi-page: part07_python_in_action/performance_marketing_report/04_multi-page_application.md
+    - data-selector: part07_python_in_action/performance_marketing_report/05_data_selector_element.md
+    - first data table: part07_python_in_action/performance_marketing_report/06_first_data_table.md
+    - download link: part07_python_in_action/performance_marketing_report/07_donwload_link.md
+    - second data table: part07_python_in_action/performance_marketing_report/08_second_data_table.md
+    - update graph function: part07_python_in_action/performance_marketing_report/09_update_graphs_function.md
+    - update graph function: part07_python_in_action/performance_marketing_report/10_update_graph_functions.md
+    - plotly graph tools: part07_python_in_action/performance_marketing_report/11_plotly_graph_tools.md
+    - deployment: part07_python_in_action/performance_marketing_report/12_deploy_application.md
+    - wrapping up: part07_python_in_action/performance_marketing_report/13_wrapping_up.md
+    - resources: part07_python_in_action/performance_marketing_report/14_resources.md
     
   - Chiana's Census Data Analysis: 
-    - introduction: python_in_action/china_census_analysis/01_introduction.md
+    - introduction: part07_python_in_action/china_census_analysis/01_introduction.md
 
-- Python 拓展:
-  - python_explore/index.md
+- 源码剖析:
+  - part08_source_code_analysis/index.md
 
-- Miscellaneous:
+- 关联拓展:
+  - python 拓展: part09_connection_and_expansion/index.md
+
+- 业内资讯:
+  - Python 生态: part10_python_exploration/index.md
+
+- 后记:
   - Change Log: changelog.md
   - Reference: reference.md
   - To do list: todolist.md
