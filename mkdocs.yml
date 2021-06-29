@@ -1,4 +1,4 @@
-# Site information
+# Site Information
 site_name: Pythonista to Pythoneer
 site_url: http://bya.cool/advanced-python-techniques
 site_author: Bai Yongan
@@ -14,7 +14,7 @@ edit_uri: ''
 # Copyright
 copyright: Copyright &copy; 2021 - present Bai Yongan
 
-# Theme configuration
+# Theme Configuration
 theme:
   name: material
   custom_dir: overrides
@@ -79,18 +79,23 @@ extra_javascript:
 nav:
 - README.md
 
+# Part01
 - 方向路线:
   - Python Roadmap: part01_learning_roadmap/index.md
 
+# Part02
 - 语法规范:  
   - Python 语法规范: part02_grammar_and_norm/index.md
 
+# Part03
 - 开发工具:
   - 开发工具列表: part03_development_tool/index.md
 
+# Part04
 - 功能模块:
   - Python 模块: part04_python_module/index.md
 
+# Part05
 - 专题总结:
 
   - 01 一切皆对象: 
@@ -208,11 +213,14 @@ nav:
     - aiohttp 实现高并发爬虫: part05_topic_summary/chapter12/article1208.md
     - 本章小结: part05_topic_summary/chapter12/article1209.md  
 
+# Part06
 - 进阶阅读:
   - Intermediate Python: part06_intermediate_reading/intermediate_python/index.md
-  - Fluent Python: part06_intermediate_reading/fluent_python/index.md
   - Python Cookbook: part06_intermediate_reading/python_cookbook/index.md
+  - Effective Python: part06_intermediate_reading/effective_python/index.md
+  - Fluent Python: part06_intermediate_reading/fluent_python/index.md
 
+# Part07
 - 工程实践:
   - Dash: part07_python_in_action/python_web/plotly_dash/index.md
   - Flask: part07_python_in_action/python_web/flask/index.md
@@ -239,15 +247,19 @@ nav:
   - Chiana's Census Data Analysis: 
     - introduction: part07_python_in_action/china_census_analysis/01_introduction.md
 
+# Part08
 - 源码剖析:
   - part08_source_code_analysis/index.md
 
+# Part09
 - 关联拓展:
   - python 拓展: part09_connection_and_expansion/index.md
 
+# Part10
 - 业内资讯:
   - Python 生态: part10_python_exploration/index.md
 
+# Record
 - 后记:
   - Change Log: changelog.md
   - Reference: reference.md
