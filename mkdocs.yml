@@ -38,8 +38,8 @@ theme:
   - navigation.tabs
   icon:
     repo: fontawesome/brands/github-alt
-  logo: img/icon-white.svg
-  favicon: img/favicon.png
+  logo: assets/image/icon-white.svg
+  favicon: assets/image/favicon.png
   language: en
 
 # Plugins
@@ -68,12 +68,12 @@ markdown_extensions:
 
 # Customization
 extra_css:
-- css/termynal.css
-- css/custom.css
+- assets/css/termynal.css
+- assets/css/custom.css
 extra_javascript:
 - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
-- js/termynal.js
-- js/custom.js
+- assets/js/termynal.js
+- assets/js/custom.js
 
 # Page tree
 nav:
@@ -94,6 +94,9 @@ nav:
 # Part04
 - 功能模块:
   - Python 模块: part04_module_package_library/index.md
+  - Algorithms: 
+    - functools: part04_module_package_library/chapter03_algorithms/functools.md
+
 
 # Part05
 - 核心专题:
@@ -263,8 +266,8 @@ nav:
 
 # Record
 - 后记:
-  - Change Log: changelog.md
-  - Reference: reference.md
-  - To do list: todolist.md
-  - License: license.md
-  - Backup: fastapi.md
+  - Change Log: CHANGELOG.md
+  - Reference: REFERENCE.md
+  - To do list: TODOLIST.md
+  - License: LICENSE.md
+  - Backup: FASTAPI.md
