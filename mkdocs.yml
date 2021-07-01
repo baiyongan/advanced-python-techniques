@@ -47,6 +47,13 @@ plugins:
 - search
 - markdownextradata:
     data: data
+# - markmap:
+#     base_path: docs
+#     encoding: utf-8
+#     file_extension: .mm.md
+#     d3_version: 6.7.0
+#     lib_version: 0.11.5
+#     view_version: 0.2.6
 
 # Extensions
 markdown_extensions:
@@ -72,6 +79,9 @@ extra_css:
 - assets/css/custom.css
 extra_javascript:
 - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+# - https://unpkg.com/d3@6.7.0/dist/d3.min.js
+# - https://unpkg.com/markmap-lib@0.11.5/dist/browser/index.min.js
+# - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
 - assets/js/termynal.js
 - assets/js/custom.js
 
@@ -94,9 +104,47 @@ nav:
 # Part04
 - 功能模块:
   - Python 模块: part04_module_package_library/index.md
+
+ # - Text:
+
+ # - Data Structures:
+
   - Algorithms: 
     - functools: part04_module_package_library/chapter03_algorithms/functools.md
 
+ # - Dates and Times:
+ #
+ # - Mathematics:
+ #
+ # - The File System:
+ #
+ # - Data Persistence and Exchange:
+ #
+ # - Data Compression and Archiving:
+ #
+ # - Cryptography:
+ #
+ # - Concurrency with Processes, Threads, and Coroutines:
+ #
+ # - Networking:
+ #
+ # - The Internet:
+ #
+ # - Email:
+ #
+ # - Application Building Blocks:
+ #
+ # - Internationalization and Localization:
+ #
+ # - Developer Tools:
+ #
+ # - Runtime Features:
+ #
+ # - Language Tools:
+ #
+ # - Modules and Packages:
+ #
+ # - Unix-specific Services:
 
 # Part05
 - 核心专题:
