@@ -703,33 +703,39 @@
     部分对象
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="部分对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     获取函数属性
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     其他可调用对象
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     方法与函数
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     获取装饰器的函数属性
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -738,19 +744,25 @@
     比较
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="比较">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     丰富的对比
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     整理顺序
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2933,33 +2945,39 @@
     部分对象
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="部分对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     获取函数属性
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     其他可调用对象
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     方法与函数
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     获取装饰器的函数属性
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2968,19 +2986,25 @@
     比较
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="比较">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     丰富的对比
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     整理顺序
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3028,17 +3052,19 @@
                 <h1 id="functools">functools —— 操作函数的工具<a class="headerlink" href="#functools" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">目的</p>
-<p>对其他函数进行操作的函数。functools 模块提供了用于调整或扩展函数和其他可调用对象的工具，而无需完全重写它们。</p>
+<p><code>functools</code> 实现对其他函数进行操作的函数。<code>functools</code> 模块提供了用于调整或扩展函数和其他可调用对象的工具，而无需完全重写它们。</p>
 </div>
 <h2 id="_1">装饰器<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><code>functools</code> 模块提供的主要工具是 <code>partial</code> 类，它可用于“包装”（"wrap"）具有默认参数的可调用对象。它的结果对象本身是可调用的，可以将其视为原始函数。它使用与原始参数相同的所有参数，也可以使用额外的位置或命名参数，来进行调用。可以使用 <code>partial</code> 代替 <code>lambda</code> 来为函数提供默认参数，同时保留一些未指定的参数。</p>
 <h2 id="_2">部分对象<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h2 id="_3">获取函数属性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h2 id="_4">其他可调用对象<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h2 id="_5">方法与函数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h2 id="_6">获取装饰器的函数属性<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>此示例显示函数 myfunc() 的两个简单部分对象。 show_details() 的输出包括部分对象的 func、args 和 keywords 属性。</p>
+<h3 id="_3">获取函数属性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">其他可调用对象<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_5">方法与函数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_6">获取装饰器的函数属性<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <h2 id="_7">比较<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h2 id="_8">丰富的对比<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h2 id="_9">整理顺序<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_8">丰富的对比<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_9">整理顺序<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <h2 id="_10">缓存<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <h2 id="_11">减小数据集<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <h2 id="_12">通用函数<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
