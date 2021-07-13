@@ -272,12 +272,13 @@ nav:
   - Fluent Python: part06_intermediate_note/fluent_python/index.md
 
 # Part07
-- 必备框架:
-  - Dash: part07_essential_framework/python_web/plotly_dash/index.md
-  - Flask: part07_essential_framework/python_web/flask/index.md
-  - Django: part07_essential_framework/python_web/django/index.md
-  - Tornado: part07_essential_framework/python_web/tornado/index.md
-  - FastAPI: part07_essential_framework/python_web/fastapi/index.md
+- 常用框架:
+  - Dash: part07_common_framework/python_web/plotly_dash/index.md
+  - Flask: 
+    - 项目结构: part07_common_framework/python_web/flask/structure_of_a_flask_project.md
+  - Django: part07_common_framework/python_web/django/index.md
+  - Tornado: part07_common_framework/python_web/tornado/index.md
+  - FastAPI: part07_common_framework/python_web/fastapi/index.md
 
 # Part08
 - 工程实践:
