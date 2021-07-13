@@ -16,7 +16,7 @@
         <link rel="canonical" href="http://bya.cool/advanced-python-techniques/FASTAPI/">
       
       <link rel="icon" href="../assets/image/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.875de78c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -313,8 +313,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../part07_essential_framework/python_web/plotly_dash/" class="md-tabs__link">
-        必备框架
+      <a href="../part07_common_framework/python_web/plotly_dash/" class="md-tabs__link">
+        常用框架
       </a>
     </li>
   
@@ -2212,13 +2212,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       <label class="md-nav__link" for="__nav_8">
-        必备框架
+        常用框架
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="必备框架" data-md-level="1">
+      <nav class="md-nav" aria-label="常用框架" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
-          必备框架
+          常用框架
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2227,7 +2227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_essential_framework/python_web/plotly_dash/" class="md-nav__link">
+      <a href="../part07_common_framework/python_web/plotly_dash/" class="md-nav__link">
         Dash
       </a>
     </li>
@@ -2238,10 +2238,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../part07_essential_framework/python_web/flask/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
+      
+      <label class="md-nav__link" for="__nav_8_2">
         Flask
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Flask" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Flask
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part07_common_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
+        项目结构
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2251,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_essential_framework/python_web/django/" class="md-nav__link">
+      <a href="../part07_common_framework/python_web/django/" class="md-nav__link">
         Django
       </a>
     </li>
@@ -2263,7 +2290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_essential_framework/python_web/tornado/" class="md-nav__link">
+      <a href="../part07_common_framework/python_web/tornado/" class="md-nav__link">
         Tornado
       </a>
     </li>
@@ -2275,7 +2302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_essential_framework/python_web/fastapi/" class="md-nav__link">
+      <a href="../part07_common_framework/python_web/fastapi/" class="md-nav__link">
         FastAPI
       </a>
     </li>
@@ -3116,11 +3143,9 @@
                 <p align="center">
   <a href="https://fastapi.tiangolo.com"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"></a>
 </p>
-
 <p align="center">
     <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
-
 <p align="center">
 <a href="https://github.com/tiangolo/fastapi/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/tiangolo/fastapi/workflows/Test/badge.svg" alt="Test">
@@ -3200,7 +3225,7 @@
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <div class="termy">
 
-<div class="highlight"><pre><span></span><code><span class="gp">$</span> pip install fastapi
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip install fastapi
 
 <span class="go">---&gt; 100%</span>
 </code></pre></div>
@@ -3210,7 +3235,7 @@
 <p>You will also need an ASGI server, for production such as <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> or <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.</p>
 <div class="termy">
 
-<div class="highlight"><pre><span></span><code><span class="gp">$</span> pip install uvicorn<span class="o">[</span>standard<span class="o">]</span>
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip install uvicorn<span class="o">[</span>standard<span class="o">]</span>
 
 <span class="go">---&gt; 100%</span>
 </code></pre></div>
@@ -3238,7 +3263,6 @@
 <span class="k">def</span> <span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
 </code></pre></div>
-
 <details>
 <p><summary>Or use <code>async def</code>...</summary></p>
 <p>If your code uses <code>async</code> / <code>await</code>, use <code>async def</code>:</p>
@@ -3258,7 +3282,6 @@
 <span class="hll"><span class="k">async</span> <span class="k">def</span> <span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 </span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
 </code></pre></div>
-
 <p><strong>Note</strong>:</p>
 <p>If you don't know, check the <em>"In a hurry?"</em> section about <a href="https://fastapi.tiangolo.com/async/#in-a-hurry" target="_blank"><code>async</code> and <code>await</code> in the docs</a>.</p>
 </details>
@@ -3266,7 +3289,7 @@
 <p>Run the server with:</p>
 <div class="termy">
 
-<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvicorn main:app --reload
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>uvicorn main:app --reload
 
 <span class="go">INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)</span>
 <span class="go">INFO:     Started reloader process [28720]</span>
@@ -3291,7 +3314,6 @@
 <p>You will see the JSON response as:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;item_id&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nt">&quot;q&quot;</span><span class="p">:</span> <span class="s2">&quot;somequery&quot;</span><span class="p">}</span>
 </code></pre></div>
-
 <p>You already created an API that:</p>
 <ul>
 <li>Receives HTTP requests in the <em>paths</em> <code>/</code> and <code>/items/{item_id}</code>.</li>
@@ -3338,7 +3360,6 @@
 </span><span class="hll"><span class="k">def</span> <span class="nf">update_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
 </span><span class="hll">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </span></code></pre></div>
-
 <p>The server should reload automatically (because you added <code>--reload</code> to the <code>uvicorn</code> command above).</p>
 <h3 id="interactive-api-docs-upgrade">Interactive API docs upgrade<a class="headerlink" href="#interactive-api-docs-upgrade" title="Permanent link">&para;</a></h3>
 <p>Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
@@ -3368,11 +3389,9 @@
 <p>For example, for an <code>int</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span>
 </code></pre></div>
-
 <p>or for a more complex <code>Item</code> model:</p>
 <div class="highlight"><pre><span></span><code><span class="n">item</span><span class="p">:</span> <span class="n">Item</span>
 </code></pre></div>
-
 <p>...and with that single declaration you get:</p>
 <ul>
 <li>Editor support, including:<ul>
@@ -3442,15 +3461,12 @@
 <p>Try changing the line with:</p>
 <div class="highlight"><pre><span></span><code>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </code></pre></div>
-
 <p>...from:</p>
 <div class="highlight"><pre><span></span><code>        <span class="o">...</span> <span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span> <span class="o">...</span>
 </code></pre></div>
-
 <p>...to:</p>
 <div class="highlight"><pre><span></span><code>        <span class="o">...</span> <span class="s2">&quot;item_price&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">price</span> <span class="o">...</span>
 </code></pre></div>
-
 <p>...and see how your editor will auto-complete the attributes and know their types:</p>
 <p><img alt="editor support" src="https://fastapi.tiangolo.com/img/vscode-completion.png" /></p>
 <p>For a more complete example including more features, see the <a href="https://fastapi.tiangolo.com/tutorial/">Tutorial - User Guide</a>.</p>
@@ -3557,10 +3573,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
       
