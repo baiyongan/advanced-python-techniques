@@ -116,8 +116,10 @@ nav:
  #
  # - Mathematics:
  #
- # - The File System:
- #
+  - The File System:
+    - sh: part04_module_package_library/chapter06_the_file_system/sh.md
+
+ 
  # - Data Persistence and Exchange:
  #
  # - Data Compression and Archiving:
