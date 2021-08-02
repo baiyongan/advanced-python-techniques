@@ -16,7 +16,7 @@
         <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/flask/structure_of_a_flask_project/">
       
       <link rel="icon" href="../../../../assets/image/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.875de78c.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.f1a3b89f.min.css">
         
       
     
@@ -3055,6 +3055,7 @@
 <span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
     <span class="c1"># define columns</span>
 </code></pre></div>
+
 <p>这段代码本身是可以工作的，但当项目变大时，可能将面临一个<strong>循环依赖</strong>的问题。例如，假如有另一个扩展，需要与 <code>User</code> 这个模型（model）一起初始化:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># project/__init__.py</span>
 <span class="kn">from</span> <span class="nn">flask_sqlalchemy</span> <span class="kn">import</span> <span class="n">SQLAlchemy</span>
@@ -3064,6 +3065,7 @@
 <span class="n">db</span> <span class="o">=</span> <span class="n">SQLAlchemy</span><span class="p">()</span>
 <span class="n">ext</span> <span class="o">=</span> <span class="n">AnotherExtension</span><span class="p">(</span><span class="n">User</span><span class="p">)</span>
 </code></pre></div>
+
 <p>这时候，就产生了循环依赖的问题。因为 <code>auth.models</code> 正在从根目录导入 <code>db</code>，而根目录不能导入 <code>User</code> 模块（module）。这是一个常见的循环导入问题，不只限于 flask 。这个问题很容易解决，但是对于初级开发人员来说，却可能会很难。所以最好在一开始的时候就避免它。</p>
 <h3 id="flask_1">flask 官网中的相应写法<a class="headerlink" href="#flask_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_app</span><span class="p">(</span><span class="n">config_filename</span><span class="p">):</span>
@@ -3077,6 +3079,7 @@
     <span class="n">app</span><span class="o">.</span><span class="n">register_blueprint</span><span class="p">(</span><span class="n">frontend</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">app</span>
 </code></pre></div>
+
 <p>官方示例 application factories 代码段中，将 <code>db</code> 放在了 <code>yourapplication.model</code> 中。</p>
 <p>因此，建议在编写模块和包时，总是保持这个特定的规则：</p>
 <div class="admonition tip">
@@ -3109,6 +3112,7 @@
     <span class="n">mail</span><span class="o">.</span><span class="n">py</span>
     <span class="o">...</span>
 </code></pre></div>
+
 <p>这个示例结构中，一切都是按照功能来区分的。如果它的行为像模型，则将其放在 models 目录下；如果它的行为像路由，则将其放在 routes 目录下。在 <code>project/__init__.py</code> 中创建一个 <code>create_app</code> 工厂函数，并且初始化所有应用 <code>init_app</code>。如下：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># project/__init__.py</span>
 <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
@@ -3121,10 +3125,12 @@
     <span class="n">services</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">app</span>
 </code></pre></div>
+
 <p>在官方文档中，Flask-SQlAlchemy 中的 <code>db</code> 是通过以下方式注册的：</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">project.models</span> <span class="kn">import</span> <span class="n">db</span>
 <span class="n">db</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
 </code></pre></div>
+
 <p>有一个技巧，则是在每个文件夹中的 <code>__init__.py</code> 文件中，定义一个 <code>init_app</code> 函数，然后统一初始化进程。如下代码所示：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># project/models/__init__.py</span>
 <span class="kn">from</span> <span class="nn">.base</span> <span class="kn">import</span> <span class="n">db</span>
@@ -3143,6 +3149,7 @@
 
 <span class="c1"># ...</span>
 </code></pre></div>
+
 <h2 id="_3">基于应用的结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>另一种流行的结构组织方式，是基于应用来划分，也就是按照业务项目的应用程序来分组。例如：</p>
 <div class="highlight"><pre><span></span><code><span class="n">project</span><span class="o">/</span>
@@ -3160,6 +3167,7 @@
     <span class="n">templates</span><span class="o">/</span>
 <span class="o">...</span>
 </code></pre></div>
+
 <p>每个目录都对应着一个应用。Django 就默认使用这种方式来组织目录。当然这并不意味这种方式更好，还是需要依据项目特点来选择匹配的目录结构。某些时候，可能不得不使用一个混合的模式。</p>
 <p>类似于上一种方式，可以像如下代码一样，来 init_app :</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># project/__init__.py</span>
@@ -3173,6 +3181,7 @@
     <span class="n">blog</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">app</span>
 </code></pre></div>
+
 <h2 id="_4">配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>加载配置是另一个很多人觉得困难的问题，这同样是一个文件夹结构的问题。解决方案如下：</p>
 <ol>
@@ -3189,6 +3198,7 @@
   <span class="n">settings</span><span class="o">.</span><span class="n">py</span>
 <span class="n">app</span><span class="o">.</span><span class="n">py</span>
 </code></pre></div>
+
 <p>定义一个 <code>create_app</code> 来加载配置和环境变量：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># project/__init__.py</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -3209,6 +3219,7 @@
             <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">from_pyfile</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">app</span>
 </code></pre></div>
+
 <p>其中，<code>FLASK_CONF</code> 是一个包含配置的 python 文件（包含路径）。这可以是任何你想要的名称, 如项目叫做 <code>BYA</code>，你可以叫它 <code>BYA_CONF</code>。可以使用 <code>FLASK_CONF</code> 来加载生产环境配置。</p>
 <h2 id="_5">拓展阅读<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p><a href="https://lepture.com/en/2018/structure-of-a-flask-project">Structure of a Flask Project</a></p>
@@ -3290,10 +3301,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.34eae1b6.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
       
