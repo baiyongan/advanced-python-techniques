@@ -38,6 +38,19 @@ theme:
   - navigation.tabs
   icon:
     repo: fontawesome/brands/github-alt
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   logo: assets/image/icon-white.svg
   favicon: assets/image/favicon.png
   language: en
@@ -95,12 +108,12 @@ nav:
   - Web 开发: part01_direction_and_roadmap/python_web_roadmap.md
 
 # Part02
-- 语法规范:  
-  - Python 语法规范: part02_grammar_and_norm/index.md
+- 开发工具:
+  - 开发工具列表: part02_development_tool/index.md
 
 # Part03
-- 开发工具:
-  - 开发工具列表: part03_development_tool/index.md
+- 规范设计:  
+  - Python 语法规范: part03_norm_and_design/index.md
 
 # Part04
 - 功能模块:
@@ -152,7 +165,7 @@ nav:
 - 核心专题:
 
   - 01 一切皆对象: 
-    - python 中的一切皆对象: part05_core_topic/chapter01/article0101.md
+    - python 中一切皆对象: part05_core_topic/chapter01/article0101.md
     - object、type 和 class: part05_core_topic/chapter01/article0102.md
     - python 中的内置类型: part05_core_topic/chapter01/article0103.md
     - 本章小结: part05_core_topic/chapter01/article0104.md
