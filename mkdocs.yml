@@ -114,6 +114,9 @@ nav:
 # Part03
 - 规范设计:  
   - Python 语法规范: part03_norm_and_design/index.md
+  - Python 代码规范的重要性: part03_norm_and_design/norm/why_python_style_guide.md
+  - PEP8: part03_norm_and_design/norm/PEP8.md
+  - Google Python Style Guide: part03_norm_and_design/norm/google_python_style_guide.md
 
 # Part04
 - 功能模块:
@@ -297,6 +300,7 @@ nav:
 
 # Part08
 - 工程实践:
+  - SWIG 编程实践: part08_python_in_action/SWIG_programming.md
   - Performance Marketing Report:
     - introduction: part08_python_in_action/performance_marketing_report/01_introduction.md
     - environment: part08_python_in_action/performance_marketing_report/02_environment.md
