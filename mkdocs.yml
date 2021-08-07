@@ -304,6 +304,8 @@ nav:
 # Part08
 - 工程实践:
   - Overview: part08_python_in_action/index.md
+  - Python 中的数据结构与算法: part08_python_in_action/data_structure_and_algorithm.md
+  - 技术研发中的注意事项: part08_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part08_python_in_action/SWIG_programming.md
   - Performance Marketing Report:
     - introduction: part08_python_in_action/performance_marketing_report/01_introduction.md
