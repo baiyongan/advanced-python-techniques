@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#python-python" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -901,6 +906,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           python 数据模型对 python 的影响
@@ -915,6 +922,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -2493,6 +2502,30 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+        Python 中的数据结构与算法
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/precautions_in_development/" class="md-nav__link">
+        技术研发中的注意事项
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../part08_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
@@ -2508,14 +2541,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
       
-      <label class="md-nav__link" for="__nav_9_3">
+      <label class="md-nav__link" for="__nav_9_5">
         Performance Marketing Report
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Performance Marketing Report" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_3">
+        <label class="md-nav__title" for="__nav_9_5">
           <span class="md-nav__icon md-icon"></span>
           Performance Marketing Report
         </label>
@@ -2703,14 +2736,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_6" type="checkbox" id="__nav_9_6" >
       
-      <label class="md-nav__link" for="__nav_9_4">
+      <label class="md-nav__link" for="__nav_9_6">
         Chiana's Census Data Analysis
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Chiana's Census Data Analysis" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_4">
+        <label class="md-nav__title" for="__nav_9_6">
           <span class="md-nav__icon md-icon"></span>
           Chiana's Census Data Analysis
         </label>
@@ -2963,15 +2996,46 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>python 数据模型对 python 的影响</h1>
-                
-                
+                <h1 id="python-python">Python 数据模型对 Python 的影响<a class="headerlink" href="#python-python" title="Permanent link">&para;</a></h1>
+<ul>
+<li>魔法函数，会直接影响到 python 语法本身</li>
+<li>内置函数，做了非常多的内部实现，因此，自定义类中魔法函数，也会影响到 python 内置函数的调用</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>python 高级开发中，了解魔法函数特性，在设计类、对象的时候，会更加灵活，看经典源码也会更加游刃有余。</p>
+</div>
                 
               
               

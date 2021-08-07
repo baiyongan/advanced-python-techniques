@@ -13,14 +13,14 @@
         <meta name="author" content="Bai Yongan">
       
       
-        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part04_module_package_library/chapter08_data_compression_and_archiving/">
+        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part08_python_in_action/precautions_in_development/">
       
       <link rel="icon" href="../../assets/image/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
-        <title>Library Index - Pythonista to Pythoneer</title>
+        <title>技术研发中的注意事项 - Pythonista to Pythoneer</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#library-index" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Library Index
+              技术研发中的注意事项
             
           </span>
         </div>
@@ -258,7 +258,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../../part04_module_package_library/" class="md-tabs__link">
         功能模块
       </a>
     </li>
@@ -316,13 +316,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../part08_python_in_action/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         工程实践
       </a>
     </li>
@@ -654,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../part04_module_package_library/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -687,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter03_algorithms/functools/" class="md-nav__link">
+      <a href="../../part04_module_package_library/chapter03_algorithms/functools/" class="md-nav__link">
         functools
       </a>
     </li>
@@ -726,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter06_the_file_system/sh/" class="md-nav__link">
+      <a href="../../part04_module_package_library/chapter06_the_file_system/sh/" class="md-nav__link">
         sh
       </a>
     </li>
@@ -2428,12 +2430,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       <label class="md-nav__link" for="__nav_9">
         工程实践
@@ -2451,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -2463,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+      <a href="../data_structure_and_algorithm/" class="md-nav__link">
         Python 中的数据结构与算法
       </a>
     </li>
@@ -2473,11 +2477,99 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../part08_python_in_action/precautions_in_development/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          技术研发中的注意事项
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         技术研发中的注意事项
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    选择合适的编程语言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    合理使用缓存
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    健全的日志记录系统
+  </a>
+  
+    <nav class="md-nav" aria-label="健全的日志记录系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    实时 logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-logging" class="md-nav__link">
+    日常 full logging
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    Profiling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2487,7 +2579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/SWIG_programming/" class="md-nav__link">
+      <a href="../SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
     </li>
@@ -2520,7 +2612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/01_introduction/" class="md-nav__link">
+      <a href="../performance_marketing_report/01_introduction/" class="md-nav__link">
         introduction
       </a>
     </li>
@@ -2532,7 +2624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/02_environment/" class="md-nav__link">
+      <a href="../performance_marketing_report/02_environment/" class="md-nav__link">
         environment
       </a>
     </li>
@@ -2544,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/03_dash_basics/" class="md-nav__link">
+      <a href="../performance_marketing_report/03_dash_basics/" class="md-nav__link">
         dash basics
       </a>
     </li>
@@ -2556,7 +2648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/04_multi-page_application/" class="md-nav__link">
+      <a href="../performance_marketing_report/04_multi-page_application/" class="md-nav__link">
         multi-page
       </a>
     </li>
@@ -2568,7 +2660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/05_data_selector_element/" class="md-nav__link">
+      <a href="../performance_marketing_report/05_data_selector_element/" class="md-nav__link">
         data-selector
       </a>
     </li>
@@ -2580,7 +2672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/06_first_data_table/" class="md-nav__link">
+      <a href="../performance_marketing_report/06_first_data_table/" class="md-nav__link">
         first data table
       </a>
     </li>
@@ -2592,7 +2684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/07_donwload_link/" class="md-nav__link">
+      <a href="../performance_marketing_report/07_donwload_link/" class="md-nav__link">
         download link
       </a>
     </li>
@@ -2604,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/08_second_data_table/" class="md-nav__link">
+      <a href="../performance_marketing_report/08_second_data_table/" class="md-nav__link">
         second data table
       </a>
     </li>
@@ -2616,7 +2708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/09_update_graphs_function/" class="md-nav__link">
+      <a href="../performance_marketing_report/09_update_graphs_function/" class="md-nav__link">
         update graph function
       </a>
     </li>
@@ -2628,7 +2720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/10_update_graph_functions/" class="md-nav__link">
+      <a href="../performance_marketing_report/10_update_graph_functions/" class="md-nav__link">
         update graph function
       </a>
     </li>
@@ -2640,7 +2732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/11_plotly_graph_tools/" class="md-nav__link">
+      <a href="../performance_marketing_report/11_plotly_graph_tools/" class="md-nav__link">
         plotly graph tools
       </a>
     </li>
@@ -2652,7 +2744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/12_deploy_application/" class="md-nav__link">
+      <a href="../performance_marketing_report/12_deploy_application/" class="md-nav__link">
         deployment
       </a>
     </li>
@@ -2664,7 +2756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/13_wrapping_up/" class="md-nav__link">
+      <a href="../performance_marketing_report/13_wrapping_up/" class="md-nav__link">
         wrapping up
       </a>
     </li>
@@ -2676,7 +2768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/performance_marketing_report/14_resources/" class="md-nav__link">
+      <a href="../performance_marketing_report/14_resources/" class="md-nav__link">
         resources
       </a>
     </li>
@@ -2715,7 +2807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_python_in_action/china_census_analysis/01_introduction/" class="md-nav__link">
+      <a href="../china_census_analysis/01_introduction/" class="md-nav__link">
         introduction
       </a>
     </li>
@@ -2975,6 +3067,61 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    选择合适的编程语言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    合理使用缓存
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    健全的日志记录系统
+  </a>
+  
+    <nav class="md-nav" aria-label="健全的日志记录系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    实时 logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-logging" class="md-nav__link">
+    日常 full logging
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiling" class="md-nav__link">
+    Profiling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    测试
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2988,7 +3135,55 @@
               
                 
                 
-                <h1 id="library-index">Library Index<a class="headerlink" href="#library-index" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">技术研发的注意事项<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">选择合适的编程语言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>例如开发一个搜索引擎系统，首先需要根据具体的需求，对系统的各个部分选择合适的编程语言。</p>
+<p>Infra 层：</p>
+<ul>
+<li>对延迟（latency）的要求极高，偏向于使用 C++；</li>
+</ul>
+<p>中间层（middle tier or 服务器端）：</p>
+<ul>
+<li>并没有特别复杂的处理和对延迟的高需求，主要是以一些业务逻辑为主；</li>
+<li>以 Java、Python、PHP 等为主，对程序员来说，使用这种高级语言也更容易上手和调试。</li>
+</ul>
+<h2 id="_3">合理使用缓存<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>缓存为我们节约了大量的 CPU 容量（capacity）和延迟。缓存（cache）在实际工程中十分重要。</p>
+<p>如果没了缓存，容易造成很多问题。</p>
+<ul>
+<li>服务器负荷迅速飙升，崩溃的几率大大增加。</li>
+<li>端对端的延迟迅速飙升，请求超时的概率大大增加。</li>
+</ul>
+<p>是不是缓存越多就越好呢？——显然不是</p>
+<p>第一，通常来说，<strong>缓存比较昂贵</strong>，所以在使用上，我们都会有一个限度，<strong>不能无限制索取</strong>。</p>
+<p>第二，缓存不是万能的，<strong>过度增加缓存，也会损害用户的产品体验</strong>。比如搜索结果的 retrieval 和排序这两块，理想状况下，肯定是做实时的 model serving 最好，因为这样对用户的个性化推荐更准确和实时。之所以会对 model 有几个小时的缓存，更多的是出于性能的考虑，但如果把缓存从几小时改为几天，显然不合适，无疑会对用户的产品体验造成极大的负面影响。</p>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<p>缓存到底取多久、取多少，往往是用户对产品参与度和性能的一个权衡，需要根据一些具体的分析以及 A/B 测试做出决定。</p>
+</div>
+<h2 id="_4">健全的日志记录系统<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>大型公司的系统，往往由成千上万个小系统组合而来，如果发生故障，比如 Google、Facebook 的某项服务突然宕机了，就需要以最快的速度找出原因并做出修复。这靠的正是健全的日志记录系统，使得我们能够方便地分解错误原因，一层一层追溯，直到找到根源。</p>
+<p>一般来说，在线上环境中，我们需要两种类型的日志记录模式。</p>
+<h3 id="logging">实时 logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h3>
+<p>考虑到服务器的压力，通常会做降采样（downsampling），比如 log 实际流量的 1%。这样的好处是，可以及时跟踪各项指标，如果有情况，立即触发警报（alert）。</p>
+<p>实时 logging 也有利于我们进行各种线上实验。</p>
+<h3 id="full-logging">日常 full logging<a class="headerlink" href="#full-logging" title="Permanent link">&para;</a></h3>
+<p>每天更新一次也就是 daily 的 full logging，有助于我们统计一些信息，进行分析，比如做成仪表板（dashboard），方便查看每天的各项指标，来跟踪进度。此外，full logging 的 table，也常常用于 ML 组的训练数据（training data）。</p>
+<h2 id="profiling">Profiling<a class="headerlink" href="#profiling" title="Permanent link">&para;</a></h2>
+<p>profile，在实际开发中是非常重要的一项功能，能够帮助开发人员详细了解系统每个部分的效率，并加以提高。</p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>在线上环境中，通常会在许多必要的地方加上 profile 的代码，这样就能够知道这段代码的延迟是多少，哪个部分的延迟特别严重等等，然后对症下药。</p>
+</div>
+<p>如果没有 profile，很容易导致开发人员随意增加功能而不进行优化，这样以来，随着时间的推移，系统越来越冗余，延迟也会越来越高。</p>
+<h2 id="_5">测试<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>无论是单元测试（unit test）、集成测试（integration test）还是其他，都是保证代码质量、减小 bug 发生概率的一个有效手段。</p>
+<p>在真正规范的公司或是小组里，开发人员如果新增或改变了一个功能而不写测试，是过不了代码评审的。</p>
+<p>除了日常开发中所写的测试外，在代码 push 到线上之前，最好还要加一层测试。</p>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<p>Google 或者 Facebook 的代码在 push 的过程中，都会有专门的 service，去模拟不同的用户发送请求，然后看返回的响应是不是符合要求。如果出错，就会阻止代码的 push，这也就告诉了开发人员，他们所写的代码可能存在问题，需要再次检查。</p>
+</div>
                 
               
               
@@ -3004,6 +3199,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../data_structure_and_algorithm/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Python 中的数据结构与算法
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../SWIG_programming/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              SWIG 编程实践
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

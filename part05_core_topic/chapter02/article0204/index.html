@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#len" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -925,6 +930,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           len 函数的特殊性
@@ -939,6 +946,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -2493,6 +2502,30 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+        Python 中的数据结构与算法
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/precautions_in_development/" class="md-nav__link">
+        技术研发中的注意事项
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../part08_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
@@ -2508,14 +2541,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
       
-      <label class="md-nav__link" for="__nav_9_3">
+      <label class="md-nav__link" for="__nav_9_5">
         Performance Marketing Report
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Performance Marketing Report" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_3">
+        <label class="md-nav__title" for="__nav_9_5">
           <span class="md-nav__icon md-icon"></span>
           Performance Marketing Report
         </label>
@@ -2703,14 +2736,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_6" type="checkbox" id="__nav_9_6" >
       
-      <label class="md-nav__link" for="__nav_9_4">
+      <label class="md-nav__link" for="__nav_9_6">
         Chiana's Census Data Analysis
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Chiana's Census Data Analysis" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_4">
+        <label class="md-nav__title" for="__nav_9_6">
           <span class="md-nav__icon md-icon"></span>
           Chiana's Census Data Analysis
         </label>
@@ -2963,15 +2996,41 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>len 函数的特殊性</h1>
-                
-                
+                <h1 id="len">len() 函数的特殊性<a class="headerlink" href="#len" title="Permanent link">&para;</a></h1>
+<p>len() 函数式会调用对象的__len__。</p>
+<p>如果是使用遍历的方式求其长度，那么效率会很低，但是在求 python 内置类型的长度时，比如 len(list)、len(dict)、len(set) 等，却会很快。</p>
+<p>这是因为在 cpython 中的 list、dict、set 等，是通过 c 语言实现的, 在其内部会维护一个数据表示长度, 所以就不需要进行遍历,能大大提高效率, 所以尽量使用 python 原生的数据类型。</p>
                 
               
               

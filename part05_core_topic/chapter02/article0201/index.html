@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#index" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -919,6 +919,40 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    魔法函数特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    实例
+  </a>
+  
+    <nav class="md-nav" aria-label="实例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    没有魔法函数特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    有魔法函数特性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
@@ -2502,6 +2536,30 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+        Python 中的数据结构与算法
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part08_python_in_action/precautions_in_development/" class="md-nav__link">
+        技术研发中的注意事项
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../part08_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
@@ -2517,14 +2575,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
       
-      <label class="md-nav__link" for="__nav_9_3">
+      <label class="md-nav__link" for="__nav_9_5">
         Performance Marketing Report
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Performance Marketing Report" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_3">
+        <label class="md-nav__title" for="__nav_9_5">
           <span class="md-nav__icon md-icon"></span>
           Performance Marketing Report
         </label>
@@ -2712,14 +2770,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_6" type="checkbox" id="__nav_9_6" >
       
-      <label class="md-nav__link" for="__nav_9_4">
+      <label class="md-nav__link" for="__nav_9_6">
         Chiana's Census Data Analysis
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Chiana's Census Data Analysis" data-md-level="2">
-        <label class="md-nav__title" for="__nav_9_4">
+        <label class="md-nav__title" for="__nav_9_6">
           <span class="md-nav__icon md-icon"></span>
           Chiana's Census Data Analysis
         </label>
@@ -2990,6 +3048,40 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    魔法函数特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    实例
+  </a>
+  
+    <nav class="md-nav" aria-label="实例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    没有魔法函数特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    有魔法函数特性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3003,7 +3095,58 @@
               
                 
                 
-                <h1 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">什么是魔法函数？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">魔法函数特性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Python 里面的魔法函数，以双下划线开头和结尾；</li>
+<li>魔法函数不依赖任何类，并且可以随时调用；</li>
+<li>使用 Python 提供的魔法函数，而不要自己去自定义；</li>
+<li>一旦类里面加上一些特定的魔法函数，整个类就被附加了一些特定的功能；</li>
+<li>魔法函数定义之后，我们不需要显式地调用它，Python 解释器自己会知道什么情况下会调用，我们在使用相应的语法的时候就会自动调用；</li>
+<li>魔法函数和本身的类没有关系，和类的父类，object也没有关系，可以理解为独立的存在，魔法函数可以写到任意一个类中，跟继不继承没有必然的关系。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>在 Pycharm IDE 编辑类方式时，输入双下划线，会自动弹出很多 Python 支持的魔法函数，以供选择。</p>
+</div>
+<h2 id="_3">实例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<p>for循环的是可迭代对象, 首先通过__iter__得到一个迭代器, 然后不断调用迭代器的__next__, 但是如果对象没有实现 __iter__或__next__迭代器协议，Python的解释器就会去寻找__getitem__来迭代对象，如果连__getitem__都没有定义，这解释器就会报对象不是可迭代对象的错误。</p>
+</div>
+<h3 id="_4">没有魔法函数特性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Company</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">employee_list</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">employee</span> <span class="o">=</span> <span class="n">employee_list</span>
+
+<span class="n">company</span> <span class="o">=</span> <span class="n">Company</span><span class="p">([</span><span class="s2">&quot;tom&quot;</span><span class="p">,</span> <span class="s2">&quot;jerry&quot;</span><span class="p">,</span> <span class="s2">&quot;bya&quot;</span><span class="p">])</span>
+
+<span class="n">employee</span> <span class="o">=</span> <span class="n">company</span><span class="o">.</span><span class="n">employee</span>  <span class="c1"># 需要指定 class 里面的方法</span>
+<span class="k">for</span> <span class="n">em</span> <span class="ow">in</span> <span class="n">employee</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">em</span><span class="p">)</span>
+</code></pre></div>
+<p>魔法函数是能影响到语法本身的, 本来 company 实例是无法进行切片操作的, 但是由于实现了__getitem__, 所以在 python 的语法上，我们可以对实例化的对象进行切片操作.(列表也是 list 这个类实例化得到的一个对象)</p>
+<h3 id="_5">有魔法函数特性<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Company</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">employee_list</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">employee</span> <span class="o">=</span> <span class="n">employee_list</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">employee</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">employee</span><span class="p">)</span>
+
+<span class="n">company</span> <span class="o">=</span> <span class="n">Company</span><span class="p">([</span><span class="s2">&quot;tom&quot;</span><span class="p">,</span> <span class="s2">&quot;jerry&quot;</span><span class="p">,</span> <span class="s2">&quot;bya&quot;</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">em</span> <span class="ow">in</span> <span class="n">company</span><span class="p">:</span>  <span class="c1"># 加入了 魔法方法 __getitem__， 可视为 可迭代类型，可以直接对类进行 for 循环</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">em</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">em</span> <span class="ow">in</span> <span class="n">company</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>  <span class="c1"># 加入了 魔法方法 __getitem__， 可视为 序列类型，可以切片操作</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">em</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">company</span><span class="p">))</span>  <span class="c1"># __len__</span>
+</code></pre></div>
                 
               
               
