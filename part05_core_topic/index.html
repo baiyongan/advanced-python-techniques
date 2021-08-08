@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../CHANGELOG.md" class="md-tabs__link">
+      <a href="../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -809,6 +809,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    面向对象
+  </a>
+  
+</li>
       
     </ul>
   
@@ -2926,7 +2933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CHANGELOG.md" class="md-nav__link">
+      <a href="../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -2940,18 +2947,6 @@
     <li class="md-nav__item">
       <a href="../REFERENCE/" class="md-nav__link">
         Reference
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TODOLIST/" class="md-nav__link">
-        To do list
       </a>
     </li>
   
@@ -3012,6 +3007,13 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    面向对象
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3026,6 +3028,59 @@
                 
                 
                 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<h2 id="_1">面向对象<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>鸭子类型</li>
+<li>抽象基类</li>
+<li>类变量、对象变量的查找顺序</li>
+<li>静态方法、类方法、实例方法</li>
+<li>数据封装和私有属性</li>
+<li>对象的自省机制</li>
+<li>上下文管理器</li>
+<li>contextlib实现上下文管理器</li>
+<li>super函数的查找顺序</li>
+<li>mixin继承模式的应用</li>
+</ul>
+<h1 id="_2">元类<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<ul>
+<li>property动态属性</li>
+<li>__getattr__、__getattribute__ 区别</li>
+<li>属性描述符</li>
+<li>__new__ 和 __init__</li>
+<li>元类实现ORM</li>
+</ul>
+<h2 id="_3">多线程<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>GIL和多线程</li>
+<li>线程通信-共享变量、Queue</li>
+<li>线程同步-Lock、RLock、Condition、Semaphor</li>
+<li>线程池和源码分析-ThreadPoolExecutor</li>
+<li>多进程-multiprocessing</li>
+<li>进程间通信</li>
+</ul>
+<h2 id="io">异步IO<a class="headerlink" href="#io" title="Permanent link">&para;</a></h2>
+<ul>
+<li>IO多路复用-select、poll、epoll</li>
+<li>select+回调+事件循环模</li>
+<li>生成器进阶-send、close、throw和yield from</li>
+<li>async和await</li>
+</ul>
+<h2 id="asyncio">asyncio并发编程<a class="headerlink" href="#asyncio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>事件循环</li>
+<li>协程嵌套</li>
+<li>call_soon、call_later、call_at</li>
+<li>call_soon_threadsafe</li>
+<li>ThreadPoolExecutor+asyncio</li>
+<li>asyncio 模拟 http 请求</li>
+<li>future 和 task</li>
+<li>asyncio 同步和通信</li>
+<li>aiohttp 实现高并发爬虫</li>
+</ul>
+<h2 id="_4">拓展阅读<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://coding.imooc.com/class/200.html">Python3高级核心技术97讲</a></li>
+</ul>
                 
               
               
