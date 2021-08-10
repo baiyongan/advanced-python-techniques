@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#index" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../CHANGELOG/" class="md-tabs__link">
+      <a href="../../../CHANGELOG.md" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -824,7 +824,7 @@
   
     <li class="md-nav__item">
       <a href="../../chapter01/article0102/" class="md-nav__link">
-        object、type 和 class
+        type、object 和 class 的关系
       </a>
     </li>
   
@@ -2940,7 +2940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CHANGELOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG.md" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -3027,7 +3027,89 @@
               
                 
                 
-                <h1 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">鸭子类型和多态<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<p><strong><code>当看到一只鸟走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟就可以被称为鸭子。</code></strong></p>
+<p>鸭子类型（英语：duck typing）在程序设计中是动态类型的一种风格。在这种风格中，一个对象有效的语义，不是由继承自特定的类或实现特定的接口，而是由"当前方法和属性的集合"决定。</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I am a cat&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Fish</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I am a fish&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Horse</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I am a horse&quot;</span><span class="p">)</span>
+
+
+<span class="n">animal_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">Cat</span><span class="p">,</span> <span class="n">Fish</span><span class="p">,</span> <span class="n">Horse</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="n">animal_list</span><span class="p">:</span>
+    <span class="n">animal</span><span class="p">()</span><span class="o">.</span><span class="n">say</span><span class="p">()</span>
+
+<span class="c1">#------------------------------------------------</span>
+<span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="n">cat</span>
+<span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="n">fish</span>
+<span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="n">horse</span>
+</code></pre></div>
+<p>在 java 中，若要实现多态，就需要继承同一个父类，覆盖父类的一些方法，而在 python 中，不需要继承任何父类，只要实现共同的方法名即可。</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bya&quot;</span><span class="p">]</span>
+<span class="n">name_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bya1&quot;</span><span class="p">,</span> <span class="s2">&quot;bya2&quot;</span><span class="p">]</span>
+
+<span class="n">name_tuple</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bya3&quot;</span><span class="p">,</span> <span class="s2">&quot;bya4&quot;</span><span class="p">]</span>
+<span class="n">name_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">name_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;bya5&quot;</span><span class="p">)</span>
+<span class="n">name_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;bya6&quot;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">name_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a + name_list</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">name_tuple</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a + name_list + name_tuple</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">name_set</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a + name_list + name_tuple + name_set</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>  <span class="c1"># 注意这里的 set 没有顺序</span>
+<span class="c1">#------------------------------------------------</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">name_list</span>
+ <span class="p">[</span><span class="s1">&#39;bya&#39;</span><span class="p">,</span> <span class="s1">&#39;bya1&#39;</span><span class="p">,</span> <span class="s1">&#39;bya2&#39;</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">name_list</span> <span class="o">+</span> <span class="n">name_tuple</span>
+ <span class="p">[</span><span class="s1">&#39;bya&#39;</span><span class="p">,</span> <span class="s1">&#39;bya1&#39;</span><span class="p">,</span> <span class="s1">&#39;bya2&#39;</span><span class="p">,</span> <span class="s1">&#39;bya3&#39;</span><span class="p">,</span> <span class="s1">&#39;bya4&#39;</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">name_list</span> <span class="o">+</span> <span class="n">name_tuple</span> <span class="o">+</span> <span class="n">name_set</span>
+ <span class="p">[</span><span class="s1">&#39;bya&#39;</span><span class="p">,</span> <span class="s1">&#39;bya1&#39;</span><span class="p">,</span> <span class="s1">&#39;bya2&#39;</span><span class="p">,</span> <span class="s1">&#39;bya3&#39;</span><span class="p">,</span> <span class="s1">&#39;bya4&#39;</span><span class="p">,</span> <span class="s1">&#39;bya6&#39;</span><span class="p">,</span> <span class="s1">&#39;bya5&#39;</span><span class="p">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># extend 方法的源码</span>
+<span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span> <span class="c1"># real signature unknown</span>
+    <span class="sd">&quot;&quot;&quot; Extend list by appending elements from the iterable. &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</code></pre></div>
+<p>如上源码，extend 只要求传入其中的参数，是可迭代的对象，没有限制一定是 list or set or tuple 等，因此，如果我们自定义一个可迭代的类，便可同样使用 extend 方法。</p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>extend 方法，会隐含地调用对象里面的迭代器，即 __iter__ 方法，或是 __getitem__ 方法。</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1"># 自定义一个有 __getitem__ 方法的类，可以使用 extend 方法</span>
+<span class="k">class</span> <span class="nc">Company</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">employee_list</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">employee</span> <span class="o">=</span> <span class="n">employee_list</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">employee</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">employee</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bya&quot;</span><span class="p">]</span>
+<span class="n">company</span> <span class="o">=</span> <span class="n">Company</span><span class="p">([</span><span class="s2">&quot;tom&quot;</span><span class="p">,</span> <span class="s2">&quot;jerry&quot;</span><span class="p">,</span> <span class="s2">&quot;bya&quot;</span><span class="p">])</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">company</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a + company</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="c1">#------------------------------------------------</span>
+<span class="n">a</span> <span class="o">+</span> <span class="n">company</span>
+ <span class="p">[</span><span class="s1">&#39;bya&#39;</span><span class="p">,</span> <span class="s1">&#39;tom&#39;</span><span class="p">,</span> <span class="s1">&#39;jerry&#39;</span><span class="p">,</span> <span class="s1">&#39;bya&#39;</span><span class="p">]</span>
+</code></pre></div>
+<p>如此一来，say 方法，和 __getitem__ 方法的特性就比较像了，即并不一定非要继承某个类，才能使用该方法，这就是鸭子类型，魔法函数即是充分利用了动态语言的鸭子类型特性。</p>
                 
               
               
