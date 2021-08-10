@@ -1,0 +1,1 @@
+# 使用 isinstance 而不是 type

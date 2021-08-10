@@ -170,7 +170,7 @@ nav:
 
   - 01 一切皆对象: 
     - python 中一切皆对象: part05_core_topic/chapter01/article0101.md
-    - object、type 和 class: part05_core_topic/chapter01/article0102.md
+    - type、object 和 class 的关系: part05_core_topic/chapter01/article0102.md
     - python 中的内置类型: part05_core_topic/chapter01/article0103.md
     - 本章小结: part05_core_topic/chapter01/article0104.md
 
