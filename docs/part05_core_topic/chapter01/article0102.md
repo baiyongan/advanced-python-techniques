@@ -73,7 +73,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```python
 # type -> type -> type
 >>> type(type)
-<class 'type'>
+<class 'type'>  # type 是一个 class，且是自身的 object
 >>> type.__bases__  # type 的基类为 object ！！！
 (<class 'object'>,)
 ```
@@ -81,7 +81,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```python
 # type -> type -> object
 >>> type(object)
-<class 'type'>  # object 是 type 的一个实例
+<class 'type'>  # object 的类是 type，object 是 type 的一个实例
 >>> object.__bases__  ## object 的基类为 空
 ()
 

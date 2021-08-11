@@ -198,7 +198,7 @@ nav:
 
   - 04 自定义序列类: 
     - python 中的序列分类: part05_core_topic/chapter04/article0401.md
-    - python 中序列类型的 abd 继承关系: part05_core_topic/chapter04/article0402.md
+    - python 中序列类型的 abc 继承关系: part05_core_topic/chapter04/article0402.md
     - list 中 extend 方法区别: part05_core_topic/chapter04/article0403.md
     - 实现可切片的对象: part05_core_topic/chapter04/article0404.md
     - bisect 维护已排序序列: part05_core_topic/chapter04/article0405.md
