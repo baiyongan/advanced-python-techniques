@@ -110,7 +110,6 @@ nav:
   - 数据分析: part01_direction_and_roadmap/python_data_analysis_roadmap.md
   - 数据挖掘（机器学习/人工智能）: part01_direction_and_roadmap/python_data_mining_roadmap.md
 
-
 # Part02
 - 开发工具:
   - Overview: part02_development_tool/index.md
@@ -132,7 +131,6 @@ nav:
   - pip: 
     - 快速上手: part02_development_tool/pip/brief_tutorial.md
     - 详细教程: part02_development_tool/pip/detailed_tutorial.md
-
 
 # Part03
 - 规范设计:  
