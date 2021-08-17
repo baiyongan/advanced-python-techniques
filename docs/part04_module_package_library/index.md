@@ -4,14 +4,27 @@
     1. 经常浏览下模块的源码，**有时候，我们想实现的功能，在标准库中可能已经实现**
     2. 其实很多工程实践的最好范例都在标准库中有体现
 
-## 常用标准库
+## 常用基础模块
 
-### Python Standart Library
+- 系统调用模块：os
+- 系统调用模块：sys
+- 时间模块：time & datetime 
+- 随机模块：random
+- 序列化模块：pickle & json
+- 加密模块：hashlib
+- 文件处理模块：shutil
+- 正则模块：re
 
-### PyMOTW3
+## 常用数据处理模块
 
-## 常用第三方库
+- numpy
+- pandas
 
+## 拓展阅读
+
+### [Python Standart Library](https://docs.python.org/3/library/)
+
+### [PyMOTW3](https://pymotw.com/3/)
 
 
 <!-- sh
