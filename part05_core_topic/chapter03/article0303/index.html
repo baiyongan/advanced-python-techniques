@@ -1373,6 +1373,20 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#type-isinstance" class="md-nav__link">
+    type 与 isinstance 的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is" class="md-nav__link">
+    == 与 is 的区别
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3356,6 +3370,20 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#type-isinstance" class="md-nav__link">
+    type 与 isinstance 的区别
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is" class="md-nav__link">
+    == 与 is 的区别
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3370,6 +3398,53 @@
                 
                 
                 <h1 id="isinstance-type">使用 isinstance 而不是 type<a class="headerlink" href="#isinstance-type" title="Permanent link">&para;</a></h1>
+<h2 id="type-isinstance">type 与 isinstance 的区别<a class="headerlink" href="#type-isinstance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>type 用于求一个未知数据类型的对象，isinstance 用于判断一个对象是否是已知类型。</li>
+<li>type 不认为子类是父类的一种类型，isinstance 认为子类是父类的一种类型，即子类对象也属于父类对象。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># A 是 B 的父类，isinstance 内部会检查类的继承链关系</span>
+<span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;判断对象类型的正确用法：使用 isinstance 判断&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b 是否为 class B 类型：&quot;</span><span class="p">,</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b 是否为 class A 类型：&quot;</span><span class="p">,</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">判断对象类型的正确用法：使用 type 判断&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b 是否为 class B 类型：&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="ow">is</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b 是否为 class A 类型：&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="ow">is</span> <span class="n">A</span><span class="p">)</span>
+<span class="c1">#--------------------------------------------------</span>
+<span class="n">判断对象类型的正确用法</span><span class="err">：</span><span class="n">使用</span> <span class="nb">isinstance</span> <span class="n">判断</span>
+<span class="n">b</span> <span class="n">是否为</span> <span class="k">class</span> <span class="nc">B</span> <span class="n">类型</span><span class="err">：</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="n">是否为</span> <span class="k">class</span> <span class="nc">A</span> <span class="n">类型</span><span class="err">：</span> <span class="kc">True</span>
+
+<span class="n">判断对象类型的正确用法</span><span class="err">：</span><span class="n">使用</span> <span class="nb">type</span> <span class="n">判断</span>
+<span class="n">b</span> <span class="n">是否为</span> <span class="k">class</span> <span class="nc">B</span> <span class="n">类型</span><span class="err">：</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="n">是否为</span> <span class="k">class</span> <span class="nc">A</span> <span class="n">类型</span><span class="err">：</span> <span class="kc">False</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># 使用 type 查询位置数据类型的对象</span>
+<span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;__main__.B&#39;&gt;</span>
+<span class="c1">#--------------------------------------------------</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">__main__</span><span class="o">.</span><span class="sa">B</span><span class="s1">&#39;&gt;</span>
+</code></pre></div>
+<h2 id="is">== 与 is 的区别<a class="headerlink" href="#is" title="Permanent link">&para;</a></h2>
+<ul>
+<li>is 是去判断这两个是不是一个对象, 即id是否相同</li>
+<li>== 是判断值是否相等</li>
+</ul>
                 
               
               
