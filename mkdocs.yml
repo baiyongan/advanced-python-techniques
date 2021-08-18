@@ -60,6 +60,9 @@ plugins:
 - search
 - markdownextradata:
     data: data
+- mkdocs-jupyter:
+    execute: True
+    
 # - markmap:
 #     base_path: docs
 #     encoding: utf-8
