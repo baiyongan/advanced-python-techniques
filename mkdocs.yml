@@ -57,11 +57,13 @@ theme:
 
 # Plugins
 plugins:
-- search
-- markdownextradata:
-    data: data
-- mkdocs-jupyter:
-    execute: True
+  - search
+  - markdownextradata:
+      data: data
+  - mkdocs-jupyter:
+      execute: False
+      include_source: True
+      kernel_name: python3
     
 # - markmap:
 #     base_path: docs
@@ -73,37 +75,37 @@ plugins:
 
 # Extensions
 markdown_extensions:
-- toc:
-    permalink: true
-- markdown.extensions.codehilite:
-    guess_lang: false
-- markdown_include.include:
-    base_path: docs
-- admonition
-- codehilite
-- extra
-- pymdownx.superfences:
-    custom_fences:
-    - name: mermaid
-      class: mermaid
-      format: !!python/name:pymdownx.superfences.fence_div_format ''
-- pymdownx.tabbed
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown_include.include:
+      base_path: docs
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_div_format ''
+  - pymdownx.tabbed
 
 # Customization
 extra_css:
-- assets/css/termynal.css
-- assets/css/custom.css
+  - assets/css/termynal.css
+  - assets/css/custom.css
 extra_javascript:
-- https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
-# - https://unpkg.com/d3@6.7.0/dist/d3.min.js
-# - https://unpkg.com/markmap-lib@0.11.5/dist/browser/index.min.js
-# - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
-- assets/js/termynal.js
-- assets/js/custom.js
+  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+  # - https://unpkg.com/d3@6.7.0/dist/d3.min.js
+  # - https://unpkg.com/markmap-lib@0.11.5/dist/browser/index.min.js
+  # - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
+  - assets/js/termynal.js
+  - assets/js/custom.js
 
 # Page tree
 nav:
-- README.md
+- Home: README.md
 
 # Part01
 - 方向路线:
@@ -369,3 +371,4 @@ nav:
   - Reference: REFERENCE.md
   - License: LICENSE.md
   - Backup: FASTAPI.md
+  - Notebook: resources/jupyter/test.ipynb
