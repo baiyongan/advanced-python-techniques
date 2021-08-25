@@ -1397,6 +1397,55 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    示例一
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    查找顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    深度优先查找的局限性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    示例二
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    查找顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    广度优先查找的局限性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c3" class="md-nav__link">
+    C3算法
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3368,6 +3417,55 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    示例一
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    查找顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    深度优先查找的局限性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    示例二
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    查找顺序
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    广度优先查找的局限性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c3" class="md-nav__link">
+    C3算法
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3384,7 +3482,81 @@
 
                 
                 
-                <h1 id="_1">类变量和对象变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="_1">类属性和实例属性以及查找顺序<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<ul>
+<li>MRO </li>
+<li>DFS</li>
+<li>BFS</li>
+<li>C3</li>
+</ul>
+</div>
+<h3 id="_2">示例一<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="mermaid">graph TB
+    D((D)) --&gt; B((B))
+    D((D)) --&gt; C((C))
+    B((B)) --&gt; A((A))
+    C((C)) --&gt; A((A))</div>
+<h3 id="_3">查找顺序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>深度优先查找：A-&gt;B-&gt;D-&gt;C (错误)</li>
+<li>广度优先查找：A-&gt;B-&gt;C-&gt;D (正确)</li>
+</ul>
+<h3 id="_4">深度优先查找的局限性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>如果C重载了D的某个方法(B没有重载该方法), 由于深度优先的原则，B之后会优先查找D，结果将会使用D中的方法, 这是不合理的。</p>
+<h3 id="_5">示例二<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="mermaid">graph TB
+    D((D)) --&gt; B((B))
+    E((E)) --&gt; C((C))
+    B((B)) --&gt; A((A))
+    C((C)) --&gt; A((A))</div>
+<h3 id="_6">查找顺序<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>深度优先查找：A-&gt;B-&gt;D-&gt;C-&gt;E (正确)</li>
+<li>广度优先查找：A-&gt;B-&gt;C-&gt;D-&gt;E (错误)</li>
+</ul>
+<h3 id="_7">广度优先查找的局限性<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>由于继承关系, B和D应该视为一个整体, B中查找不到相应方法，应该优先从其父类D中查找中, 但是由于广度优先, B之后会查找C，这时，如果C和D中定义了同名的方法, 最终结果将会使用C中的方法, 这是不合理的。</p>
+<h2 id="c3">C3算法<a class="headerlink" href="#c3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># 新式类</span>
+<span class="k">class</span> <span class="nc">D</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">E</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">E</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">D</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="vm">__mro__</span><span class="p">)</span>
+<span class="c1">#---------------------------------------</span>
+<span class="c1"># A -&gt; B -&gt; D -&gt; C -&gt; E</span>
+<span class="p">(</span><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">__main__</span><span class="o">.</span><span class="n">A</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="sa">B</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">D</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">C</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">E</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="nb">object</span><span class="s1">&#39;&gt;)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">D</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">D</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">D</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="vm">__mro__</span><span class="p">)</span>
+<span class="c1">#---------------------------------------</span>
+<span class="c1"># A -&gt; B -&gt; C -&gt; D</span>
+<span class="p">(</span><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">__main__</span><span class="o">.</span><span class="n">A</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="sa">B</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">C</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">D</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="nb">object</span><span class="s1">&#39;&gt;)</span>
+</code></pre></div>
                 
               
 

@@ -3384,19 +3384,45 @@
 
                 
                 
-                <h1 id="_1">类属性和实例属性以及查找顺序<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code>
+                <h1 id="_1">类变量和实例变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="c1"># 创建一个类A</span>
+<span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="n">aa</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># 类变量</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="c1"># 实例变量</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1"># 接上，实例化类A为一个实例a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span>  <span class="c1"># a.aa 首先会去实例a的内存中找是否有aa, 如果没有再去类A的内存中找</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span> <span class="c1"># 去类A 的内存中找 aa</span>
+<span class="c1">#---------------------------------------</span>
+<span class="mi">2</span> <span class="mi">3</span> <span class="mi">1</span>
+<span class="mi">1</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1"># 接上，更改类A的 aa 属性，以及实例a的 aa 属性</span>
+<span class="n">A</span><span class="o">.</span><span class="n">aa</span> <span class="o">=</span> <span class="mi">11</span> <span class="c1"># 会将类A内存中的的aa修改为11</span>
+<span class="n">a</span><span class="o">.</span><span class="n">aa</span> <span class="o">=</span> <span class="mi">22</span> <span class="c1"># 会在实例a内存中创建一个变量aa赋值22, 类A内存中的aa还是11</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span>  <span class="c1"># a.aa 首先会去实例a的内存中找是否有aa, 如果没有再去类A的内存中找</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span> <span class="c1"># 去类A 的内存中找 aa</span>
+<span class="c1">#---------------------------------------</span>
+<span class="mi">2</span> <span class="mi">3</span> <span class="mi">100</span>
+<span class="mi">11</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1"># 接上，实例化类A 为另一个实例b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">A</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span> <span class="c1"># 类A内存中aa已经修改为11</span>
+<span class="c1">#---------------------------------------</span>
+<span class="mi">11</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<ul>
+<li>类变量与实例变量相互独立</li>
+<li>类变量是实例共享的</li>
+</ul>
+</div>
                 
               
 
