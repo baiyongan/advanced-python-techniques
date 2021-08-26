@@ -1,7 +1,10 @@
 # 类属性和实例属性以及查找顺序
 
 !!! note "说明"
-    - MRO 
+    - MRO: Method Resolution Order 
+    
+    MRO 是在继承中使用的一个概念。它是在类层次结构中搜索方法的顺序，因为 Python 支持多重继承，所以，在 Python 类的设计及排错中特别有用。
+    
     - DFS
     - BFS
     - C3
@@ -86,3 +89,11 @@ print(A.__mro__)
 # A -> B -> C -> D
 (<class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.D'>, <class 'object'>)
 ```
+
+## 拓展阅读
+- [The Python 2.3 Method Resolution Order](https://www.python.org/download/releases/2.3/mro/)
+
+<!-- - [Python Multiple Inheritance](https://www.programiz.com/python-programming/multiple-inheritance) -->
+<!-- https://www.cnblogs.com/Cwj-XFH/p/13166808.html -->
+<!-- http://www.srikanthtechnologies.com/blog/python/mro.aspx -->
+<!-- https://zhuanlan.zhihu.com/p/33797911 -->
