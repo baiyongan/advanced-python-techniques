@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../CHANGELOG/" class="md-tabs__link">
+      <a href="../../../CHANGELOG.md" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -3282,7 +3282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CHANGELOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG.md" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -3385,6 +3385,59 @@
                 
                 
                 <h1 id="_1">静态方法、类方法以及对象方法及参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Date</span><span class="p">:</span>
+    <span class="c1"># 构造函数</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">month</span> <span class="o">=</span> <span class="n">month</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">day</span> <span class="o">=</span> <span class="n">day</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{year}</span><span class="s2">/</span><span class="si">{month}</span><span class="s2">/</span><span class="si">{day}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">tomorrow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># 实例方法，很常见。创建时，Pycharm 会自动补全一个 self 的实例</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">day</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nd">@staticmethod</span>  <span class="c1"># 静态方法，不需要接收 self 或 cls，调用必须用 Date，因为它已经进入到 Date 的命名空间了。</span>
+    <span class="k">def</span> <span class="nf">parse_from_string</span><span class="p">(</span><span class="n">date_str</span><span class="p">):</span>
+        <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">date_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">Date</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">month</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">day</span><span class="p">))</span>  <span class="c1"># 但是静态方法是用的硬编码的方式，如果 Date 类名字改变，它内部也需要变。</span>
+
+    <span class="nd">@classmethod</span>  <span class="c1"># 类方法，创建时，Pycharm 会自动补全一个 cls ，即类本身。（其实名称无所谓，只是一种默认规范）</span>
+    <span class="k">def</span> <span class="nf">from_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">date_str</span><span class="p">):</span>
+        <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">date_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">month</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">day</span><span class="p">))</span>  <span class="c1"># 这里使用类方法，避免了硬编码的方式。</span>
+
+    <span class="nd">@staticmethod</span>  <span class="c1"># 如果一种功能不需要把类变量传递进来，就没必要用类方法，使用静态方法即可。</span>
+    <span class="k">def</span> <span class="nf">valid_string</span><span class="p">(</span><span class="n">date_str</span><span class="p">):</span>
+        <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">date_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">month</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">12</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">31</span><span class="p">):</span>  <span class="c1"># 粗略判断，非实际情况</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">new_day</span> <span class="o">=</span> <span class="n">Date</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+    <span class="n">new_day</span><span class="o">.</span><span class="n">tomorrow</span><span class="p">()</span>  <span class="c1"># Python 内部会直接把 new_day.tomorrow() 转换成 tommorow(new_day) 这种调用形式，参数为 self 实例，即 new_day。</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">new_day</span><span class="p">)</span>
+
+    <span class="c1"># 2021-8-31</span>
+    <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;2021-8-31&quot;</span>
+    <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">date_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">))</span>  <span class="c1"># 每次传参前，都要解析，可以放在类中，用静态方法调用</span>
+    <span class="n">new_day</span> <span class="o">=</span> <span class="n">Date</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">month</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">day</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">new_day</span><span class="p">)</span>
+
+    <span class="c1"># 用 staticmethod 完成初始化</span>
+    <span class="n">new_day</span> <span class="o">=</span> <span class="n">Date</span><span class="o">.</span><span class="n">parse_from_string</span><span class="p">(</span><span class="n">date_str</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">new_day</span><span class="p">)</span>
+
+    <span class="c1"># 用 classmethod 完成初始化</span>
+    <span class="n">new_day</span> <span class="o">=</span> <span class="n">Date</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">date_str</span><span class="p">)</span>  <span class="c1"># 直接传递 cls，避免了硬编码</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">new_day</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="o">.</span><span class="n">valid_string</span><span class="p">(</span><span class="s2">&quot;2021-8-32&quot;</span><span class="p">))</span>
+</code></pre></div>
                 
               
 
