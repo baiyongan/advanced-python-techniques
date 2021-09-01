@@ -369,7 +369,7 @@ nav:
 
 # Record
 - 后记:
-  - Change Log: LOG.md
+  - Change Log: CHANGELOG.md
   - Reference: REFERENCE.md
   - License: LICENSE.md
   - Backup: FASTAPI.md
