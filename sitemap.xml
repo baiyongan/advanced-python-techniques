@@ -1,627 +1,631 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://bya.cool/advanced-python-techniques/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part01_direction_and_roadmap/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part01_direction_and_roadmap/python_web_roadmap/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part01_direction_and_roadmap/python_devops_roadmap/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part01_direction_and_roadmap/python_data_analysis_roadmap/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part01_direction_and_roadmap/python_data_mining_roadmap/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pycharm/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pycharm/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/ipython/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/ipython/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/jupyter_notebook/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/jupyter_notebook/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pysnooper/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pysnooper/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pdb/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pdb/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pip/brief_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part02_development_tool/pip/detailed_tutorial/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part03_norm_and_design/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part03_norm_and_design/norm/why_python_style_guide/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part03_norm_and_design/norm/PEP8/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part03_norm_and_design/norm/google_python_style_guide/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part04_module_package_library/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part04_module_package_library/chapter03_algorithms/functools/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part04_module_package_library/chapter06_the_file_system/sh/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter01/article0101/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter01/article0102/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter01/article0103/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter01/article0104/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter02/article0201/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter02/article0202/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter02/article0203/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter02/article0204/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter02/article0205/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0301/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0302/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0303/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0304/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0305/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0306/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0307/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0308/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0309/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0310/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0311/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0312/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter03/article0313/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0401/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0402/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0403/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0404/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0405/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0406/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0407/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter04/article0408/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0501/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0502/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0503/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0504/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0505/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter05/article0506/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter06/article0601/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter06/article0602/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter06/article0603/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter06/article0604/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter06/article0605/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0701/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0702/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0703/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0704/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0705/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0706/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter07/article0707/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0801/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0802/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0803/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0804/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0805/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0806/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter08/article0807/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter09/article0901/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter09/article0902/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter09/article0903/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter09/article0904/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter09/article0905/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1001/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1002/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1003/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1004/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1005/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1006/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1007/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1008/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1009/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1010/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1011/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter10/article1012/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1101/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1102/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1103/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1104/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1105/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1106/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1107/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1108/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1109/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter11/article1110/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1201/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1202/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1203/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1204/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1205/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1206/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1207/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1208/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part05_core_topic/chapter12/article1209/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/intermediate_python/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/intermediate_python/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/python3_oop/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/effective_python/content/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/python_cookbook/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/python_cookbook/content/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/effective_python/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/python3_oop/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_note/fluent_python/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <loc>http://bya.cool/advanced-python-techniques/part06_intermediate_reading/fluent_python/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/plotly_dash/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/flask/structure_of_a_flask_project/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/django/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/tornado/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part07_common_framework/python_web/fastapi/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/data_structure_and_algorithm/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/precautions_in_development/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/SWIG_programming/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/01_introduction/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/02_environment/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/03_dash_basics/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/04_multi-page_application/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/05_data_selector_element/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/06_first_data_table/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/07_donwload_link/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/08_second_data_table/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/09_update_graphs_function/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/10_update_graph_functions/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/11_plotly_graph_tools/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/12_deploy_application/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/13_wrapping_up/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/performance_marketing_report/14_resources/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part08_python_in_action/china_census_analysis/01_introduction/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part09_source_code_analysis/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part10_connection_and_expansion/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/part11_ecological_information/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://bya.cool/advanced-python-techniques/LOG/</loc>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/REFERENCE/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/LICENSE/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/FASTAPI/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://bya.cool/advanced-python-techniques/resources/jupyter/test/</loc>
-     <lastmod>2021-08-27</lastmod>
+     <lastmod>2021-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

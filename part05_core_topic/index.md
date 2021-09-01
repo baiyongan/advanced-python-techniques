@@ -12,7 +12,7 @@
 - super函数的查找顺序
 - mixin继承模式的应用
 
-# 元类
+## 元类
 - property动态属性
 - \_\_getattr\_\_、\_\_getattribute\_\_ 区别
 - 属性描述符

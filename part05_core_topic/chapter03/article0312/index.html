@@ -292,7 +292,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part06_intermediate_note/" class="md-tabs__link">
+      <a href="../../../part06_intermediate_reading/" class="md-tabs__link">
         进阶阅读
       </a>
     </li>
@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../CHANGELOG.md" class="md-tabs__link">
+      <a href="../../../LOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -2613,7 +2613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -2625,7 +2625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/intermediate_python/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/intermediate_python/" class="md-nav__link">
         Intermediate Python
       </a>
     </li>
@@ -2636,8 +2636,86 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      <label class="md-nav__link" for="__nav_7_3">
+        Effective Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Effective Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Effective Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/python3_oop/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/content/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      <label class="md-nav__link" for="__nav_7_4">
+        Python Cookbook
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python Cookbook" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Python Cookbook
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/python3_oop/" class="md-nav__link">
         Python3 面向对象编程
       </a>
     </li>
@@ -2649,31 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/python_cookbook/" class="md-nav__link">
-        Python Cookbook
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/effective_python/" class="md-nav__link">
-        Effective Python
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_note/fluent_python/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/fluent_python/" class="md-nav__link">
         Fluent Python
       </a>
     </li>
@@ -3282,7 +3336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CHANGELOG.md" class="md-nav__link">
+      <a href="../../../LOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -3385,6 +3439,26 @@
                 
                 
                 <h1 id="contextlib">contextlib 实现上下文管理器<a class="headerlink" href="#contextlib" title="Permanent link">&para;</a></h1>
+<p>contextmanager可以简化上下文管理器，不需要我们编写<code>__enter__</code>和<code>__exit__</code>函数。</p>
+<p>它可以让我们把一个之前不是上下文管理器的函数，变成一个上下文管理器，而不需要我们去修改这个函数的源代码。</p>
+<p>其中的 yield 的作用，是中断当前函数执行流程，先去执行 yield 出去部分的代码的执行流程。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">contextlib</span>
+
+
+<span class="nd">@contextlib</span><span class="o">.</span><span class="n">contextmanager</span>
+<span class="k">def</span> <span class="nf">file_open</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;file open&quot;</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="p">{}</span>  <span class="c1"># contextlib 修饰的函数需要是一个生成器</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;file close&quot;</span><span class="p">)</span>
+
+
+<span class="k">with</span> <span class="n">file_open</span><span class="p">(</span><span class="s2">&quot;bya.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f_opened</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;file processing&quot;</span><span class="p">)</span>
+<span class="c1">#-----------------------------------</span>
+<span class="n">file</span> <span class="nb">open</span>
+<span class="n">file</span> <span class="n">processing</span>
+<span class="n">file</span> <span class="n">close</span>
+</code></pre></div>
                 
               
 
