@@ -312,13 +312,15 @@ nav:
 # Part06
 - 进阶阅读:
   - Overview: part06_intermediate_reading/index.md
-  - Intermediate Python: part06_intermediate_reading/intermediate_python/index.md
+  - Intermediate Python: 
+    - 目录: part06_intermediate_reading/intermediate_python/content.md
   - Effective Python: 
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
   - Python3 面向对象编程: part06_intermediate_reading/python3_oop/index.md
-  - Fluent Python: part06_intermediate_reading/fluent_python/index.md
+  - Fluent Python: 
+    - 目录: part06_intermediate_reading/fluent_python/content.md
 
 # Part07
 - 常用框架:
