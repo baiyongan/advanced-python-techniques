@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../LOG/" class="md-tabs__link">
+      <a href="../../../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -1556,6 +1556,27 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    区别一: + 和 += 占用空间不一样
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    区别二: + 两边的数据类型要一致
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extend-append" class="md-nav__link">
+    extend 和 append 的区别
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2624,10 +2645,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/intermediate_python/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      <label class="md-nav__link" for="__nav_7_2">
         Intermediate Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Intermediate Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Intermediate Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
+        目录
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2726,10 +2774,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/fluent_python/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      <label class="md-nav__link" for="__nav_7_6">
         Fluent Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Fluent Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          Fluent Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
+        目录
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3336,7 +3411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -3422,6 +3497,27 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    区别一: + 和 += 占用空间不一样
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    区别二: + 两边的数据类型要一致
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extend-append" class="md-nav__link">
+    extend 和 append 的区别
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3439,6 +3535,52 @@
                 
                 
                 <h1 id="extend">序列的 +、+= 和 extend 的区别<a class="headerlink" href="#extend" title="Permanent link">&para;</a></h1>
+<p>这三种方式，都可以把 list 进行连接</p>
+<h2 id="_1">区别一: + 和 += 占用空间不一样<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a: &quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c: &quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>  <span class="c1"># c是产生的新的list</span>
+
+<span class="n">a</span> <span class="o">+=</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a: &quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>  <span class="c1"># a还是原来那个list</span>
+<span class="c1">#----------------------------------</span>
+<span class="n">a</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">c</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">a</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</code></pre></div>
+<h2 id="_2">区别二: + 两边的数据类型要一致<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">+=</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a: &quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>  <span class="c1"># 正常执行  </span>
+<span class="c1">#----------------------------------</span>
+<span class="n">a</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c: &quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>  <span class="c1"># 错误退出</span>
+<span class="c1">#----------------------------------</span>
+<span class="c1"># TypeError: can only concatenate list (not &quot;tuple&quot;) to list</span>
+</code></pre></div>
+<p>原因是因为 += 是调用<code>MutableSequence</code>中的<code>__iadd__</code>魔法方法, 它是调用<code>extend</code>, 接收一个<code>iterable</code>并通过for循环append.</p>
+<h2 id="extend-append">extend 和 append 的区别<a class="headerlink" href="#extend-append" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">a1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">b1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">a1</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">b1</span><span class="p">)</span>  <span class="c1"># 调用 extend 方法，会利用for循环，遍历被extend 的对象，extend 方法没有返回值，会直接对调用它的变量进行修改。</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
+
+<span class="n">a2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">b2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">a2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b2</span><span class="p">)</span>  <span class="c1"># 调用 append 方法， 会直接连接的是整体，不会for 循环迭代</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span>
+<span class="c1">#----------------------------------</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
+</code></pre></div>
                 
               
 

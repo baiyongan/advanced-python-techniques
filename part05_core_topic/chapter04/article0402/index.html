@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../LOG/" class="md-tabs__link">
+      <a href="../../../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -1544,6 +1544,47 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#collectionsabc" class="md-nav__link">
+    collections.abc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence" class="md-nav__link">
+    Sequence
+  </a>
+  
+    <nav class="md-nav" aria-label="Sequence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reversible" class="md-nav__link">
+    Reversible 类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collection" class="md-nav__link">
+    Collection 类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutablesequence" class="md-nav__link">
+    MutableSequence
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2624,10 +2665,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/intermediate_python/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      <label class="md-nav__link" for="__nav_7_2">
         Intermediate Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Intermediate Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Intermediate Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
+        目录
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2726,10 +2794,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/fluent_python/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      <label class="md-nav__link" for="__nav_7_6">
         Fluent Python
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Fluent Python" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          Fluent Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
+        目录
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3336,7 +3431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -3422,6 +3517,47 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#collectionsabc" class="md-nav__link">
+    collections.abc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence" class="md-nav__link">
+    Sequence
+  </a>
+  
+    <nav class="md-nav" aria-label="Sequence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reversible" class="md-nav__link">
+    Reversible 类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collection" class="md-nav__link">
+    Collection 类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutablesequence" class="md-nav__link">
+    MutableSequence
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3439,6 +3575,73 @@
                 
                 
                 <h1 id="abc">序列的abc继承关系<a class="headerlink" href="#abc" title="Permanent link">&para;</a></h1>
+<h2 id="collectionsabc">collections.abc<a class="headerlink" href="#collectionsabc" title="Permanent link">&para;</a></h2>
+<p>和容器相关的数据结构的抽象基类,都在 <code>from collections import abc</code> 这个模块，打开<code>from _collections_abc import all</code>，在<code>_collections_abc.py</code>模块里面可以看到内容如下：</p>
+<div class="highlight"><pre><span></span><code><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Awaitable&quot;</span><span class="p">,</span> <span class="s2">&quot;Coroutine&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;AsyncIterable&quot;</span><span class="p">,</span> <span class="s2">&quot;AsyncIterator&quot;</span><span class="p">,</span> <span class="s2">&quot;AsyncGenerator&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Hashable&quot;</span><span class="p">,</span> <span class="s2">&quot;Iterable&quot;</span><span class="p">,</span> <span class="s2">&quot;Iterator&quot;</span><span class="p">,</span> <span class="s2">&quot;Generator&quot;</span><span class="p">,</span> <span class="s2">&quot;Reversible&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Sized&quot;</span><span class="p">,</span> <span class="s2">&quot;Container&quot;</span><span class="p">,</span> <span class="s2">&quot;Callable&quot;</span><span class="p">,</span> <span class="s2">&quot;Collection&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Set&quot;</span><span class="p">,</span> <span class="s2">&quot;MutableSet&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Mapping&quot;</span><span class="p">,</span> <span class="s2">&quot;MutableMapping&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;MappingView&quot;</span><span class="p">,</span> <span class="s2">&quot;KeysView&quot;</span><span class="p">,</span> <span class="s2">&quot;ItemsView&quot;</span><span class="p">,</span> <span class="s2">&quot;ValuesView&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Sequence&quot;</span><span class="p">,</span> <span class="s2">&quot;MutableSequence&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;ByteString&quot;</span><span class="p">,</span>
+           <span class="p">]</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">提示</p>
+<p>在 __all__ 中，着重关注 “Sequence”, “MutableSequence”, Sequence 是不可变序列类型，MutableSequence 是可变序列类型</p>
+</div>
+<h2 id="sequence">Sequence<a class="headerlink" href="#sequence" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Sequence 继承了两个类 Reversible, Collection</span>
+<span class="k">class</span> <span class="nc">Sequence</span><span class="p">(</span><span class="n">Reversible</span><span class="p">,</span> <span class="n">Collection</span><span class="p">):</span>
+    <span class="c1"># 抽象方法的标识，如果用它必须重写这个方法    </span>
+    <span class="nd">@abstractmethod</span>            
+</code></pre></div>
+<h3 id="reversible">Reversible 类<a class="headerlink" href="#reversible" title="Permanent link">&para;</a></h3>
+<p>Reversible是序列的翻转，例如ABC变成CBA</p>
+<h3 id="collection">Collection 类<a class="headerlink" href="#collection" title="Permanent link">&para;</a></h3>
+<p>Collection 继承了 Sized，Iterable 和 Container 三个抽象基类
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Collection</span><span class="p">(</span><span class="n">Sized</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Container</span><span class="p">):</span>   
+    <span class="c1"># Sized 里面有魔法函数__len__,可以计算序列的长度</span>
+    <span class="c1"># Iterable 是个迭代器, 有了它可以进行for循环</span>
+    <span class="c1"># Container里面有魔法函数__contains__，因此可以用in这个字段，例如 if i in list()   </span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">__subclasshook__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">cls</span> <span class="ow">is</span> <span class="n">Collection</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_check_methods</span><span class="p">(</span><span class="n">C</span><span class="p">,</span>  <span class="s2">&quot;__len__&quot;</span><span class="p">,</span> <span class="s2">&quot;__iter__&quot;</span><span class="p">,</span> <span class="s2">&quot;__contains__&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">NotImplemented</span>
+</code></pre></div></p>
+<p>Sequence的所有魔法函数构成了序列的协议,    打开Sequence类，可以看到里面重写了所继承的抽象基类的方法,包括<code>__len__</code>,<code>__iter__</code>和<code>__contains__</code>.</p>
+<h2 id="mutablesequence">MutableSequence<a class="headerlink" href="#mutablesequence" title="Permanent link">&para;</a></h2>
+<p>MutableSequence是可变的序列, 它继承了Sequence，并新加了一些特性。如 setitem, delitem, insert, append, clear, reverse, extend, pop, remove, iadd等, 这些都是可变序列的特性。</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">MutableSequence</span><span class="p">(</span><span class="n">Sequence</span><span class="p">):</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">()</span>
+
+    <span class="sd">&quot;&quot;&quot;All the operations on a read-write sequence.</span>
+
+<span class="sd">    Concrete subclasses must provide __new__ or __init__,</span>
+<span class="sd">    __getitem__, __setitem__, __delitem__, __len__, and insert().</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="fm">__delitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="s1">&#39;S.insert(index, value) -- insert value before index&#39;</span>
+        <span class="k">raise</span> <span class="ne">IndexError</span>
+</code></pre></div>
                 
               
 
