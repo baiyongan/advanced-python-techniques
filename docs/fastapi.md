@@ -24,6 +24,28 @@
 
 ---
 
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 The key features are:

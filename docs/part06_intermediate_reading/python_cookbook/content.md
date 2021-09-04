@@ -293,3 +293,4 @@
 ## 拓展阅读
 
 - [yidao620c/python3-cookbook](https://github.com/yidao620c/python3-cookbook)
+- [Python Cookbook 3rd Edition Documentation](https://python3-cookbook.readthedocs.io/zh_CN/latest/)

@@ -90,6 +90,9 @@ markdown_extensions:
         class: mermaid
         format: !!python/name:pymdownx.superfences.fence_div_format ''
   - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
 
 # Customization
 extra_css:
@@ -147,48 +150,50 @@ nav:
 # Part04
 - 功能模块:
   - Overview: part04_module_package_library/index.md
+  - PyMOTW3: 
+    - 目录: part04_module_package_library/PyMOTW3/content.md
 
- # - Text:
+  # - Text:
 
- # - Data Structures:
+  # - Data Structures:
 
-  - Algorithms: 
-    - functools: part04_module_package_library/chapter03_algorithms/functools.md
+    - Algorithms: 
+      - functools: part04_module_package_library/PyMOTW3/chapter03_algorithms/functools.md
 
- # - Dates and Times:
- #
- # - Mathematics:
- #
-  - The File System:
-    - sh: part04_module_package_library/chapter06_the_file_system/sh.md
+  # - Dates and Times:
+  #
+  # - Mathematics:
+  #
+    - The File System:
+      - sh: part04_module_package_library/PyMOTW3/chapter06_the_file_system/sh.md
 
- # - Data Persistence and Exchange:
- #
- # - Data Compression and Archiving:
- #
- # - Cryptography:
- #
- # - Concurrency with Processes, Threads, and Coroutines:
- #
- # - Networking:
- #
- # - The Internet:
- #
- # - Email:
- #
- # - Application Building Blocks:
- #
- # - Internationalization and Localization:
- #
- # - Developer Tools:
- #
- # - Runtime Features:
- #
- # - Language Tools:
- #
- # - Modules and Packages:
- #
- # - Unix-specific Services:
+  # - Data Persistence and Exchange:
+  #
+  # - Data Compression and Archiving:
+  #
+  # - Cryptography:
+  #
+  # - Concurrency with Processes, Threads, and Coroutines:
+  #
+  # - Networking:
+  #
+  # - The Internet:
+  #
+  # - Email:
+  #
+  # - Application Building Blocks:
+  #
+  # - Internationalization and Localization:
+  #
+  # - Developer Tools:
+  #
+  # - Runtime Features:
+  #
+  # - Language Tools:
+  #
+  # - Modules and Packages:
+  #
+  # - Unix-specific Services:
 
 # Part05
 - 核心专题:
