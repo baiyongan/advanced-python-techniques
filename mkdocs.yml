@@ -320,6 +320,8 @@ nav:
   - Overview: part06_intermediate_reading/index.md
   - Intermediate Python: 
     - 目录: part06_intermediate_reading/intermediate_python/content.md
+  - Python Tricks: 
+    - 目录: part06_intermediate_reading/python_tricks/content.md
   - Effective Python: 
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
