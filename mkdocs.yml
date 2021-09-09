@@ -247,7 +247,7 @@ nav:
     - 本章小结: part05_core_topic/chapter05/article0506.md
 
   - 06 对象引用、可变性和垃圾回收: 
-    - pythoon 中的变量是什么？: part05_core_topic/chapter06/article0601.md
+    - python 中的变量是什么？: part05_core_topic/chapter06/article0601.md
     - == 和 is 的区别: part05_core_topic/chapter06/article0602.md
     - del 语句和垃圾回收: part05_core_topic/chapter06/article0603.md
     - 一个经典的参数错误: part05_core_topic/chapter06/article0604.md
@@ -326,7 +326,8 @@ nav:
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
-  - Python3 面向对象编程: part06_intermediate_reading/python3_oop/index.md
+  - Python3 面向对象编程: 
+    - 目录: part06_intermediate_reading/python3_oop/content.md
   - Fluent Python: 
     - 目录: part06_intermediate_reading/fluent_python/content.md
 
