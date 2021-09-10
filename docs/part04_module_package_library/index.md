@@ -7,7 +7,7 @@
 ## 常用标准库
 
 !!! attention "注意"
-    主要依据个人目前对 Python 的认知程度，并综合搜集的学习建议，截取了 Python 3.9 标准库中的部分常用库。
+    主要依据个人目前对 Python 的掌握程度，并综合搜集的学习建议，截取了 Python 3.9 标准库中的部分常用库。
 
 <style>
 * {
@@ -130,6 +130,7 @@
 ## 常用第三方模块
 
 ### 数据分析
+- openpyxl
 - numpy
 - pandas
 - matplotlib
@@ -141,7 +142,8 @@
 - [Python HOWTOs](https://docs.python.org/3.9/howto/index.html)
 - [PyMOTW3](https://pymotw.com/3/)
 
-<!-- sh
+<!-- 
+sh
 argparse
 collections
 functools
@@ -151,9 +153,11 @@ os
 Queue
 SimpleHTTPServer
 subprocess
-threading -->
+threading 
+-->
 
-<!-- # standard libs:
+<!-- 
+##### standard libs:
 
 itertools 
 functools 
@@ -177,7 +181,7 @@ glob 类似 listfile，可以用来查找文件
 atexit 有一个注册函数，可用于正好在脚本退出运行前执行一些代码
 dis python 反汇编，当对某条语句不理解原理时，可以用dis.dis 函数来查看代码对应的python 解释器指令等等。
 
-# 3th libs:
+##### 3th libs:
 
 paramiko ssh python 库
 selenium 浏览器自动化测试工具selenium的python 接口
@@ -195,4 +199,5 @@ mako  python模版引擎numpy ， scipy 科学计算
 matplotlib 画图
 scrapy 爬虫
 django/tornado/web.py/web2py/uliweb/flask/twisted/bottle/cherrypy.等等 python web框架/服务器
-sh 1.08 — sh v1.08 documentation 用来运行shell 模块的 极佳选择 -->
+sh 1.08 — sh v1.08 documentation 用来运行shell 模块的 极佳选择 
+-->
