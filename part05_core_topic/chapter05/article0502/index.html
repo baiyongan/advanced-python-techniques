@@ -1706,6 +1706,82 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy
+  </a>
+  
+    <nav class="md-nav" aria-label="copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy_1" class="md-nav__link">
+    浅copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy_2" class="md-nav__link">
+    深copy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fromkeys" class="md-nav__link">
+    fromkeys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#items-keys-values" class="md-nav__link">
+    items, keys, values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poppopitem" class="md-nav__link">
+    pop，popitem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setdefault" class="md-nav__link">
+    setdefault
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1795,7 +1871,7 @@
   
     <li class="md-nav__item">
       <a href="../../chapter06/article0601/" class="md-nav__link">
-        pythoon 中的变量是什么？
+        python 中的变量是什么？
       </a>
     </li>
   
@@ -2819,10 +2895,37 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      <label class="md-nav__link" for="__nav_7_6">
         Python3 面向对象编程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python3 面向对象编程" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          Python3 面向对象编程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
+        目录
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3554,6 +3657,82 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy
+  </a>
+  
+    <nav class="md-nav" aria-label="copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy_1" class="md-nav__link">
+    浅copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy_2" class="md-nav__link">
+    深copy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fromkeys" class="md-nav__link">
+    fromkeys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#items-keys-values" class="md-nav__link">
+    items, keys, values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poppopitem" class="md-nav__link">
+    pop，popitem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setdefault" class="md-nav__link">
+    setdefault
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    update
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3571,6 +3750,145 @@
                 
                 
                 <h1 id="dict">dict 的常用方法<a class="headerlink" href="#dict" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<ul>
+<li>Pycharm 中，点击菜单栏的 View -&gt; Tool Windows -&gt; Structure 可以查看源码中的的类、方法等。</li>
+<li>在一段代码后直接接个 pass 作为断点， 然后用 debug 模式调试，比较方便。</li>
+</ul>
+</div>
+<h2 id="clear">clear<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h2>
+<p>clear的功能是对dict的内容进行清除.没有任何的返回值</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">{}</span>
+</code></pre></div>
+<h2 id="copy">copy<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h2>
+<h3 id="copy_1">浅copy<a class="headerlink" href="#copy_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+<span class="n">new_dict</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">new_dict</span><span class="p">[</span><span class="s2">&quot;bya1&quot;</span><span class="p">][</span><span class="s2">&quot;school&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;ustc3&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">pass</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">}}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">}}</span>
+</code></pre></div>
+<h3 id="copy_2">深copy<a class="headerlink" href="#copy_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="n">new_dict</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">new_dict</span><span class="p">[</span><span class="s2">&quot;bya1&quot;</span><span class="p">][</span><span class="s2">&quot;school&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;ustc3&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">pass</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">}}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">}}</span>
+</code></pre></div>
+<ul>
+<li>dict 内置的 copy 方法返回浅拷贝（shallow copy）,对于嵌套的数据结构，并不会被拷贝</li>
+<li>copy 模块的 deepcopy 方法返回深拷贝（deep copy）, 会拷贝嵌套的数据结构</li>
+</ul>
+<h2 id="fromkeys">fromkeys<a class="headerlink" href="#fromkeys" title="Permanent link">&para;</a></h2>
+<p>首先这是一个静态方法, 可以直接使用类名调用</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@staticmethod</span> <span class="c1"># known case</span>
+<span class="k">def</span> <span class="nf">fromkeys</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span> <span class="c1"># real signature unknown</span>
+    <span class="sd">&quot;&quot;&quot; Returns a new dict with keys from iterable and values equal to value. &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">new_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bya&quot;</span><span class="p">,</span><span class="s2">&quot;bya2&quot;</span><span class="p">]</span>
+<span class="n">new_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">new_list</span><span class="p">,</span><span class="s2">&quot;school&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_dict</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="s1">&#39;bya&#39;</span><span class="p">:</span> <span class="s1">&#39;school&#39;</span><span class="p">,</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="s1">&#39;school&#39;</span><span class="p">}</span>
+</code></pre></div>
+<h2 id="get">get<a class="headerlink" href="#get" title="Permanent link">&para;</a></h2>
+<p>使用非常频繁，可以解决 key 没有对应的 value 而报错的问题</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+<span class="c1"># print(a[&quot;bya3&quot;]) 会提示 KeyError: &#39;bya3&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;bya3&quot;</span><span class="p">,{}))</span>  <span class="c1"># a 没有 key bya3，会设置其 value 值为 ｛｝</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;bya1&quot;</span><span class="p">,{}))</span>  <span class="c1"># a 有 key bya1， 会取其 value 值 {&#39;school&#39;: &#39;ustc1&#39;}</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">{}</span>
+<span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">}</span>
+</code></pre></div>
+<h2 id="items-keys-values">items, keys, values<a class="headerlink" href="#items-keys-values" title="Permanent link">&para;</a></h2>
+<p>使用 for 循环，进行元组拆包
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+     <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="n">bya1</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">}</span>
+<span class="n">bya2</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">}</span>
+</code></pre></div></p>
+<h2 id="poppopitem">pop，popitem<a class="headerlink" href="#poppopitem" title="Permanent link">&para;</a></h2>
+<p>删除并返回</p>
+<h2 id="setdefault">setdefault<a class="headerlink" href="#setdefault" title="Permanent link">&para;</a></h2>
+<p>如果key存在使用get方法, 如果key不存在使用set方法</p>
+<p>使用 setdefault 方法，比我们自行判断并添加的步骤要少，故而性能更高效</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+
+<span class="n">default_value</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;bya3&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc3&quot;</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">default_value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>  
+<span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">},</span> <span class="s1">&#39;bya3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">}}</span>
+</code></pre></div>
+<h2 id="update">update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">E</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">F</span><span class="p">):</span> <span class="c1"># known special case of dict.update</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        D.update([E, ]**F) -&gt; None.  Update D from dict/iterable E and F.</span>
+<span class="sd">        If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]</span>
+<span class="sd">        If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v</span>
+<span class="sd">        In either case, this is followed by: for k in F:  D[k] = F[k]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</code></pre></div>
+<p>update 方法，中间可以放可迭代的对象，因此 list，dict，tuple 都可以。</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bya1&quot;</span><span class="p">:{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc1&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;bya2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc2&quot;</span><span class="p">}</span>
+     <span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;bya3&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc3&quot;</span><span class="p">}})</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1"># 关键词方式 key=value</span>
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">bya4</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span> <span class="s2">&quot;ustc4&quot;</span><span class="p">})</span>  <span class="c1"># 同时也可以传递多个 key=value, 使用 , 隔开即可</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1"># list 中 放置 tuple 也可以</span>
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">([(</span><span class="s2">&quot;bya5&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc5&quot;</span><span class="p">})])</span>  <span class="c1"># 当然，多个 tuple 也是可以的</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1"># tuple 中 放置 tuple 也可以，因为 tuple 也是可迭代的</span>
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">(((</span><span class="s2">&quot;bya6&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;school&quot;</span><span class="p">:</span><span class="s2">&quot;ustc6&quot;</span><span class="p">}),</span> <span class="p">))</span>  <span class="c1"># 注意要有一个 , </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">},</span> <span class="s1">&#39;bya3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">}}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">},</span> <span class="s1">&#39;bya3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya4&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc4&#39;</span><span class="p">}}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">},</span> <span class="s1">&#39;bya3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya4&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc4&#39;</span><span class="p">},</span> <span class="s1">&#39;bya5&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc5&#39;</span><span class="p">}}</span>
+<span class="p">{</span><span class="s1">&#39;bya1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc1&#39;</span><span class="p">},</span> <span class="s1">&#39;bya2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc2&#39;</span><span class="p">},</span> <span class="s1">&#39;bya3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc3&#39;</span><span class="p">},</span> <span class="s1">&#39;bya4&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc4&#39;</span><span class="p">},</span> <span class="s1">&#39;bya5&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc5&#39;</span><span class="p">},</span> <span class="s1">&#39;bya6&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;school&#39;</span><span class="p">:</span> <span class="s1">&#39;ustc6&#39;</span><span class="p">}}</span>
+</code></pre></div>
+<p>两个字典合并</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;person1&quot;</span><span class="p">:{</span><span class="s2">&quot;Roger&quot;</span><span class="p">:</span><span class="mi">41</span><span class="p">},</span><span class="s2">&quot;person2&quot;</span><span class="p">:{</span><span class="s2">&quot;Rafa&quot;</span><span class="p">:</span><span class="mi">36</span><span class="p">}}</span>
+<span class="n">b</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;person1&quot;</span><span class="p">:{</span><span class="s2">&quot;Roger&quot;</span><span class="p">:</span><span class="mi">41</span><span class="p">},</span><span class="s2">&quot;person3&quot;</span><span class="p">:{</span><span class="s2">&quot;Messi&quot;</span><span class="p">:</span><span class="mi">34</span><span class="p">}}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="c1"># 没有返回值</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kc">None</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="c1"># 如果key重复, 使用a的value</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="s1">&#39;person1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Roger&#39;</span><span class="p">:</span> <span class="mi">41</span><span class="p">},</span> <span class="s1">&#39;person3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Messi&#39;</span><span class="p">:</span> <span class="mi">34</span><span class="p">},</span> <span class="s1">&#39;person2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Rafa&#39;</span><span class="p">:</span> <span class="mi">36</span><span class="p">}}</span>
+</code></pre></div>
                 
               
 
