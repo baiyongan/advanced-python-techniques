@@ -151,7 +151,16 @@ nav:
 # Part04
 - 功能模块:
   - Overview: part04_module_package_library/index.md
-  - PyMOTW3: 
+  - Python 内置:
+    - 目录: part04_module_package_library/standard_library_builtin/content.md
+  - 常用必备: 
+    - 目录: part04_module_package_library/commonly_used/content.md
+  - 重点进阶:
+    - 目录: part04_module_package_library/key_advanced/content.md
+    - collections: part04_module_package_library/key_advanced/collections.md
+    - sh: part04_module_package_library/key_advanced/sh.md
+
+  - PyMOTW3 系列: 
     - 目录: part04_module_package_library/PyMOTW3/content.md
 
   # - Text:
@@ -165,8 +174,7 @@ nav:
   #
   # - Mathematics:
   #
-    - The File System:
-      - sh: part04_module_package_library/PyMOTW3/chapter06_the_file_system/sh.md
+  # - The File System:
 
   # - Data Persistence and Exchange:
   #
@@ -347,24 +355,23 @@ nav:
   - Python 中的数据结构与算法: part08_python_in_action/data_structure_and_algorithm.md
   - 技术研发中的注意事项: part08_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part08_python_in_action/SWIG_programming.md
-  - Performance Marketing Report:
-    - introduction: part08_python_in_action/performance_marketing_report/01_introduction.md
-    - environment: part08_python_in_action/performance_marketing_report/02_environment.md
-    - dash basics: part08_python_in_action/performance_marketing_report/03_dash_basics.md
-    - multi-page: part08_python_in_action/performance_marketing_report/04_multi-page_application.md
-    - data-selector: part08_python_in_action/performance_marketing_report/05_data_selector_element.md
-    - first data table: part08_python_in_action/performance_marketing_report/06_first_data_table.md
-    - download link: part08_python_in_action/performance_marketing_report/07_donwload_link.md
-    - second data table: part08_python_in_action/performance_marketing_report/08_second_data_table.md
-    - update graph function: part08_python_in_action/performance_marketing_report/09_update_graphs_function.md
-    - update graph function: part08_python_in_action/performance_marketing_report/10_update_graph_functions.md
-    - plotly graph tools: part08_python_in_action/performance_marketing_report/11_plotly_graph_tools.md
-    - deployment: part08_python_in_action/performance_marketing_report/12_deploy_application.md
-    - wrapping up: part08_python_in_action/performance_marketing_report/13_wrapping_up.md
-    - resources: part08_python_in_action/performance_marketing_report/14_resources.md
+  - Python 的内存管理和垃圾回收机制: part08_python_in_action/garbage_collection.md
+  # - Performance Marketing Report:
+  #   - introduction: part08_python_in_action/performance_marketing_report/01_introduction.md
+  #   - environment: part08_python_in_action/performance_marketing_report/02_environment.md
+  #   - dash basics: part08_python_in_action/performance_marketing_report/03_dash_basics.md
+  #   - multi-page: part08_python_in_action/performance_marketing_report/04_multi-page_application.md
+  #   - data-selector: part08_python_in_action/performance_marketing_report/05_data_selector_element.md
+  #   - first data table: part08_python_in_action/performance_marketing_report/06_first_data_table.md
+  #   - download link: part08_python_in_action/performance_marketing_report/07_donwload_link.md
+  #   - second data table: part08_python_in_action/performance_marketing_report/08_second_data_table.md
+  #   - update graph function: part08_python_in_action/performance_marketing_report/09_update_graphs_function.md
+  #   - update graph function: part08_python_in_action/performance_marketing_report/10_update_graph_functions.md
+  #   - plotly graph tools: part08_python_in_action/performance_marketing_report/11_plotly_graph_tools.md
+  #   - deployment: part08_python_in_action/performance_marketing_report/12_deploy_application.md
+  #   - wrapping up: part08_python_in_action/performance_marketing_report/13_wrapping_up.md
+  #   - resources: part08_python_in_action/performance_marketing_report/14_resources.md
     
-  - Chiana's Census Data Analysis: 
-    - introduction: part08_python_in_action/china_census_analysis/01_introduction.md
 
 # Part09
 - 源码剖析:

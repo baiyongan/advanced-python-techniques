@@ -2,6 +2,8 @@
 
 <!---------------------------------------------------------->
 ### 0.1.17 (2021-09-12)
+#### Features
+- 更新 module & package index
 #### Articles
 - 更新 dict subclass
 - 更新 chapter 6
