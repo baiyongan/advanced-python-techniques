@@ -81,9 +81,10 @@ markdown_extensions:
       guess_lang: false
   - markdown_include.include:
       base_path: docs
-  - admonition
   - codehilite
   - extra
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid
@@ -93,7 +94,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
-  - pymdownx.superfences
 
 # Customization
 extra_css:
@@ -124,6 +124,7 @@ nav:
   - Overview: part02_development_tool/index.md
   - Pycharm: 
     - 快速上手: part02_development_tool/pycharm/brief_tutorial.md
+    - 42 Tips and Tricks: part02_development_tool/pycharm/42_tips_and_tricks.md
     - 详细教程: part02_development_tool/pycharm/detailed_tutorial.md
   - IPython: 
     - 快速上手: part02_development_tool/ipython/brief_tutorial.md

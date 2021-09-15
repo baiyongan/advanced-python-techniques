@@ -2,7 +2,8 @@
 
 ## Chapter 1: Pythonic Thinking
 
-The Python community has come to use the adjective **Pythonic** to describe code that follows a particular style. The idioms of Python have emerged over time through experience using the language and working with others. This chapter covers the best way to do the most common things in Python.
+??? abstract
+    The Python community has come to use the adjective **Pythonic** to describe code that follows a particular style. The idioms of Python have emerged over time through experience using the language and working with others. This chapter covers the best way to do the most common things in Python.
 
 - [x] 1 Know Which Version of Python You’re Using
 - [x] 2 Follow the PEP 8 Style Guide
@@ -17,7 +18,8 @@ The Python community has come to use the adjective **Pythonic** to describe code
 
 ## Chapter 2: Lists and Dictionaries
 
-In Python, the most common way to organize information is in a sequence of values stored in a list. A list‘s natural complement is the dict that stores lookup keys - mapped to corresponding values. This chapter covers how to build programs with these versatile building blocks.
+??? abstract
+    In Python, the most common way to organize information is in a sequence of values stored in a list. A list‘s natural complement is the dict that stores lookup keys - mapped to corresponding values. This chapter covers how to build programs with these versatile building blocks.
 
 - [ ] 11 Know How to Slice Sequences
 - [ ] 12 Avoid Striding and Slicing in a Single Expression
@@ -30,7 +32,8 @@ In Python, the most common way to organize information is in a sequence of value
 
 ## Chapter 3: Functions
 
-Functions in Python have a variety of extra features that make a programmer’s life easier. Some are similar to capabilities in other programming languages, but many are unique to Python. This chapter covers how to use functions to clarify intention, promote reuse, and reduce bugs.
+??? abstract
+    Functions in Python have a variety of extra features that make a programmer’s life easier. Some are similar to capabilities in other programming languages, but many are unique to Python. This chapter covers how to use functions to clarify intention, promote reuse, and reduce bugs.
 
 - [ ] 19 Never Unpack More Than Three Variables When Functions Return Multiple Values
 - [ ] 20 Prefer Raising Exceptions to Returning None
@@ -43,7 +46,8 @@ Functions in Python have a variety of extra features that make a programmer’s 
 
 ## Chapter 4: Comprehensions and Generators
 
-Python has special syntax for quickly iterating through lists, dictionaries, and sets to generate derivative data structures. It also allows for a stream of iterable values to be incrementally returned by a function. This chapter covers how these features can provide better performance, reduced memory usage, and improved readability.
+??? abstract
+    Python has special syntax for quickly iterating through lists, dictionaries, and sets to generate derivative data structures. It also allows for a stream of iterable values to be incrementally returned by a function. This chapter covers how these features can provide better performance, reduced memory usage, and improved readability.
 
 - [ ] 27 Use Comprehensions Instead of map and filter
 - [ ] 28 Avoid More Than Two Control Subexpressions in Comprehensions
@@ -58,7 +62,8 @@ Python has special syntax for quickly iterating through lists, dictionaries, and
 
 ## Chapter 5: Classes and Interfaces
 
-Python is an object-oriented language. Getting things done in Python often requires writing new classes and defining how they interact through their interfaces and hierarchies. This chapter covers how to use classes to express your intended behaviors with objects.
+??? abstract
+    Python is an object-oriented language. Getting things done in Python often requires writing new classes and defining how they interact through their interfaces and hierarchies. This chapter covers how to use classes to express your intended behaviors with objects.
 
 - [ ] 37 Compose Classes Instead of Nesting Many Levels of Built-in Types
 - [ ] 38 Accept Functions Instead of Classes for Simple Interfaces
@@ -70,7 +75,8 @@ Python is an object-oriented language. Getting things done in Python often requi
 
 ## Chapter 6: Metaclasses and Attributes
 
-Metaclasses and dynamic attributes are powerful Python features. However, they also enable you to implement extremely bizarre and unexpected behaviors. This chapter covers the common idioms for using these mechanisms to ensure that you follow the rule of least surprise.
+??? abstract
+    Metaclasses and dynamic attributes are powerful Python features. However, they also enable you to implement extremely bizarre and unexpected behaviors. This chapter covers the common idioms for using these mechanisms to ensure that you follow the rule of least surprise.
 
 - [ ] 44 Use Plain Attributes Instead of Setter and Getter Methods
 - [ ] 45 Consider @property Instead of Refactoring Attributes
@@ -83,7 +89,8 @@ Metaclasses and dynamic attributes are powerful Python features. However, they a
 
 ## Chapter 7: Concurrency and Parallelism
 
-Python makes it easy to write concurrent programs that do many different things seemingly at the same time. Python can also be used to do parallel work through system calls, subprocesses, and C extensions. This chapter covers how to best utilize Python in these subtly different situations.
+??? abstract
+    Python makes it easy to write concurrent programs that do many different things seemingly at the same time. Python can also be used to do parallel work through system calls, subprocesses, and C extensions. This chapter covers how to best utilize Python in these subtly different situations.
 
 - [ ] 52 Use subprocess to Manage Child Processes
 - [ ] 53 Use Threads for Blocking I/O, Avoid for Parallelism
@@ -101,7 +108,8 @@ Python makes it easy to write concurrent programs that do many different things 
 
 ## Chapter 8: Robustness and Performance
 
-Python has built-in features and modules that aid in hardening your programs so they are dependable. Python also includes tools to help you achieve higher performance with minimal effort. This chapter covers how to use Python to optimize your programs to maximize their reliability and efficiency in production.
+??? abstract
+    Python has built-in features and modules that aid in hardening your programs so they are dependable. Python also includes tools to help you achieve higher performance with minimal effort. This chapter covers how to use Python to optimize your programs to maximize their reliability and efficiency in production.
 
 - [ ] 65 Take Advantage of Each Block in try/except/else/finally
 - [ ] 66 Consider contextlib and with Statements for Reusable try/finally Behavior
@@ -116,7 +124,8 @@ Python has built-in features and modules that aid in hardening your programs so 
 
 ## Chapter 9: Testing and Debugging
 
-You should always test your code, regardless of what language it’s written in. However, Python’s dynamic features can increase the risk of runtime errors in unique ways. Luckily, they also make it easier to write tests and diagnose malfunctioning programs. This chapter covers Python’s built-in tools for testing and debugging.
+??? abstract
+    You should always test your code, regardless of what language it’s written in. However, Python’s dynamic features can increase the risk of runtime errors in unique ways. Luckily, they also make it easier to write tests and diagnose malfunctioning programs. This chapter covers Python’s built-in tools for testing and debugging.
 
 - [ ] 75 Use repr Strings for Debugging Output
 - [ ] 76 Verify Related Behaviors in TestCase Subclasses
@@ -128,7 +137,8 @@ You should always test your code, regardless of what language it’s written in.
 
 ## Chapter 10: Collaboration
 
-Collaborating on Python programs requires you to be deliberate about how you write your code. Even if you’re working alone, you’ll want to understand how to use modules written by others. This chapter covers the standard tools and best practices that enable people to work together on Python programs.
+??? abstract
+    Collaborating on Python programs requires you to be deliberate about how you write your code. Even if you’re working alone, you’ll want to understand how to use modules written by others. This chapter covers the standard tools and best practices that enable people to work together on Python programs.
 
 - [ ] 82 Know Where to Find Community-Built Modules
 - [ ] 83 Use Virtual Environments for Isolated and Reproducible Dependencies

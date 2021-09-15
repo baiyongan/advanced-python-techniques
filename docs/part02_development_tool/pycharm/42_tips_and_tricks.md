@@ -1,0 +1,44 @@
+# 42 Tips and Tricks of Pycharm
+
+- [ ] 1 Find Action
+- [ ] 2 Reduce Clutter by Disabling Tools
+- [ ] 3 Disable Tabs
+- [ ] 4 Jump to Recent File
+- [ ] 5 Use Recent Files to Open Tool Window
+- [ ] 6 Navigate to Symbol
+- [ ] 7 Navigate to File
+- [ ] 8 Navigate Cursor Position Back and Forth
+- [ ] 9 Activate Navigation Bar
+- [ ] 10 Navigate Files With Navigation Bar
+- [ ] 11 Open File With Navigation Bar
+- [ ] 12 Narrow Navigation Bar With Speed Search
+- [ ] 13 Create New File With Navigation Bar
+- [ ] 14 Find In Path With Navigation Bar
+- [ ] 15 Add Line After/Before
+- [ ] 16 Make and Extend Selection Using Keyboard
+- [ ] 17 Move Block Up/Down Using Keyboard
+- [ ] 18 Reformat Code
+- [ ] 19 Optimize Imports
+- [ ] 20 Generate Imports While Typing
+- [ ] 21 Install and import
+- [ ] 22 Adding Fields In a Constructor
+- [ ] 23 Rename a File and Its References
+- [ ] 24 Rename Symbol
+- [ ] 25 Quick Documentation
+- [ ] 26 View Parameter Info
+- [ ] 27 Run From Keyboard
+- [ ] 28 Conditional Breakpoints
+- [ ] 29 Evaluate Expression During Debugging
+- [ ] 30 Split Screen Without Tabs
+- [ ] 31 Run Single Test
+- [ ] 32 Auto-Run Tests
+- [ ] 33 Spot Coverage Gaps Using the Gutter
+- [ ] 34 Use Local History to Avoid Disaster
+- [ ] 35 Create a Project from GitHub
+- [ ] 36 Put New Project Under Version Control
+- [ ] 37 Reword Commit Message
+- [ ] 38 Undo Last Commit
+- [ ] 39 Only Commit Some Changes
+- [ ] 40 Run npm Scripts from package.json
+- [ ] 41 Wrap Selection With Tag
+- [ ] 42 Create SQLite Database Connection By Drag-and-Drop
