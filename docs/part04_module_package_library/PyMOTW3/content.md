@@ -1,14 +1,16 @@
 # 目录
 
 ## 1 Text
+
 ??? abstract
-    
+
 - [ ] **`string`**        ---               Text Constants and Templates
 - [ ] **`textwrap`**        ---                Formatting Text Paragraphs
 - [ ] **`re`**        ---                Regular Expressions
 - [ ] **`difflib`**        ---                Compare Sequences
 
 ##  2 Data Structures
+
 ??? abstract
  
 - [ ] **`enum`**        ---                   Enumeration Type
@@ -23,6 +25,7 @@
 - [ ] **`pprint`**        ---                Pretty-Print Data Structures
 
 ##  3 Algorithms
+
 ??? abstract
  
 - [ ] **`functools`**        ---                Tools for Manipulating Functions
@@ -31,6 +34,7 @@
 - [ ] **`contextlib`**        ---                Context Manager Utilities
 
 ##  4 Dates and Times
+
 ??? abstract
  
 - [ ] **`time`**        ---                Clock Time
@@ -38,6 +42,7 @@
 - [ ] **`calendar`**        ---                Work with Dates
 
 ##  5 Mathematics
+
 ??? abstract
  
 - [ ] **`decimal`**        ---                Fixed and Floating Point Math
@@ -47,6 +52,7 @@
 - [ ] **`statistics`**        ---                Statistical Calculations
 
 ##  6 The File System
+
 ??? abstract
  
 - [ ] **`os.path`**        ---                Platform-independent Manipulation of Filenames
@@ -62,6 +68,7 @@
 - [ ] **`io`**        ---                Text, Binary, and Raw Stream I/O Tools
 
 ##  7 Data Persistence and Exchange
+
 ??? abstract
  
 - [ ] **`pickle`**        ---                Object Serialization
@@ -72,6 +79,7 @@
 - [ ] **`csv`**        ---                Comma-separated Value Files
 
 ##  8 Data Compression and Archiving
+
 ??? abstract
  
 - [ ] **`zlib`**        ---                GNU zlib Compression
@@ -81,12 +89,14 @@
 - [ ] **`zipfile`**        ---                ZIP Archive Access
 
 ##  9 Cryptography
+
 ??? abstract
  
 - [ ] **`hashlib`**        ---                Cryptographic Hashing
 - [ ] **`hmac`**        ---                Cryptographic Message Signing and Verification
 
 ##  10 Concurrency with Processes, Threads, and Coroutines
+
 ??? abstract
  
 - [ ] **`subprocess`**        ---                Spawning Additional Processes
@@ -97,6 +107,7 @@
 - [ ] **`concurrent.futures`**        ---                Manage Pools of Concurrent Tasks
 
 ##  11 Networking
+
 ??? abstract
  
 - [ ] **`ipaddress`**        ---                Internet Addresses
@@ -106,6 +117,7 @@
 - [ ] **`socketserver`**        ---                Creating Network Servers
 
 ##  12 The Internet
+
 ??? abstract
  
 - [ ] **`urllib.parse`**        ---                Split URLs into Components
@@ -121,6 +133,7 @@
 - [ ] **`xmlrpc.server`**        ---                An XML-RPC server
 
 ##  13 Email
+
 ??? abstract
  
 - [ ] **`smtplib`**        ---                Simple Mail Transfer Protocol Client
@@ -129,6 +142,7 @@
 - [ ] **`imaplib`**        ---                IMAP4 Client Library
 
 ##  14 Application Building Blocks
+
 ??? abstract
  
 - [ ] **`argparse`**        ---                Command-Line Option and Argument Parsing
@@ -144,12 +158,14 @@
 - [ ] **`sched`**        ---                Timed Event Scheduler
 
 ##  15 Internationalization and Localization
+
 ??? abstract
  
 - [ ] **`gettext`**        ---                Message Catalogs
 - [ ] **`locale`**        ---                Cultural Localization API
 
 ##  16 Developer Tools
+
 ??? abstract
  
 - [ ] **`pydoc`**        ---                Online Help for Modules
@@ -168,6 +184,7 @@
 - [ ] **`ensurepip`**        ---                Install the Python Package Installer
 
 ##  17 Runtime Features
+
 ??? abstract
  
 - [ ] **`site`**        ---                Site-wide Configuration
@@ -179,6 +196,7 @@
 - [ ] **`sysconfig`**        ---                Interpreter Compile-time Configuration
 
 ##  18 Language Tools
+
 ??? abstract
  
 - [ ] **`warnings`**        ---                Non-fatal Alerts
@@ -187,6 +205,7 @@
 - [ ] **`inspect`**        ---                Inspect Live Objects
 
 ##  19 Modules and Packages
+
 ??? abstract
  
 - [ ] **`importlib`**        ---                Python’s Import Mechanism
@@ -194,7 +213,11 @@
 - [ ] **`zipimport`**        ---                Load Python Code from ZIP Archives
 
 ##  20 Unix-specific Services
+
 ??? abstract
  
 - [ ] **`pwd`**        ---                Unix Password Database
 - [ ] **`grp`**        ---                Unix Group Database
+
+## 拓展阅读
+- [Python 3 Module of the Week](https://pymotw.com/3/index.html)
