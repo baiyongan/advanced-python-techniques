@@ -1,11 +1,18 @@
 # 目录
 
 ## 1 Text
+
+??? abstract
+
 - [ ] **`string`**        ---               Text Constants and Templates
 - [ ] **`textwrap`**        ---                Formatting Text Paragraphs
 - [ ] **`re`**        ---                Regular Expressions
 - [ ] **`difflib`**        ---                Compare Sequences
+
 ##  2 Data Structures
+
+??? abstract
+ 
 - [ ] **`enum`**        ---                   Enumeration Type
 - [ ] **`collections`**        ---                Container Data Types
 - [ ] **`array`**        ---                Sequence of Fixed-type Data
@@ -16,22 +23,38 @@
 - [ ] **`weakref`**        ---                Impermanent References to Objects
 - [ ] **`copy`**        ---                Duplicate Objects
 - [ ] **`pprint`**        ---                Pretty-Print Data Structures
+
 ##  3 Algorithms
+
+??? abstract
+ 
 - [ ] **`functools`**        ---                Tools for Manipulating Functions
 - [ ] **`itertools`**        ---                Iterator Functions
 - [ ] **`operator`**        ---                Functional Interface to Built-in Operators
 - [ ] **`contextlib`**        ---                Context Manager Utilities
+
 ##  4 Dates and Times
+
+??? abstract
+ 
 - [ ] **`time`**        ---                Clock Time
 - [ ] **`datetime`**        ---                Date and Time Value Manipulation
 - [ ] **`calendar`**        ---                Work with Dates
+
 ##  5 Mathematics
+
+??? abstract
+ 
 - [ ] **`decimal`**        ---                Fixed and Floating Point Math
 - [ ] **`fractions`**        ---                Rational Numbers
 - [ ] **`random`**        ---                Pseudorandom Number Generators
 - [ ] **`math`**        ---                Mathematical Functions
 - [ ] **`statistics`**        ---                Statistical Calculations
+
 ##  6 The File System
+
+??? abstract
+ 
 - [ ] **`os.path`**        ---                Platform-independent Manipulation of Filenames
 - [ ] **`pathlib`**        ---                Filesystem Paths as Objects
 - [ ] **`glob`**        ---                Filename Pattern Matching
@@ -43,36 +66,60 @@
 - [ ] **`mmap`**        ---                Memory-map Files
 - [ ] **`codecs`**        ---                String Encoding and Decoding
 - [ ] **`io`**        ---                Text, Binary, and Raw Stream I/O Tools
+
 ##  7 Data Persistence and Exchange
+
+??? abstract
+ 
 - [ ] **`pickle`**        ---                Object Serialization
 - [ ] **`shelve`**        ---                Persistent Storage of Objects
 - [ ] **`dbm`**        ---                Unix Key-Value Databases
 - [ ] **`sqlite3`**        ---                Embedded Relational Database
 - [ ] **`xml.etree.ElementTree`**        ---               XML Manipulation API
 - [ ] **`csv`**        ---                Comma-separated Value Files
+
 ##  8 Data Compression and Archiving
+
+??? abstract
+ 
 - [ ] **`zlib`**        ---                GNU zlib Compression
 - [ ] **`gzip`**        ---                Read and Write GNU zip Files
 - [ ] **`bz2`**        ---                bzip2 Compression
 - [ ] **`tarfile`**        ---                Tar Archive Access
 - [ ] **`zipfile`**        ---                ZIP Archive Access
+
 ##  9 Cryptography
+
+??? abstract
+ 
 - [ ] **`hashlib`**        ---                Cryptographic Hashing
 - [ ] **`hmac`**        ---                Cryptographic Message Signing and Verification
+
 ##  10 Concurrency with Processes, Threads, and Coroutines
+
+??? abstract
+ 
 - [ ] **`subprocess`**        ---                Spawning Additional Processes
 - [ ] **`signal`**        ---                Asynchronous System Events
 - [ ] **`threading`**        ---                Manage Concurrent Operations Within a Process
 - [ ] **`multiprocessing`**        ---                Manage Processes Like Threads
 - [ ] **`asyncio`**        ---                Asynchronous I/O, event loop, and concurrency tools
 - [ ] **`concurrent.futures`**        ---                Manage Pools of Concurrent Tasks
+
 ##  11 Networking
+
+??? abstract
+ 
 - [ ] **`ipaddress`**        ---                Internet Addresses
 - [ ] **`socket`**        ---                Network Communication
 - [ ] **`selectors`**        ---                I/O Multiplexing Abstractions
 - [ ] **`select`**        ---                Wait for I/O Efficiently
 - [ ] **`socketserver`**        ---                Creating Network Servers
+
 ##  12 The Internet
+
+??? abstract
+ 
 - [ ] **`urllib.parse`**        ---                Split URLs into Components
 - [ ] **`urllib.request`**        ---                Network Resource Access
 - [ ] **`urllib.robotparser`**        ---                Internet Spider Access Control
@@ -84,12 +131,20 @@
 - [ ] **`json`**        ---                JavaScript Object Notation
 - [ ] **`xmlrpc.client`**        ---                Client Library for XML-RPC
 - [ ] **`xmlrpc.server`**        ---                An XML-RPC server
+
 ##  13 Email
+
+??? abstract
+ 
 - [ ] **`smtplib`**        ---                Simple Mail Transfer Protocol Client
 - [ ] **`smtpd`**        ---                Sample Mail Servers
 - [ ] **`mailbox`**        ---                Manipulate Email Archives
 - [ ] **`imaplib`**        ---                IMAP4 Client Library
+
 ##  14 Application Building Blocks
+
+??? abstract
+ 
 - [ ] **`argparse`**        ---                Command-Line Option and Argument Parsing
 - [ ] **`getopt`**        ---                Command Line Option Parsing
 - [ ] **`readline`**        ---                The GNU readline Library
@@ -101,10 +156,18 @@
 - [ ] **`fileinput`**        ---                Command-Line Filter Framework
 - [ ] **`atexit`**        ---                Program Shutdown Callbacks
 - [ ] **`sched`**        ---                Timed Event Scheduler
+
 ##  15 Internationalization and Localization
+
+??? abstract
+ 
 - [ ] **`gettext`**        ---                Message Catalogs
 - [ ] **`locale`**        ---                Cultural Localization API
+
 ##  16 Developer Tools
+
+??? abstract
+ 
 - [ ] **`pydoc`**        ---                Online Help for Modules
 - [ ] **`doctest`**        ---                Testing Through Documentation
 - [ ] **`unittest`**        ---                Automated Testing Framework
@@ -119,7 +182,11 @@
 - [ ] **`pyclbr`**        ---                Class Browser
 - [ ] **`venv`**        ---                Create Virtual Environments
 - [ ] **`ensurepip`**        ---                Install the Python Package Installer
+
 ##  17 Runtime Features
+
+??? abstract
+ 
 - [ ] **`site`**        ---                Site-wide Configuration
 - [ ] **`sys`**        ---                System-specific Configuration
 - [ ] **`os`**        ---                Portable access to operating system specific features
@@ -127,15 +194,30 @@
 - [ ] **`resource`**        ---                System Resource Management
 - [ ] **`gc`**        ---                Garbage Collector
 - [ ] **`sysconfig`**        ---                Interpreter Compile-time Configuration
+
 ##  18 Language Tools
+
+??? abstract
+ 
 - [ ] **`warnings`**        ---                Non-fatal Alerts
 - [ ] **`abc`**        ---                Abstract Base Classes
 - [ ] **`dis`**        ---                Python Bytecode Disassembler
 - [ ] **`inspect`**        ---                Inspect Live Objects
+
 ##  19 Modules and Packages
+
+??? abstract
+ 
 - [ ] **`importlib`**        ---                Python’s Import Mechanism
 - [ ] **`pkgutil`**        ---                Package Utilities
 - [ ] **`zipimport`**        ---                Load Python Code from ZIP Archives
+
 ##  20 Unix-specific Services
+
+??? abstract
+ 
 - [ ] **`pwd`**        ---                Unix Password Database
 - [ ] **`grp`**        ---                Unix Group Database
+
+## 拓展阅读
+- [Python 3 Module of the Week](https://pymotw.com/3/index.html)

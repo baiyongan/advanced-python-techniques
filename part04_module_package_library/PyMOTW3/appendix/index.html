@@ -13,21 +13,21 @@
         <meta name="author" content="Bai Yongan">
       
       
-        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/FASTAPI/">
+        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part04_module_package_library/PyMOTW3/appendix/">
       
-      <link rel="icon" href="../assets/image/favicon.png">
+      <link rel="icon" href="../../../assets/image/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
-        <title>Backup - Pythonista to Pythoneer</title>
+        <title>附录 - Pythonista to Pythoneer</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f955dcd.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -42,9 +42,9 @@
     
     
     
-      <link rel="stylesheet" href="../assets/css/termynal.css">
+      <link rel="stylesheet" href="../../../assets/css/termynal.css">
     
-      <link rel="stylesheet" href="../assets/css/custom.css">
+      <link rel="stylesheet" href="../../../assets/css/custom.css">
     
     
       
@@ -63,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sponsors" class="md-skip">
+        <a href="#outside-of-the-standard-library" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +84,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../.." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Backup
+              附录
             
           </span>
         </div>
@@ -195,7 +195,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../part01_direction_and_roadmap/" class="md-tabs__link">
+      <a href="../../../part01_direction_and_roadmap/" class="md-tabs__link">
         方向路线
       </a>
     </li>
@@ -226,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../part02_development_tool/" class="md-tabs__link">
+      <a href="../../../part02_development_tool/" class="md-tabs__link">
         开发工具
       </a>
     </li>
@@ -242,136 +242,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../part03_norm_and_design/" class="md-tabs__link">
+      <a href="../../../part03_norm_and_design/" class="md-tabs__link">
         规范设计
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part04_module_package_library/" class="md-tabs__link">
-        功能模块
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part05_core_topic/" class="md-tabs__link">
-        核心专题
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part06_intermediate_reading/" class="md-tabs__link">
-        进阶阅读
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part07_common_framework/" class="md-tabs__link">
-        常用框架
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part08_python_in_action/" class="md-tabs__link">
-        工程实践
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part09_source_code_analysis/" class="md-tabs__link">
-        源码剖析
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part10_connection_and_expansion/" class="md-tabs__link">
-        关联拓展
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../part11_ecological_information/" class="md-tabs__link">
-        业内资讯
       </a>
     </li>
   
@@ -388,7 +260,135 @@
   
   
     <li class="md-tabs__item">
-      <a href="../CHANGELOG/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
+        功能模块
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part05_core_topic/" class="md-tabs__link">
+        核心专题
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part06_intermediate_reading/" class="md-tabs__link">
+        进阶阅读
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part07_common_framework/" class="md-tabs__link">
+        常用框架
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part08_python_in_action/" class="md-tabs__link">
+        工程实践
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part09_source_code_analysis/" class="md-tabs__link">
+        源码剖析
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part10_connection_and_expansion/" class="md-tabs__link">
+        关联拓展
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../part11_ecological_information/" class="md-tabs__link">
+        业内资讯
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -415,9 +415,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../.." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     Pythonista to Pythoneer
@@ -446,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -482,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part01_direction_and_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -494,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
         后端开发
       </a>
     </li>
@@ -506,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
         DevOps
       </a>
     </li>
@@ -518,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
         数据分析
       </a>
     </li>
@@ -530,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
         数据挖掘（机器学习/人工智能）
       </a>
     </li>
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/" class="md-nav__link">
+      <a href="../../../part02_development_tool/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -605,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -617,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
         42 Tips and Tricks
       </a>
     </li>
@@ -629,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -680,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -719,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -731,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -770,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -782,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -821,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -833,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -872,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -884,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -932,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part03_norm_and_design/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -944,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part03_norm_and_design/norm/why_python_style_guide/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/why_python_style_guide/" class="md-nav__link">
         Python 代码规范的重要性
       </a>
     </li>
@@ -956,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part03_norm_and_design/norm/PEP8/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/PEP8/" class="md-nav__link">
         PEP8
       </a>
     </li>
@@ -968,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part03_norm_and_design/norm/google_python_style_guide/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/google_python_style_guide/" class="md-nav__link">
         Google Python Style Guide
       </a>
     </li>
@@ -987,12 +987,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         功能模块
@@ -1010,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1043,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/standard_library_builtin/content/" class="md-nav__link">
+      <a href="../../standard_library_builtin/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1082,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/commonly_used/content/" class="md-nav__link">
+      <a href="../../commonly_used/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1121,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/key_advanced/content/" class="md-nav__link">
+      <a href="../../key_advanced/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1133,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/key_advanced/collections/" class="md-nav__link">
+      <a href="../../key_advanced/collections/" class="md-nav__link">
         collections
       </a>
     </li>
@@ -1145,7 +1147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/key_advanced/sh/" class="md-nav__link">
+      <a href="../../key_advanced/sh/" class="md-nav__link">
         sh
       </a>
     </li>
@@ -1161,12 +1163,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" checked>
       
       <label class="md-nav__link" for="__nav_5_5">
         PyMOTW3 系列
@@ -1184,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/content/" class="md-nav__link">
+      <a href="../content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1217,8 +1221,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter01_text/" class="md-nav__link">
-        章节索引
+      <a href="../chapter01_text/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1256,8 +1260,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter02_data_structures/" class="md-nav__link">
-        章节索引
+      <a href="../chapter02_data_structures/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1295,8 +1299,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter03_algorithms/" class="md-nav__link">
-        章节索引
+      <a href="../chapter03_algorithms/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1307,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter03_algorithms/functools/" class="md-nav__link">
+      <a href="../chapter03_algorithms/functools/" class="md-nav__link">
         functools
       </a>
     </li>
@@ -1346,8 +1350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter04_dates_and_times/" class="md-nav__link">
-        章节索引
+      <a href="../chapter04_dates_and_times/index.md" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1385,8 +1389,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter05_mathematics/" class="md-nav__link">
-        章节索引
+      <a href="../chapter05_mathematics/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1424,8 +1428,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter06_the_file_system/" class="md-nav__link">
-        章节索引
+      <a href="../chapter06_the_file_system/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1463,8 +1467,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter07_data_persistence_and_exchange/" class="md-nav__link">
-        章节索引
+      <a href="../chapter07_data_persistence_and_exchange/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1502,8 +1506,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter08_data_compression_and_archiving/" class="md-nav__link">
-        章节索引
+      <a href="../chapter08_data_compression_and_archiving/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1541,8 +1545,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter09_cryptography/" class="md-nav__link">
-        章节索引
+      <a href="../chapter09_cryptography/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1580,8 +1584,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter10_concurrency/" class="md-nav__link">
-        章节索引
+      <a href="../chapter10_concurrency/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1619,8 +1623,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter11_networking/" class="md-nav__link">
-        章节索引
+      <a href="../chapter11_networking/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1658,8 +1662,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter12_the_internet/" class="md-nav__link">
-        章节索引
+      <a href="../chapter12_the_internet/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1697,8 +1701,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter13_email/" class="md-nav__link">
-        章节索引
+      <a href="../chapter13_email/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1736,8 +1740,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter14_application_building_blocks/" class="md-nav__link">
-        章节索引
+      <a href="../chapter14_application_building_blocks/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1775,8 +1779,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapterinternationalization_and_localization/index.md" class="md-nav__link">
-        章节索引
+      <a href="../chapterinternationalization_and_localization/index.md" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1814,8 +1818,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter16_developer_tools/" class="md-nav__link">
-        章节索引
+      <a href="../chapter16_developer_tools/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1853,8 +1857,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter17_runtime_features/" class="md-nav__link">
-        章节索引
+      <a href="../chapter17_runtime_features/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1892,8 +1896,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter18_language_tools/" class="md-nav__link">
-        章节索引
+      <a href="../chapter18_language_tools/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1931,8 +1935,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter19_modules_and_packages/" class="md-nav__link">
-        章节索引
+      <a href="../chapter19_modules_and_packages/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1970,8 +1974,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../part04_module_package_library/PyMOTW3/chapter20_unix_specific_services/" class="md-nav__link">
-        章节索引
+      <a href="../chapter20_unix_specific_services/" class="md-nav__link">
+        章节简介
       </a>
     </li>
   
@@ -1979,6 +1983,128 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          附录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        附录
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithms" class="md-nav__link">
+    Algorithms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dates-and-times" class="md-nav__link">
+    Dates and Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematics" class="md-nav__link">
+    Mathematics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-persistence-and-exchange" class="md-nav__link">
+    Data Persistence and Exchange
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cryptography" class="md-nav__link">
+    Cryptography
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concurrency-with-processes-threads-and-coroutines" class="md-nav__link">
+    Concurrency with Processes, Threads, and Coroutines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-internet" class="md-nav__link">
+    The Internet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-building-blocks" class="md-nav__link">
+    Application Building Blocks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    Developer Tools
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2024,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/" class="md-nav__link">
+      <a href="../../../part05_core_topic/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -2057,7 +2183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter01/article0101/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0101/" class="md-nav__link">
         python 中一切皆对象
       </a>
     </li>
@@ -2069,7 +2195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter01/article0102/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0102/" class="md-nav__link">
         type、object 和 class 的关系
       </a>
     </li>
@@ -2081,7 +2207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter01/article0103/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0103/" class="md-nav__link">
         python 中的内置类型
       </a>
     </li>
@@ -2093,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter01/article0104/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0104/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2132,7 +2258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter02/article0201/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0201/" class="md-nav__link">
         魔法函数简介
       </a>
     </li>
@@ -2144,7 +2270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter02/article0202/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0202/" class="md-nav__link">
         python 数据模型对 python 的影响
       </a>
     </li>
@@ -2156,7 +2282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter02/article0203/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0203/" class="md-nav__link">
         python 魔法函数一览
       </a>
     </li>
@@ -2168,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter02/article0204/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0204/" class="md-nav__link">
         len 函数的特殊性
       </a>
     </li>
@@ -2180,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter02/article0205/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0205/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2219,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0301/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0301/" class="md-nav__link">
         鸭子类型和多态
       </a>
     </li>
@@ -2231,7 +2357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0302/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0302/" class="md-nav__link">
         抽象基类（abc模块）
       </a>
     </li>
@@ -2243,7 +2369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0303/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0303/" class="md-nav__link">
         isinstance 和 type 的区别
       </a>
     </li>
@@ -2255,7 +2381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0304/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0304/" class="md-nav__link">
         类变量和实例变量
       </a>
     </li>
@@ -2267,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0305/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0305/" class="md-nav__link">
         类和实例属性的查找顺序
       </a>
     </li>
@@ -2279,7 +2405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0306/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0306/" class="md-nav__link">
         类方法、静态方法和实例方法
       </a>
     </li>
@@ -2291,7 +2417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0307/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0307/" class="md-nav__link">
         数据封装和私有属性
       </a>
     </li>
@@ -2303,7 +2429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0308/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0308/" class="md-nav__link">
         python 对象的自省机制
       </a>
     </li>
@@ -2315,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0309/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0309/" class="md-nav__link">
         super 真的是调用父类么？
       </a>
     </li>
@@ -2327,7 +2453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0310/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0310/" class="md-nav__link">
         mixin 继承案例——django rest framework
       </a>
     </li>
@@ -2339,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0311/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0311/" class="md-nav__link">
         python 中的 with 语句
       </a>
     </li>
@@ -2351,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0312/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0312/" class="md-nav__link">
         contextlib 简化上下文管理器
       </a>
     </li>
@@ -2363,7 +2489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter03/article0313/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0313/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2402,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0401/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0401/" class="md-nav__link">
         python 中的序列分类
       </a>
     </li>
@@ -2414,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0402/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0402/" class="md-nav__link">
         python 中序列类型的 abc 继承关系
       </a>
     </li>
@@ -2426,7 +2552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0403/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0403/" class="md-nav__link">
         list 中 extend 方法区别
       </a>
     </li>
@@ -2438,7 +2564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0404/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0404/" class="md-nav__link">
         实现可切片的对象
       </a>
     </li>
@@ -2450,7 +2576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0405/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0405/" class="md-nav__link">
         bisect 维护已排序序列
       </a>
     </li>
@@ -2462,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0406/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0406/" class="md-nav__link">
         什么时候不应该使用列表？
       </a>
     </li>
@@ -2474,7 +2600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0407/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0407/" class="md-nav__link">
         列表推导式、生成器表达式、字典推导式
       </a>
     </li>
@@ -2486,7 +2612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter04/article0408/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0408/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2525,7 +2651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0501/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0501/" class="md-nav__link">
         dict 的 abc 继承关系
       </a>
     </li>
@@ -2537,7 +2663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0502/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0502/" class="md-nav__link">
         dict 的常用方法
       </a>
     </li>
@@ -2549,7 +2675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0503/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0503/" class="md-nav__link">
         dict 的子类
       </a>
     </li>
@@ -2561,7 +2687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0504/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0504/" class="md-nav__link">
         set 和 frozenset
       </a>
     </li>
@@ -2573,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0505/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0505/" class="md-nav__link">
         dict 和 set 的实现原理
       </a>
     </li>
@@ -2585,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter05/article0506/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0506/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2624,7 +2750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter06/article0601/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0601/" class="md-nav__link">
         python 中的变量是什么？
       </a>
     </li>
@@ -2636,7 +2762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter06/article0602/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0602/" class="md-nav__link">
         == 和 is 的区别
       </a>
     </li>
@@ -2648,7 +2774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter06/article0603/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0603/" class="md-nav__link">
         del 语句和垃圾回收
       </a>
     </li>
@@ -2660,7 +2786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter06/article0604/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0604/" class="md-nav__link">
         一个经典的参数错误
       </a>
     </li>
@@ -2672,7 +2798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter06/article0605/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0605/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2711,7 +2837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0701/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0701/" class="md-nav__link">
         property 动态属性
       </a>
     </li>
@@ -2723,7 +2849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0702/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0702/" class="md-nav__link">
         __getattr__、__getattribute__ 魔法函数
       </a>
     </li>
@@ -2735,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0703/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0703/" class="md-nav__link">
         属性描述符和属性查找过程
       </a>
     </li>
@@ -2747,7 +2873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0704/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0704/" class="md-nav__link">
         __new__ 和 __init__ 的区别
       </a>
     </li>
@@ -2759,7 +2885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0705/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0705/" class="md-nav__link">
         自定义元类
       </a>
     </li>
@@ -2771,7 +2897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0706/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0706/" class="md-nav__link">
         通过元类实现 orm
       </a>
     </li>
@@ -2783,7 +2909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter07/article0707/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0707/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2822,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0801/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0801/" class="md-nav__link">
         python 中的迭代协议
       </a>
     </li>
@@ -2834,7 +2960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0802/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0802/" class="md-nav__link">
         什么是迭代器和可迭代对象
       </a>
     </li>
@@ -2846,7 +2972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0803/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0803/" class="md-nav__link">
         生成器函数的使用
       </a>
     </li>
@@ -2858,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0804/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0804/" class="md-nav__link">
         python 是如何实现生成器的
       </a>
     </li>
@@ -2870,7 +2996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0805/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0805/" class="md-nav__link">
         生成器在 UserList 中的应用
       </a>
     </li>
@@ -2882,7 +3008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0806/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0806/" class="md-nav__link">
         生成器如何读取大文件
       </a>
     </li>
@@ -2894,7 +3020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter08/article0807/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0807/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2933,7 +3059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter09/article0901/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0901/" class="md-nav__link">
         HTTP、Socket、TCP 概念
       </a>
     </li>
@@ -2945,7 +3071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter09/article0902/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0902/" class="md-nav__link">
         socket 和 server 实现通信
       </a>
     </li>
@@ -2957,7 +3083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter09/article0903/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0903/" class="md-nav__link">
         socket 实现聊天和多用户连接
       </a>
     </li>
@@ -2969,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter09/article0904/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0904/" class="md-nav__link">
         socket 模拟 http 请求
       </a>
     </li>
@@ -2981,7 +3107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter09/article0905/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0905/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3020,7 +3146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1001/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1001/" class="md-nav__link">
         python 中的 GIL
       </a>
     </li>
@@ -3032,7 +3158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1002/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1002/" class="md-nav__link">
         多线程编程 —— threading
       </a>
     </li>
@@ -3044,7 +3170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1003/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1003/" class="md-nav__link">
         线程间通信 —— 共享变量和 Queue
       </a>
     </li>
@@ -3056,7 +3182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1004/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1004/" class="md-nav__link">
         线程同步 —— Lock、RLock
       </a>
     </li>
@@ -3068,7 +3194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1005/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1005/" class="md-nav__link">
         线程同步 —— condition 使用及源码分析
       </a>
     </li>
@@ -3080,7 +3206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1006/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1006/" class="md-nav__link">
         线程同步 —— Semaphore 使用及源码分析
       </a>
     </li>
@@ -3092,7 +3218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1007/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1007/" class="md-nav__link">
         ThreadPoolExecutor 线程池
       </a>
     </li>
@@ -3104,7 +3230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1008/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1008/" class="md-nav__link">
         ThreadPoolExecutor 源码分析
       </a>
     </li>
@@ -3116,7 +3242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1009/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1009/" class="md-nav__link">
         多线程和多进程对比
       </a>
     </li>
@@ -3128,7 +3254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1010/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1010/" class="md-nav__link">
         multiprocessing 多进程编程
       </a>
     </li>
@@ -3140,7 +3266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1011/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1011/" class="md-nav__link">
         进程间通信 —— Queue、Pipe、Manager
       </a>
     </li>
@@ -3152,7 +3278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter10/article1012/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1012/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3191,7 +3317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1101/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1101/" class="md-nav__link">
         并发、并行、同步、异步、阻塞、非阻塞
       </a>
     </li>
@@ -3203,7 +3329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1102/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1102/" class="md-nav__link">
         IO 多路复用 (select、poll 和 epoll)
       </a>
     </li>
@@ -3215,7 +3341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1103/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1103/" class="md-nav__link">
         select+回调+事件循环获取 html
       </a>
     </li>
@@ -3227,7 +3353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1104/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1104/" class="md-nav__link">
         回调之痛
       </a>
     </li>
@@ -3239,7 +3365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1105/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1105/" class="md-nav__link">
         协程是什么
       </a>
     </li>
@@ -3251,7 +3377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1106/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1106/" class="md-nav__link">
         生成器进阶 send、close 和 throw 方法
       </a>
     </li>
@@ -3263,7 +3389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1107/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1107/" class="md-nav__link">
         生成器进阶 yield from
       </a>
     </li>
@@ -3275,7 +3401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1108/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1108/" class="md-nav__link">
         生成器实现协程
       </a>
     </li>
@@ -3287,7 +3413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1109/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1109/" class="md-nav__link">
         async和await
       </a>
     </li>
@@ -3299,7 +3425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter11/article1110/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1110/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3338,7 +3464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1201/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1201/" class="md-nav__link">
         事件循环
       </a>
     </li>
@@ -3350,7 +3476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1202/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1202/" class="md-nav__link">
         task 取消和子协程调用原理
       </a>
     </li>
@@ -3362,7 +3488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1203/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1203/" class="md-nav__link">
         call_soon、call_at、call_later、call_soon_threadsafe
       </a>
     </li>
@@ -3374,7 +3500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1204/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1204/" class="md-nav__link">
         ThreadPollExecutor 和 asycio 完成阻塞 IO 请求
       </a>
     </li>
@@ -3386,7 +3512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1205/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1205/" class="md-nav__link">
         asyncio 模拟 http 请求
       </a>
     </li>
@@ -3398,7 +3524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1206/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1206/" class="md-nav__link">
         future 和 task
       </a>
     </li>
@@ -3410,7 +3536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1207/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1207/" class="md-nav__link">
         asyncio 同步和通信
       </a>
     </li>
@@ -3422,7 +3548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1208/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1208/" class="md-nav__link">
         aiohttp 实现高并发爬虫
       </a>
     </li>
@@ -3434,7 +3560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part05_core_topic/chapter12/article1209/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1209/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3482,7 +3608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -3515,7 +3641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3554,7 +3680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3593,7 +3719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/effective_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3632,7 +3758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3671,7 +3797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3710,7 +3836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3758,7 +3884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/" class="md-nav__link">
+      <a href="../../../part07_common_framework/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -3770,7 +3896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/python_web/plotly_dash/" class="md-nav__link">
+      <a href="../../../part07_common_framework/python_web/plotly_dash/" class="md-nav__link">
         Dash
       </a>
     </li>
@@ -3803,7 +3929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
+      <a href="../../../part07_common_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
         项目结构
       </a>
     </li>
@@ -3821,7 +3947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/python_web/django/" class="md-nav__link">
+      <a href="../../../part07_common_framework/python_web/django/" class="md-nav__link">
         Django
       </a>
     </li>
@@ -3833,7 +3959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/python_web/tornado/" class="md-nav__link">
+      <a href="../../../part07_common_framework/python_web/tornado/" class="md-nav__link">
         Tornado
       </a>
     </li>
@@ -3845,7 +3971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part07_common_framework/python_web/fastapi/" class="md-nav__link">
+      <a href="../../../part07_common_framework/python_web/fastapi/" class="md-nav__link">
         FastAPI
       </a>
     </li>
@@ -3887,7 +4013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part08_python_in_action/" class="md-nav__link">
+      <a href="../../../part08_python_in_action/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -3899,7 +4025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+      <a href="../../../part08_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
         Python 中的数据结构与算法
       </a>
     </li>
@@ -3911,7 +4037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part08_python_in_action/precautions_in_development/" class="md-nav__link">
+      <a href="../../../part08_python_in_action/precautions_in_development/" class="md-nav__link">
         技术研发中的注意事项
       </a>
     </li>
@@ -3923,7 +4049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part08_python_in_action/SWIG_programming/" class="md-nav__link">
+      <a href="../../../part08_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
     </li>
@@ -3935,7 +4061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part08_python_in_action/garbage_collection/" class="md-nav__link">
+      <a href="../../../part08_python_in_action/garbage_collection/" class="md-nav__link">
         Python 的内存管理和垃圾回收机制
       </a>
     </li>
@@ -3977,7 +4103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part09_source_code_analysis/" class="md-nav__link">
+      <a href="../../../part09_source_code_analysis/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4019,7 +4145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part10_connection_and_expansion/" class="md-nav__link">
+      <a href="../../../part10_connection_and_expansion/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4061,7 +4187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part11_ecological_information/" class="md-nav__link">
+      <a href="../../../part11_ecological_information/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4080,14 +4206,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
       
       <label class="md-nav__link" for="__nav_13">
         后记
@@ -4105,7 +4229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CHANGELOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -4117,7 +4241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../REFERENCE/" class="md-nav__link">
+      <a href="../../../REFERENCE/" class="md-nav__link">
         Reference
       </a>
     </li>
@@ -4129,7 +4253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../LICENSE/" class="md-nav__link">
+      <a href="../../../LICENSE/" class="md-nav__link">
         License
       </a>
     </li>
@@ -4139,178 +4263,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Backup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../FASTAPI.md" class="md-nav__link">
         Backup
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sponsors" class="md-nav__link">
-    Sponsors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opinions" class="md-nav__link">
-    Opinions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#typer-the-fastapi-of-clis" class="md-nav__link">
-    Typer, the FastAPI of CLIs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-    <nav class="md-nav" aria-label="Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-it" class="md-nav__link">
-    Create it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
-    Run it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-it" class="md-nav__link">
-    Check it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#interactive-api-docs" class="md-nav__link">
-    Interactive API docs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alternative-api-docs" class="md-nav__link">
-    Alternative API docs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-upgrade" class="md-nav__link">
-    Example upgrade
-  </a>
-  
-    <nav class="md-nav" aria-label="Example upgrade">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interactive-api-docs-upgrade" class="md-nav__link">
-    Interactive API docs upgrade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alternative-api-docs-upgrade" class="md-nav__link">
-    Alternative API docs upgrade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recap" class="md-nav__link">
-    Recap
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-dependencies" class="md-nav__link">
-    Optional Dependencies
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4320,7 +4277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resources/jupyter/test/" class="md-nav__link">
+      <a href="../../../resources/jupyter/test/" class="md-nav__link">
         title
       </a>
     </li>
@@ -4349,6 +4306,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4357,139 +4316,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sponsors" class="md-nav__link">
-    Sponsors
+  <a href="#text" class="md-nav__link">
+    Text
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#opinions" class="md-nav__link">
-    Opinions
+  <a href="#algorithms" class="md-nav__link">
+    Algorithms
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#typer-the-fastapi-of-clis" class="md-nav__link">
-    Typer, the FastAPI of CLIs
+  <a href="#dates-and-times" class="md-nav__link">
+    Dates and Times
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
+  <a href="#mathematics" class="md-nav__link">
+    Mathematics
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#data-persistence-and-exchange" class="md-nav__link">
+    Data Persistence and Exchange
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-    <nav class="md-nav" aria-label="Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-it" class="md-nav__link">
-    Create it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
-    Run it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-it" class="md-nav__link">
-    Check it
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#interactive-api-docs" class="md-nav__link">
-    Interactive API docs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alternative-api-docs" class="md-nav__link">
-    Alternative API docs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-upgrade" class="md-nav__link">
-    Example upgrade
-  </a>
-  
-    <nav class="md-nav" aria-label="Example upgrade">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interactive-api-docs-upgrade" class="md-nav__link">
-    Interactive API docs upgrade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alternative-api-docs-upgrade" class="md-nav__link">
-    Alternative API docs upgrade
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recap" class="md-nav__link">
-    Recap
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
+  <a href="#cryptography" class="md-nav__link">
+    Cryptography
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-dependencies" class="md-nav__link">
-    Optional Dependencies
+  <a href="#concurrency-with-processes-threads-and-coroutines" class="md-nav__link">
+    Concurrency with Processes, Threads, and Coroutines
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
+  <a href="#the-internet" class="md-nav__link">
+    The Internet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-building-blocks" class="md-nav__link">
+    Application Building Blocks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-tools" class="md-nav__link">
+    Developer Tools
   </a>
   
 </li>
@@ -4510,402 +4408,49 @@
 
                 
                 
-                  <h1>Backup</h1>
-                
-                <p align="center">
-  <a href="https://fastapi.tiangolo.com"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"></a>
-</p>
-<p align="center">
-    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>
-</p>
-<p align="center">
-<a href="https://github.com/tiangolo/fastapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/tiangolo/fastapi/workflows/Test/badge.svg" alt="Test">
-</a>
-<a href="https://codecov.io/gh/tiangolo/fastapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/tiangolo/fastapi?color=%2334D058" alt="Coverage">
-</a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package" alt="Package version">
-</a>
-</p>
-
-<hr />
-<p><strong>Documentation</strong>: <a href="https://fastapi.tiangolo.com" target="_blank">https://fastapi.tiangolo.com</a></p>
-<p><strong>Source Code</strong>: <a href="https://github.com/tiangolo/fastapi" target="_blank">https://github.com/tiangolo/fastapi</a></p>
-<hr />
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">C</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello world!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">C++</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello world!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-</div>
-<p>FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.</p>
-<p>The key features are:</p>
-<ul>
-<li>
-<p><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong> (thanks to Starlette and Pydantic). <a href="#performance">One of the fastest Python frameworks available</a>.</p>
-</li>
-<li>
-<p><strong>Fast to code</strong>: Increase the speed to develop features by about 200% to 300%. *</p>
-</li>
-<li><strong>Fewer bugs</strong>: Reduce about 40% of human (developer) induced errors. *</li>
-<li><strong>Intuitive</strong>: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.</li>
-<li><strong>Easy</strong>: Designed to be easy to use and learn. Less time reading docs.</li>
-<li><strong>Short</strong>: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.</li>
-<li><strong>Robust</strong>: Get production-ready code. With automatic interactive documentation.</li>
-<li><strong>Standards-based</strong>: Based on (and fully compatible with) the open standards for APIs: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (previously known as Swagger) and <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.</li>
-</ul>
-<p><small>* estimation based on tests on an internal development team, building production applications.</small></p>
-<h2 id="sponsors">Sponsors<a class="headerlink" href="#sponsors" title="Permanent link">&para;</a></h2>
-<!-- sponsors -->
-
-<!-- /sponsors -->
-
-<p><a href="https://fastapi.tiangolo.com/fastapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a></p>
-<h2 id="opinions">Opinions<a class="headerlink" href="#opinions" title="Permanent link">&para;</a></h2>
-<p>"<em>[...] I'm using <strong>FastAPI</strong> a ton these days. [...] I'm actually planning to use it for all of my team's <strong>ML services at Microsoft</strong>. Some of them are getting integrated into the core <strong>Windows</strong> product and some <strong>Office</strong> products.</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/tiangolo/fastapi/pull/26" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<p>"<em>We adopted the <strong>FastAPI</strong> library to spawn a <strong>REST</strong> server that can be queried to obtain <strong>predictions</strong>. [for Ludwig]</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<p>"<em><strong>Netflix</strong> is pleased to announce the open-source release of our <strong>crisis management</strong> orchestration framework: <strong>Dispatch</strong>! [built with <strong>FastAPI</strong>]</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<p>"<em>I’m over the moon excited about <strong>FastAPI</strong>. It’s so fun!</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<p>"<em>Honestly, what you've built looks super solid and polished. In many ways, it's what I wanted <strong>Hug</strong> to be - it's really inspiring to see someone build that.</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Timothy Crosley - <strong><a href="https://www.hug.rest/" target="_blank">Hug</a> creator</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<p>"<em>If you're looking to learn one <strong>modern framework</strong> for building REST APIs, check out <strong>FastAPI</strong> [...] It's fast, easy to use and easy to learn [...]</em>"</p>
-<p>"<em>We've switched over to <strong>FastAPI</strong> for our <strong>APIs</strong> [...] I think you'll like it [...]</em>"</p>
-<div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
-
-<hr />
-<h2 id="typer-the-fastapi-of-clis"><strong>Typer</strong>, the FastAPI of CLIs<a class="headerlink" href="#typer-the-fastapi-of-clis" title="Permanent link">&para;</a></h2>
-<p><a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a></p>
-<p>If you are building a <abbr title="Command Line Interface">CLI</abbr> app to be used in the terminal instead of a web API, check out <a href="https://typer.tiangolo.com/" class="external-link" target="_blank"><strong>Typer</strong></a>.</p>
-<p><strong>Typer</strong> is FastAPI's little sibling. And it's intended to be the <strong>FastAPI of CLIs</strong>. ⌨️ 🚀</p>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<p>Python 3.6+</p>
-<p>FastAPI stands on the shoulders of giants:</p>
-<ul>
-<li><a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> for the web parts.</li>
-<li><a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> for the data parts.</li>
-</ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<div class="termy">
-
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip install fastapi
-
-<span class="go">---&gt; 100%</span>
-</code></pre></div>
-
-</div>
-
-<p>You will also need an ASGI server, for production such as <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> or <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.</p>
-<div class="termy">
-
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip install uvicorn<span class="o">[</span>standard<span class="o">]</span>
-
-<span class="go">---&gt; 100%</span>
-</code></pre></div>
-
-</div>
-
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<h3 id="create-it">Create it<a class="headerlink" href="#create-it" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Create a file <code>main.py</code> with:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
-
-<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
-</code></pre></div>
-<details>
-<p><summary>Or use <code>async def</code>...</summary></p>
-<p>If your code uses <code>async</code> / <code>await</code>, use <code>async def</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
-
-<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-<span class="hll"><span class="k">async</span> <span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
-</span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="hll"><span class="k">async</span> <span class="k">def</span> <span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
-</code></pre></div>
-<p><strong>Note</strong>:</p>
-<p>If you don't know, check the <em>"In a hurry?"</em> section about <a href="https://fastapi.tiangolo.com/async/#in-a-hurry" target="_blank"><code>async</code> and <code>await</code> in the docs</a>.</p>
-</details>
-<h3 id="run-it">Run it<a class="headerlink" href="#run-it" title="Permanent link">&para;</a></h3>
-<p>Run the server with:</p>
-<div class="termy">
-
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>uvicorn main:app --reload
-
-<span class="go">INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)</span>
-<span class="go">INFO:     Started reloader process [28720]</span>
-<span class="go">INFO:     Started server process [28722]</span>
-<span class="go">INFO:     Waiting for application startup.</span>
-<span class="go">INFO:     Application startup complete.</span>
-</code></pre></div>
-
-</div>
-
-<details>
-<p><summary>About the command <code>uvicorn main:app --reload</code>...</summary></p>
-<p>The command <code>uvicorn main:app</code> refers to:</p>
-<ul>
-<li><code>main</code>: the file <code>main.py</code> (the Python "module").</li>
-<li><code>app</code>: the object created inside of <code>main.py</code> with the line <code>app = FastAPI()</code>.</li>
-<li><code>--reload</code>: make the server restart after code changes. Only do this for development.</li>
-</ul>
-</details>
-<h3 id="check-it">Check it<a class="headerlink" href="#check-it" title="Permanent link">&para;</a></h3>
-<p>Open your browser at <a href="http://127.0.0.1:8000/items/5?q=somequery" class="external-link" target="_blank">http://127.0.0.1:8000/items/5?q=somequery</a>.</p>
-<p>You will see the JSON response as:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;item_id&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nt">&quot;q&quot;</span><span class="p">:</span> <span class="s2">&quot;somequery&quot;</span><span class="p">}</span>
-</code></pre></div>
-<p>You already created an API that:</p>
-<ul>
-<li>Receives HTTP requests in the <em>paths</em> <code>/</code> and <code>/items/{item_id}</code>.</li>
-<li>Both <em>paths</em> take <code>GET</code> <em>operations</em> (also known as HTTP <em>methods</em>).</li>
-<li>The <em>path</em> <code>/items/{item_id}</code> has a <em>path parameter</em> <code>item_id</code> that should be an <code>int</code>.</li>
-<li>The <em>path</em> <code>/items/{item_id}</code> has an optional <code>str</code> <em>query parameter</em> <code>q</code>.</li>
-</ul>
-<h3 id="interactive-api-docs">Interactive API docs<a class="headerlink" href="#interactive-api-docs" title="Permanent link">&para;</a></h3>
-<p>Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
-<p>You will see the automatic interactive API documentation (provided by <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):</p>
-<p><img alt="Swagger UI" src="https://fastapi.tiangolo.com/img/index/index-01-swagger-ui-simple.png" /></p>
-<h3 id="alternative-api-docs">Alternative API docs<a class="headerlink" href="#alternative-api-docs" title="Permanent link">&para;</a></h3>
-<p>And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.</p>
-<p>You will see the alternative automatic documentation (provided by <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):</p>
-<p><img alt="ReDoc" src="https://fastapi.tiangolo.com/img/index/index-02-redoc-simple.png" /></p>
-<h2 id="example-upgrade">Example upgrade<a class="headerlink" href="#example-upgrade" title="Permanent link">&para;</a></h2>
-<p>Now modify the file <code>main.py</code> to receive a body from a <code>PUT</code> request.</p>
-<p>Declare the body using standard Python types, thanks to Pydantic.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
-
-<span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
-<span class="hll"><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
-</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-
-
-<span class="hll"><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span><span class="hll">    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-</span><span class="hll">    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
-</span><span class="hll">    <span class="n">is_offer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</span>
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_root</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-
-
-<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
-
-
-<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span class="hll"><span class="k">def</span> <span class="nf">update_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
-</span><span class="hll">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
-</span></code></pre></div>
-<p>The server should reload automatically (because you added <code>--reload</code> to the <code>uvicorn</code> command above).</p>
-<h3 id="interactive-api-docs-upgrade">Interactive API docs upgrade<a class="headerlink" href="#interactive-api-docs-upgrade" title="Permanent link">&para;</a></h3>
-<p>Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
-<ul>
-<li>The interactive API documentation will be automatically updated, including the new body:</li>
-</ul>
-<p><img alt="Swagger UI" src="https://fastapi.tiangolo.com/img/index/index-03-swagger-02.png" /></p>
-<ul>
-<li>Click on the button "Try it out", it allows you to fill the parameters and directly interact with the API:</li>
-</ul>
-<p><img alt="Swagger UI interaction" src="https://fastapi.tiangolo.com/img/index/index-04-swagger-03.png" /></p>
-<ul>
-<li>Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:</li>
-</ul>
-<p><img alt="Swagger UI interaction" src="https://fastapi.tiangolo.com/img/index/index-05-swagger-04.png" /></p>
-<h3 id="alternative-api-docs-upgrade">Alternative API docs upgrade<a class="headerlink" href="#alternative-api-docs-upgrade" title="Permanent link">&para;</a></h3>
-<p>And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.</p>
-<ul>
-<li>The alternative documentation will also reflect the new query parameter and body:</li>
-</ul>
-<p><img alt="ReDoc" src="https://fastapi.tiangolo.com/img/index/index-06-redoc-02.png" /></p>
-<h3 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h3>
-<p>In summary, you declare <strong>once</strong> the types of parameters, body, etc. as function parameters. </p>
-<p>You do that with standard modern Python types.</p>
-<p>You don't have to learn a new syntax, the methods or classes of a specific library, etc.</p>
-<p>Just standard <strong>Python 3.6+</strong>.</p>
-<p>For example, for an <code>int</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span>
-</code></pre></div>
-<p>or for a more complex <code>Item</code> model:</p>
-<div class="highlight"><pre><span></span><code><span class="n">item</span><span class="p">:</span> <span class="n">Item</span>
-</code></pre></div>
-<p>...and with that single declaration you get:</p>
-<ul>
-<li>Editor support, including:<ul>
-<li>Completion.</li>
-<li>Type checks.</li>
-</ul>
-</li>
-<li>Validation of data:<ul>
-<li>Automatic and clear errors when the data is invalid.</li>
-<li>Validation even for deeply nested JSON objects.</li>
-</ul>
-</li>
-<li><abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of input data: coming from the network to Python data and types. Reading from:<ul>
-<li>JSON.</li>
-<li>Path parameters.</li>
-<li>Query parameters.</li>
-<li>Cookies.</li>
-<li>Headers.</li>
-<li>Forms.</li>
-<li>Files.</li>
-</ul>
-</li>
-<li><abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of output data: converting from Python data and types to network data (as JSON):<ul>
-<li>Convert Python types (<code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>, <code>list</code>, etc).</li>
-<li><code>datetime</code> objects.</li>
-<li><code>UUID</code> objects.</li>
-<li>Database models.</li>
-<li>...and many more.</li>
-</ul>
-</li>
-<li>Automatic interactive API documentation, including 2 alternative user interfaces:<ul>
-<li>Swagger UI.</li>
-<li>ReDoc.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<p>Coming back to the previous code example, <strong>FastAPI</strong> will:</p>
-<ul>
-<li>Validate that there is an <code>item_id</code> in the path for <code>GET</code> and <code>PUT</code> requests.</li>
-<li>Validate that the <code>item_id</code> is of type <code>int</code> for <code>GET</code> and <code>PUT</code> requests.<ul>
-<li>If it is not, the client will see a useful, clear error.</li>
-</ul>
-</li>
-<li>Check if there is an optional query parameter named <code>q</code> (as in <code>http://127.0.0.1:8000/items/foo?q=somequery</code>) for <code>GET</code> requests.<ul>
-<li>As the <code>q</code> parameter is declared with <code>= None</code>, it is optional.</li>
-<li>Without the <code>None</code> it would be required (as is the body in the case with <code>PUT</code>).</li>
-</ul>
-</li>
-<li>For <code>PUT</code> requests to <code>/items/{item_id}</code>, Read the body as JSON:<ul>
-<li>Check that it has a required attribute <code>name</code> that should be a <code>str</code>. </li>
-<li>Check that it has a required attribute <code>price</code> that has to be a <code>float</code>.</li>
-<li>Check that it has an optional attribute <code>is_offer</code>, that should be a <code>bool</code>, if present.</li>
-<li>All this would also work for deeply nested JSON objects.</li>
-</ul>
-</li>
-<li>Convert from and to JSON automatically.</li>
-<li>Document everything with OpenAPI, that can be used by:<ul>
-<li>Interactive documentation systems.</li>
-<li>Automatic client code generation systems, for many languages.</li>
-</ul>
-</li>
-<li>Provide 2 interactive documentation web interfaces directly.</li>
-</ul>
-<hr />
-<p>We just scratched the surface, but you already get the idea of how it all works.</p>
-<p>Try changing the line with:</p>
-<div class="highlight"><pre><span></span><code>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
-</code></pre></div>
-<p>...from:</p>
-<div class="highlight"><pre><span></span><code>        <span class="o">...</span> <span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span> <span class="o">...</span>
-</code></pre></div>
-<p>...to:</p>
-<div class="highlight"><pre><span></span><code>        <span class="o">...</span> <span class="s2">&quot;item_price&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">price</span> <span class="o">...</span>
-</code></pre></div>
-<p>...and see how your editor will auto-complete the attributes and know their types:</p>
-<p><img alt="editor support" src="https://fastapi.tiangolo.com/img/vscode-completion.png" /></p>
-<p>For a more complete example including more features, see the <a href="https://fastapi.tiangolo.com/tutorial/">Tutorial - User Guide</a>.</p>
-<p><strong>Spoiler alert</strong>: the tutorial - user guide includes:</p>
-<ul>
-<li>Declaration of <strong>parameters</strong> from other different places as: <strong>headers</strong>, <strong>cookies</strong>, <strong>form fields</strong> and <strong>files</strong>.</li>
-<li>How to set <strong>validation constraints</strong> as <code>maximum_length</code> or <code>regex</code>.</li>
-<li>A very powerful and easy to use <strong><abbr title="also known as components, resources, providers, services, injectables">Dependency Injection</abbr></strong> system.</li>
-<li>Security and authentication, including support for <strong>OAuth2</strong> with <strong>JWT tokens</strong> and <strong>HTTP Basic</strong> auth.</li>
-<li>More advanced (but equally easy) techniques for declaring <strong>deeply nested JSON models</strong> (thanks to Pydantic).</li>
-<li>Many extra features (thanks to Starlette) as:<ul>
-<li><strong>WebSockets</strong></li>
-<li><strong>GraphQL</strong></li>
-<li>extremely easy tests based on <code>requests</code> and <code>pytest</code></li>
-<li><strong>CORS</strong></li>
-<li><strong>Cookie Sessions</strong></li>
-<li>...and more.</li>
-</ul>
-</li>
-</ul>
-<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
-<p>Independent TechEmpower benchmarks show <strong>FastAPI</strong> applications running under Uvicorn as <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">one of the fastest Python frameworks available</a>, only below Starlette and Uvicorn themselves (used internally by FastAPI). (*)</p>
-<p>To understand more about it, see the section <a href="https://fastapi.tiangolo.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.</p>
-<h2 id="optional-dependencies">Optional Dependencies<a class="headerlink" href="#optional-dependencies" title="Permanent link">&para;</a></h2>
-<p>Used by Pydantic:</p>
-<ul>
-<li><a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - for faster JSON <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>.</li>
-<li><a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - for email validation.</li>
-</ul>
-<p>Used by Starlette:</p>
-<ul>
-<li><a href="https://requests.readthedocs.io" target="_blank"><code>requests</code></a> - Required if you want to use the <code>TestClient</code>.</li>
-<li><a href="https://github.com/Tinche/aiofiles" target="_blank"><code>aiofiles</code></a> - Required if you want to use <code>FileResponse</code> or <code>StaticFiles</code>.</li>
-<li><a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Required if you want to use the default template configuration.</li>
-<li><a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, with <code>request.form()</code>.</li>
-<li><a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Required for <code>SessionMiddleware</code> support.</li>
-<li><a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Required for Starlette's <code>SchemaGenerator</code> support (you probably don't need it with FastAPI).</li>
-<li><a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Required for <code>GraphQLApp</code> support.</li>
-<li><a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Required if you want to use <code>UJSONResponse</code>.</li>
-</ul>
-<p>Used by FastAPI / Starlette:</p>
-<ul>
-<li><a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - for the server that loads and serves your application.</li>
-<li><a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Required if you want to use <code>ORJSONResponse</code>.</li>
-</ul>
-<p>You can install all of these with <code>pip install fastapi[all]</code>.</p>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>This project is licensed under the terms of the MIT license.</p>
+                <h1 id="outside-of-the-standard-library">Outside of the Standard Library<a class="headerlink" href="#outside-of-the-standard-library" title="Permanent link">&para;</a></h1>
+<p>Although the Python standard library is extensive, there is also a robust ecosystem of modules provided by third-party developers and available from the Python Package Index. This appendix describes some of these modules, and the situations when you might want to use them to supplement or even replace the standard library.</p>
+<h2 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h2>
+<p>The string module includes a very basic template tool. Many web frameworks include more powerful template tools, but Jinja2 and Mako are popular standalone alternatives. Both support looping and conditional control structures as well as other features for combining data with a template to produce text output.</p>
+<p>The re module includes functions for searching and parsing text using formally described patterns called regular expressions. It is not the only way to parse text, though.</p>
+<p>The PLY package supports building parsers in the style of the GNU tools lexx and yacc, commonly used for building language compilers. By providing inputs describing the valid tokens, a grammar, and actions to take when each are encountered, it is possible to build fully functional compilers and interpreters, as well as more straightforward data parsers.</p>
+<p>PyParsing is a another tool for building parsers. The inputs are instances of classes that can be chained together using operators and method calls to build up a grammar.</p>
+<p>Finally, NLTK is a package for processing natural language text – human languages instead of computer languages. It supports parsing sentences into parts of speech, finding the root form of words, and basic semantic processing.</p>
+<h2 id="algorithms">Algorithms<a class="headerlink" href="#algorithms" title="Permanent link">&para;</a></h2>
+<p>The functools module includes some tools for creating decorators, functions that wrap other functions to change how they behave. The wrapt package goes further than functools.wrap() to ensure that a decorator is constructed properly and works for all edge-cases.</p>
+<h2 id="dates-and-times">Dates and Times<a class="headerlink" href="#dates-and-times" title="Permanent link">&para;</a></h2>
+<p>The time and datetime modules provide functions and classes for manipulating time and date values. Both include functions for parsing strings to turn them into internal representations. The dateutil package includes a more flexible parser that makes it easier to build robust applications that are more forgiving of different input formats.</p>
+<p>The datetime module includes a timezone-aware class for representing a specific time on a specific day. It does not, however, include a full timezone database. The pytz package does provide such a database. It is distributed separately from the standard library because it is maintained by other authors and it is updated frequently when timezone and daylight savings time values are changed by the political institutions that control them.</p>
+<h2 id="mathematics">Mathematics<a class="headerlink" href="#mathematics" title="Permanent link">&para;</a></h2>
+<p>The math module contains fast implementations of advanced mathematical functions. NumPy expands the set of functions supported to include linear algebra and Fourier transform functions. It also includes a fast multi-dimensional array implementation, improving on the version in array.</p>
+<h2 id="data-persistence-and-exchange">Data Persistence and Exchange<a class="headerlink" href="#data-persistence-and-exchange" title="Permanent link">&para;</a></h2>
+<p>The examples in the sqlite3 section run SQL statements directly and work with low-level data structures. For large applications, it is often desirable to map classes to tables in the database using an object relational mapper or ORM. The sqlalchemy ORM library provides APIs for associating classes with tables, building queries, and connecting to different types of production-grade relational databases.</p>
+<p>The lxml package wraps the libxml2 and libxslt libraries to create an alternative to the XML parser in xml.etree.ElementTree. Developers familiar with using those libraries from other languages may find lxml easier to adopt in Python.</p>
+<p>The defusedxml package contains fixes for “Billion Laughs” and other entity expansion denial of service vulnerabilities in Python’s XML libraries and makes working with untrusted XML safer than using the standard library alone.</p>
+<h2 id="cryptography">Cryptography<a class="headerlink" href="#cryptography" title="Permanent link">&para;</a></h2>
+<p>The team building the cryptography package says “Our goal is for it to be your ‘cryptographic standard library’.” The cryptography package exposes high-level APIs to make it easy to add cryptographic features to applications and the package is actively maintained with frequent releases to address vulnerabilities in the underlying libraries such as OpenSSL.</p>
+<h2 id="concurrency-with-processes-threads-and-coroutines">Concurrency with Processes, Threads, and Coroutines<a class="headerlink" href="#concurrency-with-processes-threads-and-coroutines" title="Permanent link">&para;</a></h2>
+<p>The event loop built into asyncio is a reference implementation based on the abstract API defined by the module. It is possible to replace the event loop with a library such as uvloop, which gives better performance in exchange for adding extra application dependencies.</p>
+<p>The curio package is another concurrency package similar to asyncio but with a smaller API that treats everything as a coroutine and does not support callbacks in the way asyncio does.</p>
+<p>The Twisted library provides an extensible framework for Python programming, with special focus on event-based network programming and multiprotocol integration. It is mature, robust, and well-documented.</p>
+<h2 id="the-internet">The Internet<a class="headerlink" href="#the-internet" title="Permanent link">&para;</a></h2>
+<p>The requests package is a very popular replacement for urllib.request. It provides a consistent API for working with remote resources addressable via HTTP, includes robust SSL support, and can use connection pooling for better performance in multi-threaded applications. It also provides features that make it well suited for accessing REST APIs, such as built-in JSON parsing.</p>
+<p>Python’s html module includes a basic parser for well-formed HTML data. However, real world data is rarely well structured, making parsing it problematic. The BeautifulSoup and PyQuery libraries are alternatives to html that are more robust in the face of messy data. Both define APIs for parsing, modifying, and constructing HTML.</p>
+<p>The built-in http.server package includes base classes for creating simple HTTP servers from scratch. It does not offer much support beyond that for building web-based applications, though. The Django and Pyramid packages are two popular web application frameworks that provide more support for advanced features like request parsing, URL routing, and cookie handling.</p>
+<p>Many existing libraries do not work with asyncio because they do not integrate with the event loop. A new set of libraries such as aiohttp is being created to fill this gap as part of the aio-libs project.</p>
+<h2 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h2>
+<p>The API for imaplib is relatively low-level, requiring the caller to understand the IMAP protocol to build queries and parse results. The imapclient package provides a higher-level API that is easier to work with for building applications that need to manipulate IMAP mailboxes.</p>
+<h2 id="application-building-blocks">Application Building Blocks<a class="headerlink" href="#application-building-blocks" title="Permanent link">&para;</a></h2>
+<p>The two standard library modules for building command line interfaces, argparse and getopt, both separate the definition of command line arguments from their parsing and value processing. Alternatively, click (the “Command Line Interface Construction Kit”), works by defining command processing functions and then associating option and prompt definitions with those commands using decorators.</p>
+<p>cliff (“Command Line Interface Formulation Framework”) provides a set of base classes for defining commands and a plugin system for extending applications with multiple sub-commands that can be distributed in separate packages. It uses argparse to build the help text and argument parser, so the command line processing is familiar.</p>
+<p>The docopt package reverses the typical flow by asking the developer to write the help text for a program, which it then parses to understand the sub-commands, valid combinations of options, and sub-commands.</p>
+<p>For interactive terminal-based programs, prompt_toolkit includes advanced features like color support, syntax highlighting, input editing, mouse support, and searchable history. It can be used to build command-oriented programs with a prompt loop like the cmd module, or full-screen applications like text editors.</p>
+<p>While INI files such as used by configparser continue to be popular for application configuration, the YAML file format is also very popular. YAML provides many of the data structure features of JSON in a format that is easier for people to read. The PyYAML library provides access to a YAML parser and serializer.</p>
+<h2 id="developer-tools">Developer Tools<a class="headerlink" href="#developer-tools" title="Permanent link">&para;</a></h2>
+<p>The standard library module venv is new in Python 3. For similar application isolation under both Python 2 and 3, use virtualenv.</p>
+<p>The fixtures package provides several test resource management classes tailor made to work with the addCleanup() method of test cases from the unittest module. The provided fixture classes can manage loggers, environment variables, temporary files, and more in a consistent and safe way that ensures each test case is completely isolated from others in the suite.</p>
+<p>The distutils module in the standard library for packaging Python modules for distribution and reuse is deprecated. The replacement, setuptools, is packaged separately from the standard library to make it easier to deliver new versions frequently. The API for setuptools includes tools for building the list of files to include in a package. There are extensions to automatically build the list from the set of files managed by a version control system. For example, using setuptools-git with source in a git repository causes all of the tracked files to be included in the package by default. After a package is built, the twine application will upload it to the package index to be shared with other developers.</p>
+<p>Tools like tabnanny are good at finding common formatting mistakes in Python code. The Python Code Quality Authority maintains an extensive range of more advanced static analysis tools, including tools that enforce style guidelines, find common programming errors, and even help avoid excessive complexity.</p>
                 
               
 
@@ -4925,7 +4470,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../LICENSE/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../chapter20_unix_specific_services/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4934,19 +4479,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              License
+              章节简介
             </div>
           </div>
         </a>
       
       
-        <a href="../resources/jupyter/test/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../../part05_core_topic/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              title
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -4979,16 +4524,16 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
       
-        <script src="../assets/js/termynal.js"></script>
+        <script src="../../../assets/js/termynal.js"></script>
       
-        <script src="../assets/js/custom.js"></script>
+        <script src="../../../assets/js/custom.js"></script>
       
     
   </body>
