@@ -5,11 +5,17 @@
 ??? hint
     快捷键太多记不住的话，只需记住 (Shift-Ctrl-A Win/Linux, Shift-Cmd-A macOS)。输入该快捷键，会弹出 `Find` 面板，面板中有 `All`, `Classes`, `Files`, `Symbols`, 和 `Action`, 默认是 `Action`。继续输入想要实现的 `Action`，pycharm 会自动补全。
     
-    也可以使用简写快速编辑，比如说直接输入 `fi pa`，即代表 `Find in Path`。
+    也可以使用简写快速编辑查询，比如说直接输入 `fi pa`，即代表 `Find in Path`。
     
-    或者是输入 `wi pl no` 代表 `Window | Editor Tabs | Tabs Placement: None`。
+    除了快速查询，也可以快速更改首选项配置，例如输入 `wi pl no` 代表 `Window | Editor Tabs | Tabs Placement: None`。
 
 ## 2 Reduce Clutter by Disabling Tools
+
+??? hint
+    作为一款 IDE，Pycharm 默认会有很多 UI 窗口，可以关闭一些 toolbar 和文件导航窗口，来更专注于代码本身。
+
+    View -> Appearence -> Enter Zen Mode
+
 ## 3 Disable Tabs
 ## 4 Jump to Recent File
 ## 5 Use Recent Files to Open Tool Window
