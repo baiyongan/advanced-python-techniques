@@ -118,8 +118,10 @@ nav:
   - Overview: part01_direction_and_roadmap/index.md
   - 后端开发: part01_direction_and_roadmap/python_web_roadmap.md
   - DevOps: part01_direction_and_roadmap/python_devops_roadmap.md
+  - 网络爬虫: part01_direction_and_roadmap/python_web_scraping_roadmap.md
   - 数据分析: part01_direction_and_roadmap/python_data_analysis_roadmap.md
-  - 数据挖掘（机器学习/人工智能）: part01_direction_and_roadmap/python_data_mining_roadmap.md
+  - 数据挖掘: part01_direction_and_roadmap/python_data_mining_roadmap.md
+  - 机器学习: part01_direction_and_roadmap/python_machine_learning_roadmap.md
 
 # Part02
 - 开发工具:
@@ -164,10 +166,12 @@ nav:
     - sh: part04_module_package_library/key_advanced/sh.md
 
   - PyMOTW3 系列: 
-    - 目录: part04_module_package_library/PyMOTW3/content.md
+    - 英文目录: part04_module_package_library/PyMOTW3/content_en.md
+    - 中文目录: part04_module_package_library/PyMOTW3/content_zh.md
 
     - 01 Text:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter01_text/index.md
+      - string 模块: part04_module_package_library/PyMOTW3/chapter01_text/string.md
 
     - 02 Data Structures:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter02_data_structures/index.md
