@@ -1,15 +1,13 @@
 # 目录
 
-## 1 Text
+## 1 文本
 
-- [ ] **`string`**        ---               Text Constants and Templates
-- [ ] **`textwrap`**        ---                Formatting Text Paragraphs
-- [ ] **`re`**        ---                Regular Expressions
-- [ ] **`difflib`**        ---                Compare Sequences
+- [ ] **`string`**        ---               文本常量与模板
+- [ ] **`textwrap`**        ---                格式化的文本段落
+- [ ] **`re`**        ---                正则表达式
+- [ ] **`difflib`**        ---                比较句子
 
-##  2 Data Structures
-
-??? abstract
+##  2 数据结构
  
 - [ ] **`enum`**        ---                   Enumeration Type
 - [ ] **`collections`**        ---                Container Data Types
@@ -22,26 +20,20 @@
 - [ ] **`copy`**        ---                Duplicate Objects
 - [ ] **`pprint`**        ---                Pretty-Print Data Structures
 
-##  3 Algorithms
-
-??? abstract
+##  3 算法
  
 - [ ] **`functools`**        ---                Tools for Manipulating Functions
 - [ ] **`itertools`**        ---                Iterator Functions
 - [ ] **`operator`**        ---                Functional Interface to Built-in Operators
 - [ ] **`contextlib`**        ---                Context Manager Utilities
 
-##  4 Dates and Times
-
-??? abstract
+##  4 日期与时间
  
 - [ ] **`time`**        ---                Clock Time
 - [ ] **`datetime`**        ---                Date and Time Value Manipulation
 - [ ] **`calendar`**        ---                Work with Dates
 
-##  5 Mathematics
-
-??? abstract
+##  5 数学运算
  
 - [ ] **`decimal`**        ---                Fixed and Floating Point Math
 - [ ] **`fractions`**        ---                Rational Numbers
@@ -49,9 +41,7 @@
 - [ ] **`math`**        ---                Mathematical Functions
 - [ ] **`statistics`**        ---                Statistical Calculations
 
-##  6 The File System
-
-??? abstract
+##  6 文件系统
  
 - [ ] **`os.path`**        ---                Platform-independent Manipulation of Filenames
 - [ ] **`pathlib`**        ---                Filesystem Paths as Objects
@@ -65,9 +55,7 @@
 - [ ] **`codecs`**        ---                String Encoding and Decoding
 - [ ] **`io`**        ---                Text, Binary, and Raw Stream I/O Tools
 
-##  7 Data Persistence and Exchange
-
-??? abstract
+##  7 数据持久化与转换
  
 - [ ] **`pickle`**        ---                Object Serialization
 - [ ] **`shelve`**        ---                Persistent Storage of Objects
@@ -76,9 +64,7 @@
 - [ ] **`xml.etree.ElementTree`**        ---               XML Manipulation API
 - [ ] **`csv`**        ---                Comma-separated Value Files
 
-##  8 Data Compression and Archiving
-
-??? abstract
+##  8 数据压缩与归档
  
 - [ ] **`zlib`**        ---                GNU zlib Compression
 - [ ] **`gzip`**        ---                Read and Write GNU zip Files
@@ -86,16 +72,12 @@
 - [ ] **`tarfile`**        ---                Tar Archive Access
 - [ ] **`zipfile`**        ---                ZIP Archive Access
 
-##  9 Cryptography
-
-??? abstract
+##  9 加密
  
 - [ ] **`hashlib`**        ---                Cryptographic Hashing
 - [ ] **`hmac`**        ---                Cryptographic Message Signing and Verification
 
-##  10 Concurrency with Processes, Threads, and Coroutines
-
-??? abstract
+##  10 进程、线程与协程的并发
  
 - [ ] **`subprocess`**        ---                Spawning Additional Processes
 - [ ] **`signal`**        ---                Asynchronous System Events
@@ -104,9 +86,7 @@
 - [ ] **`asyncio`**        ---                Asynchronous I/O, event loop, and concurrency tools
 - [ ] **`concurrent.futures`**        ---                Manage Pools of Concurrent Tasks
 
-##  11 Networking
-
-??? abstract
+##  11 网络
  
 - [ ] **`ipaddress`**        ---                Internet Addresses
 - [ ] **`socket`**        ---                Network Communication
@@ -114,9 +94,7 @@
 - [ ] **`select`**        ---                Wait for I/O Efficiently
 - [ ] **`socketserver`**        ---                Creating Network Servers
 
-##  12 The Internet
-
-??? abstract
+##  12 互联网
  
 - [ ] **`urllib.parse`**        ---                Split URLs into Components
 - [ ] **`urllib.request`**        ---                Network Resource Access
@@ -130,18 +108,14 @@
 - [ ] **`xmlrpc.client`**        ---                Client Library for XML-RPC
 - [ ] **`xmlrpc.server`**        ---                An XML-RPC server
 
-##  13 Email
-
-??? abstract
+##  13 邮件
  
 - [ ] **`smtplib`**        ---                Simple Mail Transfer Protocol Client
 - [ ] **`smtpd`**        ---                Sample Mail Servers
 - [ ] **`mailbox`**        ---                Manipulate Email Archives
 - [ ] **`imaplib`**        ---                IMAP4 Client Library
 
-##  14 Application Building Blocks
-
-??? abstract
+##  14 应用程序构建块
  
 - [ ] **`argparse`**        ---                Command-Line Option and Argument Parsing
 - [ ] **`getopt`**        ---                Command Line Option Parsing
@@ -155,16 +129,12 @@
 - [ ] **`atexit`**        ---                Program Shutdown Callbacks
 - [ ] **`sched`**        ---                Timed Event Scheduler
 
-##  15 Internationalization and Localization
-
-??? abstract
+##  15 国际化与本地化
  
 - [ ] **`gettext`**        ---                Message Catalogs
 - [ ] **`locale`**        ---                Cultural Localization API
 
-##  16 Developer Tools
-
-??? abstract
+##  16 开发者工具
  
 - [ ] **`pydoc`**        ---                Online Help for Modules
 - [ ] **`doctest`**        ---                Testing Through Documentation
@@ -181,9 +151,7 @@
 - [ ] **`venv`**        ---                Create Virtual Environments
 - [ ] **`ensurepip`**        ---                Install the Python Package Installer
 
-##  17 Runtime Features
-
-??? abstract
+##  17 运行时特征
  
 - [ ] **`site`**        ---                Site-wide Configuration
 - [ ] **`sys`**        ---                System-specific Configuration
@@ -194,25 +162,19 @@
 - [ ] **`sysconfig`**        ---                Interpreter Compile-time Configuration
 
 ##  18 Language Tools
-
-??? abstract
  
 - [ ] **`warnings`**        ---                Non-fatal Alerts
 - [ ] **`abc`**        ---                Abstract Base Classes
 - [ ] **`dis`**        ---                Python Bytecode Disassembler
 - [ ] **`inspect`**        ---                Inspect Live Objects
 
-##  19 Modules and Packages
-
-??? abstract
+##  19 模块与包
  
 - [ ] **`importlib`**        ---                Python’s Import Mechanism
 - [ ] **`pkgutil`**        ---                Package Utilities
 - [ ] **`zipimport`**        ---                Load Python Code from ZIP Archives
 
-##  20 Unix-specific Services
-
-??? abstract
+##  20 Unix 专属服务
  
 - [ ] **`pwd`**        ---                Unix Password Database
 - [ ] **`grp`**        ---                Unix Group Database
