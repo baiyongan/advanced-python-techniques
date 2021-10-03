@@ -2807,6 +2807,27 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    模块的导入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property_1" class="md-nav__link">
+    property装饰器(属性方法)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    最大特点
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4286,6 +4307,27 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    模块的导入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property_1" class="md-nav__link">
+    property装饰器(属性方法)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    最大特点
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4303,6 +4345,88 @@
                 
                 
                 <h1 id="property">property 动态属性<a class="headerlink" href="#property" title="Permanent link">&para;</a></h1>
+<h2 id="_1">模块的导入<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span><span class="p">,</span> <span class="n">datetime</span> 
+<span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">birthday</span> <span class="o">=</span> <span class="n">birthday</span> 
+
+<span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;BYA&quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;in </span><span class="si">{}</span><span class="s2"> file&quot;</span> <span class="o">.</span> <span class="nb">format</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+
+<span class="c1"># 在另一个py文件中导入User类, 会连同 print 也一起被执行了</span>
+<span class="c1"># 因此，在测试的时候，最好用 if &#39;__name__&#39; == &#39;__main__&#39;:</span>
+<span class="kn">from</span> <span class="nn">chapter07.text</span> <span class="kn">import</span> <span class="n">User</span>
+</code></pre></div>
+<h2 id="property_1">property装饰器(属性方法)<a class="headerlink" href="#property_1" title="Permanent link">&para;</a></h2>
+<p>假如一个类有年龄属性, 我们需要设置值并能获取值</p>
+<ul>
+<li>方法一: 在<code>__init__()</code>中设置 age, 但是问题是对于赋值无法添加处理或者校验</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="n">age</span>
+<span class="n">stu</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">stu</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+</code></pre></div>
+<ul>
+<li>方法二: 使用 set_age 方法 和 get_age 方法</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">set_age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">age</span><span class="p">,</span><span class="nb">int</span><span class="p">):</span>
+            <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;</span><span class="n">age</span><span class="o">&lt;</span><span class="mi">120</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="n">age</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;请输入合法的年龄&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span>
+
+<span class="n">stu</span><span class="o">=</span><span class="n">Student</span><span class="p">(</span><span class="s2">&quot;Jerry&quot;</span><span class="p">)</span>
+<span class="n">stu</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="mi">120</span>  <span class="c1">#stu自己给自己添加了一个age 属性，所以不会报错。这个属性只是属于stu对象</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stu</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+</code></pre></div>
+<p>为了让age更安全, 可以改成_age，这属于python 编码上的一种规范，并不能做到真正的隐藏。</p>
+<ul>
+<li>property 装饰起，则实现了上面的set_age和get_age的作用</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
+
+    <span class="nd">@age</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">age</span><span class="p">,</span><span class="nb">int</span><span class="p">):</span>
+            <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;</span><span class="n">age</span><span class="o">&lt;</span><span class="mi">120</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="o">=</span><span class="n">age</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;请输入合法的年龄&quot;</span><span class="p">)</span>
+
+<span class="n">stu</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">&quot;Jerry&quot;</span><span class="p">)</span>
+<span class="n">stu</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stu</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+
+
+<span class="mf">1.</span> <span class="n">get和set的方法名称都要一样</span><span class="err">（</span><span class="n">age</span><span class="err">）</span>
+<span class="mf">2.</span> <span class="n">set方法返回的属性前面加个</span><span class="s2">&quot;_&quot;</span>
+<span class="mf">3.</span> <span class="nd">@property是针对get方法</span>
+<span class="mf">4.</span> <span class="nd">@age</span><span class="o">.</span><span class="n">setter是针对set方法</span><span class="err">，</span><span class="n">是</span><span class="nd">@property本身又创建了另一个装饰器</span>
+<span class="mf">5.</span> <span class="n">直接可以这样</span> <span class="n">stu</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">10</span> <span class="n">对象名</span><span class="o">.</span><span class="n">方法名进行赋值</span><span class="err">，</span>
+<span class="mf">6.</span> <span class="n">只定义getter方法</span><span class="err">，</span><span class="n">不定义setter方法是一个只读属性</span>
+</code></pre></div>
+<h2 id="_2">最大特点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>属性值可动态获取</strong></p>
                 
               
 
