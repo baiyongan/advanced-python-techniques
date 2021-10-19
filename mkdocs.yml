@@ -363,11 +363,14 @@ nav:
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
+    - Chapter01 数据结构与算法: 
+      - 1.1 将序列分解为单独的变量: part06_intermediate_reading/python_cookbook/chapter01/item0101.md
   - Python3 面向对象编程: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
   - Fluent Python: 
     - 目录: part06_intermediate_reading/fluent_python/content.md
-
+  - Python 架构模式: 
+    - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
 # Part07
 - 常用框架:
   - Overview: part07_common_framework/index.md
