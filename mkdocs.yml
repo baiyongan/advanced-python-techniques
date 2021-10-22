@@ -363,8 +363,21 @@ nav:
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
-    - Chapter01 数据结构与算法: 
-      - 1.1 将序列分解为单独的变量: part06_intermediate_reading/python_cookbook/chapter01/item0101.md
+    - 01 数据结构与算法: part06_intermediate_reading/python_cookbook/chapter01/item.md
+    - 02 字符串和文本: part06_intermediate_reading/python_cookbook/chapter02/item.md
+    - 03 数字日期和时间: part06_intermediate_reading/python_cookbook/chapter03/item.md
+    - 04 迭代器与生成器: part06_intermediate_reading/python_cookbook/chapter04/item.md
+    - 05 文件与IO: part06_intermediate_reading/python_cookbook/chapter05/item.md
+    - 06 数据编码和处理: part06_intermediate_reading/python_cookbook/chapter06/item.md
+    - 07 函数: part06_intermediate_reading/python_cookbook/chapter07/item.md
+    - 08 类与对象: part06_intermediate_reading/python_cookbook/chapter08/item.md
+    - 09 元编程: part06_intermediate_reading/python_cookbook/chapter09/item.md
+    - 10 模块与包: part06_intermediate_reading/python_cookbook/chapter10/item.md
+    - 11 网络与Web编程: part06_intermediate_reading/python_cookbook/chapter11/item.md
+    - 12 并发编程: part06_intermediate_reading/python_cookbook/chapter12/item.md
+    - 13 脚本与系统管理: part06_intermediate_reading/python_cookbook/chapter13/item.md
+    - 14 测试、调试和异常: part06_intermediate_reading/python_cookbook/chapter14/item.md
+    - 15 C语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
   - Python3 面向对象编程: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
   - Fluent Python: 
