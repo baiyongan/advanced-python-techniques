@@ -359,6 +359,8 @@ nav:
     - 目录: part06_intermediate_reading/intermediate_python/content.md
   - Python Tricks: 
     - 目录: part06_intermediate_reading/python_tricks/content.md
+  - PEP: 
+    - 目录: part06_intermediate_reading/pep/content.md
   - Effective Python: 
     - 目录: part06_intermediate_reading/effective_python/content.md
   - Python Cookbook: 
@@ -367,7 +369,7 @@ nav:
     - 02 字符串和文本: part06_intermediate_reading/python_cookbook/chapter02/item.md
     - 03 数字日期和时间: part06_intermediate_reading/python_cookbook/chapter03/item.md
     - 04 迭代器与生成器: part06_intermediate_reading/python_cookbook/chapter04/item.md
-    - 05 文件与IO: part06_intermediate_reading/python_cookbook/chapter05/item.md
+    - 05 文件与 IO: part06_intermediate_reading/python_cookbook/chapter05/item.md
     - 06 数据编码和处理: part06_intermediate_reading/python_cookbook/chapter06/item.md
     - 07 函数: part06_intermediate_reading/python_cookbook/chapter07/item.md
     - 08 类与对象: part06_intermediate_reading/python_cookbook/chapter08/item.md
@@ -377,7 +379,7 @@ nav:
     - 12 并发编程: part06_intermediate_reading/python_cookbook/chapter12/item.md
     - 13 脚本与系统管理: part06_intermediate_reading/python_cookbook/chapter13/item.md
     - 14 测试、调试和异常: part06_intermediate_reading/python_cookbook/chapter14/item.md
-    - 15 C语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
+    - 15 C 语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
   - Python3 面向对象编程: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
   - Fluent Python: 
@@ -385,50 +387,54 @@ nav:
   - Python 架构模式: 
     - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
 # Part07
-- 常用框架:
-  - Overview: part07_common_framework/index.md
-  - Dash: part07_common_framework/python_web/plotly_dash/index.md
+- 应用框架:
+  - Overview: part07_application_framework/index.md
+  - Dash: part07_application_framework/python_web/plotly_dash/index.md
   - Flask: 
-    - 项目结构: part07_common_framework/python_web/flask/structure_of_a_flask_project.md
-  - Django: part07_common_framework/python_web/django/index.md
-  - Tornado: part07_common_framework/python_web/tornado/index.md
-  - FastAPI: part07_common_framework/python_web/fastapi/index.md
+    - 项目结构: part07_application_framework/python_web/flask/structure_of_a_flask_project.md
+  - Django: part07_application_framework/python_web/django/index.md
+  - Tornado: part07_application_framework/python_web/tornado/index.md
+  - FastAPI: part07_application_framework/python_web/fastapi/index.md
 
 # Part08
-- 工程实践:
-  - Overview: part08_python_in_action/index.md
-  - Python 中的数据结构与算法: part08_python_in_action/data_structure_and_algorithm.md
-  - 技术研发中的注意事项: part08_python_in_action/precautions_in_development.md
-  - SWIG 编程实践: part08_python_in_action/SWIG_programming.md
-  - Python 的内存管理和垃圾回收机制: part08_python_in_action/garbage_collection.md
-  # - Performance Marketing Report:
-  #   - introduction: part08_python_in_action/performance_marketing_report/01_introduction.md
-  #   - environment: part08_python_in_action/performance_marketing_report/02_environment.md
-  #   - dash basics: part08_python_in_action/performance_marketing_report/03_dash_basics.md
-  #   - multi-page: part08_python_in_action/performance_marketing_report/04_multi-page_application.md
-  #   - data-selector: part08_python_in_action/performance_marketing_report/05_data_selector_element.md
-  #   - first data table: part08_python_in_action/performance_marketing_report/06_first_data_table.md
-  #   - download link: part08_python_in_action/performance_marketing_report/07_donwload_link.md
-  #   - second data table: part08_python_in_action/performance_marketing_report/08_second_data_table.md
-  #   - update graph function: part08_python_in_action/performance_marketing_report/09_update_graphs_function.md
-  #   - update graph function: part08_python_in_action/performance_marketing_report/10_update_graph_functions.md
-  #   - plotly graph tools: part08_python_in_action/performance_marketing_report/11_plotly_graph_tools.md
-  #   - deployment: part08_python_in_action/performance_marketing_report/12_deploy_application.md
-  #   - wrapping up: part08_python_in_action/performance_marketing_report/13_wrapping_up.md
-  #   - resources: part08_python_in_action/performance_marketing_report/14_resources.md
-    
+- 数据分析:
+  - Overview: part08_data_analysis/index.md
 
 # Part09
-- 源码剖析:
-  - Overview: part09_source_code_analysis/index.md
+- 工程实践:
+  - Overview: part09_python_in_action/index.md
+  - Python 中的数据结构与算法: part09_python_in_action/data_structure_and_algorithm.md
+  - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
+  - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
+  - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
+  # - Performance Marketing Report:
+  #   - introduction: part09_python_in_action/performance_marketing_report/01_introduction.md
+  #   - environment: part09_python_in_action/performance_marketing_report/02_environment.md
+  #   - dash basics: part09_python_in_action/performance_marketing_report/03_dash_basics.md
+  #   - multi-page: part09_python_in_action/performance_marketing_report/04_multi-page_application.md
+  #   - data-selector: part09_python_in_action/performance_marketing_report/05_data_selector_element.md
+  #   - first data table: part09_python_in_action/performance_marketing_report/06_first_data_table.md
+  #   - download link: part09_python_in_action/performance_marketing_report/07_donwload_link.md
+  #   - second data table: part09_python_in_action/performance_marketing_report/08_second_data_table.md
+  #   - update graph function: part09_python_in_action/performance_marketing_report/09_update_graphs_function.md
+  #   - update graph function: part09_python_in_action/performance_marketing_report/10_update_graph_functions.md
+  #   - plotly graph tools: part09_python_in_action/performance_marketing_report/11_plotly_graph_tools.md
+  #   - deployment: part09_python_in_action/performance_marketing_report/12_deploy_application.md
+  #   - wrapping up: part09_python_in_action/performance_marketing_report/13_wrapping_up.md
+  #   - resources: part09_python_in_action/performance_marketing_report/14_resources.md
+    
 
 # Part10
-- 关联拓展:
-  - Overview: part10_connection_and_expansion/index.md
+- 源码剖析:
+  - Overview: part10_source_code_analysis/index.md
 
 # Part11
+- 关联拓展:
+  - Overview: part11_connection_and_expansion/index.md
+
+# Part12
 - 业内资讯:
-  - Overview: part11_ecological_information/index.md
+  - Overview: part12_ecological_information/index.md
 
 # Record
 - 后记:
