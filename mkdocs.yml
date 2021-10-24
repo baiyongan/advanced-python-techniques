@@ -362,7 +362,9 @@ nav:
   - PEP: 
     - 目录: part06_intermediate_reading/pep/content.md
   - Effective Python: 
-    - 目录: part06_intermediate_reading/effective_python/content.md
+    - 英文目录: part06_intermediate_reading/effective_python/content_en.md
+    - 中文目录: part06_intermediate_reading/effective_python/content_zh.md
+
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
     - 01 数据结构与算法: part06_intermediate_reading/python_cookbook/chapter01/item.md
@@ -380,12 +382,13 @@ nav:
     - 13 脚本与系统管理: part06_intermediate_reading/python_cookbook/chapter13/item.md
     - 14 测试、调试和异常: part06_intermediate_reading/python_cookbook/chapter14/item.md
     - 15 C 语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
-  - Python3 面向对象编程: 
+  - Python3 OOP: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
   - Fluent Python: 
     - 目录: part06_intermediate_reading/fluent_python/content.md
-  - Python 架构模式: 
+  - Python Architecture Patterns: 
     - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
+
 # Part07
 - 应用框架:
   - Overview: part07_application_framework/index.md
@@ -423,7 +426,6 @@ nav:
   #   - wrapping up: part09_python_in_action/performance_marketing_report/13_wrapping_up.md
   #   - resources: part09_python_in_action/performance_marketing_report/14_resources.md
     
-
 # Part10
 - 源码剖析:
   - Overview: part10_source_code_analysis/index.md
