@@ -429,6 +429,8 @@ nav:
 # Part10
 - 源码剖析:
   - Overview: part10_source_code_analysis/index.md
+  - The Tao of Python: part10_source_code_analysis/the_tao_of_python.md
+  - MRO in Python: part10_source_code_analysis/mro_in_python.md
 
 # Part11
 - 关联拓展:
