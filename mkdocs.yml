@@ -169,66 +169,66 @@ nav:
     - 英文目录: part04_module_package_library/PyMOTW3/content_en.md
     - 中文目录: part04_module_package_library/PyMOTW3/content_zh.md
 
-    - 01 Text:
+    - 01 文本:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter01_text/index.md
       - string 模块: part04_module_package_library/PyMOTW3/chapter01_text/string.md
 
-    - 02 Data Structures:
+    - 02 数据结构:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter02_data_structures/index.md
 
-    - 03 Algorithms: 
+    - 03 算法: 
       - 章节简介: part04_module_package_library/PyMOTW3/chapter03_algorithms/index.md
       - functools: part04_module_package_library/PyMOTW3/chapter03_algorithms/functools.md
 
-    - 04 Dates and Times:
+    - 04 日期与时间:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter04_dates_and_times/index.md
     
-    - 05 Mathematics:
+    - 05 数学运算:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter05_mathematics/index.md
     
-    - 06 The File System:
+    - 06 文件系统:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter06_the_file_system/index.md
 
-    - 07 Data Persistence and Exchange:
+    - 07 数据持久化与转换:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter07_data_persistence_and_exchange/index.md
     
-    - 08 Data Compression and Archiving:
+    - 08 数据压缩与归档:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter08_data_compression_and_archiving/index.md
     
-    - 09 Cryptography:
+    - 09 加密:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter09_cryptography/index.md
     
-    - 10 Concurrency with Processes, Threads, and Coroutines:
+    - 10 进程、线程与协程的并发:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter10_concurrency/index.md
     
-    - 11 Networking:
+    - 11 网络:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter11_networking/index.md
     
-    - 12 The Internet:
+    - 12 互联网:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter12_the_internet/index.md
    
-    - 13 Email:
+    - 13 邮件:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter13_email/index.md
    
-    - 14 Application Building Blocks:
+    - 14 应用程序构建组件:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter14_application_building_blocks/index.md
    
-    - 15 Internationalization and Localization:
+    - 15 国际化与本地化:
       - 章节简介: part04_module_package_library/PyMOTW3/chapterinternationalization_and_localization/index.md
   
-    - 16 Developer Tools:
+    - 16 开发者工具:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter16_developer_tools/index.md
     
-    - 17 Runtime Features:
+    - 17 运行时特征:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter17_runtime_features/index.md
    
-    - 18 Language Tools:
+    - 18 语言工具:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter18_language_tools/index.md
     
-    - 19 Modules and Packages:
+    - 19 模块与包:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter19_modules_and_packages/index.md
     
-    - 20 Unix-specific Services:
+    - 20 Unix 专属服务:
       - 章节简介: part04_module_package_library/PyMOTW3/chapter20_unix_specific_services/index.md
 
     - 附录: part04_module_package_library/PyMOTW3/appendix.md
