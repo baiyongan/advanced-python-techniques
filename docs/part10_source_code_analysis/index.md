@@ -1,5 +1,7 @@
 # Overview
 
+# A Guide to Python's Magic Methods
+
 # 500 lines or less
 
 ## bottle
