@@ -361,6 +361,9 @@ nav:
     - 目录: part06_intermediate_reading/python_tricks/content.md
   - PEP: 
     - 目录: part06_intermediate_reading/pep/content.md
+  - Python HOWTOs: 
+    - 目录: part06_intermediate_reading/python_how_to/content.md
+
   - Effective Python: 
     - 英文目录: part06_intermediate_reading/effective_python/content_en.md
     - 中文目录: part06_intermediate_reading/effective_python/content_zh.md
