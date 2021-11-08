@@ -19,8 +19,8 @@
 - **Metaclasses and Metaprogramming in Python**
 - **Functional Programming in Python**: Decorators, Generators, Iterators
 - **Descriptors**: The magic behind attribute access in Python
-- How to speedup Python with cython
-- How to speedup Python, without bothering too much, with numba
-- How to make a REST API using django and django-rest-framework (project and slides).
-- How to use websockets in django with channels (slides).
-- Notes on Git (based on the official Git docs, Pro Git book and the Atlassian Git tutorial)
+- How to **speedup Python with cython**
+- How to **speedup Python**, without bothering too much, **with numba**
+- How to **make a REST API** using django and django-rest-framework (project and slides).
+- How to **use websockets** in django with channels (slides).
+<!-- - Notes on Git (based on the official Git docs, Pro Git book and the Atlassian Git tutorial) -->
