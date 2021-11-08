@@ -4,6 +4,7 @@
 ### 0.1.23 (2021-11-08)
 #### Articles
 - 更新 collections & top python developer skills 
+- 更新 part04 popular 3rd party & commonly used libraries contents
 
 <!---------------------------------------------------------->
 ### 0.1.22 (2021-11-01)

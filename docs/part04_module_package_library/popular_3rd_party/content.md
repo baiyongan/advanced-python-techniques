@@ -1,58 +1,11 @@
 # 目录
 
-| 频度排序 | 模块               | 功能                                             |   
-| :------ | :---------------  | :---------------------------------------------- |  
-| 1       | `os`              |                                                 |  
-| 2       | `sys`             |                                                 |  
-| 3       | `time`            |                                                 |  
-| 4       | `re`              |                                                 |  
-| 5       | `json`            |                                                 |  
-| 6       | `random`          |                                                 |  
-| 7       | `logging`         |                                                 |  
-| 8       | `collections`     |                                                 |  
-| 9       | `argparse`        |                                                 |  
-| 10      | `datetime`        |                                                 |  
-| 11      | `subprocess`      |                                                 |  
-| 12      | `requests`        |                                                 |  
-| 13      | `math`            |                                                 |  
-| 14      | `setuptools`      |                                                 |  
-| 15      | `unittest`        |                                                 |  
-| 16      | `threading`       |                                                 |  
-| 17      | `shutil`          |                                                 |  
-| 18      | `copy`            |                                                 |  
-| 19      | `itertools`       |                                                 |  
-| 20      | `functools`       |                                                 |  
-| 21      | `socket`          |                                                 |  
-| 22      | `hashlib`         |                                                 |  
-| 23      | `os.path`         |                                                 |  
-| 24      | `io`              |                                                 |  
-| 25      | `tempfile`        |                                                 |  
-| 26      | `string`          |                                                 |  
-| 27      | `glob`            |                                                 |  
-| 28      | `traceback`       |                                                 |  
-| 29      | `urllib`          |                                                 |  
-| 30      | `base64`          |                                                 |  
-| 31      | `pickle`          |                                                 |  
-| 32      | `codecs`          |                                                 |  
-| 33      | `struct`          |                                                 |  
-| 34      | `pytest`          |                                                 |  
-| 35      | `csv`             |                                                 |  
-| 36      | `uuid`            |                                                 |  
-| 37      | `operator`        |                                                 |  
-| 38      | `inspect`         |                                                 |  
-| 39      | `warnings`        |                                                 |  
-| 40      | `multiprocessing` |                                                 |  
-| 41      | `urllib2`         |                                                 |  
-| 42      | `yaml`            |                                                 |  
-| 43      | `signal`          |                                                 |  
-| 44      | `six`             |                                                 |  
-| 45      | `platform`        |                                                 |  
-| 46      | `bs4`             |                                                 |  
-| 47      | `errno`           |                                                 |  
-| 48      | `urlparse`        |                                                 |  
-| 49      | `types`           |                                                 |  
-| 50      | `pprint`          |                                                 |  
-   
+## category1
+
+## category2
+
+## ... 
+
 <!-- 
 1. os	用在(28679)个项目中
 2.  sys	用在(26398)个项目中
@@ -364,6 +317,22 @@
 299. keras.utils.np_utils	用在(310)个项目中
 300. tokenize	用在(310)个项目中 
 -->
-
+     
+<!-- 我们统计了40,000个Python开源项目，按照模块使用频率列表如下，括号中的数字是使用该模块的项目数。 -->
 <!-- Source: https://codingdict.com/sources/py/all -->
+
+
+<!-- 
+sh
+argparse
+collections
+functools
+glob
+multiprocessing
+os
+Queue
+SimpleHTTPServer
+subprocess
+threading 
+-->
 

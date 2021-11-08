@@ -158,14 +158,20 @@ nav:
 # Part04
 - 功能模块:
   - Overview: part04_module_package_library/index.md
-  - Python 内置:
+  - 内置基础:
     - 目录: part04_module_package_library/standard_library_builtin/content.md
   - 常用必备: 
     - 目录: part04_module_package_library/commonly_used/content.md
-  - 重点进阶:
+  - 重难点进阶:
     - 目录: part04_module_package_library/key_advanced/content.md
     - collections: part04_module_package_library/key_advanced/collections.md
-    - sh: part04_module_package_library/key_advanced/sh.md
+  - 流行第三方库:
+    - 目录: part04_module_package_library/popular_3rd_party/content.md
+    - sh: part04_module_package_library/popular_3rd_party/sh.md
+    - rich: part04_module_package_library/popular_3rd_party/rich.md
+
+
+
 
   - PyMOTW3 系列: 
     - 英文目录: part04_module_package_library/PyMOTW3/content_en.md
@@ -411,6 +417,8 @@ nav:
 # Part09
 - 工程实践:
   - Overview: part09_python_in_action/index.md
+  - Code Snippets: 
+    - 目录: part09_python_in_action/code_snippets/content.md
   - Python 中的数据结构与算法: part09_python_in_action/data_structure_and_algorithm.md
   - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
