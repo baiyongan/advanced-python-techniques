@@ -122,6 +122,8 @@ nav:
   - 数据分析: part01_direction_and_roadmap/python_data_analysis_roadmap.md
   - 数据挖掘: part01_direction_and_roadmap/python_data_mining_roadmap.md
   - 机器学习: part01_direction_and_roadmap/python_machine_learning_roadmap.md
+  - 经验建议:
+    - Top Python Developer Skills: part01_direction_and_roadmap/top_python_developer_skills.md
 
 # Part02
 - 开发工具:
