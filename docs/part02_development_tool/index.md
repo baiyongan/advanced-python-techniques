@@ -49,6 +49,19 @@
 - Anaconda
 - pip
 
+## Linter
+- pylint
+- flask8
+- pycodestyle
+
+## Testing
+- Pytest
+- Coverage
+
+## Deployment
+
+## Version Control
+
 
 
 <!-- Top 10 Best IDE for Python: How to choose the best Python IDE?
