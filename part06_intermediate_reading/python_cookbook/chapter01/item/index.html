@@ -5155,13 +5155,16 @@
                 
                 
                 <h1 id="_1">数据结构和算法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="01">01 将序列分解为单独的变量<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
-<p>任何的序列（或者是可迭代对象）可以通过一个简单的赋值操作来分解为单独的变量。 唯一的要求就是变量的总数和结构必须与序列相吻合。</p>
-<p>不仅仅只是元组或列表，只要对象是可迭代的，就可以执行分解操作。包括字符串，文件对象，迭代器和生成器。</p>
-<div class="admonition tips">
-<p class="admonition-title">Tips</p>
-<p>如果只想使用部分变量，可以将不需要的变量用占位符如 <code>_</code> 替代。</p>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？</p>
 </div>
+<details class="done"><summary>解决方案</summary><p>任何的序列（或者是可迭代对象）可以通过一个简单的赋值操作来分解为单独的变量。 <strong>唯一的要求就是变量的总数和结构必须与序列相吻合。</strong></p>
+<p>不仅仅只是元组或列表，只要对象是可迭代的，就可以执行分解操作。包括字符串，文件对象，迭代器和生成器。</p>
+</details>
+<details class="summary"><summary>讨论</summary><p>如果只想使用部分变量，可以将不需要的变量用占位符如 <code>_</code> 替代。</p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;ACME&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">91.1</span><span class="p">,</span> <span class="p">(</span><span class="mi">2012</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span> <span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">_</span><span class="p">,</span> <span class="n">shares</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">data</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">shares</span>
@@ -5170,9 +5173,14 @@
 <span class="mf">91.1</span>
 <span class="o">&gt;&gt;&gt;</span>
 </code></pre></div>
+</details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="02">02 解压可迭代对象赋值给多个变量<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
-<p>如果一个可迭代对象的元素个数超过变量个数时，会抛出一个 <code>ValueError</code>。 </p>
-<p>此时，可以分析要处理的数据结构，将变动的部分，用星号表达式 <code>*</code> 处理。其中，用 <code>*</code>代替的变量类型始终为 list，即使 list 长度为 0。</p>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>如果一个可迭代对象的元素个数超过变量个数时，会抛出一个 <code>ValueError</code>。 那么怎样才能从这个可迭代对象中解压出 N 个元素出来？</p>
+</div>
+<details class="done"><summary>解决方案</summary><p>此时，可以分析要处理的数据结构，将变动的部分，用星号表达式 <code>*</code> 处理。其中，用 <code>*</code>代替的变量类型始终为 list，即使 list 长度为 0。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># 假设现在有一些用户的记录列表，每条记录包含一个名字、邮件，接着就是不确定数量的电话号码。</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">record</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Dave&#39;</span><span class="p">,</span> <span class="s1">&#39;dave@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;773-555-1212&#39;</span><span class="p">,</span> <span class="s1">&#39;847-555-1212&#39;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="o">*</span><span class="n">phone_numbers</span> <span class="o">=</span> <span class="n">record</span>
@@ -5184,11 +5192,9 @@
 <span class="p">[</span><span class="s1">&#39;773-555-1212&#39;</span><span class="p">,</span> <span class="s1">&#39;847-555-1212&#39;</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span>
 </code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>星号表达式可以用在可迭代对象的开头，中间，或结尾，以及结合占位符用于嵌套的结构。</strong></p>
+</details>
+<details class="summary"><summary>讨论</summary><p><strong>星号表达式可以用在可迭代对象的开头，中间，或结尾，以及结合占位符用于嵌套的结构。</strong></p>
 <p>扩展的迭代解压语法是专门为解压不确定个数或任意个数元素的可迭代对象而设计的。 通常，这些可迭代对象的元素结构有确定的规则（比如第 1 个元素后面都是电话号码）， 星号表达式让开发人员可以很容易的利用这些规则来解压出元素来。 </p>
-</div>
 <h3 id="_2">星号表达式的常用场景<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>迭代元素为可变长元组的序列</li>
@@ -5229,9 +5235,16 @@
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">head</span><span class="p">,</span> <span class="o">*</span><span class="n">tail</span> <span class="o">=</span> <span class="n">items</span>
 </code></pre></div>
+</details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="03-n">03 保留最后N个元素<a class="headerlink" href="#03-n" title="Permanent link">&para;</a></h2>
-<p>在迭代操作或者其他操作的时候，可以使用 <code>collections.deque</code> 来实现只保留最后有限几个元素的历史记录。</p>
-<p>使用 <code>deque(maxlen=N)</code> 构造函数会新建一个固定大小的队列。当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。</p>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>在迭代操作或者其他操作的时候，怎样只保留最后有限几个元素的历史记录？</p>
+</div>
+<details class="done"><summary>解决方案</summary><p>在迭代操作或者其他操作的时候，可以使用 <code>collections.deque</code> 来实现只保留最后有限几个元素的历史记录。</p>
+</details>
+<details class="summary"><summary>讨论</summary><p>使用 <code>deque(maxlen=N)</code> 构造函数会新建一个固定大小的队列。当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。</p>
 <p>相对于手动在一个列表上实现这一的操作（比如增加、删除等等）。使用 <code>collections.deque</code> 会更加优雅并且运行得更快。</p>
 <p><code>deque</code> 类可以被用在任何只需要一个简单队列数据结构的场合，并且可以在队列的两端执行添加和弹出元素的操作。</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
@@ -5251,29 +5264,169 @@
 <span class="o">&gt;&gt;&gt;</span> <span class="n">q</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
 <span class="mi">4</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>在队列两端插入或删除元素时间复杂度都是 O(1) ，区别于列表，在列表的开头插入或删除元素的时间复杂度为 O(N)。</p>
-</div>
+</details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="04-n">04 查找最大或最小的N个元素<a class="headerlink" href="#04-n" title="Permanent link">&para;</a></h2>
-<p>使用 <code>heapq</code> 模块的两个函数：<code>nlargest()</code> 和 <code>nsmallest()</code> 可以从一个集合中获得最大或者最小的 N 个元素列表。</p>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>怎样从一个集合中获得最大或者最小的 N 个元素列表？</p>
+</div>
+<details class="done"><summary>解决方案</summary><p>使用 <code>heapq</code> 模块的两个函数：<code>nlargest()</code> 和 <code>nsmallest()</code>。</p>
+<p><strong>除了基本用法，两个函数都能接受一个关键字参数，用于更复杂的数据结构中</strong>
+<div class="highlight"><pre><span></span><code>    <span class="n">portfolio</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;IBM&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">91.1</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;AAPL&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">543.22</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;FB&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">21.09</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;HPQ&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">31.75</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;YHOO&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">45</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">16.35</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;ACME&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">:</span> <span class="mf">115.65</span><span class="p">}</span>
+<span class="p">]</span>
+<span class="n">cheap</span> <span class="o">=</span> <span class="n">heapq</span><span class="o">.</span><span class="n">nsmallest</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">portfolio</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span>
+<span class="n">expensive</span> <span class="o">=</span> <span class="n">heapq</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">portfolio</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span>
+</code></pre></div></p>
+</details>
+<details class="summary"><summary>讨论</summary><p>堆数据结构最重要的特征是 heap[0] 永远是最小的元素。并且剩余的元素可以很容易的通过调用 heapq.heappop() 方法得到，</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">heapq</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heap</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heapify</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heap</span>
+<span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="c1"># 如果想要查找最小的 3 个元素，可以使用如下操作</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="o">-</span><span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">heap</span><span class="p">)</span>
+<span class="mi">2</span>
+</code></pre></div>
+<p>当要查找的元素个数相对比较小的时候，函数 <code>nlargest()</code> 和 <code>nsmallest()</code> 是很合适的。</p>
+<p>如果仅需要查找唯一的最小或最大（N=1）的元素的话，那么使用 <code>min()</code> 和 <code>max()</code> 函数会更快些。 </p>
+<p>如果 N 的大小和集合大小接近的时候，通常先排序这个集合然后再使用切片操作会更快点 （<code>sorted(items)[:N]</code> 或者是 <code>sorted(items)[-N:]</code>）</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>heapq</code> 模块的官方文档里面也详细的介绍了堆数据结构底层的实现细节。</p>
+</div>
+</details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="05">05 实现一个优先级队列<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>怎样实现一个按优先级排序的队列？ 并且在这个队列上面每次 pop 操作总是返回优先级最高的那个元素</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="06">06 字典中的键映射多个值<a class="headerlink" href="#06" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="07">07 字典排序<a class="headerlink" href="#07" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="08">08 字典的运算<a class="headerlink" href="#08" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="09">09 查找两字典的相同点<a class="headerlink" href="#09" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="10">10 删除序列相同元素并保持顺序<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="11">11 命名切片<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="12">12 序列中出现次数最多的元素<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="13">13 通过某个关键字排序一个字典列表<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="14">14 排序不支持原生比较的对象<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="15">15 通过某个字段将记录分组<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="16">16 过滤序列元素<a class="headerlink" href="#16" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="17">17 从字典中提取子集<a class="headerlink" href="#17" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="18">18 映射名称到序列元素<a class="headerlink" href="#18" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="19">19 转换并同时计算数据<a class="headerlink" href="#19" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="20">20 合并多个字典或映射<a class="headerlink" href="#20" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
 <h2 id="_3">总结<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">总结</p>
+</div>
                 
               
 
