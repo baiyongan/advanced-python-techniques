@@ -1,6 +1,12 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.25 (2021-11-15)
+#### Articles
+- 更新 cookbook chapter01 item01-06
+- 更新 effective python chapter01 item01
+
+<!---------------------------------------------------------->
 ### 0.1.23 (2021-11-08)
 #### Articles
 - 更新 collections & top python developer skills 
