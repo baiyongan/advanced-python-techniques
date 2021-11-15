@@ -43,4 +43,4 @@
 ## 拓展阅读
 
 - [yasoob/intermediatePython](https://github.com/yasoob/intermediatePython)
-- [Python进阶](py.eastlakeside.cn)
+- [Python进阶](https://eastlakeside.gitbook.io/interpy-zh/)
