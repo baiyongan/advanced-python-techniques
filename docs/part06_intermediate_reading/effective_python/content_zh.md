@@ -5,30 +5,30 @@
 ??? abstract
     Pythonic 风格的代码，是开发者在使用 Python 语言编程并相互协作的过程中逐渐形成的。本章讲解如何采用这样的风格编写常见的Python代码。 
 
-- [x] 1 Know Which Version of Python You’re Using
-- [x] 2 Follow the PEP 8 Style Guide
-- [x] 3 Know the Differences Between bytes and str
-- [ ] 4 Prefer Interpolated F-Strings Over C-style Format Strings and str.format
-- [ ] 5 Write Helper Functions Instead of Complex Expressions
-- [ ] 6 Prefer Multiple Assignment Unpacking Over Indexing
-- [ ] 7 Prefer enumerate Over range
-- [ ] 8 Use zip to Process Iterators in Parallel
-- [ ] 9 Avoid else Blocks After for and while Loops
-- [ ] 10 Prevent Repetition with Assignment Expressions
+- [x] 1 查询自己使用的 Python 版本
+- [x] 2 遵循 PEP 8 风格指南
+- [x] 3 了解 bytes 与 str 的区别
+- [ ] 4 用支持差值的 f-string 取代 C 风格的格式字符串与 str.format 方法
+- [ ] 5 用辅助函数取代复杂的表达式
+- [ ] 6 把数据结构直接拆分到多个变量里，不要专门通过下标访问
+- [ ] 7 尽量用 enumerate 取代 range
+- [ ] 8 用 zip 函数同时遍历两个迭代器
+- [ ] 9 不要再 for 与 while 循环后面写 else 
+- [ ] 10 用赋值表达式减少代码重复
 
 ## Chapter 2: 列表与字典
 
 ??? abstract
-    在Python语言中h处理信息时，最常用的方法是把一系列数值保存到列表（list）中。另外一种跟它互补的结构，是字典（dict），字典可以把它存储的查找键（key）映射到对应的值（value）上。本章讲解如何采用这些数据结构来编写程序。
+    在Python语言中处理信息时，最常用的方法是把一系列数值保存到列表（list）中。另外一种跟它互补的结构，是字典（dict），字典可以把它存储的查找键（key）映射到对应的值（value）上。本章讲解如何采用这些数据结构来编写程序。
 
-- [ ] 11 Know How to Slice Sequences
-- [ ] 12 Avoid Striding and Slicing in a Single Expression
-- [ ] 13 Prefer Catch-All Unpacking Over Slicing
-- [ ] 14 Sort by Complex Criteria Using the key Parameter
-- [ ] 15 Be Cautious When Relying on dict Insertion Ordering
-- [ ] 16 Prefer get Over in and KeyError to Handle Missing Dictionary Keys
-- [ ] 17 Prefer defaultdict Over setdefault to Handle Missing Items in Internal State
-- [ ] 18 Know How to Construct Key-Dependent Default Values with \_\_missing\_\_
+- [ ] 11 学会对序列做切片
+- [ ] 12 不要再切片里同时指定起止下标与步进
+- [ ] 13 通过带星号的 unpacking 操作来捕获多个元素，而不是用切片
+- [ ] 14 用 sort 方法的 key 参数，来表示复杂的排序逻辑
+- [ ] 15 不要过分依赖给字典添加条目时所用的顺序
+- [ ] 16 用 get 来处理键不在字典中的情况，不要用 in 与 KeyError
+- [ ] 17 用 defaultdict 处理内部状态中缺失的元素，而不要用 setdefault
+- [ ] 18 学会利用 \_\_missing\_\_ 构造依赖键的默认值
 
 ## Chapter 3: 函数
 

@@ -165,12 +165,11 @@ nav:
   - 重难点进阶:
     - 目录: part04_module_package_library/key_advanced/content.md
     - collections: part04_module_package_library/key_advanced/collections.md
+
   - 流行第三方库:
     - 目录: part04_module_package_library/popular_3rd_party/content.md
     - sh: part04_module_package_library/popular_3rd_party/sh.md
     - rich: part04_module_package_library/popular_3rd_party/rich.md
-
-
 
 
   - PyMOTW3 系列: 
@@ -363,18 +362,26 @@ nav:
 # Part06
 - 进阶阅读:
   - Overview: part06_intermediate_reading/index.md
+  
   - Intermediate Python: 
     - 目录: part06_intermediate_reading/intermediate_python/content.md
+  
   - Python Tricks: 
     - 目录: part06_intermediate_reading/python_tricks/content.md
-  - PEP: 
-    - 目录: part06_intermediate_reading/pep/content.md
-  - Python HOWTOs: 
-    - 目录: part06_intermediate_reading/python_how_to/content.md
 
   - Effective Python: 
     - 英文目录: part06_intermediate_reading/effective_python/content_en.md
     - 中文目录: part06_intermediate_reading/effective_python/content_zh.md
+    - 01 培养 Pythonic 思维: part06_intermediate_reading/effective_python/chapter01/item.md
+    - 02 列表与字典: part06_intermediate_reading/effective_python/chapter02/item.md
+    - 03 函数: part06_intermediate_reading/effective_python/chapter03/item.md
+    - 04 推导与生成: part06_intermediate_reading/effective_python/chapter04/item.md
+    - 05 类与接口: part06_intermediate_reading/effective_python/chapter05/item.md
+    - 06 元类与属性: part06_intermediate_reading/effective_python/chapter06/item.md
+    - 07 开发与并行: part06_intermediate_reading/effective_python/chapter07/item.md
+    - 08 稳定与性能: part06_intermediate_reading/effective_python/chapter08/item.md
+    - 09 测试与调试: part06_intermediate_reading/effective_python/chapter09/item.md
+    - 10 协作开发: part06_intermediate_reading/effective_python/chapter10/item.md
 
   - Python Cookbook: 
     - 目录: part06_intermediate_reading/python_cookbook/content.md
@@ -393,12 +400,21 @@ nav:
     - 13 脚本与系统管理: part06_intermediate_reading/python_cookbook/chapter13/item.md
     - 14 测试、调试和异常: part06_intermediate_reading/python_cookbook/chapter14/item.md
     - 15 C 语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
+  
   - Python3 OOP: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
+  
   - Fluent Python: 
     - 目录: part06_intermediate_reading/fluent_python/content.md
+  
   - Python Architecture Patterns: 
     - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
+
+  - PEP: 
+    - 目录: part06_intermediate_reading/pep/content.md
+  
+  - Python HOWTOs: 
+    - 目录: part06_intermediate_reading/python_how_to/content.md
 
 # Part07
 - 应用框架:
