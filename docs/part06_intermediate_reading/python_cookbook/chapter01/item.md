@@ -5,6 +5,8 @@
 !!! question "问题"
     有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？
 
+    - **使用占位符如 `_`**
+
 ??? done "解决方案"
     任何的序列（或者是可迭代对象）可以通过一个简单的赋值操作来分解为单独的变量。 **唯一的要求就是变量的总数和结构必须与序列相吻合。**
 
@@ -27,6 +29,8 @@
 
 !!! question "问题"
     如果一个可迭代对象的元素个数超过变量个数时，会抛出一个 `ValueError`。 那么怎样才能从这个可迭代对象中解压出 N 个元素出来？
+
+    - **使用星号表达式 `*`**
 
 ??? done "解决方案"
     此时，可以分析要处理的数据结构，将变动的部分，用星号表达式 `*` 处理。其中，用 `*`代替的变量类型始终为 list，即使 list 长度为 0。
@@ -99,6 +103,8 @@
 !!! question "问题"
     在迭代操作或者其他操作的时候，怎样只保留最后有限几个元素的历史记录？
 
+    - **使用 `collections.deque`**
+
 ??? done "解决方案"
     在迭代操作或者其他操作的时候，可以使用 `collections.deque` 来实现只保留最后有限几个元素的历史记录。
 
@@ -135,6 +141,8 @@
 
 !!! question "问题"
     怎样从一个集合中获得最大或者最小的 N 个元素列表？
+
+    - **使用 `heapq` 模块的两个函数：`nlargest()` 和 `nsmallest()`。**
 
 ??? done "解决方案"
     使用 `heapq` 模块的两个函数：`nlargest()` 和 `nsmallest()`。
@@ -197,6 +205,8 @@
 !!! question "问题"
     怎样实现一个键对应多个值的字典（也叫 `multidict`）？
 
+    - **用 `colllections` 模块中的 `defaultdict` 来构造**
+  
 ??? done "解决方案"
     `dict` 就是一个 key 对应一个 value 的映射。如果需要一个 key 映射多个 values，就需要将 values 放入一个 `container` 中，例如 `list` 或 `set`。
     
@@ -253,24 +263,104 @@
         d[key].append(value)
     ```
 
-
 <!-- -------------------------------------------------------------------------- -->
 ## 07 字典排序
 
 !!! question "问题"
+    如何创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序？
+
+    - **使用 `collections` 模块中的 `OrderedDict` 类**
 
 ??? done "解决方案"
+    `collections` 模块中的 `OrderedDict` 类，在迭代操作的时候会保持元素被插入时的顺序。
+
+    当想要构建一个将来需要序列化或编码成其他格式的映射的时候，比如，想精确控制以 JSON 编码后字段的顺序，可以先使用 OrderedDict 来构建这样的数据。
+
+    ```python
+    from collections import OrderedDict
+
+    d = OrderedDict()
+    d['foo'] = 1
+    d['bar'] = 2
+    d['spam'] = 3
+    d['grok'] = 4
+    # Outputs "foo 1", "bar 2", "spam 3", "grok 4"
+    for key in d:
+        print(key, d[key])
+
+    >>> import json
+    >>> json.dumps(d)
+    '{"foo": 1, "bar": 2, "spam": 3, "grok": 4}'
+    ```
 
 ??? summary "讨论"
+    `OrderedDict` 内部维护着一个根据键插入顺序排序的双向链表。每次当一个新的元素插入进来的时候， 它会被放到链表的尾部。对于一个已经存在的键的重复赋值不会改变键的顺序。
+
+    !!! attention
+        **一个 `OrderedDict` 的大小是一个普通字典的两倍，因为它内部维护着另外一个链表。** 如果你要构建一个需要大量 `OrderedDict` 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 `OrderedDict` 列表中去）， 那么你就得仔细权衡一下是否使用 Ord`eredDict 带来的好处要大过额外内存消耗的影响。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 08 字典的运算
 
 !!! question "问题"
+    怎样在数据字典中执行一些计算操作（比如求最小值、最大值、排序等等）？
+
+    - **使用 `zip()` 函数**
 
 ??? done "解决方案"
+    为了对字典值执行计算操作，通常需要使用 `zip()` 函数先将键和值反转过来。
+
+    ```python
+    prices = {
+        'ACME': 45.23,
+        'AAPL': 612.78,
+        'IBM': 205.55,
+        'HPQ': 37.20,
+        'FB': 10.75
+    }
+    ```
+
+    - 求字典中 value 的最大最小值
+
+    ```python
+    min_price = min(zip(prices.values(), prices.keys()))
+    # min_price is (10.75, 'FB')
+    max_price = max(zip(prices.values(), prices.keys()))
+    # max_price is (612.78, 'AAPL')
+    ```
+
+    - 对字典中 value 进行排序
+
+    ```python
+    prices_sorted = sorted(zip(prices.values(), prices.keys()))
+    # prices_sorted is [(10.75, 'FB'), (37.2, 'HPQ'),
+    #                   (45.23, 'ACME'), (205.55, 'IBM'),
+    #                   (612.78, 'AAPL')]
+    ```
+  
+    !!! attention
+        需要注意的是 `zip()` 函数创建的是一个只能访问一次的迭代器。 
+
+        ```python
+        prices_and_names = zip(prices.values(), prices.keys())
+        print(min(prices_and_names)) # OK
+        print(max(prices_and_names)) # ValueError: max() arg is an empty sequence
+        ```
 
 ??? summary "讨论"
+    `zip()` 函数方案会将字典”反转”为 (值，键) 元组序列。当比较两个元组的时候，值会先进行比较，然后才是键。 这样的话，通过一条简单的语句就能很轻松地实现在字典上的求最值和排序操作了。
+
+    !!! attention
+        当多个实体拥有相同的值的时候，键会决定返回结果。 比如，在执行 `min()` 和 `max()` 操作的时候，如果恰巧最小或最大值有重复的，那么拥有最小或最大键的实体会返回。
+        
+        ```python
+        >>> prices = { 'AAA' : 45.23, 'ZZZ': 45.23 }
+        >>> min(zip(prices.values(), prices.keys()))
+        (45.23, 'AAA')
+        >>> max(zip(prices.values(), prices.keys()))
+        (45.23, 'ZZZ')
+        >>>
+        ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 09 查找两字典的相同点
