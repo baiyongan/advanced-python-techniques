@@ -366,19 +366,108 @@
 ## 09 查找两字典的相同点
 
 !!! question "问题"
+    怎样在两个字典中寻找相同点（比如相同的键、相同的值等等）？
+
+    - 在两字典的 `keys()` 或者 `items()` 方法返回结果上执行集合操作: `&`, `-` 
 
 ??? done "解决方案"
+    ```python
+    a = {
+        'x' : 1,
+        'y' : 2,
+        'z' : 3
+    }
+
+    b = {
+        'w' : 10,
+        'x' : 11,
+        'y' : 2
+    }
+
+    # Find keys in common
+    a.keys() & b.keys() # { 'x', 'y' }
+    # Find keys in a that are not in b
+    a.keys() - b.keys() # { 'z' }
+    # Find (key,value) pairs in common
+    a.items() & b.items() # { ('y', 2) }
+    ```
+
+    !!! tip
+        这些操作也可以用于修改或者过滤字典元素。 比如，假如你想以现有字典构造一个排除几个指定键的新字典。 下面利用字典推导来实现这样的需求：
+
+        ```python
+        # Make a new dictionary with certain keys removed
+        c = {key:a[key] for key in a.keys() - {'z', 'w'}}
+        # c is {'x': 1, 'y': 2}
+        ```
 
 ??? summary "讨论"
+    一个字典就是一个键集合与值集合的映射关系。 
+    
+    字典的 `keys()` 方法返回一个展现键集合的键视图对象。 键视图也支持集合操作，比如集合并、交、差运算。 所以，如果想对集合的键执行一些普通的集合操作，可以直接使用键视图对象而不用先将它们转换成一个 set。
+
+    字典的 `items()` 方法返回一个包含 (键，值) 对的元素视图对象。 这个对象同样也支持集合操作，并且可以被用来查找两个字典有哪些相同的键值对。
+
+    字典的 `values()` ，并不支持这里介绍的集合操作。 某种程度上是因为值视图不能保证所有的值互不相同，这样会导致某些集合操作会出现问题。 不过，如果你硬要在值上面执行这些集合操作的话，可以先将值集合转换成 set，然后再执行集合运算。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 10 删除序列相同元素并保持顺序
 
 !!! question "问题"
+    怎样在一个序列上面保持元素顺序的同时消除重复的值？
+
+    - hashable 类型
+    - unhashable 类型
 
 ??? done "解决方案"
 
+    - 方式一：如果序列上的值都是 `hashable` 类型，可以利用集合或者生成器来解决这个问题。
+    ```python
+    def dedupe(items):
+        seen = set()
+        for item in items:
+            if item not in seen:
+                yield item
+                seen.add(item)
+
+    >>> a = [1, 5, 2, 1, 9, 1, 5, 10]
+    >>> list(dedupe(a))
+    [1, 5, 2, 9, 10]
+    ```
+
+    - 方式二：如果要消除元素不可哈希（比如 dict 类型）的序列中重复元素，需要将上述代码稍微改变一下
+    ```python
+    def dedupe(items, key=None):
+        seen = set()
+        for item in items:  # key 参数指定了一个函数，将序列元素转换成 hashable 类型
+            val = item if key is None else key(item)
+            if val not in seen:
+                yield item
+                seen.add(val)
+
+    >>> a = [ {'x':1, 'y':2}, {'x':1, 'y':3}, {'x':1, 'y':2}, {'x':2, 'y':4}]
+    >>> list(dedupe(a, key=lambda d: (d['x'],d['y'])))
+    [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 2, 'y': 4}]
+    >>> list(dedupe(a, key=lambda d: d['x']))
+    [{'x': 1, 'y': 2}, {'x': 2, 'y': 4}]
+    >>>
+    ```
+
+    **想基于单个字段、属性或者某个更大的数据结构来消除重复元素，第二种方案同样可以胜任。**
+
 ??? summary "讨论"
+
+    - `set()` 可以用来消除重复元素，但是不能维护元素的顺序
+    - 方式二中使用了生成器函数，让我们的函数更加通用，不仅仅是局限于列表处理。 如果想读取一个文件，消除重复行，可以这样做：
+
+    ```python
+    with open(somefile,'r') as f:
+    for line in dedupe(f):
+        ...
+    ```
+
+    !!! tip
+        上述 `key` 函数参数模仿了 `sorted()` , `min()` 和 `max()` 等内置函数的相似功能。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 11 命名切片

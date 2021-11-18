@@ -1,7 +1,3 @@
 # Advanced Python Techniques
 
-## 目标
-
-## 内容
-
-## License
+访问网址：http://106.14.160.45:8080
