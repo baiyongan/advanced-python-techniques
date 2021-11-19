@@ -3831,6 +3831,19 @@
     2 遵循 PEP 8 风格指南
   </a>
   
+    <nav class="md-nav" aria-label="2 遵循 PEP 8 风格指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    命名
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3890,7 +3903,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     本章小结
   </a>
   
@@ -4732,6 +4745,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
+        Python 中的 GIL
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -5027,6 +5052,19 @@
     2 遵循 PEP 8 风格指南
   </a>
   
+    <nav class="md-nav" aria-label="2 遵循 PEP 8 风格指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    命名
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5086,7 +5124,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     本章小结
   </a>
   
@@ -5108,19 +5146,42 @@
 
                 
                 
-                <h1 id="pythonic">培养 Pythonic 思维<a class="headerlink" href="#pythonic" title="Permanent link">&para;</a></h1>
+                <h1 id="pythonic">第一章 培养 Pythonic 思维<a class="headerlink" href="#pythonic" title="Permanent link">&para;</a></h1>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="1-python">1 查询自己使用的 Python 版本<a class="headerlink" href="#1-python" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">要点</p>
+<ul>
+<li>python --version 查询</li>
+<li>sys.version_info 查询细节</li>
+<li>sys.version 查询整体</li>
+</ul>
 </div>
-<details class="summary"><summary></summary></details>
+<details class="summary"><summary></summary><ul>
+<li>2to3 与 six 等工具，可以把代码轻松地适配到 Python3 及其后续版本上。</li>
+</ul>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="2-pep-8">2 遵循 PEP 8 风格指南<a class="headerlink" href="#2-pep-8" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">要点</p>
+<ul>
+<li>统一的代码风格，可以增强代码的可读性，利于多人协作与后续变更</li>
+<li>PEP 8 的重点规则有<strong>空白</strong>、<strong>命名</strong>、<strong>表达式和语句</strong>、</li>
+<li>pylint 是一款流行的 Python 源码静态分析工具，可以自动检查代码是否符合 PEP8 规范</li>
+</ul>
 </div>
-<details class="summary"><summary></summary></details>
+<details class="summary"><summary></summary><h3 id="_1">命名<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>函数、变量及属性，因该用小写字母，单词间用下划线相连，如 lowercase_underscore</li>
+<li>受保护的实例属性，以单个下划线开头，如 _leading_underscore</li>
+<li>私有的实例属性，以两个下划线开头，如 __double_leading_underscore</li>
+<li>类与异常，以每个单词首字母均大写的形式命名，如 CapitalizedWord</li>
+<li>模块级别的常量，全部采用大写字母拼写，下划线连接，如 ALL_CAPS</li>
+<li>类中的实例方法（instance method），应该把首个参数命名为 self，以表示该对象自身</li>
+<li>类方法（class method）的首个参数，应该命名为 cls，以表示该类自身</li>
+</ul>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="3-bytes-str">3 了解 bytes 与 str 的区别<a class="headerlink" href="#3-bytes-str" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
@@ -5169,8 +5230,10 @@
 <p class="admonition-title">要点</p>
 </div>
 <details class="summary"><summary></summary></details>
-<h2 id="_1">本章小结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="admonition example"></div>
+<h2 id="_2">本章小结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p>总结</p>
+</div>
                 
               
 

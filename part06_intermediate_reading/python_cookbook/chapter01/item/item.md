@@ -5,6 +5,8 @@
 !!! question "问题"
     有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？
 
+    - **使用占位符如 `_`**
+
 ??? done "解决方案"
     任何的序列（或者是可迭代对象）可以通过一个简单的赋值操作来分解为单独的变量。 **唯一的要求就是变量的总数和结构必须与序列相吻合。**
 
@@ -27,6 +29,8 @@
 
 !!! question "问题"
     如果一个可迭代对象的元素个数超过变量个数时，会抛出一个 `ValueError`。 那么怎样才能从这个可迭代对象中解压出 N 个元素出来？
+
+    - **使用星号表达式 `*`**
 
 ??? done "解决方案"
     此时，可以分析要处理的数据结构，将变动的部分，用星号表达式 `*` 处理。其中，用 `*`代替的变量类型始终为 list，即使 list 长度为 0。
@@ -99,6 +103,8 @@
 !!! question "问题"
     在迭代操作或者其他操作的时候，怎样只保留最后有限几个元素的历史记录？
 
+    - **使用 `collections.deque`**
+
 ??? done "解决方案"
     在迭代操作或者其他操作的时候，可以使用 `collections.deque` 来实现只保留最后有限几个元素的历史记录。
 
@@ -135,6 +141,8 @@
 
 !!! question "问题"
     怎样从一个集合中获得最大或者最小的 N 个元素列表？
+
+    - **使用 `heapq` 模块的两个函数：`nlargest()` 和 `nsmallest()`。**
 
 ??? done "解决方案"
     使用 `heapq` 模块的两个函数：`nlargest()` 和 `nsmallest()`。
@@ -197,6 +205,8 @@
 !!! question "问题"
     怎样实现一个键对应多个值的字典（也叫 `multidict`）？
 
+    - **用 `colllections` 模块中的 `defaultdict` 来构造**
+  
 ??? done "解决方案"
     `dict` 就是一个 key 对应一个 value 的映射。如果需要一个 key 映射多个 values，就需要将 values 放入一个 `container` 中，例如 `list` 或 `set`。
     
@@ -253,69 +263,355 @@
         d[key].append(value)
     ```
 
-
 <!-- -------------------------------------------------------------------------- -->
 ## 07 字典排序
 
 !!! question "问题"
+    如何创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序？
+
+    - **使用 `collections` 模块中的 `OrderedDict` 类**
 
 ??? done "解决方案"
+    `collections` 模块中的 `OrderedDict` 类，在迭代操作的时候会保持元素被插入时的顺序。
+
+    当想要构建一个将来需要序列化或编码成其他格式的映射的时候，比如，想精确控制以 JSON 编码后字段的顺序，可以先使用 OrderedDict 来构建这样的数据。
+
+    ```python
+    from collections import OrderedDict
+
+    d = OrderedDict()
+    d['foo'] = 1
+    d['bar'] = 2
+    d['spam'] = 3
+    d['grok'] = 4
+    # Outputs "foo 1", "bar 2", "spam 3", "grok 4"
+    for key in d:
+        print(key, d[key])
+
+    >>> import json
+    >>> json.dumps(d)
+    '{"foo": 1, "bar": 2, "spam": 3, "grok": 4}'
+    ```
 
 ??? summary "讨论"
+    `OrderedDict` 内部维护着一个根据键插入顺序排序的双向链表。每次当一个新的元素插入进来的时候， 它会被放到链表的尾部。对于一个已经存在的键的重复赋值不会改变键的顺序。
+
+    !!! attention
+        **一个 `OrderedDict` 的大小是一个普通字典的两倍，因为它内部维护着另外一个链表。** 如果你要构建一个需要大量 `OrderedDict` 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 `OrderedDict` 列表中去）， 那么你就得仔细权衡一下是否使用 Ord`eredDict 带来的好处要大过额外内存消耗的影响。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 08 字典的运算
 
 !!! question "问题"
+    怎样在数据字典中执行一些计算操作（比如求最小值、最大值、排序等等）？
+
+    - **使用 `zip()` 函数**
 
 ??? done "解决方案"
+    为了对字典值执行计算操作，通常需要使用 `zip()` 函数先将键和值反转过来。
+
+    ```python
+    prices = {
+        'ACME': 45.23,
+        'AAPL': 612.78,
+        'IBM': 205.55,
+        'HPQ': 37.20,
+        'FB': 10.75
+    }
+    ```
+
+    - 求字典中 value 的最大最小值
+
+    ```python
+    min_price = min(zip(prices.values(), prices.keys()))
+    # min_price is (10.75, 'FB')
+    max_price = max(zip(prices.values(), prices.keys()))
+    # max_price is (612.78, 'AAPL')
+    ```
+
+    - 对字典中 value 进行排序
+
+    ```python
+    prices_sorted = sorted(zip(prices.values(), prices.keys()))
+    # prices_sorted is [(10.75, 'FB'), (37.2, 'HPQ'),
+    #                   (45.23, 'ACME'), (205.55, 'IBM'),
+    #                   (612.78, 'AAPL')]
+    ```
+  
+    !!! attention
+        需要注意的是 `zip()` 函数创建的是一个只能访问一次的迭代器。 
+
+        ```python
+        prices_and_names = zip(prices.values(), prices.keys())
+        print(min(prices_and_names)) # OK
+        print(max(prices_and_names)) # ValueError: max() arg is an empty sequence
+        ```
 
 ??? summary "讨论"
+    `zip()` 函数方案会将字典”反转”为 (值，键) 元组序列。当比较两个元组的时候，值会先进行比较，然后才是键。 这样的话，通过一条简单的语句就能很轻松地实现在字典上的求最值和排序操作了。
+
+    !!! attention
+        当多个实体拥有相同的值的时候，键会决定返回结果。 比如，在执行 `min()` 和 `max()` 操作的时候，如果恰巧最小或最大值有重复的，那么拥有最小或最大键的实体会返回。
+        
+        ```python
+        >>> prices = { 'AAA' : 45.23, 'ZZZ': 45.23 }
+        >>> min(zip(prices.values(), prices.keys()))
+        (45.23, 'AAA')
+        >>> max(zip(prices.values(), prices.keys()))
+        (45.23, 'ZZZ')
+        >>>
+        ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 09 查找两字典的相同点
 
 !!! question "问题"
+    怎样在两个字典中寻找相同点（比如相同的键、相同的值等等）？
+
+    - 在两字典的 `keys()` 或者 `items()` 方法返回结果上执行集合操作: `&`, `-` 
 
 ??? done "解决方案"
+    ```python
+    a = {
+        'x' : 1,
+        'y' : 2,
+        'z' : 3
+    }
+
+    b = {
+        'w' : 10,
+        'x' : 11,
+        'y' : 2
+    }
+
+    # Find keys in common
+    a.keys() & b.keys() # { 'x', 'y' }
+    # Find keys in a that are not in b
+    a.keys() - b.keys() # { 'z' }
+    # Find (key,value) pairs in common
+    a.items() & b.items() # { ('y', 2) }
+    ```
+
+    !!! tip
+        这些操作也可以用于修改或者过滤字典元素。 比如，假如你想以现有字典构造一个排除几个指定键的新字典。 下面利用字典推导来实现这样的需求：
+
+        ```python
+        # Make a new dictionary with certain keys removed
+        c = {key:a[key] for key in a.keys() - {'z', 'w'}}
+        # c is {'x': 1, 'y': 2}
+        ```
 
 ??? summary "讨论"
+    一个字典就是一个键集合与值集合的映射关系。 
+    
+    字典的 `keys()` 方法返回一个展现键集合的键视图对象。 键视图也支持集合操作，比如集合并、交、差运算。 所以，如果想对集合的键执行一些普通的集合操作，可以直接使用键视图对象而不用先将它们转换成一个 set。
+
+    字典的 `items()` 方法返回一个包含 (键，值) 对的元素视图对象。 这个对象同样也支持集合操作，并且可以被用来查找两个字典有哪些相同的键值对。
+
+    字典的 `values()` ，并不支持这里介绍的集合操作。 某种程度上是因为值视图不能保证所有的值互不相同，这样会导致某些集合操作会出现问题。 不过，如果你硬要在值上面执行这些集合操作的话，可以先将值集合转换成 set，然后再执行集合运算。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 10 删除序列相同元素并保持顺序
 
 !!! question "问题"
+    怎样在一个序列上面保持元素顺序的同时消除重复的值？
+
+    - hashable 类型
+    - unhashable 类型
 
 ??? done "解决方案"
 
+    - 方式一：如果序列上的值都是 `hashable` 类型，可以利用集合或者生成器来解决这个问题。
+    ```python
+    def dedupe(items):
+        seen = set()
+        for item in items:
+            if item not in seen:
+                yield item
+                seen.add(item)
+
+    >>> a = [1, 5, 2, 1, 9, 1, 5, 10]
+    >>> list(dedupe(a))
+    [1, 5, 2, 9, 10]
+    ```
+
+    - 方式二：如果要消除元素不可哈希（比如 dict 类型）的序列中重复元素，需要将上述代码稍微改变一下
+    ```python
+    def dedupe(items, key=None):
+        seen = set()
+        for item in items:  # key 参数指定了一个函数，将序列元素转换成 hashable 类型
+            val = item if key is None else key(item)
+            if val not in seen:
+                yield item
+                seen.add(val)
+
+    >>> a = [ {'x':1, 'y':2}, {'x':1, 'y':3}, {'x':1, 'y':2}, {'x':2, 'y':4}]
+    >>> list(dedupe(a, key=lambda d: (d['x'],d['y'])))
+    [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 2, 'y': 4}]
+    >>> list(dedupe(a, key=lambda d: d['x']))
+    [{'x': 1, 'y': 2}, {'x': 2, 'y': 4}]
+    >>>
+    ```
+
+    **想基于单个字段、属性或者某个更大的数据结构来消除重复元素，第二种方案同样可以胜任。**
+
 ??? summary "讨论"
+
+    - `set()` 可以用来消除重复元素，但是不能维护元素的顺序
+    - 方式二中使用了生成器函数，让我们的函数更加通用，不仅仅是局限于列表处理。 如果想读取一个文件，消除重复行，可以这样做：
+
+    ```python
+    with open(somefile,'r') as f:
+    for line in dedupe(f):
+        ...
+    ```
+
+    !!! tip
+        上述 `key` 函数参数模仿了 `sorted()` , `min()` 和 `max()` 等内置函数的相似功能。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 11 命名切片
 
 !!! question "问题"
+    程序包含了大量无法直视的硬编码切片，如何清理一下代码？
+
+    - `slice()` 内置函数
 
 ??? done "解决方案"
 
+    ```python
+    ######    0123456789012345678901234567890123456789012345678901234567890'
+    record = '....................100 .......513.25 ..........'
+    # 原方式
+    cost = int(record[20:23]) * float(record[31:37])
+
+    # 命名切片方式
+    SHARES = slice(20, 23)
+    PRICE = slice(31, 37)
+    cost = int(record[SHARES]) * float(record[PRICE])
+    ```
+
+    使用命名切片的方式，可以避免在代码中出现大量难以理解的硬编码下标，可以提升代码的可读性。
+
 ??? summary "讨论"
+    内置的 `slice()` 函数，会创建一个切片对象。所有使用切片的地方，都可以使用切片对象。
+
+    如果现有一个切片对象 a，可以分别调用它的 `a.start` , `a.stop` , `a.step` 属性来获取更多的信息。
+    ```python
+    >>> a = slice(5, 50, 2)
+    >>> a.start
+    5
+    >>> a.stop
+    50
+    >>> a.step
+    2
+    >>>
+    ```
+
+    可以通过调用切片的 `indices(size)` 的方法，将它映射到一个已知大小的序列上。 这个方法返回一个三元组 `(start, stop, step)` ，所有的值都会被缩小，直到适合这个已知序列的边界为止。 这样，使用的时就不会出现 `IndexError` 异常。
+
+    ```python
+    >>> s = 'HelloWorld'
+    >>> a.indices(len(s))
+    (5, 10, 2)
+    >>> for i in range(*a.indices(len(s))):
+    ...     print(s[i])
+    ...
+    W
+    r
+    d
+    >>>
+    ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 12 序列中出现次数最多的元素
 
 !!! question "问题"
+    怎样找出一个序列中出现次数最多的元素呢？
+
+    - `collections.Counter` 类中的 `most_common()` 方法
 
 ??? done "解决方案"
+    假设你有一个单词列表并且想找出哪个单词出现频率最高。
+
+    ```python 
+    words = [
+    'look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes',
+    'the', 'eyes', 'the', 'eyes', 'the', 'eyes', 'not', 'around', 'the',
+    'eyes', "don't", 'look', 'around', 'the', 'eyes', 'look', 'into',
+    'my', 'eyes', "you're", 'under'
+    ]
+    from collections import Counter
+    word_counts = Counter(words)
+    # 出现频率最高的3个单词
+    top_three = word_counts.most_common(3)
+    print(top_three)
+    # Outputs [('eyes', 8), ('the', 5), ('look', 4)]
+    ```
 
 ??? summary "讨论"
+    作为输入， `Counter` 对象可以接受任意的由可哈希（`hashable`）元素构成的序列对象。 在底层实现上，一个 `Counter` 对象就是一个字典，将元素映射到它出现的次数上。
+
+    除了可以用加减法，来手动变更计数外，还可以用 `update()` 方法来更新。
+
+    `Counter` 实例也可以很容易地和数学运算操作相结合，实现 `+` 、`-` 等操作。 
+
+    !!! tip
+        `Counter` 对象在几乎所有需要制表或者计数数据的场合是非常有用的工具。 在解决这类问题的时候你应该优先选择它，而不是手动的利用字典去实现。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 13 通过某个关键字排序一个字典列表
 
 !!! question "问题"
+    现有一个字典列表，如何根据某个或某几个字典字段来排序这个列表？
+
+    - 使用 `operator` 模块的 `itemgetter` 函数
 
 ??? done "解决方案"
+    ```python
+    rows = [
+        {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
+        {'fname': 'David', 'lname': 'Beazley', 'uid': 1002},
+        {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
+        {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
+    ]
+
+    # 根据任意的字典字段来排序输入结果行
+    from operator import itemgetter
+    rows_by_fname = sorted(rows, key=itemgetter('fname'))
+    rows_by_uid = sorted(rows, key=itemgetter('uid'))
+    print(rows_by_fname)
+    print(rows_by_uid)
+    
+    >>>
+    [{'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
+    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'}]
+    [{'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
+    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
+    {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'}]
+    ```
+
+    # `itemgetter()` 函数也支持多个 keys
+    ```python
+    rows_by_lfname = sorted(rows, key=itemgetter('lname','fname'))
+    print(rows_by_lfname)
+    >>>
+    [{'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
+    {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'}]
+    ```
 
 ??? summary "讨论"
+    在上例中， rows 被传递给接受一个关键字参数的 `sorted()` 内置函数。 这个参数是 `callable` 类型，并且从 rows 中接受一个单一元素，然后返回被用来排序的值。 `itemgetter()` 函数就是负责创建这个 `callable` 对象的。
+
+    !!! attention
+        `operator.itemgetter()` 函数有一个被 rows 中的记录用来查找值的索引参数。可以是一个字典键名称， 一个整形值或者任何能够传入一个对象的 `__getitem__()` 方法的值。 如果你传入多个索引参数给 `itemgetter()` ，它生成的 `callable` 对象会返回一个包含所有元素值的元组， 并且 `sorted()` 函数会根据这个元组中元素顺序去排序。这对于同时在几个字段上面进行排序的情形会很有用。
+
+    `itemgetter()` 有时候也可以用 `lambda` 表达式代替，但是，使用 `itemgetter()` 方式会运行的稍微快点。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 14 排序不支持原生比较的对象

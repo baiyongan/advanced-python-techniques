@@ -4082,62 +4082,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
-    14 排序不支持原生比较的对象
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
-    15 通过某个字段将记录分组
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
-    16 过滤序列元素
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
-    17 从字典中提取子集
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#18" class="md-nav__link">
-    18 映射名称到序列元素
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#19" class="md-nav__link">
-    19 转换并同时计算数据
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#20" class="md-nav__link">
-    20 合并多个字典或映射
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    总结
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -4815,6 +4759,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
+        Python 中的 GIL
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -5202,62 +5158,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
-    14 排序不支持原生比较的对象
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
-    15 通过某个字段将记录分组
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
-    16 过滤序列元素
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
-    17 从字典中提取子集
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#18" class="md-nav__link">
-    18 映射名称到序列元素
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#19" class="md-nav__link">
-    19 转换并同时计算数据
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#20" class="md-nav__link">
-    20 合并多个字典或映射
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    总结
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -5280,6 +5180,9 @@
 <div class="admonition question">
 <p class="admonition-title">问题</p>
 <p>有一个包含 N 个元素的元组或者是序列，怎样将它里面的值解压后同时赋值给 N 个变量？</p>
+<ul>
+<li><strong>使用占位符如 <code>_</code></strong></li>
+</ul>
 </div>
 <details class="done"><summary>解决方案</summary><p>任何的序列（或者是可迭代对象）可以通过一个简单的赋值操作来分解为单独的变量。 <strong>唯一的要求就是变量的总数和结构必须与序列相吻合。</strong></p>
 <p>不仅仅只是元组或列表，只要对象是可迭代的，就可以执行分解操作。包括字符串，文件对象，迭代器和生成器。</p>
@@ -5299,6 +5202,9 @@
 <div class="admonition question">
 <p class="admonition-title">问题</p>
 <p>如果一个可迭代对象的元素个数超过变量个数时，会抛出一个 <code>ValueError</code>。 那么怎样才能从这个可迭代对象中解压出 N 个元素出来？</p>
+<ul>
+<li><strong>使用星号表达式 <code>*</code></strong></li>
+</ul>
 </div>
 <details class="done"><summary>解决方案</summary><p>此时，可以分析要处理的数据结构，将变动的部分，用星号表达式 <code>*</code> 处理。其中，用 <code>*</code>代替的变量类型始终为 list，即使 list 长度为 0。</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># 假设现在有一些用户的记录列表，每条记录包含一个名字、邮件，接着就是不确定数量的电话号码。</span>
@@ -5361,6 +5267,9 @@
 <div class="admonition question">
 <p class="admonition-title">问题</p>
 <p>在迭代操作或者其他操作的时候，怎样只保留最后有限几个元素的历史记录？</p>
+<ul>
+<li><strong>使用 <code>collections.deque</code></strong></li>
+</ul>
 </div>
 <details class="done"><summary>解决方案</summary><p>在迭代操作或者其他操作的时候，可以使用 <code>collections.deque</code> 来实现只保留最后有限几个元素的历史记录。</p>
 </details>
@@ -5391,6 +5300,9 @@
 <div class="admonition question">
 <p class="admonition-title">问题</p>
 <p>怎样从一个集合中获得最大或者最小的 N 个元素列表？</p>
+<ul>
+<li><strong>使用 <code>heapq</code> 模块的两个函数：<code>nlargest()</code> 和 <code>nsmallest()</code>。</strong></li>
+</ul>
 </div>
 <details class="done"><summary>解决方案</summary><p>使用 <code>heapq</code> 模块的两个函数：<code>nlargest()</code> 和 <code>nsmallest()</code>。</p>
 <p><strong>除了基本用法，两个函数都能接受一个关键字参数，用于更复杂的数据结构中</strong>
@@ -5442,6 +5354,9 @@
 <div class="admonition question">
 <p class="admonition-title">问题</p>
 <p>怎样实现一个键对应多个值的字典（也叫 <code>multidict</code>）？</p>
+<ul>
+<li><strong>用 <code>colllections</code> 模块中的 <code>defaultdict</code> 来构造</strong></li>
+</ul>
 </div>
 <details class="done"><summary>解决方案</summary><p><code>dict</code> 就是一个 key 对应一个 value 的映射。如果需要一个 key 映射多个 values，就需要将 values 放入一个 <code>container</code> 中，例如 <code>list</code> 或 <code>set</code>。</p>
 <ul>
@@ -5493,51 +5408,319 @@
 <h2 id="07">07 字典排序<a class="headerlink" href="#07" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>如何创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序？</p>
+<ul>
+<li><strong>使用 <code>collections</code> 模块中的 <code>OrderedDict</code> 类</strong></li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p><code>collections</code> 模块中的 <code>OrderedDict</code> 类，在迭代操作的时候会保持元素被插入时的顺序。</p>
+<p>当想要构建一个将来需要序列化或编码成其他格式的映射的时候，比如，想精确控制以 JSON 编码后字段的顺序，可以先使用 OrderedDict 来构建这样的数据。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">&#39;foo&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">&#39;bar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">d</span><span class="p">[</span><span class="s1">&#39;grok&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1"># Outputs &quot;foo 1&quot;, &quot;bar 2&quot;, &quot;spam 3&quot;, &quot;grok 4&quot;</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">json</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="s1">&#39;{&quot;foo&quot;: 1, &quot;bar&quot;: 2, &quot;spam&quot;: 3, &quot;grok&quot;: 4}&#39;</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p><code>OrderedDict</code> 内部维护着一个根据键插入顺序排序的双向链表。每次当一个新的元素插入进来的时候， 它会被放到链表的尾部。对于一个已经存在的键的重复赋值不会改变键的顺序。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>一个 <code>OrderedDict</code> 的大小是一个普通字典的两倍，因为它内部维护着另外一个链表。</strong> 如果你要构建一个需要大量 <code>OrderedDict</code> 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 <code>OrderedDict</code> 列表中去）， 那么你就得仔细权衡一下是否使用 Ord`eredDict 带来的好处要大过额外内存消耗的影响。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="08">08 字典的运算<a class="headerlink" href="#08" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>怎样在数据字典中执行一些计算操作（比如求最小值、最大值、排序等等）？</p>
+<ul>
+<li><strong>使用 <code>zip()</code> 函数</strong></li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>为了对字典值执行计算操作，通常需要使用 <code>zip()</code> 函数先将键和值反转过来。</p>
+<div class="highlight"><pre><span></span><code><span class="n">prices</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;ACME&#39;</span><span class="p">:</span> <span class="mf">45.23</span><span class="p">,</span>
+    <span class="s1">&#39;AAPL&#39;</span><span class="p">:</span> <span class="mf">612.78</span><span class="p">,</span>
+    <span class="s1">&#39;IBM&#39;</span><span class="p">:</span> <span class="mf">205.55</span><span class="p">,</span>
+    <span class="s1">&#39;HPQ&#39;</span><span class="p">:</span> <span class="mf">37.20</span><span class="p">,</span>
+    <span class="s1">&#39;FB&#39;</span><span class="p">:</span> <span class="mf">10.75</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>求字典中 value 的最大最小值</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">min_price</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="c1"># min_price is (10.75, &#39;FB&#39;)</span>
+<span class="n">max_price</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="c1"># max_price is (612.78, &#39;AAPL&#39;)</span>
+</code></pre></div>
+<ul>
+<li>对字典中 value 进行排序</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">prices_sorted</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="c1"># prices_sorted is [(10.75, &#39;FB&#39;), (37.2, &#39;HPQ&#39;),</span>
+<span class="c1">#                   (45.23, &#39;ACME&#39;), (205.55, &#39;IBM&#39;),</span>
+<span class="c1">#                   (612.78, &#39;AAPL&#39;)]</span>
+</code></pre></div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>需要注意的是 <code>zip()</code> 函数创建的是一个只能访问一次的迭代器。 </p>
+<div class="highlight"><pre><span></span><code><span class="n">prices_and_names</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">prices_and_names</span><span class="p">))</span> <span class="c1"># OK</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">prices_and_names</span><span class="p">))</span> <span class="c1"># ValueError: max() arg is an empty sequence</span>
+</code></pre></div>
+</div>
+</details>
+<details class="summary"><summary>讨论</summary><p><code>zip()</code> 函数方案会将字典”反转”为 (值，键) 元组序列。当比较两个元组的时候，值会先进行比较，然后才是键。 这样的话，通过一条简单的语句就能很轻松地实现在字典上的求最值和排序操作了。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>当多个实体拥有相同的值的时候，键会决定返回结果。 比如，在执行 <code>min()</code> 和 <code>max()</code> 操作的时候，如果恰巧最小或最大值有重复的，那么拥有最小或最大键的实体会返回。</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">prices</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;AAA&#39;</span> <span class="p">:</span> <span class="mf">45.23</span><span class="p">,</span> <span class="s1">&#39;ZZZ&#39;</span><span class="p">:</span> <span class="mf">45.23</span> <span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">min</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="p">(</span><span class="mf">45.23</span><span class="p">,</span> <span class="s1">&#39;AAA&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">max</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">prices</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">prices</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="p">(</span><span class="mf">45.23</span><span class="p">,</span> <span class="s1">&#39;ZZZ&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="09">09 查找两字典的相同点<a class="headerlink" href="#09" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>怎样在两个字典中寻找相同点（比如相同的键、相同的值等等）？</p>
+<ul>
+<li>在两字典的 <code>keys()</code> 或者 <code>items()</code> 方法返回结果上执行集合操作: <code>&amp;</code>, <code>-</code> </li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;x&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;y&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;z&#39;</span> <span class="p">:</span> <span class="mi">3</span>
+<span class="p">}</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;w&#39;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s1">&#39;x&#39;</span> <span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+    <span class="s1">&#39;y&#39;</span> <span class="p">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="c1"># Find keys in common</span>
+<span class="n">a</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">b</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># { &#39;x&#39;, &#39;y&#39; }</span>
+<span class="c1"># Find keys in a that are not in b</span>
+<span class="n">a</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">-</span> <span class="n">b</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="c1"># { &#39;z&#39; }</span>
+<span class="c1"># Find (key,value) pairs in common</span>
+<span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">b</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="c1"># { (&#39;y&#39;, 2) }</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>这些操作也可以用于修改或者过滤字典元素。 比如，假如你想以现有字典构造一个排除几个指定键的新字典。 下面利用字典推导来实现这样的需求：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Make a new dictionary with certain keys removed</span>
+<span class="n">c</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span><span class="n">a</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">-</span> <span class="p">{</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">}}</span>
+<span class="c1"># c is {&#39;x&#39;: 1, &#39;y&#39;: 2}</span>
+</code></pre></div>
+</div>
+</details>
+<details class="summary"><summary>讨论</summary><p>一个字典就是一个键集合与值集合的映射关系。 </p>
+<p>字典的 <code>keys()</code> 方法返回一个展现键集合的键视图对象。 键视图也支持集合操作，比如集合并、交、差运算。 所以，如果想对集合的键执行一些普通的集合操作，可以直接使用键视图对象而不用先将它们转换成一个 set。</p>
+<p>字典的 <code>items()</code> 方法返回一个包含 (键，值) 对的元素视图对象。 这个对象同样也支持集合操作，并且可以被用来查找两个字典有哪些相同的键值对。</p>
+<p>字典的 <code>values()</code> ，并不支持这里介绍的集合操作。 某种程度上是因为值视图不能保证所有的值互不相同，这样会导致某些集合操作会出现问题。 不过，如果你硬要在值上面执行这些集合操作的话，可以先将值集合转换成 set，然后再执行集合运算。</p>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="10">10 删除序列相同元素并保持顺序<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>怎样在一个序列上面保持元素顺序的同时消除重复的值？</p>
+<ul>
+<li>hashable 类型</li>
+<li>unhashable 类型</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><ul>
+<li>
+<p>方式一：如果序列上的值都是 <code>hashable</code> 类型，可以利用集合或者生成器来解决这个问题。
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dedupe</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">item</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">dedupe</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>方式二：如果要消除元素不可哈希（比如 dict 类型）的序列中重复元素，需要将上述代码稍微改变一下
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dedupe</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>  <span class="c1"># key 参数指定了一个函数，将序列元素转换成 hashable 类型</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">item</span> <span class="k">if</span> <span class="n">key</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">key</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">val</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">item</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">}]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">dedupe</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">])))</span>
+<span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">dedupe</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]))</span>
+<span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}]</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></p>
+</li>
+</ul>
+<p><strong>想基于单个字段、属性或者某个更大的数据结构来消除重复元素，第二种方案同样可以胜任。</strong></p>
+</details>
+<details class="summary"><summary>讨论</summary><ul>
+<li><code>set()</code> 可以用来消除重复元素，但是不能维护元素的顺序</li>
+<li>方式二中使用了生成器函数，让我们的函数更加通用，不仅仅是局限于列表处理。 如果想读取一个文件，消除重复行，可以这样做：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">somefile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">dedupe</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="o">...</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>上述 <code>key</code> 函数参数模仿了 <code>sorted()</code> , <code>min()</code> 和 <code>max()</code> 等内置函数的相似功能。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="11">11 命名切片<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>程序包含了大量无法直视的硬编码切片，如何清理一下代码？</p>
+<ul>
+<li><code>slice()</code> 内置函数</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="c1">######    0123456789012345678901234567890123456789012345678901234567890&#39;</span>
+<span class="n">record</span> <span class="o">=</span> <span class="s1">&#39;....................100 .......513.25 ..........&#39;</span>
+<span class="c1"># 原方式</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span><span class="p">])</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="mi">31</span><span class="p">:</span><span class="mi">37</span><span class="p">])</span>
+
+<span class="c1"># 命名切片方式</span>
+<span class="n">SHARES</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+<span class="n">PRICE</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">)</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="n">SHARES</span><span class="p">])</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="n">PRICE</span><span class="p">])</span>
+</code></pre></div>
+<p>使用命名切片的方式，可以避免在代码中出现大量难以理解的硬编码下标，可以提升代码的可读性。</p>
+</details>
+<details class="summary"><summary>讨论</summary><p>内置的 <code>slice()</code> 函数，会创建一个切片对象。所有使用切片的地方，都可以使用切片对象。</p>
+<p>如果现有一个切片对象 a，可以分别调用它的 <code>a.start</code> , <code>a.stop</code> , <code>a.step</code> 属性来获取更多的信息。
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">start</span>
+<span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">stop</span>
+<span class="mi">50</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">step</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></p>
+<p>可以通过调用切片的 <code>indices(size)</code> 的方法，将它映射到一个已知大小的序列上。 这个方法返回一个三元组 <code>(start, stop, step)</code> ，所有的值都会被缩小，直到适合这个已知序列的边界为止。 这样，使用的时就不会出现 <code>IndexError</code> 异常。</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;HelloWorld&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">indices</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="o">.</span><span class="n">indices</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))):</span>
+<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="o">...</span>
+<span class="n">W</span>
+<span class="n">r</span>
+<span class="n">d</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="12">12 序列中出现次数最多的元素<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>怎样找出一个序列中出现次数最多的元素呢？</p>
+<ul>
+<li><code>collections.Counter</code> 类中的 <code>most_common()</code> 方法</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>假设你有一个单词列表并且想找出哪个单词出现频率最高。</p>
+<div class="highlight"><pre><span></span><code><span class="n">words</span> <span class="o">=</span> <span class="p">[</span>
+<span class="s1">&#39;look&#39;</span><span class="p">,</span> <span class="s1">&#39;into&#39;</span><span class="p">,</span> <span class="s1">&#39;my&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s1">&#39;look&#39;</span><span class="p">,</span> <span class="s1">&#39;into&#39;</span><span class="p">,</span> <span class="s1">&#39;my&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span>
+<span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s1">&#39;not&#39;</span><span class="p">,</span> <span class="s1">&#39;around&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span>
+<span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s2">&quot;don&#39;t&quot;</span><span class="p">,</span> <span class="s1">&#39;look&#39;</span><span class="p">,</span> <span class="s1">&#39;around&#39;</span><span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s1">&#39;look&#39;</span><span class="p">,</span> <span class="s1">&#39;into&#39;</span><span class="p">,</span>
+<span class="s1">&#39;my&#39;</span><span class="p">,</span> <span class="s1">&#39;eyes&#39;</span><span class="p">,</span> <span class="s2">&quot;you&#39;re&quot;</span><span class="p">,</span> <span class="s1">&#39;under&#39;</span>
+<span class="p">]</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="n">word_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+<span class="c1"># 出现频率最高的3个单词</span>
+<span class="n">top_three</span> <span class="o">=</span> <span class="n">word_counts</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_three</span><span class="p">)</span>
+<span class="c1"># Outputs [(&#39;eyes&#39;, 8), (&#39;the&#39;, 5), (&#39;look&#39;, 4)]</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>作为输入， <code>Counter</code> 对象可以接受任意的由可哈希（<code>hashable</code>）元素构成的序列对象。 在底层实现上，一个 <code>Counter</code> 对象就是一个字典，将元素映射到它出现的次数上。</p>
+<p>除了可以用加减法，来手动变更计数外，还可以用 <code>update()</code> 方法来更新。</p>
+<p><code>Counter</code> 实例也可以很容易地和数学运算操作相结合，实现 <code>+</code> 、<code>-</code> 等操作。 </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>Counter</code> 对象在几乎所有需要制表或者计数数据的场合是非常有用的工具。 在解决这类问题的时候你应该优先选择它，而不是手动的利用字典去实现。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="13">13 通过某个关键字排序一个字典列表<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>现有一个字典列表，如何根据某个或某几个字典字段来排序这个列表？</p>
+<ul>
+<li>使用 <code>operator</code> 模块的 <code>itemgetter</code> 函数</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="n">rows</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Brian&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1003</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;David&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Beazley&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1002</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Cleese&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1001</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Big&#39;</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1004</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># 根据任意的字典字段来排序输入结果行</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="n">rows_by_fname</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;fname&#39;</span><span class="p">))</span>
+<span class="n">rows_by_uid</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;uid&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rows_by_fname</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rows_by_uid</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">[{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Big&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1004</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Brian&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1003</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;David&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1002</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Beazley&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1001</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Cleese&#39;</span><span class="p">}]</span>
+<span class="p">[{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1001</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Cleese&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;David&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1002</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Beazley&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Brian&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1003</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Big&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1004</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">}]</span>
+</code></pre></div>
+<h1 id="itemgetter-keys"><code>itemgetter()</code> 函数也支持多个 keys<a class="headerlink" href="#itemgetter-keys" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="n">rows_by_lfname</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;lname&#39;</span><span class="p">,</span><span class="s1">&#39;fname&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rows_by_lfname</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span>
+<span class="p">[{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;David&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1002</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Beazley&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1001</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Cleese&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Big&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1004</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">},</span>
+<span class="p">{</span><span class="s1">&#39;fname&#39;</span><span class="p">:</span> <span class="s1">&#39;Brian&#39;</span><span class="p">,</span> <span class="s1">&#39;uid&#39;</span><span class="p">:</span> <span class="mi">1003</span><span class="p">,</span> <span class="s1">&#39;lname&#39;</span><span class="p">:</span> <span class="s1">&#39;Jones&#39;</span><span class="p">}]</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>在上例中， rows 被传递给接受一个关键字参数的 <code>sorted()</code> 内置函数。 这个参数是 <code>callable</code> 类型，并且从 rows 中接受一个单一元素，然后返回被用来排序的值。 <code>itemgetter()</code> 函数就是负责创建这个 <code>callable</code> 对象的。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><code>operator.itemgetter()</code> 函数有一个被 rows 中的记录用来查找值的索引参数。可以是一个字典键名称， 一个整形值或者任何能够传入一个对象的 <code>__getitem__()</code> 方法的值。 如果你传入多个索引参数给 <code>itemgetter()</code> ，它生成的 <code>callable</code> 对象会返回一个包含所有元素值的元组， 并且 <code>sorted()</code> 函数会根据这个元组中元素顺序去排序。这对于同时在几个字段上面进行排序的情形会很有用。</p>
+</div>
+<p><code>itemgetter()</code> 有时候也可以用 <code>lambda</code> 表达式代替，但是，使用 <code>itemgetter()</code> 方式会运行的稍微快点。</p>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="14">14 排序不支持原生比较的对象<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
