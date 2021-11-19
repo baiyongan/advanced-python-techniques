@@ -473,28 +473,145 @@
 ## 11 命名切片
 
 !!! question "问题"
+    程序包含了大量无法直视的硬编码切片，如何清理一下代码？
+
+    - `slice()` 内置函数
 
 ??? done "解决方案"
 
+    ```python
+    ######    0123456789012345678901234567890123456789012345678901234567890'
+    record = '....................100 .......513.25 ..........'
+    # 原方式
+    cost = int(record[20:23]) * float(record[31:37])
+
+    # 命名切片方式
+    SHARES = slice(20, 23)
+    PRICE = slice(31, 37)
+    cost = int(record[SHARES]) * float(record[PRICE])
+    ```
+
+    使用命名切片的方式，可以避免在代码中出现大量难以理解的硬编码下标，可以提升代码的可读性。
+
 ??? summary "讨论"
+    内置的 `slice()` 函数，会创建一个切片对象。所有使用切片的地方，都可以使用切片对象。
+
+    如果现有一个切片对象 a，可以分别调用它的 `a.start` , `a.stop` , `a.step` 属性来获取更多的信息。
+    ```python
+    >>> a = slice(5, 50, 2)
+    >>> a.start
+    5
+    >>> a.stop
+    50
+    >>> a.step
+    2
+    >>>
+    ```
+
+    可以通过调用切片的 `indices(size)` 的方法，将它映射到一个已知大小的序列上。 这个方法返回一个三元组 `(start, stop, step)` ，所有的值都会被缩小，直到适合这个已知序列的边界为止。 这样，使用的时就不会出现 `IndexError` 异常。
+
+    ```python
+    >>> s = 'HelloWorld'
+    >>> a.indices(len(s))
+    (5, 10, 2)
+    >>> for i in range(*a.indices(len(s))):
+    ...     print(s[i])
+    ...
+    W
+    r
+    d
+    >>>
+    ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 12 序列中出现次数最多的元素
 
 !!! question "问题"
+    怎样找出一个序列中出现次数最多的元素呢？
+
+    - `collections.Counter` 类中的 `most_common()` 方法
 
 ??? done "解决方案"
+    假设你有一个单词列表并且想找出哪个单词出现频率最高。
+
+    ```python 
+    words = [
+    'look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes',
+    'the', 'eyes', 'the', 'eyes', 'the', 'eyes', 'not', 'around', 'the',
+    'eyes', "don't", 'look', 'around', 'the', 'eyes', 'look', 'into',
+    'my', 'eyes', "you're", 'under'
+    ]
+    from collections import Counter
+    word_counts = Counter(words)
+    # 出现频率最高的3个单词
+    top_three = word_counts.most_common(3)
+    print(top_three)
+    # Outputs [('eyes', 8), ('the', 5), ('look', 4)]
+    ```
 
 ??? summary "讨论"
+    作为输入， `Counter` 对象可以接受任意的由可哈希（`hashable`）元素构成的序列对象。 在底层实现上，一个 `Counter` 对象就是一个字典，将元素映射到它出现的次数上。
+
+    除了可以用加减法，来手动变更计数外，还可以用 `update()` 方法来更新。
+
+    `Counter` 实例也可以很容易地和数学运算操作相结合，实现 `+` 、`-` 等操作。 
+
+    !!! tip
+        `Counter` 对象在几乎所有需要制表或者计数数据的场合是非常有用的工具。 在解决这类问题的时候你应该优先选择它，而不是手动的利用字典去实现。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 13 通过某个关键字排序一个字典列表
 
 !!! question "问题"
+    现有一个字典列表，如何根据某个或某几个字典字段来排序这个列表？
+
+    - 使用 `operator` 模块的 `itemgetter` 函数
 
 ??? done "解决方案"
+    ```python
+    rows = [
+        {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
+        {'fname': 'David', 'lname': 'Beazley', 'uid': 1002},
+        {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
+        {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
+    ]
+
+    # 根据任意的字典字段来排序输入结果行
+    from operator import itemgetter
+    rows_by_fname = sorted(rows, key=itemgetter('fname'))
+    rows_by_uid = sorted(rows, key=itemgetter('uid'))
+    print(rows_by_fname)
+    print(rows_by_uid)
+    
+    >>>
+    [{'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
+    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'}]
+    [{'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
+    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
+    {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'}]
+    ```
+
+    # `itemgetter()` 函数也支持多个 keys
+    ```python
+    rows_by_lfname = sorted(rows, key=itemgetter('lname','fname'))
+    print(rows_by_lfname)
+    >>>
+    [{'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
+    {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'}]
+    ```
 
 ??? summary "讨论"
+    在上例中， rows 被传递给接受一个关键字参数的 `sorted()` 内置函数。 这个参数是 `callable` 类型，并且从 rows 中接受一个单一元素，然后返回被用来排序的值。 `itemgetter()` 函数就是负责创建这个 `callable` 对象的。
+
+    !!! attention
+        `operator.itemgetter()` 函数有一个被 rows 中的记录用来查找值的索引参数。可以是一个字典键名称， 一个整形值或者任何能够传入一个对象的 `__getitem__()` 方法的值。 如果你传入多个索引参数给 `itemgetter()` ，它生成的 `callable` 对象会返回一个包含所有元素值的元组， 并且 `sorted()` 函数会根据这个元组中元素顺序去排序。这对于同时在几个字段上面进行排序的情形会很有用。
+
+    `itemgetter()` 有时候也可以用 `lambda` 表达式代替，但是，使用 `itemgetter()` 方式会运行的稍微快点。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 14 排序不支持原生比较的对象

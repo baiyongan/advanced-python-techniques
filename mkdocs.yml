@@ -439,6 +439,8 @@ nav:
   - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
   - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
+  - Python 中的 GIL: part09_python_in_action/global_interpreter_lock.md
+
   # - Performance Marketing Report:
   #   - introduction: part09_python_in_action/performance_marketing_report/01_introduction.md
   #   - environment: part09_python_in_action/performance_marketing_report/02_environment.md

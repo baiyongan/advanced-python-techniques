@@ -54,6 +54,8 @@ from collections.abc import *
     如果用 C 语言来类比，tuple 对应的是 struct，而 list 对应的是 array
 
 ## namedtuple 的功能
+
+
 ## defaultdict 的功能
 ## deque 的功能
 ## Counter 功能
@@ -64,4 +66,6 @@ from collections.abc import *
 namedtuple 是在 tuple 之上做的一些扩展，defaultdict、Counter、OrderedDict、ChainMap 是在 dict 之上做的一些扩展
 
 ## 拓展阅读
+
+[慕课网 bobby 全栈工程师：python必学模块-collection](https://www.imooc.com/learn/934)
 
