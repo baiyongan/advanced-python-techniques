@@ -1,5 +1,6 @@
-# 前言
+# 
 
+## Python 之禅
 <div class="termy">
 ```python
 $ python3 -m this
@@ -28,9 +29,9 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ```
 
+## Python 技能图谱
+
 </div>
-
-
 
 <!--mark-->
 <p>
