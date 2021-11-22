@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1158,6 +1163,18 @@
     <li class="md-nav__item">
       <a href="../../../../part04_module_package_library/commonly_used/content/" class="md-nav__link">
         目录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../part04_module_package_library/commonly_used/os/" class="md-nav__link">
+        os
       </a>
     </li>
   
@@ -4055,6 +4072,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           10 模块与包
@@ -4070,12 +4089,126 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    01 构建一个模块的层级包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    02 控制模块被全部导入的内容
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    03 使用相对路径名导入包中子模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    04 将模块分割成多个文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05" class="md-nav__link">
+    05 利用命名空间导入目录分散的代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06" class="md-nav__link">
+    06 重新加载模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07" class="md-nav__link">
+    07 运行目录或压缩文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08" class="md-nav__link">
+    08 读取位于包中的数据文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-syspath" class="md-nav__link">
+    09 将文件夹加入到sys.path
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    10 通过字符串名导入模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    11 通过钩子远程加载模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    12 导入模块的同时修改模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    13 安装私有的包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-python" class="md-nav__link">
+    14 创建新的Python环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    15 分发包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
       
     </ul>
   
@@ -4517,6 +4650,45 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      <label class="md-nav__link" for="__nav_9_2">
+        Data Science For Beginners
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Data Science For Beginners" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          Data Science For Beginners
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/content/" class="md-nav__link">
+        目录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -4923,6 +5095,143 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    01 构建一个模块的层级包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    02 控制模块被全部导入的内容
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    03 使用相对路径名导入包中子模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    04 将模块分割成多个文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05" class="md-nav__link">
+    05 利用命名空间导入目录分散的代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06" class="md-nav__link">
+    06 重新加载模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07" class="md-nav__link">
+    07 运行目录或压缩文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#08" class="md-nav__link">
+    08 读取位于包中的数据文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09-syspath" class="md-nav__link">
+    09 将文件夹加入到sys.path
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    10 通过字符串名导入模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    11 通过钩子远程加载模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    12 导入模块的同时修改模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    13 安装私有的包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-python" class="md-nav__link">
+    14 创建新的Python环境
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    15 分发包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -4932,9 +5241,164 @@
 
                 
                 
-                  <h1>10 模块与包</h1>
-                
-                
+                <h1 id="_1">模块与包<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="01">01 构建一个模块的层级包<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>如何将代码组织成由很多分层模块构成的包？</p>
+<ul>
+<li><code>__init__.py</code></li>
+</ul>
+</div>
+<details class="done"><summary>解决方案</summary><p>在文件系统上组织好代码，并确保每个目录都定义了一个 <code>__init__.py</code> 文件，之后，就可以执行相应的 import 语句。</p>
+<div class="highlight"><pre><span></span><code><span class="n">graphics</span><span class="o">/</span>
+    <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">primitive</span><span class="o">/</span>
+        <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">line</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">fill</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">text</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">formats</span><span class="o">/</span>
+        <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">png</span><span class="o">.</span><span class="n">py</span>
+        <span class="n">jpg</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>文件 <code>__init__.py</code> 的目的是要包含不同运行级别的包的可选的初始化代码。举个例子，如果你执行了语句 <code>import graphics</code>， 文件 <code>graphics/__init__.py</code>将被导入,建立graphics 命名空间的内容。</p>
+<p>绝大部分时候让 <code>__init__.py</code> 空着就好。但是有些情况下可能包含代码。 举个例子，能够用 <code>__init__.py</code> 来自动加载子模块。
+<div class="highlight"><pre><span></span><code><span class="c1"># graphics/formats/__init__.py</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">jpg</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">png</span>
+</code></pre></div>
+用户可以仅仅通过 import grahpics.formats 来代替 import graphics.formats.jpg 以及 import graphics.formats.png。</p>
+<p><code>__init__.py</code> 的其他常用用法包括将多个文件合并到一个逻辑命名空间</p>
+</details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="02">02 控制模块被全部导入的内容<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+<p>当使用 <code>from module import *</code> 语句时，如何对从模块或包导出的符号进行精确控制？</p>
+<ul>
+<li>在模块中定义一个变量 <code>__all__</code> 来明确指出需要导出的内容。</li>
+</ul>
+</div>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="c1"># somemodule.py</span>
+<span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">grok</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="n">blah</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="c1"># Only export &#39;spam&#39; and &#39;grok&#39;</span>
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;grok&#39;</span><span class="p">]</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><ul>
+<li>强烈反对使用 <code>from module import *</code> 这种写法，如果不做任何事，这样的方式将会导入所有不以下划线开头的方法。而如果定义了 <code>__all__</code>，则只有被其列出的方法才会被导出。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>如果将 <code>__all__</code>定义为空列表，则没有东西会被导入，如果 <code>__all__</code> 包含未定义的名字，在导入时，会引起 <code>AttributeError</code>。</p>
+</div>
+</details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="03">03 使用相对路径名导入包中子模块<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="04">04 将模块分割成多个文件<a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="05">05 利用命名空间导入目录分散的代码<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="06">06 重新加载模块<a class="headerlink" href="#06" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="07">07 运行目录或压缩文件<a class="headerlink" href="#07" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="08">08 读取位于包中的数据文件<a class="headerlink" href="#08" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="09-syspath">09 将文件夹加入到sys.path<a class="headerlink" href="#09-syspath" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="10">10 通过字符串名导入模块<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="11">11 通过钩子远程加载模块<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="12">12 导入模块的同时修改模块<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="13">13 安装私有的包<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="14-python">14 创建新的Python环境<a class="headerlink" href="#14-python" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="15">15 分发包<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题</p>
+</div>
+<details class="done"><summary>解决方案</summary></details>
+<details class="summary"><summary>讨论</summary></details>
+<!-- -------------------------------------------------------------------------- -->
+<h2 id="_2">总结<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">总结</p>
+</div>
                 
               
 
