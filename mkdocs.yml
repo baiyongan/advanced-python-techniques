@@ -162,6 +162,8 @@ nav:
     - 目录: part04_module_package_library/standard_library_builtin/content.md
   - 常用必备: 
     - 目录: part04_module_package_library/commonly_used/content.md
+    - os: part04_module_package_library/commonly_used/os.md
+
   - 重难点进阶:
     - 目录: part04_module_package_library/key_advanced/content.md
     - collections: part04_module_package_library/key_advanced/collections.md
