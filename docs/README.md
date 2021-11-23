@@ -39,3 +39,15 @@ Namespaces are one honking great idea -- let's do more of those!
 		<iframe allowtransparency="yes" frameborder="0" width="800" height="1200" src="resources/html/python_knowledge_map.html"></iframe>
 	</div>
 </p>
+
+<!-- 
+python map 
+
+- from wikipedia
+- keywords 35
+- builtins 69
+- control
+- native data structure
+- standard libraries
+- applications
+ -->

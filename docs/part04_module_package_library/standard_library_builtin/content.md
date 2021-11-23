@@ -9,10 +9,10 @@
 ## 内置类型
 
 - string 常用方法
-- dict 常用方法
 - list 常用方法
-- set 常用方法
+- dict 常用方法
 - tuple 常用方法
+- set 常用方法
 
 ## 内置异常
 

@@ -160,6 +160,14 @@ nav:
   - Overview: part04_module_package_library/index.md
   - 内置基础:
     - 目录: part04_module_package_library/standard_library_builtin/content.md
+    - 内置函数: part04_module_package_library/standard_library_builtin/builtin_functions.md
+    - 内置类型: 
+      - string: part04_module_package_library/standard_library_builtin/string_methods.md
+      - list: part04_module_package_library/standard_library_builtin/list_methods.md
+      - dict: part04_module_package_library/standard_library_builtin/dict_methods.md
+      - tuple: part04_module_package_library/standard_library_builtin/tuple_methods.md
+      - set: part04_module_package_library/standard_library_builtin/set_methods.md
+
   - 常用必备: 
     - 目录: part04_module_package_library/commonly_used/content.md
     - os: part04_module_package_library/commonly_used/os.md
@@ -432,7 +440,33 @@ nav:
 - 数据分析:
   - Overview: part08_data_analysis/index.md
   - Data Science For Beginners: 
-    - 目录: part08_data_analysis/data_science_for_beginners/content.md
+    - 目录: part08_data_analysis/data_science_for_beginners/content_en.md
+    - 01 Introduction:
+      - part08_data_analysis/data_science_for_beginners/01_introduction/lesson01.md
+      - part08_data_analysis/data_science_for_beginners/01_introduction/lesson02.md
+      - part08_data_analysis/data_science_for_beginners/01_introduction/lesson03.md
+      - part08_data_analysis/data_science_for_beginners/01_introduction/lesson04.md
+    - 02 Working With Data:
+      - part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson05.md
+      - part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson06.md
+      - part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson07.md
+      - part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson08.md
+    - 03 Data Visualization:
+      - part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson09.md
+      - part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson10.md
+      - part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson11.md
+      - part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson12.md
+      - part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson13.md
+    - 04 Lifecycle:
+      - part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson14.md
+      - part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson15.md
+      - part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson16.md
+    - 05 Cloud Data:
+      - part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson17.md
+      - part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson18.md
+      - part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19.md
+    - 06 In the Wild:
+      - part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20.md
 
 # Part09
 - 工程实践:
