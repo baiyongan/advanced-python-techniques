@@ -1,6 +1,12 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.29 (2021-11-23)
+#### Features
+- 更新 builtin functions & builtin data structures' methods
+- 更新 Data Science For Beginners from Microsoft contents
+
+<!---------------------------------------------------------->
 ### 0.1.28 (2021-11-22)
 #### Articles
 - 更新 cookbook chapter10 item02
