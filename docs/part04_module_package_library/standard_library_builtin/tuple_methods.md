@@ -80,18 +80,65 @@
 
 ## index()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
 
 
 ## 拓展阅读

@@ -2,664 +2,2863 @@
 
 ## capitalize()
 
-!!! note ""
-    ### Function
-    capitalize() 方法将字符串的第一个字符转换为大写字母，并将所有其他字符（如果有）小写。
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
 
 ## center()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
 
 ## casefold()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
 
 ## count()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## endswith()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## expandtabs()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## encode()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## find()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## format()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## index()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isalnum()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isalpha()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isdecimal()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isdigit()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isidentifier()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## islower()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isnumeric()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isprintable()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isspace()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## istitle()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## isupper()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## join()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## ljust()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rjust()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## lower()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## upper()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## swapcase()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## lstrip()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rstrip()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## strip()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## partition()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## maketrans()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rpartition()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## translate()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## replace()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rfind()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rindex()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## split()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## rsplit()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## splitlines()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## startswith()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## title()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## zfill()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 ## format_map()
 
-!!! note ""
-    ### Function 
-
 !!! abstract ""
-    ### Syntax
+    === "Function"
+    
+        
 
-    ### Parameter
+    === "Syntax"
 
-    ### Return Value
+        ```python
+        
+        ```
 
-!!! note ""
-    ### Example 
+    === "Parameter"
+
+        
+
+    === "Return Value"
+
+        
+
+??? note ""
+    === "Example 1"
+        
+
+        ```python
+
+        ```
+
+        Result 1
+
+        ```python
+
+        ```
+
+    === "Example 2"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 2
+
+        ```python
+
+        ```
+
+    === "Example 3"
+        
+        
+        ```python
+        
+ 
+
+        ```
+
+        Result 3
+
+        ```python
+
+        ```
     
 
 ## 拓展阅读
