@@ -71,12 +71,66 @@
 ## 03 使用相对路径名导入包中子模块
 
 !!! question "问题"
-    
+    将代码组织成包,想用import语句从另一个包名没有硬编码过的包中导入子模块。
+
+    - 使用包的相对导入，使一个模块导入同一个包的另一个模块。
 
 ??? done "解决方案"
+    
+    ```python
+    mypackage/
+        __init__.py
+        A/
+            __init__.py
+            spam.py
+            grok.py
+        B/
+            __init__.py
+            bar.py
+    ```
+    
+    在模块 mypackage.A.spam 中导入同目录下的模块 grok：
+    
+    ```python
+    # mypackage/A/spam.py
+    from . import grok
+    ```
+
+    在模块 mypackage.A.spam 中导入不同目录下的模块 B.bar
+    
+    ```python
+    # mypackage/A/spam.py
+    from ..B import bar
+    ```
 
 ??? summary "讨论"
+    在包内，既可以使用相对路径也可以使用绝对路径来导入。 
+    
+    ```python
+    # mypackage/A/spam.py
+    from mypackage.A import grok # OK
+    from . import grok # OK
+    import grok # Error (not found)
+    ```
 
+    像 mypackage.A 这样使用绝对路径名的不利之处是这将顶层包名硬编码到你的源码中。硬编码的名称会使移动代码变得困难。
+
+    !!! attention
+        ```python
+        from . import grok # OK
+        import .grok # ERROR
+        ```
+
+        - import 语句的 `.` 和 `..`，其中 `.` 为当前目录，`..B` 为目录 `../B`。这种语法只适用于import。
+        - 尽管使用相对导入看起来像是浏览文件系统，但是不能到定义包的目录之外。
+        - 如果包的部分被作为脚本直接执行，相对导入方式将不起作用。
+        ```python
+        % python3 mypackage/A/spam.py # Relative imports fail
+        ```
+        - 使用Python的 -m 选项来执行先前的脚本，相对导入将会正确运行。
+        ```python
+        % python3 -m mypackage.A.spam # Relative imports work
+        ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 04 将模块分割成多个文件

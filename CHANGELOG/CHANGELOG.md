@@ -1,6 +1,12 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.30 (2021-11-28)
+#### Features
+- 更新 string & tuple methods
+- 更新 cookbook chapter10 item03
+  
+<!---------------------------------------------------------->
 ### 0.1.29 (2021-11-23)
 #### Features
 - 更新 builtin functions & builtin data structures' methods
