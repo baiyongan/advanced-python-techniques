@@ -4,7 +4,7 @@
 
 !!! abstract ""
     === "Function"
-    
+
         
 
     === "Syntax"
@@ -25,6 +25,7 @@
     === "Example 1"
         
 
+
         ```python
 
         ```
@@ -37,11 +38,10 @@
 
     === "Example 2"
         
+
         
         ```python
         
- 
-
         ```
 
         Result 2
@@ -52,10 +52,9 @@
 
     === "Example 3"
         
+
         
         ```python
-        
- 
 
         ```
 
