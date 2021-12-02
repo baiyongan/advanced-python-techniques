@@ -5860,9 +5860,87 @@
 <h2 id="04">04 将模块分割成多个文件<a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>如何将一个模块分割成多个文件，但同时再将分离的文件统一成一个逻辑模块时，可以不使已有的代码遭到破坏？</p>
+<ul>
+<li>module --&gt; n packages 即程序模块可以通过变成包来分割成多个独立的文件。</li>
+<li>合并多个文件成一个单一的逻辑命名空间，关键是创建一个包目录，使用 <code>__init__.py</code> 文件将各部分粘合到一起。 </li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="c1"># mymodule.py</span>
+<span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">spam</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A.spam&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;B.bar&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>如果想将上述 mymodule.py 分成两个文件，每个文件定义一个类。可以先用 mymodule 目录替换原来的 mymodule.py 文件，再分别在 a.py 和 b.py 中插入对应类的代码。最后，再在 <code>__init__.py</code> 文件中，将两个文件粘合到一起。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># mymodule.py --&gt; mymodule 文件夹</span>
+<span class="n">mymodule</span><span class="o">/</span>
+<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<span class="n">a</span><span class="o">.</span><span class="n">py</span>
+<span class="n">b</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># a.py 内容</span>
+<span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">spam</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A.spam&#39;</span><span class="p">)</span>
+
+<span class="c1"># b.py 内容</span>
+<span class="kn">from</span> <span class="nn">.a</span> <span class="kn">import</span> <span class="n">A</span>
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;B.bar&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>以上步骤所产生的包 mymodule，将作为一个单一的逻辑模块：
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">mymodule</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">A</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">spam</span><span class="p">()</span>
+<span class="n">A</span><span class="o">.</span><span class="n">spam</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">B</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">B</span><span class="o">.</span><span class="n">bar</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></p>
+</details>
+<details class="summary"><summary>讨论</summary><p>这个问题主要是一个设计问题，在大型代码库中，如果将一切都分割成独立的文件，用户需要使用大量的 import 语句，前提是他们要清楚不同的部分在哪里，这增加了用户的负担。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mymodule.a</span> <span class="kn">import</span> <span class="n">A</span>
+<span class="kn">from</span> <span class="nn">mymodule.b</span> <span class="kn">import</span> <span class="n">B</span>
+<span class="o">...</span>
+</code></pre></div>
+<div class="admonition tip">
+<p>通常情况下，让 mymodule 成为一个大的源文件是最常见的，这样，使用一条 import 将更容易
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mymodule</span> <span class="kn">import</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span>
+</code></pre></div></p>
+</div>
+<div class="admonition attention">
+<p>当模块被分割，需要特别注意交叉引用，需要使用相对导入的方式来获取，来避免将顶层模块名硬编码到源代码中，如此，可以使得重命名模块或者转移位置更容易。</p>
+</div>
+<p><strong>延迟导入</strong>：之前 <code>__init__.py</code> 文件一次导入所有必须的组件，但是，对于一个很大的模块，指向在组件被需要时才加载，如何做到<strong>延迟导入</strong>呢？</p>
+<div class="admonition tip">
+<p>如下，将类 A 和类 B 替换为在第一次访问时加载所需的类的函数。
+<div class="highlight"><pre><span></span><code><span class="c1"># __init__.py</span>
+<span class="k">def</span> <span class="nf">A</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">.a</span> <span class="kn">import</span> <span class="n">A</span>
+    <span class="k">return</span> <span class="n">A</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">B</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">.b</span> <span class="kn">import</span> <span class="n">B</span>
+    <span class="k">return</span> <span class="n">B</span><span class="p">()</span>
+</code></pre></div></p>
+</div>
+<div class="admonition danger">
+<p>延迟加载的主要缺点是继承和类型检查可能会中断。可能会需要稍微改变你之前的代码（？？？）：</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">A</span><span class="p">):</span> <span class="c1"># Error</span>
+<span class="o">...</span>
+
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">A</span><span class="p">):</span> <span class="c1"># Ok</span>
+<span class="o">...</span>
+</code></pre></div>
+<p>延迟加载的真实例子, 见标准库 <code>multiprocessing/__init__.py</code> 的源码。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="05">05 利用命名空间导入目录分散的代码<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
 <div class="admonition question">

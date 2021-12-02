@@ -23,6 +23,7 @@
 
 ??? note ""
     === "Example 1"
+        
         Use of Tuple count()
 
         ```python
@@ -51,6 +52,7 @@
         ```
 
     === "Example 2"
+        
         Count List and Tuple Elements Inside Tuple
         
         ```python
@@ -109,6 +111,7 @@
 
 ??? note ""
     === "Example 1"
+        
         Find the index of the element
         
         ```python
@@ -134,6 +137,7 @@
         ```
 
     === "Example 2"
+        
         Index of the Element not Present in the Tuple
         
         ```python
@@ -152,6 +156,7 @@
         ```
 
     === "Example 3"
+        
         Working of index() With Start and End Parameters
         
         ```python

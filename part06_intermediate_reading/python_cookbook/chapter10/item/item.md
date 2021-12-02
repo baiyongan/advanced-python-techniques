@@ -136,10 +136,101 @@
 ## 04 将模块分割成多个文件
 
 !!! question "问题"
+    如何将一个模块分割成多个文件，但同时再将分离的文件统一成一个逻辑模块时，可以不使已有的代码遭到破坏？
+
+    - module --> n packages 即程序模块可以通过变成包来分割成多个独立的文件。
+    - 合并多个文件成一个单一的逻辑命名空间，关键是创建一个包目录，使用 `__init__.py` 文件将各部分粘合到一起。 
 
 ??? done "解决方案"
+    ```python
+    # mymodule.py
+    class A:
+        def spam(self):
+            print('A.spam')
+
+    class B(A):
+        def bar(self):
+            print('B.bar')
+    ```
+
+    如果想将上述 mymodule.py 分成两个文件，每个文件定义一个类。可以先用 mymodule 目录替换原来的 mymodule.py 文件，再分别在 a.py 和 b.py 中插入对应类的代码。最后，再在 `__init__.py` 文件中，将两个文件粘合到一起。
+
+    ```python
+    # mymodule.py --> mymodule 文件夹
+    mymodule/
+    __init__.py
+    a.py
+    b.py
+
+    # a.py 内容
+    class A:
+    def spam(self):
+        print('A.spam')
+
+    # b.py 内容
+    from .a import A
+    class B(A):
+        def bar(self):
+            print('B.bar')
+    ```
+
+    以上步骤所产生的包 mymodule，将作为一个单一的逻辑模块：
+    ```python
+    >>> import mymodule
+    >>> a = mymodule.A()
+    >>> a.spam()
+    A.spam
+    >>> b = mymodule.B()
+    >>> b.bar()
+    B.bar
+    >>>
+    ```
 
 ??? summary "讨论"
+    这个问题主要是一个设计问题，在大型代码库中，如果将一切都分割成独立的文件，用户需要使用大量的 import 语句，前提是他们要清楚不同的部分在哪里，这增加了用户的负担。
+
+    ```python
+    from mymodule.a import A
+    from mymodule.b import B
+    ...
+    ```
+
+    !!! tip ""
+        通常情况下，让 mymodule 成为一个大的源文件是最常见的，这样，使用一条 import 将更容易
+        ```python
+        from mymodule import A, B
+        ```
+    
+    !!! attention ""
+        当模块被分割，需要特别注意交叉引用，需要使用相对导入的方式来获取，来避免将顶层模块名硬编码到源代码中，如此，可以使得重命名模块或者转移位置更容易。
+
+    **延迟导入**：之前 `__init__.py` 文件一次导入所有必须的组件，但是，对于一个很大的模块，指向在组件被需要时才加载，如何做到**延迟导入**呢？
+
+    !!! tip ""
+        如下，将类 A 和类 B 替换为在第一次访问时加载所需的类的函数。
+        ```python
+        # __init__.py
+        def A():
+            from .a import A
+            return A()
+
+        def B():
+            from .b import B
+            return B()
+        ```
+    
+    !!! danger ""
+        延迟加载的主要缺点是继承和类型检查可能会中断。可能会需要稍微改变你之前的代码（？？？）：
+
+        ```python
+        if isinstance(x, mymodule.A): # Error
+        ...
+
+        if isinstance(x, mymodule.a.A): # Ok
+        ...
+        ```
+
+        延迟加载的真实例子, 见标准库 `multiprocessing/__init__.py` 的源码。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 05 利用命名空间导入目录分散的代码
