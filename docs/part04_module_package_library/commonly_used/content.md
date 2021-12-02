@@ -378,5 +378,10 @@
 300. tokenize	用在(310)个项目中 
 -->
 
-<!-- Source: https://codingdict.com/sources/py/all -->
+<!-- 
+编程字典网站
+https://codingdict.com/sources/py/all 
 
+ProgramCreek 网站
+https://www.programcreek.com/python/index/module/list 
+-->
