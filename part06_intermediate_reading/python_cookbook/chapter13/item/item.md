@@ -83,26 +83,135 @@
 ## 03 解析命令行选项
 
 !!! question "问题"
+    如何使脚本程序能够解析命令行选项?（位于sys.argv中）
+
+    - 使用 `argparse` 模块来解析命令行选项
+    - `argparse` 模块是标准库中最大的模块之一，拥有大量的配置选项。
 
 ??? done "解决方案"
 
-    ```python
+    若使用 `argparse` 模块，为了解析命令行选项，首先要创建一个 `ArgumentParser` 实例， 并使用 `add_argument()` 方法声明想要支持的选项。
 
+    在每个 `add_argument()` 调用中:
+    
+    - `dest` 参数指定解析结果被指派给属性的名字。 
+    - `metavar` 参数被用来生成帮助信息。
+    - `action` 参数指定跟属性对应的处理逻辑， 通常的值为 `store`，被用来存储某个值或将多个参数值收集到一个列表中。 
+
+    ```python
+    # search.py
+    '''
+    Hypothetical command-line tool for searching a collection of
+    files for one or more text patterns.
+    '''
+    import argparse
+    parser = argparse.ArgumentParser(description='Search some files')
+
+    parser.add_argument(dest='filenames',metavar='filename', nargs='*')
+
+    parser.add_argument('-p', '--pat',metavar='pattern', required=True,
+                        dest='patterns', action='append',
+                        help='text pattern to search for')
+
+    parser.add_argument('-v', dest='verbose', action='store_true',
+                        help='verbose mode')
+
+    parser.add_argument('-o', dest='outfile', action='store',
+                        help='output file')
+
+    parser.add_argument('--speed', dest='speed', action='store',
+                        choices={'slow','fast'}, default='slow',
+                        help='search speed')
+
+    args = parser.parse_args()
+
+    # Output the collected arguments
+    print(args.filenames)
+    print(args.patterns)
+    print(args.verbose)
+    print(args.outfile)
+    print(args.speed)
     ```
 
-    ```python
+    该程序定义了一个如下使用的命令行解析器：
 
+    ```python
+    bash % python3 search.py -h
+    usage: search.py [-h] [-p pattern] [-v] [-o OUTFILE] [--speed {slow,fast}]
+                    [filename [filename ...]]
+
+    Search some files
+
+    positional arguments:
+    filename
+
+    optional arguments:
+    -h, --help            show this help message and exit
+    -p pattern, --pat pattern
+                            text pattern to search for
+    -v                    verbose mode
+    -o OUTFILE            output file
+    --speed {slow,fast}   search speed
     ```
+
+    !!! tip ""
+        对于选项值的进一步处理由程序来决定，可以用自己的逻辑来替代 `print()` 函数。
 
 ??? summary "讨论"
 
-    ```python
+    === "示例1"
+        下面的参数收集所有剩余的命令行参数到一个列表中。在本例中它被用来构造一个文件名列表：
 
-    ```
+        ```python
+        parser.add_argument(dest='filenames',metavar='filename', nargs='*')
+        ```
 
-    ```python
+    === "示例2"
+        下面的参数根据参数是否存在来设置一个 `Boolean` 标志：
 
-    ```
+        ```python
+        parser.add_argument('-v', dest='verbose', action='store_true',
+                            help='verbose mode')
+        ```
+
+    === "示例3"
+        下面的参数接受一个单独值并将其存储为一个字符串：
+        
+        ```python
+        parser.add_argument('-o', dest='outfile', action='store',
+                            help='output file')
+        ```
+
+    === "示例4"
+        下面的参数说明允许某个参数重复出现多次，并将它们追加到一个列表中去。 `required` 标志表示该参数至少要有一个。`-p` 和 `--pat` 表示两个参数名形式都可使用。
+
+        ```python
+        parser.add_argument('-p', '--pat',metavar='pattern', required=True,
+                            dest='patterns', action='append',
+                            help='text pattern to search for')
+        ```
+
+    === "示例5"
+        下面的参数说明接受一个值，但是会将其和可能的选择值做比较，以检测其合法性：
+
+        ```python
+        parser.add_argument('--speed', dest='speed', action='store',
+                            choices={'slow','fast'}, default='slow',
+                            help='search speed')
+        ```
+
+    一旦参数选项被指定，就可以执行 `parser.parse()` 方法了。 它会处理 `sys.argv` 的值并返回一个结果实例。
+
+    !!! danger ""
+        还很多种其他方法解析命令行选项。
+        
+        - `getopt` vs `argparse`
+        
+        例如，可能会手动的处理 `sys.argv` 或者使用 `getopt` 模块。 但是，如果采用本节的方式，将会减少很多冗余代码，底层细节 argparse 模块已经帮你处理了。 
+        
+        - `optparse` vs `argparse`
+        
+        尽管 `optparse` 和 `argparse` 很像，但是后者更先进，因此在新的程序中你应该使用它。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 04 运行时弹出密码输入提示

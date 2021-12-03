@@ -5805,16 +5805,118 @@
 <h2 id="03">03 解析命令行选项<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>如何使脚本程序能够解析命令行选项?（位于sys.argv中）</p>
+<ul>
+<li>使用 <code>argparse</code> 模块来解析命令行选项</li>
+<li><code>argparse</code> 模块是标准库中最大的模块之一，拥有大量的配置选项。</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code>
+<details class="done"><summary>解决方案</summary><p>若使用 <code>argparse</code> 模块，为了解析命令行选项，首先要创建一个 <code>ArgumentParser</code> 实例， 并使用 <code>add_argument()</code> 方法声明想要支持的选项。</p>
+<p>在每个 <code>add_argument()</code> 调用中:</p>
+<ul>
+<li><code>dest</code> 参数指定解析结果被指派给属性的名字。 </li>
+<li><code>metavar</code> 参数被用来生成帮助信息。</li>
+<li><code>action</code> 参数指定跟属性对应的处理逻辑， 通常的值为 <code>store</code>，被用来存储某个值或将多个参数值收集到一个列表中。 </li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># search.py</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Hypothetical command-line tool for searching a collection of</span>
+<span class="sd">files for one or more text patterns.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Search some files&#39;</span><span class="p">)</span>
+
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="n">dest</span><span class="o">=</span><span class="s1">&#39;filenames&#39;</span><span class="p">,</span><span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;filename&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-p&#39;</span><span class="p">,</span> <span class="s1">&#39;--pat&#39;</span><span class="p">,</span><span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;pattern&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;patterns&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;append&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;text pattern to search for&#39;</span><span class="p">)</span>
+
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;verbose&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;verbose mode&#39;</span><span class="p">)</span>
+
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;outfile&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;output file&#39;</span><span class="p">)</span>
+
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--speed&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;speed&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span>
+                    <span class="n">choices</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span><span class="s1">&#39;fast&#39;</span><span class="p">},</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;search speed&#39;</span><span class="p">)</span>
+
+<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+<span class="c1"># Output the collected arguments</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">filenames</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">patterns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">verbose</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">outfile</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">speed</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+<p>该程序定义了一个如下使用的命令行解析器：</p>
+<div class="highlight"><pre><span></span><code><span class="n">bash</span> <span class="o">%</span> <span class="n">python3</span> <span class="n">search</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">h</span>
+<span class="n">usage</span><span class="p">:</span> <span class="n">search</span><span class="o">.</span><span class="n">py</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">p</span> <span class="n">pattern</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">o</span> <span class="n">OUTFILE</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">speed</span> <span class="p">{</span><span class="n">slow</span><span class="p">,</span><span class="n">fast</span><span class="p">}]</span>
+                <span class="p">[</span><span class="n">filename</span> <span class="p">[</span><span class="n">filename</span> <span class="o">...</span><span class="p">]]</span>
+
+<span class="n">Search</span> <span class="n">some</span> <span class="n">files</span>
+
+<span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span>
+<span class="n">filename</span>
+
+<span class="n">optional</span> <span class="n">arguments</span><span class="p">:</span>
+<span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">show</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+<span class="o">-</span><span class="n">p</span> <span class="n">pattern</span><span class="p">,</span> <span class="o">--</span><span class="n">pat</span> <span class="n">pattern</span>
+                        <span class="n">text</span> <span class="n">pattern</span> <span class="n">to</span> <span class="n">search</span> <span class="k">for</span>
+<span class="o">-</span><span class="n">v</span>                    <span class="n">verbose</span> <span class="n">mode</span>
+<span class="o">-</span><span class="n">o</span> <span class="n">OUTFILE</span>            <span class="n">output</span> <span class="n">file</span>
+<span class="o">--</span><span class="n">speed</span> <span class="p">{</span><span class="n">slow</span><span class="p">,</span><span class="n">fast</span><span class="p">}</span>   <span class="n">search</span> <span class="n">speed</span>
 </code></pre></div>
+<div class="admonition tip">
+<p>对于选项值的进一步处理由程序来决定，可以用自己的逻辑来替代 <code>print()</code> 函数。</p>
+</div>
 </details>
-<details class="summary"><summary>讨论</summary><div class="highlight"><pre><span></span><code>
+<details class="summary"><summary>讨论</summary><div class="tabbed-set" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">示例1</label><div class="tabbed-content">
+<p>下面的参数收集所有剩余的命令行参数到一个列表中。在本例中它被用来构造一个文件名列表：</p>
+<div class="highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="n">dest</span><span class="o">=</span><span class="s1">&#39;filenames&#39;</span><span class="p">,</span><span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;filename&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">示例2</label><div class="tabbed-content">
+<p>下面的参数根据参数是否存在来设置一个 <code>Boolean</code> 标志：</p>
+<div class="highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;verbose&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;verbose mode&#39;</span><span class="p">)</span>
 </code></pre></div>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">示例3</label><div class="tabbed-content">
+<p>下面的参数接受一个单独值并将其存储为一个字符串：</p>
+<div class="highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;outfile&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;output file&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">示例4</label><div class="tabbed-content">
+<p>下面的参数说明允许某个参数重复出现多次，并将它们追加到一个列表中去。 <code>required</code> 标志表示该参数至少要有一个。<code>-p</code> 和 <code>--pat</code> 表示两个参数名形式都可使用。</p>
+<div class="highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-p&#39;</span><span class="p">,</span> <span class="s1">&#39;--pat&#39;</span><span class="p">,</span><span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;pattern&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;patterns&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;append&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;text pattern to search for&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">示例5</label><div class="tabbed-content">
+<p>下面的参数说明接受一个值，但是会将其和可能的选择值做比较，以检测其合法性：</p>
+<div class="highlight"><pre><span></span><code><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--speed&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;speed&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span>
+                    <span class="n">choices</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span><span class="s1">&#39;fast&#39;</span><span class="p">},</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;search speed&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+<p>一旦参数选项被指定，就可以执行 <code>parser.parse()</code> 方法了。 它会处理 <code>sys.argv</code> 的值并返回一个结果实例。</p>
+<div class="admonition danger">
+<p>还很多种其他方法解析命令行选项。</p>
+<ul>
+<li><code>getopt</code> vs <code>argparse</code></li>
+</ul>
+<p>例如，可能会手动的处理 <code>sys.argv</code> 或者使用 <code>getopt</code> 模块。 但是，如果采用本节的方式，将会减少很多冗余代码，底层细节 argparse 模块已经帮你处理了。 </p>
+<ul>
+<li><code>optparse</code> vs <code>argparse</code></li>
+</ul>
+<p>尽管 <code>optparse</code> 和 <code>argparse</code> 很像，但是后者更先进，因此在新的程序中你应该使用它。</p>
+</div>
 </details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="04">04 运行时弹出密码输入提示<a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
