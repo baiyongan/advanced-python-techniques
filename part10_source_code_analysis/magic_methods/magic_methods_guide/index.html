@@ -13,21 +13,21 @@
         <meta name="author" content="Bai Yongan">
       
       
-        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part10_source_code_analysis/python_magic_methods/">
+        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part10_source_code_analysis/magic_methods/magic_methods_guide/">
       
-      <link rel="icon" href="../../assets/image/favicon.png">
+      <link rel="icon" href="../../../assets/image/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
-        <title>Python Magic Methods - Pythonista to Pythoneer</title>
+        <title>A guide to python's magic methods - Pythonista to Pythoneer</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f955dcd.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -42,9 +42,9 @@
     
     
     
-      <link rel="stylesheet" href="../../assets/css/termynal.css">
+      <link rel="stylesheet" href="../../../assets/css/termynal.css">
     
-      <link rel="stylesheet" href="../../assets/css/custom.css">
+      <link rel="stylesheet" href="../../../assets/css/custom.css">
     
     
       
@@ -63,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python" class="md-skip">
+        <a href="#a-guide-to-pythons-magic-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +84,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../.." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python Magic Methods
+              A guide to python's magic methods
             
           </span>
         </div>
@@ -195,7 +195,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part01_direction_and_roadmap/" class="md-tabs__link">
+      <a href="../../../part01_direction_and_roadmap/" class="md-tabs__link">
         方向路线
       </a>
     </li>
@@ -226,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part02_development_tool/" class="md-tabs__link">
+      <a href="../../../part02_development_tool/" class="md-tabs__link">
         开发工具
       </a>
     </li>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part03_norm_and_design/" class="md-tabs__link">
+      <a href="../../../part03_norm_and_design/" class="md-tabs__link">
         规范设计
       </a>
     </li>
@@ -258,7 +258,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part04_module_package_library/" class="md-tabs__link">
+      <a href="../../../part04_module_package_library/" class="md-tabs__link">
         功能模块
       </a>
     </li>
@@ -274,7 +274,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part05_core_topic/" class="md-tabs__link">
+      <a href="../../../part05_core_topic/" class="md-tabs__link">
         核心专题
       </a>
     </li>
@@ -290,7 +290,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part06_intermediate_reading/" class="md-tabs__link">
+      <a href="../../../part06_intermediate_reading/" class="md-tabs__link">
         进阶阅读
       </a>
     </li>
@@ -306,7 +306,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part07_application_framework/" class="md-tabs__link">
+      <a href="../../../part07_application_framework/" class="md-tabs__link">
         应用框架
       </a>
     </li>
@@ -322,7 +322,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part08_data_analysis/" class="md-tabs__link">
+      <a href="../../../part08_data_analysis/" class="md-tabs__link">
         数据分析
       </a>
     </li>
@@ -338,7 +338,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part09_python_in_action/" class="md-tabs__link">
+      <a href="../../../part09_python_in_action/" class="md-tabs__link">
         工程实践
       </a>
     </li>
@@ -356,7 +356,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         源码剖析
       </a>
     </li>
@@ -372,7 +372,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part11_connection_and_expansion/" class="md-tabs__link">
+      <a href="../../../part11_connection_and_expansion/" class="md-tabs__link">
         关联拓展
       </a>
     </li>
@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../part12_ecological_information/" class="md-tabs__link">
+      <a href="../../../part12_ecological_information/" class="md-tabs__link">
         业内资讯
       </a>
     </li>
@@ -404,7 +404,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../CHANGELOG/" class="md-tabs__link">
+      <a href="../../../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -431,9 +431,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../.." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     Pythonista to Pythoneer
@@ -462,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -498,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -510,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
         后端开发
       </a>
     </li>
@@ -522,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
         DevOps
       </a>
     </li>
@@ -534,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_web_scraping_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_web_scraping_roadmap/" class="md-nav__link">
         网络爬虫
       </a>
     </li>
@@ -546,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
         数据分析
       </a>
     </li>
@@ -558,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
         数据挖掘
       </a>
     </li>
@@ -570,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/python_machine_learning_roadmap/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/python_machine_learning_roadmap/" class="md-nav__link">
         机器学习
       </a>
     </li>
@@ -603,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part01_direction_and_roadmap/top_python_developer_skills/" class="md-nav__link">
+      <a href="../../../part01_direction_and_roadmap/top_python_developer_skills/" class="md-nav__link">
         Top Python Developer Skills
       </a>
     </li>
@@ -651,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/" class="md-nav__link">
+      <a href="../../../part02_development_tool/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -684,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -696,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
         42 Tips and Tricks
       </a>
     </li>
@@ -708,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -747,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -759,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -798,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -849,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -861,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -900,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -912,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -951,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -963,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -1011,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part03_norm_and_design/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1023,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part03_norm_and_design/norm/why_python_style_guide/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/why_python_style_guide/" class="md-nav__link">
         Python 代码规范的重要性
       </a>
     </li>
@@ -1035,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part03_norm_and_design/norm/PEP8/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/PEP8/" class="md-nav__link">
         PEP8
       </a>
     </li>
@@ -1047,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part03_norm_and_design/norm/google_python_style_guide/" class="md-nav__link">
+      <a href="../../../part03_norm_and_design/norm/google_python_style_guide/" class="md-nav__link">
         Google Python Style Guide
       </a>
     </li>
@@ -1089,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1122,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/content/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1134,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/builtin_functions/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/builtin_functions/" class="md-nav__link">
         内置函数
       </a>
     </li>
@@ -1167,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/string_methods/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/string_methods/" class="md-nav__link">
         string
       </a>
     </li>
@@ -1179,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/list_methods/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/list_methods/" class="md-nav__link">
         list
       </a>
     </li>
@@ -1191,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/dict_methods/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/dict_methods/" class="md-nav__link">
         dict
       </a>
     </li>
@@ -1203,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/tuple_methods/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/tuple_methods/" class="md-nav__link">
         tuple
       </a>
     </li>
@@ -1215,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/standard_library_builtin/set_methods/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/standard_library_builtin/set_methods/" class="md-nav__link">
         set
       </a>
     </li>
@@ -1260,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/commonly_used/content/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/commonly_used/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1272,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/commonly_used/os/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/commonly_used/os/" class="md-nav__link">
         os
       </a>
     </li>
@@ -1311,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/key_advanced/content/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/key_advanced/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1323,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/key_advanced/collections/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/key_advanced/collections/" class="md-nav__link">
         collections
       </a>
     </li>
@@ -1362,7 +1362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/popular_3rd_party/content/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/popular_3rd_party/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1374,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/popular_3rd_party/sh/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/popular_3rd_party/sh/" class="md-nav__link">
         sh
       </a>
     </li>
@@ -1386,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/popular_3rd_party/rich/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/popular_3rd_party/rich/" class="md-nav__link">
         rich
       </a>
     </li>
@@ -1425,7 +1425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/content_en/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/content_en/" class="md-nav__link">
         英文目录
       </a>
     </li>
@@ -1437,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/content_zh/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/content_zh/" class="md-nav__link">
         中文目录
       </a>
     </li>
@@ -1470,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter01_text/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter01_text/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1482,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter01_text/string/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter01_text/string/" class="md-nav__link">
         string 模块
       </a>
     </li>
@@ -1521,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter02_data_structures/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter02_data_structures/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1560,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter03_algorithms/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter03_algorithms/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1572,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter03_algorithms/functools/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter03_algorithms/functools/" class="md-nav__link">
         functools
       </a>
     </li>
@@ -1611,7 +1611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter04_dates_and_times/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter04_dates_and_times/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1650,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter05_mathematics/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter05_mathematics/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1689,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter06_the_file_system/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter06_the_file_system/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1728,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter07_data_persistence_and_exchange/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter07_data_persistence_and_exchange/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1767,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter08_data_compression_and_archiving/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter08_data_compression_and_archiving/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1806,7 +1806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter09_cryptography/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter09_cryptography/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1845,7 +1845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter10_concurrency/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter10_concurrency/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1884,7 +1884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter11_networking/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter11_networking/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1923,7 +1923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter12_the_internet/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter12_the_internet/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1962,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter13_email/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter13_email/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2001,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter14_application_building_blocks/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter14_application_building_blocks/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2040,7 +2040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter15_internationalization_and_localization/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter15_internationalization_and_localization/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2079,7 +2079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter16_developer_tools/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter16_developer_tools/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2118,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter17_runtime_features/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter17_runtime_features/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2157,7 +2157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter18_language_tools/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter18_language_tools/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2196,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter19_modules_and_packages/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter19_modules_and_packages/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2235,7 +2235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/chapter20_unix_specific_services/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/chapter20_unix_specific_services/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2253,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part04_module_package_library/PyMOTW3/appendix/" class="md-nav__link">
+      <a href="../../../part04_module_package_library/PyMOTW3/appendix/" class="md-nav__link">
         附录
       </a>
     </li>
@@ -2301,7 +2301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/" class="md-nav__link">
+      <a href="../../../part05_core_topic/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -2334,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter01/article0101/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0101/" class="md-nav__link">
         python 中一切皆对象
       </a>
     </li>
@@ -2346,7 +2346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter01/article0102/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0102/" class="md-nav__link">
         type、object 和 class 的关系
       </a>
     </li>
@@ -2358,7 +2358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter01/article0103/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0103/" class="md-nav__link">
         python 中的内置类型
       </a>
     </li>
@@ -2370,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter01/article0104/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter01/article0104/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2409,7 +2409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter02/article0201/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0201/" class="md-nav__link">
         魔法函数简介
       </a>
     </li>
@@ -2421,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter02/article0202/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0202/" class="md-nav__link">
         python 数据模型对 python 的影响
       </a>
     </li>
@@ -2433,7 +2433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter02/article0203/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0203/" class="md-nav__link">
         python 魔法函数一览
       </a>
     </li>
@@ -2445,7 +2445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter02/article0204/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0204/" class="md-nav__link">
         len 函数的特殊性
       </a>
     </li>
@@ -2457,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter02/article0205/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter02/article0205/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2496,7 +2496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0301/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0301/" class="md-nav__link">
         鸭子类型和多态
       </a>
     </li>
@@ -2508,7 +2508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0302/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0302/" class="md-nav__link">
         抽象基类（abc模块）
       </a>
     </li>
@@ -2520,7 +2520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0303/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0303/" class="md-nav__link">
         isinstance 和 type 的区别
       </a>
     </li>
@@ -2532,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0304/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0304/" class="md-nav__link">
         类变量和实例变量
       </a>
     </li>
@@ -2544,7 +2544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0305/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0305/" class="md-nav__link">
         类和实例属性的查找顺序
       </a>
     </li>
@@ -2556,7 +2556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0306/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0306/" class="md-nav__link">
         类方法、静态方法和实例方法
       </a>
     </li>
@@ -2568,7 +2568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0307/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0307/" class="md-nav__link">
         数据封装和私有属性
       </a>
     </li>
@@ -2580,7 +2580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0308/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0308/" class="md-nav__link">
         python 对象的自省机制
       </a>
     </li>
@@ -2592,7 +2592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0309/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0309/" class="md-nav__link">
         super 真的是调用父类么？
       </a>
     </li>
@@ -2604,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0310/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0310/" class="md-nav__link">
         mixin 继承案例——django rest framework
       </a>
     </li>
@@ -2616,7 +2616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0311/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0311/" class="md-nav__link">
         python 中的 with 语句
       </a>
     </li>
@@ -2628,7 +2628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0312/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0312/" class="md-nav__link">
         contextlib 简化上下文管理器
       </a>
     </li>
@@ -2640,7 +2640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter03/article0313/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter03/article0313/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2679,7 +2679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0401/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0401/" class="md-nav__link">
         python 中的序列分类
       </a>
     </li>
@@ -2691,7 +2691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0402/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0402/" class="md-nav__link">
         python 中序列类型的 abc 继承关系
       </a>
     </li>
@@ -2703,7 +2703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0403/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0403/" class="md-nav__link">
         list 中 extend 方法区别
       </a>
     </li>
@@ -2715,7 +2715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0404/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0404/" class="md-nav__link">
         实现可切片的对象
       </a>
     </li>
@@ -2727,7 +2727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0405/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0405/" class="md-nav__link">
         bisect 维护已排序序列
       </a>
     </li>
@@ -2739,7 +2739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0406/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0406/" class="md-nav__link">
         什么时候不应该使用列表？
       </a>
     </li>
@@ -2751,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0407/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0407/" class="md-nav__link">
         列表推导式、生成器表达式、字典推导式
       </a>
     </li>
@@ -2763,7 +2763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter04/article0408/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter04/article0408/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2802,7 +2802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0501/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0501/" class="md-nav__link">
         dict 的 abc 继承关系
       </a>
     </li>
@@ -2814,7 +2814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0502/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0502/" class="md-nav__link">
         dict 的常用方法
       </a>
     </li>
@@ -2826,7 +2826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0503/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0503/" class="md-nav__link">
         dict 的子类
       </a>
     </li>
@@ -2838,7 +2838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0504/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0504/" class="md-nav__link">
         set 和 frozenset
       </a>
     </li>
@@ -2850,7 +2850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0505/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0505/" class="md-nav__link">
         dict 和 set 的实现原理
       </a>
     </li>
@@ -2862,7 +2862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter05/article0506/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter05/article0506/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2901,7 +2901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter06/article0601/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0601/" class="md-nav__link">
         python 中的变量是什么？
       </a>
     </li>
@@ -2913,7 +2913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter06/article0602/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0602/" class="md-nav__link">
         == 和 is 的区别
       </a>
     </li>
@@ -2925,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter06/article0603/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0603/" class="md-nav__link">
         del 语句和垃圾回收
       </a>
     </li>
@@ -2937,7 +2937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter06/article0604/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0604/" class="md-nav__link">
         一个经典的参数错误
       </a>
     </li>
@@ -2949,7 +2949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter06/article0605/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter06/article0605/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2988,7 +2988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0701/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0701/" class="md-nav__link">
         property 动态属性
       </a>
     </li>
@@ -3000,7 +3000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0702/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0702/" class="md-nav__link">
         __getattr__、__getattribute__ 魔法函数
       </a>
     </li>
@@ -3012,7 +3012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0703/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0703/" class="md-nav__link">
         属性描述符和属性查找过程
       </a>
     </li>
@@ -3024,7 +3024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0704/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0704/" class="md-nav__link">
         __new__ 和 __init__ 的区别
       </a>
     </li>
@@ -3036,7 +3036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0705/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0705/" class="md-nav__link">
         自定义元类
       </a>
     </li>
@@ -3048,7 +3048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0706/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0706/" class="md-nav__link">
         通过元类实现 orm
       </a>
     </li>
@@ -3060,7 +3060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter07/article0707/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter07/article0707/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3099,7 +3099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0801/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0801/" class="md-nav__link">
         python 中的迭代协议
       </a>
     </li>
@@ -3111,7 +3111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0802/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0802/" class="md-nav__link">
         什么是迭代器和可迭代对象
       </a>
     </li>
@@ -3123,7 +3123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0803/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0803/" class="md-nav__link">
         生成器函数的使用
       </a>
     </li>
@@ -3135,7 +3135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0804/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0804/" class="md-nav__link">
         python 是如何实现生成器的
       </a>
     </li>
@@ -3147,7 +3147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0805/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0805/" class="md-nav__link">
         生成器在 UserList 中的应用
       </a>
     </li>
@@ -3159,7 +3159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0806/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0806/" class="md-nav__link">
         生成器如何读取大文件
       </a>
     </li>
@@ -3171,7 +3171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter08/article0807/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter08/article0807/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3210,7 +3210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter09/article0901/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0901/" class="md-nav__link">
         HTTP、Socket、TCP 概念
       </a>
     </li>
@@ -3222,7 +3222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter09/article0902/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0902/" class="md-nav__link">
         socket 和 server 实现通信
       </a>
     </li>
@@ -3234,7 +3234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter09/article0903/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0903/" class="md-nav__link">
         socket 实现聊天和多用户连接
       </a>
     </li>
@@ -3246,7 +3246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter09/article0904/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0904/" class="md-nav__link">
         socket 模拟 http 请求
       </a>
     </li>
@@ -3258,7 +3258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter09/article0905/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter09/article0905/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3297,7 +3297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1001/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1001/" class="md-nav__link">
         python 中的 GIL
       </a>
     </li>
@@ -3309,7 +3309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1002/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1002/" class="md-nav__link">
         多线程编程 —— threading
       </a>
     </li>
@@ -3321,7 +3321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1003/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1003/" class="md-nav__link">
         线程间通信 —— 共享变量和 Queue
       </a>
     </li>
@@ -3333,7 +3333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1004/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1004/" class="md-nav__link">
         线程同步 —— Lock、RLock
       </a>
     </li>
@@ -3345,7 +3345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1005/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1005/" class="md-nav__link">
         线程同步 —— condition 使用及源码分析
       </a>
     </li>
@@ -3357,7 +3357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1006/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1006/" class="md-nav__link">
         线程同步 —— Semaphore 使用及源码分析
       </a>
     </li>
@@ -3369,7 +3369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1007/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1007/" class="md-nav__link">
         ThreadPoolExecutor 线程池
       </a>
     </li>
@@ -3381,7 +3381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1008/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1008/" class="md-nav__link">
         ThreadPoolExecutor 源码分析
       </a>
     </li>
@@ -3393,7 +3393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1009/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1009/" class="md-nav__link">
         多线程和多进程对比
       </a>
     </li>
@@ -3405,7 +3405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1010/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1010/" class="md-nav__link">
         multiprocessing 多进程编程
       </a>
     </li>
@@ -3417,7 +3417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1011/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1011/" class="md-nav__link">
         进程间通信 —— Queue、Pipe、Manager
       </a>
     </li>
@@ -3429,7 +3429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter10/article1012/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter10/article1012/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3468,7 +3468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1101/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1101/" class="md-nav__link">
         并发、并行、同步、异步、阻塞、非阻塞
       </a>
     </li>
@@ -3480,7 +3480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1102/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1102/" class="md-nav__link">
         IO 多路复用 (select、poll 和 epoll)
       </a>
     </li>
@@ -3492,7 +3492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1103/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1103/" class="md-nav__link">
         select+回调+事件循环获取 html
       </a>
     </li>
@@ -3504,7 +3504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1104/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1104/" class="md-nav__link">
         回调之痛
       </a>
     </li>
@@ -3516,7 +3516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1105/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1105/" class="md-nav__link">
         协程是什么
       </a>
     </li>
@@ -3528,7 +3528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1106/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1106/" class="md-nav__link">
         生成器进阶 send、close 和 throw 方法
       </a>
     </li>
@@ -3540,7 +3540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1107/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1107/" class="md-nav__link">
         生成器进阶 yield from
       </a>
     </li>
@@ -3552,7 +3552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1108/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1108/" class="md-nav__link">
         生成器实现协程
       </a>
     </li>
@@ -3564,7 +3564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1109/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1109/" class="md-nav__link">
         async和await
       </a>
     </li>
@@ -3576,7 +3576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter11/article1110/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter11/article1110/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3615,7 +3615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1201/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1201/" class="md-nav__link">
         事件循环
       </a>
     </li>
@@ -3627,7 +3627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1202/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1202/" class="md-nav__link">
         task 取消和子协程调用原理
       </a>
     </li>
@@ -3639,7 +3639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1203/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1203/" class="md-nav__link">
         call_soon、call_at、call_later、call_soon_threadsafe
       </a>
     </li>
@@ -3651,7 +3651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1204/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1204/" class="md-nav__link">
         ThreadPollExecutor 和 asycio 完成阻塞 IO 请求
       </a>
     </li>
@@ -3663,7 +3663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1205/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1205/" class="md-nav__link">
         asyncio 模拟 http 请求
       </a>
     </li>
@@ -3675,7 +3675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1206/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1206/" class="md-nav__link">
         future 和 task
       </a>
     </li>
@@ -3687,7 +3687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1207/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1207/" class="md-nav__link">
         asyncio 同步和通信
       </a>
     </li>
@@ -3699,7 +3699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1208/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1208/" class="md-nav__link">
         aiohttp 实现高并发爬虫
       </a>
     </li>
@@ -3711,7 +3711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part05_core_topic/chapter12/article1209/" class="md-nav__link">
+      <a href="../../../part05_core_topic/chapter12/article1209/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3759,7 +3759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -3792,7 +3792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3831,7 +3831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -3870,7 +3870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/content_en/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/content_en/" class="md-nav__link">
         英文目录
       </a>
     </li>
@@ -3882,7 +3882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/content_zh/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/content_zh/" class="md-nav__link">
         中文目录
       </a>
     </li>
@@ -3894,7 +3894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter01/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter01/item/" class="md-nav__link">
         01 培养 Pythonic 思维
       </a>
     </li>
@@ -3906,7 +3906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter02/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter02/item/" class="md-nav__link">
         02 列表与字典
       </a>
     </li>
@@ -3918,7 +3918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter03/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter03/item/" class="md-nav__link">
         03 函数
       </a>
     </li>
@@ -3930,7 +3930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter04/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter04/item/" class="md-nav__link">
         04 推导与生成
       </a>
     </li>
@@ -3942,7 +3942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter05/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter05/item/" class="md-nav__link">
         05 类与接口
       </a>
     </li>
@@ -3954,7 +3954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter06/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter06/item/" class="md-nav__link">
         06 元类与属性
       </a>
     </li>
@@ -3966,7 +3966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter07/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter07/item/" class="md-nav__link">
         07 开发与并行
       </a>
     </li>
@@ -3978,7 +3978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter08/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter08/item/" class="md-nav__link">
         08 稳定与性能
       </a>
     </li>
@@ -3990,7 +3990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter09/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter09/item/" class="md-nav__link">
         09 测试与调试
       </a>
     </li>
@@ -4002,7 +4002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/effective_python/chapter10/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/effective_python/chapter10/item/" class="md-nav__link">
         10 协作开发
       </a>
     </li>
@@ -4041,7 +4041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4053,7 +4053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter01/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter01/item/" class="md-nav__link">
         01 数据结构与算法
       </a>
     </li>
@@ -4065,7 +4065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter02/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter02/item/" class="md-nav__link">
         02 字符串和文本
       </a>
     </li>
@@ -4077,7 +4077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter03/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter03/item/" class="md-nav__link">
         03 数字日期和时间
       </a>
     </li>
@@ -4089,7 +4089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter04/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter04/item/" class="md-nav__link">
         04 迭代器与生成器
       </a>
     </li>
@@ -4101,7 +4101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter05/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter05/item/" class="md-nav__link">
         05 文件与 IO
       </a>
     </li>
@@ -4113,7 +4113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter06/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter06/item/" class="md-nav__link">
         06 数据编码和处理
       </a>
     </li>
@@ -4125,7 +4125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter07/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter07/item/" class="md-nav__link">
         07 函数
       </a>
     </li>
@@ -4137,7 +4137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter08/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter08/item/" class="md-nav__link">
         08 类与对象
       </a>
     </li>
@@ -4149,7 +4149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter09/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter09/item/" class="md-nav__link">
         09 元编程
       </a>
     </li>
@@ -4161,7 +4161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter10/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter10/item/" class="md-nav__link">
         10 模块与包
       </a>
     </li>
@@ -4173,7 +4173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter11/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter11/item/" class="md-nav__link">
         11 网络与Web编程
       </a>
     </li>
@@ -4185,7 +4185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter12/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter12/item/" class="md-nav__link">
         12 并发编程
       </a>
     </li>
@@ -4197,7 +4197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter13/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter13/item/" class="md-nav__link">
         13 脚本与系统管理
       </a>
     </li>
@@ -4209,7 +4209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter14/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter14/item/" class="md-nav__link">
         14 测试、调试和异常
       </a>
     </li>
@@ -4221,7 +4221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_cookbook/chapter15/item/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_cookbook/chapter15/item/" class="md-nav__link">
         15 C 语言扩展
       </a>
     </li>
@@ -4260,7 +4260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4299,7 +4299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4338,7 +4338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/architecture_patterns_with_python/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/architecture_patterns_with_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4377,7 +4377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/pep/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/pep/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4416,7 +4416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part06_intermediate_reading/python_how_to/content/" class="md-nav__link">
+      <a href="../../../part06_intermediate_reading/python_how_to/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4464,7 +4464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/" class="md-nav__link">
+      <a href="../../../part07_application_framework/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4476,7 +4476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/python_web/plotly_dash/" class="md-nav__link">
+      <a href="../../../part07_application_framework/python_web/plotly_dash/" class="md-nav__link">
         Dash
       </a>
     </li>
@@ -4509,7 +4509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
+      <a href="../../../part07_application_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
         项目结构
       </a>
     </li>
@@ -4527,7 +4527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/python_web/django/" class="md-nav__link">
+      <a href="../../../part07_application_framework/python_web/django/" class="md-nav__link">
         Django
       </a>
     </li>
@@ -4539,7 +4539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/python_web/tornado/" class="md-nav__link">
+      <a href="../../../part07_application_framework/python_web/tornado/" class="md-nav__link">
         Tornado
       </a>
     </li>
@@ -4551,7 +4551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part07_application_framework/python_web/fastapi/" class="md-nav__link">
+      <a href="../../../part07_application_framework/python_web/fastapi/" class="md-nav__link">
         FastAPI
       </a>
     </li>
@@ -4593,7 +4593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4626,7 +4626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/content_en/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/content_en/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4659,7 +4659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson01/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson01/" class="md-nav__link">
         Defining Data Science
       </a>
     </li>
@@ -4671,7 +4671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson02/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson02/" class="md-nav__link">
         Data Science Ethics
       </a>
     </li>
@@ -4683,7 +4683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson03/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson03/" class="md-nav__link">
         Defining Data
       </a>
     </li>
@@ -4695,7 +4695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson04/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson04/" class="md-nav__link">
         Introduction to Statistics and Probability
       </a>
     </li>
@@ -4734,7 +4734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson05/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson05/" class="md-nav__link">
         Relational databases
       </a>
     </li>
@@ -4746,7 +4746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson06/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson06/" class="md-nav__link">
         Non-relational databases
       </a>
     </li>
@@ -4758,7 +4758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson07/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson07/" class="md-nav__link">
         Working with Python
       </a>
     </li>
@@ -4770,7 +4770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson08/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson08/" class="md-nav__link">
         Preparing data
       </a>
     </li>
@@ -4809,7 +4809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson09/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson09/" class="md-nav__link">
         Visualizing quantities
       </a>
     </li>
@@ -4821,7 +4821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson10/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson10/" class="md-nav__link">
         Visualizing distribution
       </a>
     </li>
@@ -4833,7 +4833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson11/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson11/" class="md-nav__link">
         Visualizing proportions
       </a>
     </li>
@@ -4845,7 +4845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson12/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson12/" class="md-nav__link">
         Visualizing relationships
       </a>
     </li>
@@ -4857,7 +4857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson13/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson13/" class="md-nav__link">
         Making Meaningful Visualizations
       </a>
     </li>
@@ -4896,7 +4896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson14/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson14/" class="md-nav__link">
         Introduction to the Data Science lifecycle
       </a>
     </li>
@@ -4908,7 +4908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson15/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson15/" class="md-nav__link">
         Analyzing
       </a>
     </li>
@@ -4920,7 +4920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson16/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson16/" class="md-nav__link">
         Communication
       </a>
     </li>
@@ -4959,7 +4959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson17/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson17/" class="md-nav__link">
         Why use Cloud for Data Science?
       </a>
     </li>
@@ -4971,7 +4971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson18/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson18/" class="md-nav__link">
         Data Science in the Cloud: The "Low code/No code" way
       </a>
     </li>
@@ -4983,7 +4983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19/" class="md-nav__link">
         Data Science in the Cloud: The "Azure ML SDK" way
       </a>
     </li>
@@ -5022,7 +5022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20/" class="md-nav__link">
+      <a href="../../../part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20/" class="md-nav__link">
         Data Science in the Real World
       </a>
     </li>
@@ -5076,7 +5076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5109,7 +5109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/code_snippets/content/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/code_snippets/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -5127,7 +5127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/data_structure_and_algorithm/" class="md-nav__link">
         Python 中的数据结构与算法
       </a>
     </li>
@@ -5139,7 +5139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/precautions_in_development/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/precautions_in_development/" class="md-nav__link">
         技术研发中的注意事项
       </a>
     </li>
@@ -5151,7 +5151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/SWIG_programming/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
     </li>
@@ -5163,7 +5163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/garbage_collection/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/garbage_collection/" class="md-nav__link">
         Python 的内存管理和垃圾回收机制
       </a>
     </li>
@@ -5175,7 +5175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
+      <a href="../../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
         Python 中的 GIL
       </a>
     </li>
@@ -5219,8 +5219,43 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_2" type="checkbox" id="__nav_11_2" checked>
+      
+      <label class="md-nav__link" for="__nav_11_2">
+        Python Magic Methods
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Python Magic Methods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_11_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python Magic Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content/" class="md-nav__link">
+        目录
       </a>
     </li>
   
@@ -5241,12 +5276,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Python Magic Methods
+          A guide to python's magic methods
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Python Magic Methods
+        A guide to python's magic methods
       </a>
       
         
@@ -5263,13 +5298,6 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    拓展阅读
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -5283,7 +5311,25 @@
   
   
     <li class="md-nav__item">
-      <a href="../the_tao_of_python/" class="md-nav__link">
+      <a href="../magic_methods_cookbook/" class="md-nav__link">
+        Python magic methods cookbook
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../the_tao_of_python/" class="md-nav__link">
         The Tao of Python
       </a>
     </li>
@@ -5295,7 +5341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mro_in_python/" class="md-nav__link">
+      <a href="../../mro_in_python/" class="md-nav__link">
         MRO in Python
       </a>
     </li>
@@ -5337,7 +5383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part11_connection_and_expansion/" class="md-nav__link">
+      <a href="../../../part11_connection_and_expansion/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5379,7 +5425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../part12_ecological_information/" class="md-nav__link">
+      <a href="../../../part12_ecological_information/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5421,7 +5467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CHANGELOG/" class="md-nav__link">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -5433,7 +5479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../REFERENCE/" class="md-nav__link">
+      <a href="../../../REFERENCE/" class="md-nav__link">
         Reference
       </a>
     </li>
@@ -5445,7 +5491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LICENSE/" class="md-nav__link">
+      <a href="../../../LICENSE/" class="md-nav__link">
         License
       </a>
     </li>
@@ -5457,7 +5503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FASTAPI/" class="md-nav__link">
+      <a href="../../../FASTAPI/" class="md-nav__link">
         Backup
       </a>
     </li>
@@ -5469,7 +5515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/jupyter/test/" class="md-nav__link">
+      <a href="../../../resources/jupyter/test/" class="md-nav__link">
         title
       </a>
     </li>
@@ -5507,13 +5553,6 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    拓展阅读
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -5530,9 +5569,7 @@
 
                 
                 
-                <h1 id="python">Python 中的魔法方法<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
-<h2 id="_1">拓展阅读<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/RafeKettler/magicmethods">Github: RafeKettler/magicmethods</a></p>
+                <h1 id="a-guide-to-pythons-magic-methods">A Guide to Python's Magic Methods<a class="headerlink" href="#a-guide-to-pythons-magic-methods" title="Permanent link">&para;</a></h1>
                 
               
 
@@ -5552,7 +5589,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../content/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -5561,19 +5598,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Overview
+              目录
             </div>
           </div>
         </a>
       
       
-        <a href="../the_tao_of_python/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../magic_methods_cookbook/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              The Tao of Python
+              Python magic methods cookbook
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -5606,16 +5643,16 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
       
-        <script src="../../assets/js/termynal.js"></script>
+        <script src="../../../assets/js/termynal.js"></script>
       
-        <script src="../../assets/js/custom.js"></script>
+        <script src="../../../assets/js/custom.js"></script>
       
     
   </body>

@@ -1,6 +1,18 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.33 (2021-12-04)
+#### Articles
+- 更新 magic methods cookbook
+
+<!---------------------------------------------------------->
+### 0.1.32 (2021-12-03)
+#### Features
+- 更新 efficient python index
+#### Articles
+- 更新 cookbook chapter13 item01-04
+
+<!---------------------------------------------------------->
 ### 0.1.31 (2021-11-29)
 #### Features
 - 更新 builtin functions & builtin data structures' methods
