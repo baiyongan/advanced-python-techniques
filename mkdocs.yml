@@ -135,6 +135,7 @@ nav:
   - IPython: 
     - 快速上手: part02_development_tool/ipython/brief_tutorial.md
     - 详细教程: part02_development_tool/ipython/detailed_tutorial.md
+    - 50 IPython Tricks: resources/jupyter/50-ipython-tricks.ipynb
   - Jupyter Notebook: 
     - 快速上手: part02_development_tool/jupyter_notebook/brief_tutorial.md
     - 详细教程: part02_development_tool/jupyter_notebook/detailed_tutorial.md
@@ -512,6 +513,7 @@ nav:
 # Part12
 - 业内资讯:
   - Overview: part12_ecological_information/index.md
+  - Blog: part12_ecological_information/blog.md
 
 # Record
 - 后记:
