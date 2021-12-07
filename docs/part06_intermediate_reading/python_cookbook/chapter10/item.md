@@ -236,8 +236,12 @@
 ## 05 利用命名空间导入目录分散的代码
 
 !!! question "问题"
+    你可能有大量的代码，由不同的人来分散地维护。每个部分被组织为文件目录，如一个包。然而，你希望能用共同的包前缀将所有组件连接起来，不是将每一个部分作为独立的包来安装。
+
+    - 从本质上讲，要定义一个顶级Python包，作为一个大集合分开维护子包的命名空间。
 
 ??? done "解决方案"
+    这个问题经常出现在大的应用框架中，框架开发者希望鼓励用户发布插件或附加包。
 
 ??? summary "讨论"
 
@@ -246,10 +250,73 @@
 ## 06 重新加载模块
 
 !!! question "问题"
+    你想重新加载已经加载的模块，因为你对其源码进行了修改。
+
+    - 使用 `imp.reload()` 来重新加载先前加载的模块。
 
 ??? done "解决方案"
+    ```python
+    >>> import spam
+    >>> import imp
+    >>> imp.reload(spam)
+    <module 'spam' from './spam.py'>
+    >>>
+    ```
 
 ??? summary "讨论"
+    重新加载模块在开发和调试过程中常常很有用。但在生产环境中的代码使用会不安全，因为它并不总是像您期望的那样工作。
+
+    !!! attention 
+        `reload()` 擦除了模块底层字典的内容，并通过重新执行模块的源代码来刷新它。模块对象本身的身份保持不变。因此，该操作在程序中所有已经被导入了的地方更新了模块。
+
+        尽管如此，reload()没有更新像”from module import name”这样使用import语句导入的定义。
+
+    ```python
+    # spam.py
+    def bar():
+        print('bar')
+
+    def grok():
+        print('grok')
+    ```
+
+    现在启动交互式会话：
+    ```python
+    >>> import spam
+    >>> from spam import grok
+    >>> spam.bar()
+    bar
+    >>> grok()
+    grok
+    >>>
+    ```
+
+    不退出Python修改spam.py的源码，将grok()函数改成这样：
+
+    ```python
+    def grok():
+        print('New grok')
+    ```
+
+    现在回到交互式会话，重新加载模块:
+
+    ```python
+    >>> import imp
+    >>> imp.reload(spam)
+    <module 'spam' from './spam.py'>
+    >>> spam.bar()
+    bar
+    >>> grok() # Notice old output
+    grok
+    >>> spam.grok() # Notice new output
+    New grok
+    >>>
+    ```
+
+    !!! danger
+        看到有2个版本的grok()函数被加载。通常来说，这不是你想要的，而是令人头疼的事。
+
+        因此，在生产环境中可能需要避免重新加载模块。在交互环境下调试，解释程序并试图弄懂它。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 07 运行目录或压缩文件
