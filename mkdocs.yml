@@ -116,6 +116,7 @@ nav:
 # Part01
 - 方向路线:
   - Overview: part01_direction_and_roadmap/index.md
+  - 语言专题: part01_direction_and_roadmap/python_language.md
   - 后端开发: part01_direction_and_roadmap/python_web_roadmap.md
   - DevOps: part01_direction_and_roadmap/python_devops_roadmap.md
   - 网络爬虫: part01_direction_and_roadmap/python_web_scraping_roadmap.md

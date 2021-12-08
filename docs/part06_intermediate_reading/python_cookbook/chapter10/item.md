@@ -243,7 +243,50 @@
 ??? done "解决方案"
     这个问题经常出现在大的应用框架中，框架开发者希望鼓励用户发布插件或附加包。
 
+    如果要将单独的目录统一到一个公共的命名空间下，可以把代码像普通的 Python 包那样组织起来，但是要删去用来将组件联合起来的 `__init__.py` 文件。
+
+    ```python
+    foo-package/
+        spam/
+            blah.py
+
+    bar-package/
+        spam/
+            grok.py
+    ```
+
+    在这2个目录里，都有着共同的命名空间 `spam` 。在任何一个目录里都没有 `__init__.py` 文件。
+
+    如果将 foo-package 和 bar-package 都加到 python 模块路径，则两个不同的包目录被合并到一起，你可以导入spam.blah和spam.grok，并且它们能够工作。
+
+    ```python
+    >>> import sys
+    >>> sys.path.extend(['foo-package', 'bar-package'])
+    >>> import spam.blah
+    >>> import spam.grok
+    >>>
+    ```
+
 ??? summary "讨论"
+    从本质上讲，**包命名空间是一种特殊的封装设计**，为合并不同的目录的代码到一个共同的命名空间。
+    
+    对于大的框架，这可能是有用的，因为它允许一个框架的部分被单独地安装下载。它也使人们能够轻松地为这样的框架编写第三方附加组件和其他扩展。
+
+    包命名空间的关键是确保顶级目录中没有 `__init__.py` 文件来作为共同的命名空间。
+
+    包命名空间的一个重要特点是任何人都可以用自己的代码来扩展命名空间。
+
+    一个包是否被作为一个包命名空间的主要方法是检查其 `__file__` 属性。如果没有，那包是个命名空间。这也可以由其字符表现形式中的 “namespace” 这个词体现出来。
+
+    ```python
+    >>> spam.__file__
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+    AttributeError: 'module' object has no attribute '__file__'
+    >>> spam
+    <module 'spam' (namespace)>
+    >>>
+    ```
 
 
 <!-- -------------------------------------------------------------------------- -->
