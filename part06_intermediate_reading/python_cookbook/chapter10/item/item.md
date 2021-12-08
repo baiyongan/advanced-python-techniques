@@ -236,20 +236,130 @@
 ## 05 利用命名空间导入目录分散的代码
 
 !!! question "问题"
+    你可能有大量的代码，由不同的人来分散地维护。每个部分被组织为文件目录，如一个包。然而，你希望能用共同的包前缀将所有组件连接起来，不是将每一个部分作为独立的包来安装。
+
+    - 从本质上讲，要定义一个顶级Python包，作为一个大集合分开维护子包的命名空间。
 
 ??? done "解决方案"
+    这个问题经常出现在大的应用框架中，框架开发者希望鼓励用户发布插件或附加包。
+
+    如果要将单独的目录统一到一个公共的命名空间下，可以把代码像普通的 Python 包那样组织起来，但是要删去用来将组件联合起来的 `__init__.py` 文件。
+
+    ```python
+    foo-package/
+        spam/
+            blah.py
+
+    bar-package/
+        spam/
+            grok.py
+    ```
+
+    在这2个目录里，都有着共同的命名空间 `spam` 。在任何一个目录里都没有 `__init__.py` 文件。
+
+    如果将 foo-package 和 bar-package 都加到 python 模块路径，则两个不同的包目录被合并到一起，你可以导入spam.blah和spam.grok，并且它们能够工作。
+
+    ```python
+    >>> import sys
+    >>> sys.path.extend(['foo-package', 'bar-package'])
+    >>> import spam.blah
+    >>> import spam.grok
+    >>>
+    ```
 
 ??? summary "讨论"
+    从本质上讲，**包命名空间是一种特殊的封装设计**，为合并不同的目录的代码到一个共同的命名空间。
+    
+    对于大的框架，这可能是有用的，因为它允许一个框架的部分被单独地安装下载。它也使人们能够轻松地为这样的框架编写第三方附加组件和其他扩展。
+
+    包命名空间的关键是确保顶级目录中没有 `__init__.py` 文件来作为共同的命名空间。
+
+    包命名空间的一个重要特点是任何人都可以用自己的代码来扩展命名空间。
+
+    一个包是否被作为一个包命名空间的主要方法是检查其 `__file__` 属性。如果没有，那包是个命名空间。这也可以由其字符表现形式中的 “namespace” 这个词体现出来。
+
+    ```python
+    >>> spam.__file__
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+    AttributeError: 'module' object has no attribute '__file__'
+    >>> spam
+    <module 'spam' (namespace)>
+    >>>
+    ```
 
 
 <!-- -------------------------------------------------------------------------- -->
 ## 06 重新加载模块
 
 !!! question "问题"
+    你想重新加载已经加载的模块，因为你对其源码进行了修改。
+
+    - 使用 `imp.reload()` 来重新加载先前加载的模块。
 
 ??? done "解决方案"
+    ```python
+    >>> import spam
+    >>> import imp
+    >>> imp.reload(spam)
+    <module 'spam' from './spam.py'>
+    >>>
+    ```
 
 ??? summary "讨论"
+    重新加载模块在开发和调试过程中常常很有用。但在生产环境中的代码使用会不安全，因为它并不总是像您期望的那样工作。
+
+    !!! attention 
+        `reload()` 擦除了模块底层字典的内容，并通过重新执行模块的源代码来刷新它。模块对象本身的身份保持不变。因此，该操作在程序中所有已经被导入了的地方更新了模块。
+
+        尽管如此，reload()没有更新像”from module import name”这样使用import语句导入的定义。
+
+    ```python
+    # spam.py
+    def bar():
+        print('bar')
+
+    def grok():
+        print('grok')
+    ```
+
+    现在启动交互式会话：
+    ```python
+    >>> import spam
+    >>> from spam import grok
+    >>> spam.bar()
+    bar
+    >>> grok()
+    grok
+    >>>
+    ```
+
+    不退出Python修改spam.py的源码，将grok()函数改成这样：
+
+    ```python
+    def grok():
+        print('New grok')
+    ```
+
+    现在回到交互式会话，重新加载模块:
+
+    ```python
+    >>> import imp
+    >>> imp.reload(spam)
+    <module 'spam' from './spam.py'>
+    >>> spam.bar()
+    bar
+    >>> grok() # Notice old output
+    grok
+    >>> spam.grok() # Notice new output
+    New grok
+    >>>
+    ```
+
+    !!! danger
+        看到有2个版本的grok()函数被加载。通常来说，这不是你想要的，而是令人头疼的事。
+
+        因此，在生产环境中可能需要避免重新加载模块。在交互环境下调试，解释程序并试图弄懂它。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 07 运行目录或压缩文件

@@ -510,6 +510,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../part01_direction_and_roadmap/python_language/" class="md-nav__link">
+        语言专题
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
         后端开发
       </a>
@@ -585,14 +597,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
       
-      <label class="md-nav__link" for="__nav_2_8">
+      <label class="md-nav__link" for="__nav_2_9">
         经验建议
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="经验建议" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_8">
+        <label class="md-nav__title" for="__nav_2_9">
           <span class="md-nav__icon md-icon"></span>
           经验建议
         </label>
@@ -761,6 +773,18 @@
     <li class="md-nav__item">
       <a href="../../../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
         详细教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../resources/jupyter/50-ipython-tricks/" class="md-nav__link">
+        50 IPython Tricks
       </a>
     </li>
   
@@ -5544,6 +5568,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../part12_ecological_information/blog/" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -5996,16 +6032,104 @@
 <h2 id="05">05 利用命名空间导入目录分散的代码<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>你可能有大量的代码，由不同的人来分散地维护。每个部分被组织为文件目录，如一个包。然而，你希望能用共同的包前缀将所有组件连接起来，不是将每一个部分作为独立的包来安装。</p>
+<ul>
+<li>从本质上讲，要定义一个顶级Python包，作为一个大集合分开维护子包的命名空间。</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>这个问题经常出现在大的应用框架中，框架开发者希望鼓励用户发布插件或附加包。</p>
+<p>如果要将单独的目录统一到一个公共的命名空间下，可以把代码像普通的 Python 包那样组织起来，但是要删去用来将组件联合起来的 <code>__init__.py</code> 文件。</p>
+<div class="highlight"><pre><span></span><code><span class="n">foo</span><span class="o">-</span><span class="n">package</span><span class="o">/</span>
+    <span class="n">spam</span><span class="o">/</span>
+        <span class="n">blah</span><span class="o">.</span><span class="n">py</span>
+
+<span class="n">bar</span><span class="o">-</span><span class="n">package</span><span class="o">/</span>
+    <span class="n">spam</span><span class="o">/</span>
+        <span class="n">grok</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div>
+<p>在这2个目录里，都有着共同的命名空间 <code>spam</code> 。在任何一个目录里都没有 <code>__init__.py</code> 文件。</p>
+<p>如果将 foo-package 和 bar-package 都加到 python 模块路径，则两个不同的包目录被合并到一起，你可以导入spam.blah和spam.grok，并且它们能够工作。</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s1">&#39;foo-package&#39;</span><span class="p">,</span> <span class="s1">&#39;bar-package&#39;</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">spam.blah</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">spam.grok</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>从本质上讲，<strong>包命名空间是一种特殊的封装设计</strong>，为合并不同的目录的代码到一个共同的命名空间。</p>
+<p>对于大的框架，这可能是有用的，因为它允许一个框架的部分被单独地安装下载。它也使人们能够轻松地为这样的框架编写第三方附加组件和其他扩展。</p>
+<p>包命名空间的关键是确保顶级目录中没有 <code>__init__.py</code> 文件来作为共同的命名空间。</p>
+<p>包命名空间的一个重要特点是任何人都可以用自己的代码来扩展命名空间。</p>
+<p>一个包是否被作为一个包命名空间的主要方法是检查其 <code>__file__</code> 属性。如果没有，那包是个命名空间。这也可以由其字符表现形式中的 “namespace” 这个词体现出来。</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="vm">__file__</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+    <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;module&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;__file__&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
+<span class="o">&lt;</span><span class="n">module</span> <span class="s1">&#39;spam&#39;</span> <span class="p">(</span><span class="n">namespace</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="06">06 重新加载模块<a class="headerlink" href="#06" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>你想重新加载已经加载的模块，因为你对其源码进行了修改。</p>
+<ul>
+<li>使用 <code>imp.reload()</code> 来重新加载先前加载的模块。</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">spam</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">imp</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">imp</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">spam</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">module</span> <span class="s1">&#39;spam&#39;</span> <span class="kn">from</span> <span class="s1">&#39;./spam.py&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>重新加载模块在开发和调试过程中常常很有用。但在生产环境中的代码使用会不安全，因为它并不总是像您期望的那样工作。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><code>reload()</code> 擦除了模块底层字典的内容，并通过重新执行模块的源代码来刷新它。模块对象本身的身份保持不变。因此，该操作在程序中所有已经被导入了的地方更新了模块。</p>
+<p>尽管如此，reload()没有更新像”from module import name”这样使用import语句导入的定义。</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1"># spam.py</span>
+<span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">grok</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;grok&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>现在启动交互式会话：
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">spam</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">spam</span> <span class="kn">import</span> <span class="n">grok</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">bar</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">grok</span><span class="p">()</span>
+<span class="n">grok</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></p>
+<p>不退出Python修改spam.py的源码，将grok()函数改成这样：</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">grok</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;New grok&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>现在回到交互式会话，重新加载模块:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">imp</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">imp</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">spam</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">module</span> <span class="s1">&#39;spam&#39;</span> <span class="kn">from</span> <span class="s1">&#39;./spam.py&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="n">bar</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">grok</span><span class="p">()</span> <span class="c1"># Notice old output</span>
+<span class="n">grok</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">grok</span><span class="p">()</span> <span class="c1"># Notice new output</span>
+<span class="n">New</span> <span class="n">grok</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>看到有2个版本的grok()函数被加载。通常来说，这不是你想要的，而是令人头疼的事。</p>
+<p>因此，在生产环境中可能需要避免重新加载模块。在交互环境下调试，解释程序并试图弄懂它。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="07">07 运行目录或压缩文件<a class="headerlink" href="#07" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
