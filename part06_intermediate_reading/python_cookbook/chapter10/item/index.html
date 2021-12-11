@@ -6134,16 +6134,75 @@
 <h2 id="07">07 运行目录或压缩文件<a class="headerlink" href="#07" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>一个已成长为包含多个文件的应用，已远不再是一个简单的脚本，如何向用户提供一些简单的方法运行这个程序？</p>
+<ul>
+<li>如果应用程序已经有多个文件，可以把应用程序放进它自己的目录，并添加一个 <code>__main__.py</code> 文件。</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code><span class="n">myapplication</span><span class="o">/</span>
+    <span class="n">spam</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">bar</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">grok</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">__main__</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div>
+<p>如果 <code>__main__.py</code> 存在，可以简单地在顶级目录运行Python解释器：</p>
+<div class="highlight"><pre><span></span><code><span class="n">bash</span> <span class="o">%</span> <span class="n">python3</span> <span class="n">myapplication</span>
+</code></pre></div>
+<p>如果你将你的代码打包成zip文件，这种技术同样也适用，举个例子：</p>
+<div class="highlight"><pre><span></span><code><span class="n">bash</span> <span class="o">%</span> <span class="n">ls</span>
+<span class="n">spam</span><span class="o">.</span><span class="n">py</span> <span class="n">bar</span><span class="o">.</span><span class="n">py</span> <span class="n">grok</span><span class="o">.</span><span class="n">py</span> <span class="n">__main__</span><span class="o">.</span><span class="n">py</span>
+<span class="n">bash</span> <span class="o">%</span> <span class="nb">zip</span> <span class="o">-</span><span class="n">r</span> <span class="n">myapp</span><span class="o">.</span><span class="n">zip</span> <span class="o">*.</span><span class="n">py</span>
+<span class="n">bash</span> <span class="o">%</span> <span class="n">python3</span> <span class="n">myapp</span><span class="o">.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">output</span> <span class="kn">from</span> <span class="nn">__main__.py</span> <span class="o">...</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>创建一个目录或zip文件并添加<code>__main__.py</code>文件来将一个更大的Python应用打包是可行的。这只是让别人执行的代码包。</p>
+<div class="admonition tip">
+<p>由于目录和zip文件与正常文件有一点不同，你可能还需要增加一个shell脚本，使执行更加容易。例如，如果代码文件名为myapp.zip，你可以创建这样一个顶级脚本：
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3 /usr/local/bin/myapp.zip</span>
+</code></pre></div></p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="08">08 读取位于包中的数据文件<a class="headerlink" href="#08" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>你的包中包含代码需要去读取的数据文件。你需要尽可能地用最便捷的方式来做这件事。</p>
+<ul>
+<li>使用 <code>pkgutil</code> 模块</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>假设 spam.py 文件需要读取 somedata.dat 文件中的内容。</p>
+<div class="highlight"><pre><span></span><code><span class="n">mypackage</span><span class="o">/</span>
+    <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">somedata</span><span class="o">.</span><span class="n">dat</span>
+    <span class="n">spam</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div>
+<p>如下，由此产生的变量是包含该文件的原始内容的字节字符串。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># spam.py</span>
+<span class="kn">import</span> <span class="nn">pkgutil</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pkgutil</span><span class="o">.</span><span class="n">get_data</span><span class="p">(</span><span class="n">__package__</span><span class="p">,</span> <span class="s1">&#39;somedata.dat&#39;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><p>为什么不用内置的 open() 函数？</p>
+<ul>
+<li>
+<p>首先，<strong>一个包对解释器的当前工作目录几乎没有控制权。</strong> 因此，编程时任何I/O操作都必须使用绝对文件名。由于每个模块包含有完整路径的 <code>__file__</code> 变量，弄清楚它的路径不是不可能，但它很凌乱。</p>
+</li>
+<li>
+<p>第二，包通常安装作为 <code>.zip</code> 或 <code>.egg</code> 文件，这些文件并不像在文件系统上的一个普通目录里那样被保存。因此，你试图用open()对一个包含数据文件的归档文件进行操作，它根本不会工作。</p>
+</li>
+</ul>
+<p>为什么用 pkgutil.get_data() ？</p>
+<ul>
+<li>
+<p>pkgutil.get_data() 函数是一个读取数据文件的高级工具，不用管包是如何安装以及安装在哪。它只是工作并将文件内容以字节字符串返回给你</p>
+</li>
+<li>
+<p>get_data() 的第一个参数是包含包名的字符串。你可以直接使用包名，也可以使用特殊的变量，比如 <code>__package__</code>。第二个参数是包内文件的相对名称。如果有必要，可以使用标准的Unix命名规范到不同的目录，只要最后的目录仍然位于包中。</p>
+</li>
+</ul>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="09-syspath">09 将文件夹加入到sys.path<a class="headerlink" href="#09-syspath" title="Permanent link">&para;</a></h2>
 <div class="admonition question">

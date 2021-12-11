@@ -1,1 +1,1 @@
-# Pycharm 简明教程
+# Pycharm 常用快捷键
