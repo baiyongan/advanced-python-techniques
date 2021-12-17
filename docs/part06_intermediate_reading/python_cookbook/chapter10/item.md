@@ -449,19 +449,90 @@
 ## 09 将文件夹加入到sys.path
 
 !!! question "问题"
+    如果无法导入你的 Python 代码，因为它所在的目录不在 sys.path 里。那么如何将其添加新目录到Python路径，但是不硬链接到你的代码。
+
+    - 第一种：使用 PYTHONPATH 变量添加
+    - 第二种：创建一个 .pth 文件，将目录列在其中
 
 ??? done "解决方案"
+    - 第一种：使用 PYTHONPATH 环境变量添加
+    
+    在自定义应用程序中，这样的环境变量可在程序启动时设置或通过shell脚本设置。
+
+    ```python
+    bash % env PYTHONPATH=/some/dir:/other/dir python3
+    Python 3.3.0 (default, Oct 4 2012, 10:17:33)
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import sys
+    >>> sys.path
+    ['', '/some/dir', '/other/dir', ...]
+    >>>
+    ```
+
+    - 第二种：.pth 文件
+
+    ```python
+    # myapplication.pth
+    /some/dir
+    /other/dir
+    ```
+
+    !!! attention ""
+        这个 .pth 文件需要放在某个Python的site-packages目录，通常位于/usr/local/lib/python3.3/site-packages 或者 ~/.local/lib/python3.3/sitepackages。当解释器启动时，.pth文件里列举出来的存在于文件系统的目录将被添加到sys.path。安装一个.pth文件可能需要管理员权限，如果它被添加到系统级的Python解释器。
 
 ??? summary "讨论"
+
+    如果使用模块级的变量来精心构造一个适当的绝对路径，则可以解决硬编码目录的问题，比如`__file__`。
+
+    ```python
+    import sys
+    from os.path import abspath, join, dirname
+    sys.path.insert(0, join(abspath(dirname(__file__)), 'src'))
+    ```
+
+    这将 src 目录添加到 path 里，和执行插入步骤的代码在同一个目录里。
+
+    !!! tips ""
+        site-packages 目录是第三方包和模块安装的目录。如果手动安装你的代码，它将被安装到site-packages目录。
+
+        虽然用于配置path的.pth文件必须放置在site-packages里，但它配置的路径可以是系统上任何你希望的目录。因此，你可以把你的代码放在一系列不同的目录，只要那些目录包含在.pth文件里。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 10 通过字符串名导入模块
 
 !!! question "问题"
+    你想导入一个模块，但是模块的名字在字符串里。如何对字符串调用导入命令？
 
-??? done "解决方案"
+    - 使用 `importlib.import_module()` 函数来手动导入名字为字符串给出的一个模块或者包的一部分。
+
+??? done "解决方案" 
+    ```python
+    >>> import importlib
+    >>> math = importlib.import_module('math')
+    >>> math.sin(2)
+    0.9092974268256817
+    >>> mod = importlib.import_module('urllib.request')
+    >>> u = mod.urlopen('http://www.python.org')
+    >>>
+    ```
+
+    !!! tips ""
+        import_module只是简单地执行和import相同的步骤，但是返回生成的模块对象。你只需要将其存储在一个变量，然后像正常的模块一样使用。
+
+        **如果你正在使用的包，import_module()也可用于相对导入**。但是，你需要给它一个额外的参数。例如：
+
+        ```python
+        import importlib
+        # Same as 'from . import b'
+        b = importlib.import_module('.b', __package__)
+        ```
 
 ??? summary "讨论"
+    使用 import_module() 手动导入模块的问题，通常出现在以某种方式编写修改或覆盖模块的代码时候。例如，也许你正在执行某种自定义导入机制，需要通过名称来加载一个模块，通过补丁加载代码。
+
+    !!! attention ""
+        在旧的代码，有时你会看到用于导入的内建函数 `__import__()`。尽管它能工作，但是 `importlib.import_module()` 通常更容易使用。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 11 通过钩子远程加载模块
