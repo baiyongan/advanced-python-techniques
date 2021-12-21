@@ -139,7 +139,7 @@ nav:
   - Jupyter Notebook: 
     - 快速上手: part02_development_tool/jupyter_notebook/brief_tutorial.md
     - 详细教程: part02_development_tool/jupyter_notebook/detailed_tutorial.md
-    - 50 IPython Tips: resources/jupyter/50-ipython-tricks.ipynb
+    - 50 IPython Tips: part02_development_tool/jupyter_notebook/50_ipython_tricks.ipynb
   - PySnooper: 
     - 快速上手: part02_development_tool/pysnooper/brief_tutorial.md
     - 详细教程: part02_development_tool/pysnooper/detailed_tutorial.md

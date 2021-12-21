@@ -4,64 +4,35 @@
 
 !!! abstract ""
     === "Function"
-
-        
+        `clear()` 方法从字典中删除所有item。
 
     === "Syntax"
 
         ```python
-        
+        dict.clear()
         ```
 
     === "Parameter"
-
-        
-
+        无参数
+    
     === "Return Value"
-
-        
+        `clear()` 方法不返回任何值（返回 `None`）。
 
 ??? note ""
     === "Example 1"
-        
-
+        `clear()` 方法如何作用于字典？
 
         ```python
+        d = {1: "one", 2: "two"}
 
+        d.clear()
+        print('d =', d)
         ```
 
         Result 1
 
         ```python
-
-        ```
-
-    === "Example 2"
-        
-
-        
-        ```python
-        
-        ```
-
-        Result 2
-
-        ```python
-
-        ```
-
-    === "Example 3"
-        
-
-        
-        ```python
-
-        ```
-
-        Result 3
-
-        ```python
-
+        d = {}
         ```
 
 ## copy()
