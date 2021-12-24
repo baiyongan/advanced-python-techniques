@@ -594,18 +594,136 @@
     - 使用 `pyvenv` 命令创建一个新的“虚拟”环境。
 
 ??? done "解决方案"
+    pyvenv 命令被安装在Python解释器同一目录，或Windows上面的Scripts目录中。
+
+    ```bash
+    bash % pyvenv Spam
+    bash %
+    
+    # 传给 pyvenv 命令的名字是将要被创建的目录名。当被创建后，Span目录像下面这样：
+    bash % cd Spam
+    bash % ls
+    bin include lib pyvenv.cfg
+    bash %
+    ```
+
+    在bin目录中，会找到一个可以使用的Python解释器：
+
+    这个解释器的特点就是其 site-packages 目录被设置为新创建的环境。 
+    
+    如果你要安装第三方包，它们会被安装在那里，而不是通常系统的site-packages目录。
+
+    ```bash
+    bash % Spam/bin/python3
+    Python 3.3.0 (default, Oct 6 2012, 15:45:22)
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> from pprint import pprint
+    >>> import sys
+    >>> pprint(sys.path)
+    ['',
+    '/usr/local/lib/python33.zip',
+    '/usr/local/lib/python3.3',
+    '/usr/local/lib/python3.3/plat-darwin',
+    '/usr/local/lib/python3.3/lib-dynload',
+    '/Users/beazley/Spam/lib/python3.3/site-packages']
+    >>>
+    ```
+
+    可以看出，sys.path 变量包含来自于系统Python的目录， 而 site-packages目录已经被重定位到一个新的目录。
 
 ??? summary "讨论"
+
+    创建虚拟环境通常是为了安装和管理第三方包。 
+
+    有了一个新的虚拟环境，下一步就是安装一个包管理器，比如distribute或pip。 但安装这样的工具和包的时候，要确保你使用的是虚拟环境的解释器。 它会将包安装到新创建的site-packages目录中去。
+
+    !!! attention ""
+        尽管一个虚拟环境看上去是Python安装的一个复制， 不过它实际上只包含了少量几个文件和一些符号链接。 所有标准库函文件和可执行解释器都来自原来的Python安装。 因此，创建这样的环境是很容易的，并且几乎不会消耗机器资源。
+
+    !!! tip ""
+        默认情况下，虚拟环境是空的，不包含任何额外的第三方库。如果你想将一个已经安装的包作为虚拟环境的一部分， 可以使用“–system-site-packages”选项来创建虚拟环境，
+
+        ```bash
+        bash % pyvenv --system-site-packages Spam
+        bash %
+        ```
 
 <!-- -------------------------------------------------------------------------- -->
 ## 15 分发包
 
 !!! question "问题"
+    如何将编写的库分享给其他人？
 
+    - setup.py & MANIFEST.in
+    
 ??? done "解决方案"
+    如果要分发代码，首先，给它起一个唯一的名字，并清理其目录结构。
+    
+    ```python
+    projectname/
+        README.txt
+        Doc/
+            documentation.txt
+        projectname/
+            __init__.py
+            foo.py
+            bar.py
+            utils/
+                __init__.py
+                spam.py
+                grok.py
+        examples/
+            helloworld.py
+            ...
+    ```
+
+    首先编写 setup.py
+    
+    ```python
+    # setup.py
+    from distutils.core import setup
+
+    setup(name='projectname',
+        version='1.0',
+        author='Your Name',
+        author_email='you@youraddress.com',
+        url='http://www.you.com/projectname',
+        packages=['projectname', 'projectname.utils'],
+    )
+    ```
+
+    其次，创建一个 MANIFEST.in 文件，列出所有在包中需要包含进来的非源码文件：
+    
+    ```python
+    # MANIFEST.in
+    include *.txt
+    recursive-include examples *
+    recursive-include Doc *
+    ```
+
+    最后，确保 setup.py 和 MANIFEST.in 文件放在你的包的最顶级目录中。然后，执行命令来创建一个源码分发包：
+
+    ```python
+    % bash python3 setup.py sdist
+    ```
+
+    它会创建一个文件比如”projectname-1.0.zip” 或 “projectname-1.0.tar.gz”, 具体依赖于你的系统平台。
+    
+    如果一切正常， 这个文件就可以发送给别人使用或者上传至 Python Package Index.
 
 ??? summary "讨论"
+    对于纯Python代码，编写一个普通的 setup.py 文件通常很简单。
 
+    !!! attention ""
+        一个常见错误就是仅仅只列出一个包的最顶级目录，忘记了包含包的子组件。 这也是为什么在 setup.py 中对于包的说明包含了列表 `packages=['projectname', 'projectname.utils']`。
+
+    !!! tip ""
+        有很多第三方包管理器供选择，包括setuptools、distribute等等。 有些是为了替代标准库中的distutils。
+        
+        如果你依赖这些包， 用户可能不能安装你的软件，除非他们已经事先安装过所需要的包管理器。 正因如此，你更应该时刻记住——**越简单越好**。 
+        
+        **最好让你的代码使用标准的 Python3 安装。 如果其他包也需要的话，可以通过一个可选项来支持。**
 
 <!-- -------------------------------------------------------------------------- -->
 ## 总结
