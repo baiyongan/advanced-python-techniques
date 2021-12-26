@@ -53,6 +53,7 @@
 - pylint
 - flask8
 - pycodestyle
+- autopep8
 
 ## Testing
 - Pytest
