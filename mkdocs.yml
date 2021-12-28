@@ -154,7 +154,8 @@ nav:
 - 规范设计:  
   - Overview: part03_norm_and_design/index.md
   - Python 代码规范的重要性: part03_norm_and_design/norm/why_python_style_guide.md
-  - PEP8: part03_norm_and_design/norm/PEP8.md
+  - PEP8 简要总结: part03_norm_and_design/norm/PEP8_brief_summary.md
+  - PEP8 全文翻译: part03_norm_and_design/norm/PEP8_translation.md
   - Google Python Style Guide: part03_norm_and_design/norm/google_python_style_guide.md
 
 # Part04
