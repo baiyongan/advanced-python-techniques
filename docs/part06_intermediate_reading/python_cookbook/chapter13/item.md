@@ -46,10 +46,6 @@
     <other output omitted>
     ```
 
-    ```python
-
-    ```
-
 <!-- -------------------------------------------------------------------------- -->
 ## 02 终止程序并给出错误信息
 
@@ -566,26 +562,77 @@
 ## 15 启动一个WEB浏览器
 
 !!! question "问题"
+    如何通过脚本启动浏览器并打开指定的URL网页？
+
+    - 使用与平台无关的 webbrowser 模块
 
 ??? done "解决方案"
 
-    ```python
-
-    ```
+    webbrowser.open() 会使用默认浏览器打开指定网页。
 
     ```python
-
+    >>> import webbrowser
+    >>> webbrowser.open('http://www.python.org')
+    True
+    >>>
     ```
+
+    如果还想对网页打开方式做更多控制，还可以使用下面这些函数，打开一个新的浏览器窗口或者标签：
+
+    ```python
+    >>> # Open the page in a new browser window
+    >>> webbrowser.open_new('http://www.python.org')
+    True
+    >>>
+
+    >>> # Open the page in a new browser tab
+    >>> webbrowser.open_new_tab('http://www.python.org')
+    True
+    >>>
+    ```
+    
+    如果要指定浏览器类型，可以使用 webbrowser.get() 函数来指定某个特定浏览器。
+
+    ```python
+    >>> c = webbrowser.get('firefox')
+    >>> c.open('http://www.python.org')
+    True
+    >>> c.open_new_tab('http://docs.python.org')
+    True
+    >>>
+    ```
+
+    对于支持的浏览器名称列表可查阅 [Python文档](http://docs.python.org/3/library/webbrowser.html)
+
+    !!! danger ""
+        可能会出现如下错误：
+
+            ```python
+            In [17]: c = webbrowser.get('firefox')
+            ---------------------------------------------------------------------------
+            Error                                     Traceback (most recent call last)
+            <ipython-input-17-eabad5612d09> in <module>
+            ----> 1 c = webbrowser.get('firefox')
+
+            ~\Anaconda3\lib\webbrowser.py in get(using)
+                63             elif command[0] is not None:
+                64                 return command[0]()
+            ---> 65     raise Error("could not locate runnable browser")
+                66
+                67 # Please note: the following definition hides a builtin function.
+
+            Error: could not locate runnable browser
+            ```
 
 ??? summary "讨论"
+    **在脚本中打开浏览器有时候会很有用**。例如，某个脚本执行某个服务器发布任务， 你想快速打开一个浏览器来确保它已经正常运行了。
+    
+    或者是某个程序以HTML网页格式输出数据，你想打开浏览器查看结果。 不管是上面哪种情况，使用 `webbrowser` 模块都是一个简单实用的解决方案。
 
-    ```python
 
-    ```
 
-    ```python
 
-    ```
+
 
 <!-- -------------------------------------------------------------------------- -->
 ## 总结
