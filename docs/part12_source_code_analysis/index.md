@@ -24,3 +24,5 @@
 - How to **make a REST API** using django and django-rest-framework (project and slides).
 - How to **use websockets** in django with channels (slides).
 <!-- - Notes on Git (based on the official Git docs, Pro Git book and the Atlassian Git tutorial) -->
+
+

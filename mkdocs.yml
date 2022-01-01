@@ -151,12 +151,12 @@ nav:
     - 详细教程: part02_development_tool/pip/detailed_tutorial.md
 
 # Part03
-- 规范设计:  
-  - Overview: part03_norm_and_design/index.md
-  - Python 代码规范的重要性: part03_norm_and_design/norm/why_python_style_guide.md
-  - PEP8 要点总结: part03_norm_and_design/norm/PEP8_brief_summary.md
-  - PEP8 中文翻译: part03_norm_and_design/norm/PEP8_translation.md
-  - Google Python Style Guide: part03_norm_and_design/norm/google_python_style_guide.md
+- 规范准则:  
+  - Overview: part03_norm_and_guideline/index.md
+  - Python 代码规范的重要性: part03_norm_and_guideline/norm/why_python_style_guide.md
+  - PEP8 要点总结: part03_norm_and_guideline/norm/PEP8_brief_summary.md
+  - PEP8 中文翻译: part03_norm_and_guideline/norm/PEP8_translation.md
+  - Google Python Style Guide: part03_norm_and_guideline/norm/google_python_style_guide.md
 
 # Part04
 - 功能模块:
@@ -476,7 +476,6 @@ nav:
   - Overview: part09_python_in_action/index.md
   - Code Snippets: 
     - 目录: part09_python_in_action/code_snippets/content.md
-  - Python 中的数据结构与算法: part09_python_in_action/data_structure_and_algorithm.md
   - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
   - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
@@ -499,23 +498,28 @@ nav:
   #   - resources: part09_python_in_action/performance_marketing_report/14_resources.md
     
 # Part10
-- 源码剖析:
-  - Overview: part10_source_code_analysis/index.md
-  - Python Magic Methods: 
-    - 目录: part10_source_code_analysis/magic_methods/content.md
-    - A guide to python's magic methods: part10_source_code_analysis/magic_methods/magic_methods_guide.md
-    - Python magic methods cookbook: part10_source_code_analysis/magic_methods/magic_methods_cookbook.md
-  - The Tao of Python: part10_source_code_analysis/the_tao_of_python.md
-  - MRO in Python: part10_source_code_analysis/mro_in_python.md
+- 结构算法:
+  - Overview: part10_data_structure_and_algorithm/index.md
+  - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
 
 # Part11
-- 关联拓展:
-  - Overview: part11_connection_and_expansion/index.md
+- 设计模式:
+  - Overview: part11_design_pattern/index.md
 
 # Part12
-- 业内资讯:
-  - Overview: part12_ecological_information/index.md
-  - Blog: part12_ecological_information/blog.md
+- 源码剖析:
+  - Overview: part12_source_code_analysis/index.md
+  - Python Magic Methods: 
+    - 目录: part12_source_code_analysis/magic_methods/content.md
+    - A guide to python's magic methods: part12_source_code_analysis/magic_methods/magic_methods_guide.md
+    - Python magic methods cookbook: part12_source_code_analysis/magic_methods/magic_methods_cookbook.md
+  - The Tao of Python: part12_source_code_analysis/the_tao_of_python.md
+  - MRO in Python: part12_source_code_analysis/mro_in_python.md
+
+# Part13
+- 关联拓展:
+  - Overview: part13_connection_and_expansion/index.md
+  - Blog: part13_connection_and_expansion/blog.md
 
 # Record
 - 后记:
@@ -523,9 +527,8 @@ nav:
   - Reference: REFERENCE.md
   - License: LICENSE.md
   - Backup: FASTAPI.md
-  - Notebook: resources/jupyter/test.ipynb
 
-# # color
+# # color option
 # red
 # pink
 # purple
