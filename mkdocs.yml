@@ -416,7 +416,20 @@ nav:
   
   - Python3 OOP: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
-  
+    - 01 面向对象设计: part06_intermediate_reading/python3_oop/chapter01/item.md
+    - 02 Python对象: part06_intermediate_reading/python3_oop/chapter02/item.md
+    - 03 对象相似时: part06_intermediate_reading/python3_oop/chapter03/item.md
+    - 04 异常捕获: part06_intermediate_reading/python3_oop/chapter04/item.md
+    - 05 何时使用面向对象编程: part06_intermediate_reading/python3_oop/chapter05/item.md
+    - 06 Python数据结构: part06_intermediate_reading/python3_oop/chapter06/item.md
+    - 07 Python面向对象的捷径: part06_intermediate_reading/python3_oop/chapter07/item.md
+    - 08 字符串与序列化: part06_intermediate_reading/python3_oop/chapter08/item.md
+    - 09 迭代器模式: part06_intermediate_reading/python3_oop/chapter09/item.md
+    - 10 Python设计模式I: part06_intermediate_reading/python3_oop/chapter10/item.md
+    - 11 Python设计模式II: part06_intermediate_reading/python3_oop/chapter11/item.md
+    - 12 测试面向对象程序: part06_intermediate_reading/python3_oop/chapter12/item.md
+    - 13 并发: part06_intermediate_reading/python3_oop/chapter13/item.md
+
   - Fluent Python: 
     - 目录: part06_intermediate_reading/fluent_python/content.md
   
