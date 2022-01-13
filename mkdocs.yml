@@ -12,7 +12,7 @@ repo_url: https://github.com/baiyongan/advanced-python-techniques
 edit_uri: ''
 
 # Copyright
-copyright: Copyright &copy; 2021 - present Bai Yongan
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a> <br> Copyright &copy; 2022 Bai Yongan 
 
 # Theme Configuration
 theme:
