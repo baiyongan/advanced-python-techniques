@@ -5857,7 +5857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../LICENSE.md" class="md-nav__link">
+      <a href="../../../../LICENSE/" class="md-nav__link">
         License
       </a>
     </li>
@@ -6573,14 +6573,47 @@
 <p><code>operator.itemgetter()</code> 函数有一个被 rows 中的记录用来查找值的索引参数。可以是一个字典键名称， 一个整形值或者任何能够传入一个对象的 <code>__getitem__()</code> 方法的值。 如果你传入多个索引参数给 <code>itemgetter()</code> ，它生成的 <code>callable</code> 对象会返回一个包含所有元素值的元组， 并且 <code>sorted()</code> 函数会根据这个元组中元素顺序去排序。这对于同时在几个字段上面进行排序的情形会很有用。</p>
 </div>
 <p><code>itemgetter()</code> 有时候也可以用 <code>lambda</code> 表达式代替，但是，使用 <code>itemgetter()</code> 方式会运行的稍微快点。</p>
+<p>这节中展示的技术也同样适用于 <code>min()</code> 和 <code>max()</code> 等函数。</p>
 </details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="14">14 排序不支持原生比较的对象<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>如果想排序类型相同的对象，但是它们不支持原生的比较操作，怎么办？</p>
+<ul>
+<li>内置的 <code>sorted()</code> 函数有一个关键字参数 <code>key</code></li>
+<li>使用 <code>operator.attrgetter()</code> 来代替 <code>lambda</code> 函数</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>内置的 <code>sorted()</code> 函数有一个关键字参数 <code>key</code> ，可以传入一个 <code>callable</code> 对象给它， 这个 <code>callable</code> 对象对每个传入的对象返回一个值，这个值会被 <code>sorted</code> 用来排序这些对象。 </p>
+<p>如下，提供来一个以 <code>User</code> 实例作为输入，并输出对应 <code>user_id</code> 值的 <code>callable</code> 对象:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_id</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">user_id</span> <span class="o">=</span> <span class="n">user_id</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;User(</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">user_id</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">sort_notcompare</span><span class="p">():</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="p">(</span><span class="mi">23</span><span class="p">),</span> <span class="n">User</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">User</span><span class="p">(</span><span class="mi">99</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">u</span><span class="p">:</span> <span class="n">u</span><span class="o">.</span><span class="n">user_id</span><span class="p">))</span>
+</code></pre></div>
+<p>另外一种方式是使用 <code>operator.attrgetter()</code> 来代替 <code>lambda</code> 函数：</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">attrgetter</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;user_id&#39;</span><span class="p">))</span>
+<span class="p">[</span><span class="n">User</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">User</span><span class="p">(</span><span class="mi">23</span><span class="p">),</span> <span class="n">User</span><span class="p">(</span><span class="mi">99</span><span class="p">)]</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+</details>
+<details class="summary"><summary>讨论</summary><div class="admonition tip">
+<p><code>attrgetter()</code> 函数通常会运行的快点，并且还能同时允许多个字段进行比较。例如，如果 <code>User</code> 实例还有一个 <code>first_name</code> 和 <code>last_name</code> 属性，那么可以向下面这样排序：</p>
+<div class="highlight"><pre><span></span><code><span class="n">by_name</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;last_name&#39;</span><span class="p">,</span> <span class="s1">&#39;first_name&#39;</span><span class="p">))</span>
+</code></pre></div>
+<p>这节中展示的技术也同样适用于 <code>min()</code> 和 <code>max()</code> 等函数。</p>
+</div>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="15">15 通过某个字段将记录分组<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
 <div class="admonition question">

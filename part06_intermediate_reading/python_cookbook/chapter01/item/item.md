@@ -613,14 +613,55 @@
 
     `itemgetter()` 有时候也可以用 `lambda` 表达式代替，但是，使用 `itemgetter()` 方式会运行的稍微快点。
 
+    这节中展示的技术也同样适用于 `min()` 和 `max()` 等函数。
+
 <!-- -------------------------------------------------------------------------- -->
 ## 14 排序不支持原生比较的对象
 
 !!! question "问题"
+    如果想排序类型相同的对象，但是它们不支持原生的比较操作，怎么办？
+
+    - 内置的 `sorted()` 函数有一个关键字参数 `key`
+    - 使用 `operator.attrgetter()` 来代替 `lambda` 函数
 
 ??? done "解决方案"
+    内置的 `sorted()` 函数有一个关键字参数 `key` ，可以传入一个 `callable` 对象给它， 这个 `callable` 对象对每个传入的对象返回一个值，这个值会被 `sorted` 用来排序这些对象。 
+
+    如下，提供来一个以 `User` 实例作为输入，并输出对应 `user_id` 值的 `callable` 对象:
+
+    ```python
+    class User:
+        def __init__(self, user_id):
+            self.user_id = user_id
+
+        def __repr__(self):
+            return 'User({})'.format(self.user_id)
+
+
+    def sort_notcompare():
+        users = [User(23), User(3), User(99)]
+        print(users)
+        print(sorted(users, key=lambda u: u.user_id))
+    ```
+
+    另外一种方式是使用 `operator.attrgetter()` 来代替 `lambda` 函数：
+
+    ```python
+    >>> from operator import attrgetter
+    >>> sorted(users, key=attrgetter('user_id'))
+    [User(3), User(23), User(99)]
+    >>>
+    ```
 
 ??? summary "讨论"
+    !!! tip ""
+        `attrgetter()` 函数通常会运行的快点，并且还能同时允许多个字段进行比较。例如，如果 `User` 实例还有一个 `first_name` 和 `last_name` 属性，那么可以向下面这样排序：
+        
+        ```python
+        by_name = sorted(users, key=attrgetter('last_name', 'first_name'))
+        ```
+
+        这节中展示的技术也同样适用于 `min()` 和 `max()` 等函数。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 15 通过某个字段将记录分组

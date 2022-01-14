@@ -6088,7 +6088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LICENSE.md" class="md-nav__link">
+      <a href="../../../LICENSE/" class="md-nav__link">
         License
       </a>
     </li>
@@ -6504,7 +6504,8 @@
 <p>风格指南是有关一致性的重要规约。书写与此风格指南一致的代码很重要，书写与项目风格一致的代码更加重要，在一个模块或函数内, 书写风格一致的代码超级重要。   </p>
 <p>所以，风格指南并不适用于所有情况，要知道什么时候不一致，这需要你运用自己的智慧进行判断。多看一些例子，选择你认为最好的那个，必要的时候要懂得向别人请教。   </p>
 <p>尤其注意：<strong>不要为了满足风格指南而破坏与过去代码风格的兼容性！</strong></p>
-<blockquote>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>以下情况可以不必考虑风格指南：   </p>
 <ol>
 <li>即使对于习惯此风格代码的人，应用此风格指南也会使代码的可读性降低。   </li>
@@ -6513,20 +6514,19 @@
 <li>有些代码早于此风格指南出现并且没有其他理由要修改这些代码。   </li>
 <li>代码需要与旧版本的 Python 代码兼容，但旧版本不支持此风格指南。   </li>
 </ol>
-</blockquote>
+</div>
 <h2 id="3">3、代码布局<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <hr />
 <h3 id="1_1"><strong>（1）缩进</strong><a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>每级缩进对应四个空格。   </p>
 <p>()、[] 或者 {} 可以隐式的换行，三种括号所包裹的代码要么垂直对齐，要么悬挂缩进。当使用悬挂缩进时，应该注意：参数不能放在首行，续行要再缩进一级以便和后边的代码区别开。   </p>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">正确写法</p>
 <ul>
 <li>与左括号对齐（垂直对齐写法）</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">foo</span> <span class="o">=</span> <span class="n">long_function_name</span><span class="p">(</span><span class="n">var_one</span><span class="p">,</span> <span class="n">var_two</span><span class="p">,</span>
-                         <span class="n">var_three</span><span class="p">,</span> <span class="n">var_four</span><span class="p">)</span>
+                        <span class="n">var_three</span><span class="p">,</span> <span class="n">var_four</span><span class="p">)</span>
 </code></pre></div>
 <ul>
 <li>悬挂缩进</li>
@@ -6543,9 +6543,9 @@
         <span class="n">var_four</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法： </p>
-</blockquote>
+</div>
+<div class="admonition error">
+<p class="admonition-title">错误写法</p>
 <ul>
 <li>参数放在第一行而没有垂直对齐</li>
 </ul>
@@ -6560,9 +6560,10 @@
     <span class="n">var_four</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>对于续行来说，4个空格的缩进规则可以不必遵守  </p>
-</blockquote>
 <ul>
 <li>可以不采用是4个空格的缩进方法</li>
 </ul>
@@ -6570,6 +6571,7 @@
   <span class="n">var_one</span><span class="p">,</span> <span class="n">var_two</span><span class="p">,</span>
   <span class="n">var_three</span><span class="p">,</span> <span class="n">var_four</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <p>当 if 语句的条件部分很长以至于需要将其写成多行时，需要注意，if 和单个空格以及左括号正好是 4 个空格缩进，这可能与嵌套在if语句中的代码块产生冲突。本文档不提供确切的方法来解决条件行和 if 语句的嵌套代码块的冲突。以下是一些可行的处理方法，但不必局限于此：</p>
 <ul>
 <li>无额外的缩进</li>
