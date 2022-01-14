@@ -24,13 +24,14 @@ Guido 认为：代码被阅读之频繁远甚于其被编写。所以，这里�
 
 尤其注意：**不要为了满足风格指南而破坏与过去代码风格的兼容性！**
 
->以下情况可以不必考虑风格指南：   
->
->1. 即使对于习惯此风格代码的人，应用此风格指南也会使代码的可读性降低。   
->2. 为了与上下文代码风格一致(可能由于历史原因，上下文的风格也违背了本指南)，   
->   当然这也是一个规范代码风格的机会(通过改变上下文的风格)。   
->3. 有些代码早于此风格指南出现并且没有其他理由要修改这些代码。   
->4. 代码需要与旧版本的 Python 代码兼容，但旧版本不支持此风格指南。   
+!!! attention
+    以下情况可以不必考虑风格指南：   
+
+    1. 即使对于习惯此风格代码的人，应用此风格指南也会使代码的可读性降低。   
+    2. 为了与上下文代码风格一致(可能由于历史原因，上下文的风格也违背了本指南)，   
+      当然这也是一个规范代码风格的机会(通过改变上下文的风格)。   
+    3. 有些代码早于此风格指南出现并且没有其他理由要修改这些代码。   
+    4. 代码需要与旧版本的 Python 代码兼容，但旧版本不支持此风格指南。   
 
 ## 3、代码布局
 
@@ -42,59 +43,61 @@ Guido 认为：代码被阅读之频繁远甚于其被编写。所以，这里�
 
 ()、[] 或者 {} 可以隐式的换行，三种括号所包裹的代码要么垂直对齐，要么悬挂缩进。当使用悬挂缩进时，应该注意：参数不能放在首行，续行要再缩进一级以便和后边的代码区别开。   
 
->正确写法：
+!!! note "正确写法"
 
-- 与左括号对齐（垂直对齐写法）
+    - 与左括号对齐（垂直对齐写法）
 
-```python 
-foo = long_function_name(var_one, var_two,
-                         var_three, var_four)
-```
+    ```python 
+    foo = long_function_name(var_one, var_two,
+                            var_three, var_four)
+    ```
 
-- 悬挂缩进
+    - 悬挂缩进
 
-```python
-foo = long_function_name(
-    var_one, var_two,
-    var_three, var_four)
-```
+    ```python
+    foo = long_function_name(
+        var_one, var_two,
+        var_three, var_four)
+    ```
 
-- 如果后边有代码行，悬挂缩进增加一级
+    - 如果后边有代码行，悬挂缩进增加一级
 
-```python
-def long_function_name(
+    ```python
+    def long_function_name(
+            var_one, var_two, var_three,
+            var_four):
+        print(var_one)
+    ```
+
+!!! error "错误写法" 
+
+    - 参数放在第一行而没有垂直对齐
+
+    ```python
+    foo = long_function_name(var_one, var_two,
+        var_three, var_four)
+    ```
+
+    - 后边有代码行时没有增加缩进
+
+    ```python
+    def long_function_name(
         var_one, var_two, var_three,
         var_four):
-    print(var_one)
-```
+        print(var_one)
+    ```
 
->错误写法： 
+!!! attention 
 
-- 参数放在第一行而没有垂直对齐
+    对于续行来说，4个空格的缩进规则可以不必遵守  
 
-```python
-foo = long_function_name(var_one, var_two,
-    var_three, var_four)
-```
+    - 可以不采用是4个空格的缩进方法
 
-- 后边有代码行时没有增加缩进
-
-```python
-def long_function_name(
-    var_one, var_two, var_three,
-    var_four):
-    print(var_one)
-```
-
->对于续行来说，4个空格的缩进规则可以不必遵守  
-
-- 可以不采用是4个空格的缩进方法
-
-```python
-foo = long_function_name(
-  var_one, var_two,
-  var_three, var_four)
-```
+    ```python
+    foo = long_function_name(
+      var_one, var_two,
+      var_three, var_four)
+    ```
 
 当 if 语句的条件部分很长以至于需要将其写成多行时，需要注意，if 和单个空格以及左括号正好是 4 个空格缩进，这可能与嵌套在if语句中的代码块产生冲突。本文档不提供确切的方法来解决条件行和 if 语句的嵌套代码块的冲突。以下是一些可行的处理方法，但不必局限于此：
 
