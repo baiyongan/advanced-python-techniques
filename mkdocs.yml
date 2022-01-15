@@ -79,16 +79,16 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/baiyongan
     # tiddly wiki
-    - icon: fontawesome/brands/wikipedia-w
+    - icon: fontawesome/brands/wordpress
       link: http://106.14.160.45:8081
     # linux website
     - icon: fontawesome/brands/linux
       link: http://106.14.160.45
     # blog website
-    - icon: fontawesome/brands/fly
+    - icon: fontawesome/brands/bootstrap
       link: https://bya.cool
     # lsf website
-    - icon: fontawesome/brands/centos
+    - icon: fontawesome/brands/buromobelexperte
       link: https://baiyongan.gitbook.io/lsf/
 
 
