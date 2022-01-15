@@ -1,6 +1,15 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.48 (2022-1-15)
+#### Features
+- 调整 功能模块 standard_library_builtin 结构
+- 添加 mkdocs 语法说明 article
+- 添加 icons from fontawesome
+#### Articles
+- 更新 功能模块 popular_3rd_party article
+
+<!---------------------------------------------------------->
 ### 0.1.46 (2022-1-14)
 #### Articles
 - 更新 cookbook chapter01 item14

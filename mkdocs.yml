@@ -66,13 +66,42 @@ plugins:
       include_source: True
       kernel_name: python3
     
-# - markmap:
-#     base_path: docs
-#     encoding: utf-8
-#     file_extension: .mm.md
-#     d3_version: 6.7.0
-#     lib_version: 0.11.5
-#     view_version: 0.2.6
+# Customization
+extra:
+#  analytics:
+#    provider: google
+#    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    # python website's license
+    - icon: fontawesome/brands/creative-commons
+      link: http://106.14.160.45:8080/LICENSE/
+    # github personal page
+    - icon: fontawesome/brands/github
+      link: https://github.com/baiyongan
+    # tiddly wiki
+    - icon: fontawesome/brands/wikipedia-w
+      link: http://106.14.160.45:8081
+    # linux website
+    - icon: fontawesome/brands/linux
+      link: http://106.14.160.45
+    # blog website
+    - icon: fontawesome/brands/fly
+      link: https://bya.cool
+    # lsf website
+    - icon: fontawesome/brands/centos
+      link: https://baiyongan.gitbook.io/lsf/
+
+
+extra_css:
+  - assets/css/termynal.css
+  - assets/css/custom.css
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+  # - https://unpkg.com/d3@6.7.0/dist/d3.min.js
+  # - https://unpkg.com/markmap-lib@0.11.5/dist/browser/index.min.js
+  # - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
+  - assets/js/termynal.js
+  - assets/js/custom.js
 
 # Extensions
 markdown_extensions:
@@ -97,23 +126,11 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
 
-# Customization
-extra_css:
-  - assets/css/termynal.css
-  - assets/css/custom.css
-extra_javascript:
-  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
-  # - https://unpkg.com/d3@6.7.0/dist/d3.min.js
-  # - https://unpkg.com/markmap-lib@0.11.5/dist/browser/index.min.js
-  # - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
-  - assets/js/termynal.js
-  - assets/js/custom.js
-
 # Page tree
 nav:
 - Home: README.md
 
-# Part01
+## Part01
 - 方向路线:
   - Overview: part01_direction_and_roadmap/index.md
   - 语言专题: part01_direction_and_roadmap/python_language.md
@@ -126,7 +143,7 @@ nav:
   - 经验建议:
     - Top Python Developer Skills: part01_direction_and_roadmap/top_python_developer_skills.md
 
-# Part02
+## Part02
 - 开发工具:
   - Overview: part02_development_tool/index.md
   - Pycharm: 
@@ -150,7 +167,7 @@ nav:
     - 快速上手: part02_development_tool/pip/brief_tutorial.md
     - 详细教程: part02_development_tool/pip/detailed_tutorial.md
 
-# Part03
+## Part03
 - 规范准则:  
   - Overview: part03_norm_and_guideline/index.md
   - Python 代码规范的重要性: part03_norm_and_guideline/norm/why_python_style_guide.md
@@ -158,19 +175,21 @@ nav:
   - PEP8 中文翻译: part03_norm_and_guideline/norm/PEP8_translation.md
   - Google Python Style Guide: part03_norm_and_guideline/norm/google_python_style_guide.md
 
-# Part04
+## Part04
 - 功能模块:
   - Overview: part04_module_package_library/index.md
   - 内置基础:
     - 目录: part04_module_package_library/standard_library_builtin/content.md
     - 内置函数: part04_module_package_library/standard_library_builtin/builtin_functions.md
+    - 内置常量: part04_module_package_library/standard_library_builtin/builtin_constants.md
     - 内置类型: 
-      - string: part04_module_package_library/standard_library_builtin/string_methods.md
-      - list: part04_module_package_library/standard_library_builtin/list_methods.md
-      - dict: part04_module_package_library/standard_library_builtin/dict_methods.md
-      - tuple: part04_module_package_library/standard_library_builtin/tuple_methods.md
-      - set: part04_module_package_library/standard_library_builtin/set_methods.md
-
+      - string: part04_module_package_library/standard_library_builtin/builtin_types/string_methods.md
+      - list: part04_module_package_library/standard_library_builtin/builtin_types/list_methods.md
+      - dict: part04_module_package_library/standard_library_builtin/builtin_types/dict_methods.md
+      - tuple: part04_module_package_library/standard_library_builtin/builtin_types/tuple_methods.md
+      - set: part04_module_package_library/standard_library_builtin/builtin_types/set_methods.md
+    - 内置异常: part04_module_package_library/standard_library_builtin/builtin_exceptions.md
+    
   - 常用必备: 
     - 目录: part04_module_package_library/commonly_used/content.md
     - os: part04_module_package_library/commonly_used/os.md
@@ -253,7 +272,7 @@ nav:
 
     - 附录: part04_module_package_library/PyMOTW3/appendix.md
 
-# Part05
+## Part05
 - 核心专题:
   - Overview: part05_core_topic/index.md
 
@@ -372,7 +391,7 @@ nav:
     - aiohttp 实现高并发爬虫: part05_core_topic/chapter12/article1208.md
     - 本章小结: part05_core_topic/chapter12/article1209.md  
 
-# Part06
+## Part06
 - 进阶阅读:
   - Overview: part06_intermediate_reading/index.md
   
@@ -442,7 +461,7 @@ nav:
   - Python HOWTOs: 
     - 目录: part06_intermediate_reading/python_how_to/content.md
 
-# Part07
+## Part07
 - 应用框架:
   - Overview: part07_application_framework/index.md
   - Dash: part07_application_framework/python_web/plotly_dash/index.md
@@ -452,7 +471,7 @@ nav:
   - Tornado: part07_application_framework/python_web/tornado/index.md
   - FastAPI: part07_application_framework/python_web/fastapi/index.md
 
-# Part08
+## Part08
 - 数据分析:
   - Overview: part08_data_analysis/index.md
   - Data Science For Beginners: 
@@ -484,7 +503,7 @@ nav:
     - 06 In the Wild:
       - part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20.md
 
-# Part09
+## Part09
 - 工程实践:
   - Overview: part09_python_in_action/index.md
   - Code Snippets: 
@@ -510,16 +529,16 @@ nav:
   #   - wrapping up: part09_python_in_action/performance_marketing_report/13_wrapping_up.md
   #   - resources: part09_python_in_action/performance_marketing_report/14_resources.md
     
-# Part10
+## Part10
 - 结构算法:
   - Overview: part10_data_structure_and_algorithm/index.md
   - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
 
-# Part11
+## Part11
 - 设计模式:
   - Overview: part11_design_pattern/index.md
 
-# Part12
+## Part12
 - 源码剖析:
   - Overview: part12_source_code_analysis/index.md
   - Python Magic Methods: 
@@ -529,37 +548,16 @@ nav:
   - The Tao of Python: part12_source_code_analysis/the_tao_of_python.md
   - MRO in Python: part12_source_code_analysis/mro_in_python.md
 
-# Part13
+## Part13
 - 关联拓展:
   - Overview: part13_connection_and_expansion/index.md
   - Blog: part13_connection_and_expansion/blog.md
 
-# Record
+## Record
 - 后记:
   - Change Log: CHANGELOG.md
   - Reference: REFERENCE.md
   - License: LICENSE.md
-  - Backup: FASTAPI.md
+  - Tips: NOTE.md
+#  - Backup: FASTAPI.md
 
-# # color option
-# red
-# pink
-# purple
-# deep purple
-# indigo
-# blue
-# light blue
-# cyan
-# teal
-# green
-# light green
-# lime
-# yellow
-# amber
-# orange
-# deep orange
-# brown
-# grey
-# blue grey
-# black
-# white
