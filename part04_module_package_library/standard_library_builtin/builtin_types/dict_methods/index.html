@@ -13,21 +13,21 @@
         <meta name="author" content="Bai Yongan">
       
       
-        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part04_module_package_library/standard_library_builtin/string_methods/">
+        <link rel="canonical" href="http://bya.cool/advanced-python-techniques/part04_module_package_library/standard_library_builtin/builtin_types/dict_methods/">
       
-      <link rel="icon" href="../../../assets/image/favicon.png">
+      <link rel="icon" href="../../../../assets/image/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
-        <title>string - Pythonista to Pythoneer</title>
+        <title>dict - Pythonista to Pythoneer</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f955dcd.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -42,9 +42,9 @@
     
     
     
-      <link rel="stylesheet" href="../../../assets/css/termynal.css">
+      <link rel="stylesheet" href="../../../../assets/css/termynal.css">
     
-      <link rel="stylesheet" href="../../../assets/css/custom.css">
+      <link rel="stylesheet" href="../../../../assets/css/custom.css">
     
     
       
@@ -63,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-string-methods" class="md-skip">
+        <a href="#python-dictionary-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +84,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../../.." title="Pythonista to Pythoneer" class="md-header__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../../../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              string
+              dict
             
           </span>
         </div>
@@ -195,7 +195,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part01_direction_and_roadmap/" class="md-tabs__link">
+      <a href="../../../../part01_direction_and_roadmap/" class="md-tabs__link">
         方向路线
       </a>
     </li>
@@ -226,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part02_development_tool/" class="md-tabs__link">
+      <a href="../../../../part02_development_tool/" class="md-tabs__link">
         开发工具
       </a>
     </li>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part03_norm_and_guideline/" class="md-tabs__link">
+      <a href="../../../../part03_norm_and_guideline/" class="md-tabs__link">
         规范准则
       </a>
     </li>
@@ -260,7 +260,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
         功能模块
       </a>
     </li>
@@ -276,7 +276,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part05_core_topic/" class="md-tabs__link">
+      <a href="../../../../part05_core_topic/" class="md-tabs__link">
         核心专题
       </a>
     </li>
@@ -292,7 +292,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part06_intermediate_reading/" class="md-tabs__link">
+      <a href="../../../../part06_intermediate_reading/" class="md-tabs__link">
         进阶阅读
       </a>
     </li>
@@ -308,7 +308,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part07_application_framework/" class="md-tabs__link">
+      <a href="../../../../part07_application_framework/" class="md-tabs__link">
         应用框架
       </a>
     </li>
@@ -324,7 +324,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part08_data_analysis/" class="md-tabs__link">
+      <a href="../../../../part08_data_analysis/" class="md-tabs__link">
         数据分析
       </a>
     </li>
@@ -340,7 +340,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part09_python_in_action/" class="md-tabs__link">
+      <a href="../../../../part09_python_in_action/" class="md-tabs__link">
         工程实践
       </a>
     </li>
@@ -356,7 +356,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part10_data_structure_and_algorithm/" class="md-tabs__link">
+      <a href="../../../../part10_data_structure_and_algorithm/" class="md-tabs__link">
         结构算法
       </a>
     </li>
@@ -372,7 +372,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part11_design_pattern/" class="md-tabs__link">
+      <a href="../../../../part11_design_pattern/" class="md-tabs__link">
         设计模式
       </a>
     </li>
@@ -388,7 +388,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part12_source_code_analysis/" class="md-tabs__link">
+      <a href="../../../../part12_source_code_analysis/" class="md-tabs__link">
         源码剖析
       </a>
     </li>
@@ -404,7 +404,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../part13_connection_and_expansion/" class="md-tabs__link">
+      <a href="../../../../part13_connection_and_expansion/" class="md-tabs__link">
         关联拓展
       </a>
     </li>
@@ -420,7 +420,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../CHANGELOG/" class="md-tabs__link">
+      <a href="../../../../CHANGELOG/" class="md-tabs__link">
         后记
       </a>
     </li>
@@ -447,9 +447,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
+    <a href="../../../.." title="Pythonista to Pythoneer" class="md-nav__button md-logo" aria-label="Pythonista to Pythoneer" data-md-component="logo">
       
-  <img src="../../../assets/image/icon-white.svg" alt="logo">
+  <img src="../../../../assets/image/icon-white.svg" alt="logo">
 
     </a>
     Pythonista to Pythoneer
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -514,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -526,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_language/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_language/" class="md-nav__link">
         语言专题
       </a>
     </li>
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_web_roadmap/" class="md-nav__link">
         后端开发
       </a>
     </li>
@@ -550,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_devops_roadmap/" class="md-nav__link">
         DevOps
       </a>
     </li>
@@ -562,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_web_scraping_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_web_scraping_roadmap/" class="md-nav__link">
         网络爬虫
       </a>
     </li>
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_data_analysis_roadmap/" class="md-nav__link">
         数据分析
       </a>
     </li>
@@ -586,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_data_mining_roadmap/" class="md-nav__link">
         数据挖掘
       </a>
     </li>
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/python_machine_learning_roadmap/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/python_machine_learning_roadmap/" class="md-nav__link">
         机器学习
       </a>
     </li>
@@ -631,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part01_direction_and_roadmap/top_python_developer_skills/" class="md-nav__link">
+      <a href="../../../../part01_direction_and_roadmap/top_python_developer_skills/" class="md-nav__link">
         Top Python Developer Skills
       </a>
     </li>
@@ -679,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -712,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pycharm/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -724,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pycharm/42_tips_and_tricks/" class="md-nav__link">
         42 Tips and Tricks
       </a>
     </li>
@@ -736,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pycharm/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -775,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/ipython/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -787,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/ipython/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -826,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/jupyter_notebook/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -838,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/jupyter_notebook/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -850,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/jupyter_notebook/50_ipython_tricks/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/jupyter_notebook/50_ipython_tricks/" class="md-nav__link">
         50 IPython Tips
       </a>
     </li>
@@ -889,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pysnooper/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -901,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pysnooper/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -940,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pdb/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -952,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pdb/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -991,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pip/brief_tutorial/" class="md-nav__link">
         快速上手
       </a>
     </li>
@@ -1003,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
+      <a href="../../../../part02_development_tool/pip/detailed_tutorial/" class="md-nav__link">
         详细教程
       </a>
     </li>
@@ -1051,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part03_norm_and_guideline/" class="md-nav__link">
+      <a href="../../../../part03_norm_and_guideline/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1063,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part03_norm_and_guideline/norm/why_python_style_guide/" class="md-nav__link">
+      <a href="../../../../part03_norm_and_guideline/norm/why_python_style_guide/" class="md-nav__link">
         Python 代码规范的重要性
       </a>
     </li>
@@ -1075,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part03_norm_and_guideline/norm/PEP8_brief_summary/" class="md-nav__link">
+      <a href="../../../../part03_norm_and_guideline/norm/PEP8_brief_summary/" class="md-nav__link">
         PEP8 要点总结
       </a>
     </li>
@@ -1087,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part03_norm_and_guideline/norm/PEP8_translation/" class="md-nav__link">
+      <a href="../../../../part03_norm_and_guideline/norm/PEP8_translation/" class="md-nav__link">
         PEP8 中文翻译
       </a>
     </li>
@@ -1099,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part03_norm_and_guideline/norm/google_python_style_guide/" class="md-nav__link">
+      <a href="../../../../part03_norm_and_guideline/norm/google_python_style_guide/" class="md-nav__link">
         Google Python Style Guide
       </a>
     </li>
@@ -1143,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1178,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../content/" class="md-nav__link">
+      <a href="../../content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1190,8 +1190,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../builtin_functions/" class="md-nav__link">
+      <a href="../../builtin_functions/" class="md-nav__link">
         内置函数
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builtin_constants/" class="md-nav__link">
+        内置常量
       </a>
     </li>
   
@@ -1207,14 +1219,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_3" type="checkbox" id="__nav_5_2_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_4" type="checkbox" id="__nav_5_2_4" checked>
       
-      <label class="md-nav__link" for="__nav_5_2_3">
+      <label class="md-nav__link" for="__nav_5_2_4">
         内置类型
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="内置类型" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_2_3">
+        <label class="md-nav__title" for="__nav_5_2_4">
           <span class="md-nav__icon md-icon"></span>
           内置类型
         </label>
@@ -1223,359 +1235,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          string
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../string_methods/" class="md-nav__link">
         string
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#capitalize" class="md-nav__link">
-    capitalize()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#center" class="md-nav__link">
-    center()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#casefold" class="md-nav__link">
-    casefold()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#count" class="md-nav__link">
-    count()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endswith" class="md-nav__link">
-    endswith()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expandtabs" class="md-nav__link">
-    expandtabs()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encode" class="md-nav__link">
-    encode()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find" class="md-nav__link">
-    find()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    format()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#index" class="md-nav__link">
-    index()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isalnum" class="md-nav__link">
-    isalnum()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isalpha" class="md-nav__link">
-    isalpha()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isdecimal" class="md-nav__link">
-    isdecimal()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isdigit" class="md-nav__link">
-    isdigit()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isidentifier" class="md-nav__link">
-    isidentifier()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#islower" class="md-nav__link">
-    islower()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isnumeric" class="md-nav__link">
-    isnumeric()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isprintable" class="md-nav__link">
-    isprintable()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isspace" class="md-nav__link">
-    isspace()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#istitle" class="md-nav__link">
-    istitle()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isupper" class="md-nav__link">
-    isupper()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#join" class="md-nav__link">
-    join()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ljust" class="md-nav__link">
-    ljust()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rjust" class="md-nav__link">
-    rjust()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lower" class="md-nav__link">
-    lower()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upper" class="md-nav__link">
-    upper()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swapcase" class="md-nav__link">
-    swapcase()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lstrip" class="md-nav__link">
-    lstrip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rstrip" class="md-nav__link">
-    rstrip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strip" class="md-nav__link">
-    strip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#partition" class="md-nav__link">
-    partition()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maketrans" class="md-nav__link">
-    maketrans()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rpartition" class="md-nav__link">
-    rpartition()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#translate" class="md-nav__link">
-    translate()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replace" class="md-nav__link">
-    replace()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rfind" class="md-nav__link">
-    rfind()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rindex" class="md-nav__link">
-    rindex()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split" class="md-nav__link">
-    split()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rsplit" class="md-nav__link">
-    rsplit()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#splitlines" class="md-nav__link">
-    splitlines()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#startswith" class="md-nav__link">
-    startswith()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#title" class="md-nav__link">
-    title()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zfill" class="md-nav__link">
-    zfill()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#format_map" class="md-nav__link">
-    format_map()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    拓展阅读
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1595,11 +1259,128 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../dict_methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          dict
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         dict
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    clear()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fromkeys" class="md-nav__link">
+    fromkeys()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    get()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    items()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    keys()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    pop()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popitem" class="md-nav__link">
+    popitem()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setdefault" class="md-nav__link">
+    setdefault()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    update()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    values()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    拓展阅读
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1630,6 +1411,18 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../builtin_exceptions/" class="md-nav__link">
+        内置异常
+      </a>
     </li>
   
 
@@ -1666,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../commonly_used/content/" class="md-nav__link">
+      <a href="../../../commonly_used/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1678,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../commonly_used/os/" class="md-nav__link">
+      <a href="../../../commonly_used/os/" class="md-nav__link">
         os
       </a>
     </li>
@@ -1717,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../key_advanced/content/" class="md-nav__link">
+      <a href="../../../key_advanced/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1729,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../key_advanced/collections/" class="md-nav__link">
+      <a href="../../../key_advanced/collections/" class="md-nav__link">
         collections
       </a>
     </li>
@@ -1768,7 +1561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../popular_3rd_party/content/" class="md-nav__link">
+      <a href="../../../popular_3rd_party/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -1780,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../popular_3rd_party/sh/" class="md-nav__link">
+      <a href="../../../popular_3rd_party/sh/" class="md-nav__link">
         sh
       </a>
     </li>
@@ -1792,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../popular_3rd_party/rich/" class="md-nav__link">
+      <a href="../../../popular_3rd_party/rich/" class="md-nav__link">
         rich
       </a>
     </li>
@@ -1831,7 +1624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/content_en/" class="md-nav__link">
+      <a href="../../../PyMOTW3/content_en/" class="md-nav__link">
         英文目录
       </a>
     </li>
@@ -1843,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/content_zh/" class="md-nav__link">
+      <a href="../../../PyMOTW3/content_zh/" class="md-nav__link">
         中文目录
       </a>
     </li>
@@ -1876,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter01_text/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter01_text/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1888,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter01_text/string/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter01_text/string/" class="md-nav__link">
         string 模块
       </a>
     </li>
@@ -1927,7 +1720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter02_data_structures/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter02_data_structures/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1966,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter03_algorithms/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter03_algorithms/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -1978,7 +1771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter03_algorithms/functools/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter03_algorithms/functools/" class="md-nav__link">
         functools
       </a>
     </li>
@@ -2017,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter04_dates_and_times/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter04_dates_and_times/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2056,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter05_mathematics/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter05_mathematics/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2095,7 +1888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter06_the_file_system/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter06_the_file_system/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2134,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter07_data_persistence_and_exchange/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter07_data_persistence_and_exchange/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2173,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter08_data_compression_and_archiving/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter08_data_compression_and_archiving/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2212,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter09_cryptography/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter09_cryptography/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2251,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter10_concurrency/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter10_concurrency/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2290,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter11_networking/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter11_networking/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2329,7 +2122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter12_the_internet/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter12_the_internet/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2368,7 +2161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter13_email/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter13_email/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2407,7 +2200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter14_application_building_blocks/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter14_application_building_blocks/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2446,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter15_internationalization_and_localization/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter15_internationalization_and_localization/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2485,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter16_developer_tools/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter16_developer_tools/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2524,7 +2317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter17_runtime_features/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter17_runtime_features/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2563,7 +2356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter18_language_tools/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter18_language_tools/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2602,7 +2395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter19_modules_and_packages/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter19_modules_and_packages/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2641,7 +2434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/chapter20_unix_specific_services/" class="md-nav__link">
+      <a href="../../../PyMOTW3/chapter20_unix_specific_services/" class="md-nav__link">
         章节简介
       </a>
     </li>
@@ -2659,7 +2452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PyMOTW3/appendix/" class="md-nav__link">
+      <a href="../../../PyMOTW3/appendix/" class="md-nav__link">
         附录
       </a>
     </li>
@@ -2707,7 +2500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -2740,7 +2533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter01/article0101/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter01/article0101/" class="md-nav__link">
         python 中一切皆对象
       </a>
     </li>
@@ -2752,7 +2545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter01/article0102/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter01/article0102/" class="md-nav__link">
         type、object 和 class 的关系
       </a>
     </li>
@@ -2764,7 +2557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter01/article0103/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter01/article0103/" class="md-nav__link">
         python 中的内置类型
       </a>
     </li>
@@ -2776,7 +2569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter01/article0104/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter01/article0104/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2815,7 +2608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter02/article0201/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter02/article0201/" class="md-nav__link">
         魔法函数简介
       </a>
     </li>
@@ -2827,7 +2620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter02/article0202/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter02/article0202/" class="md-nav__link">
         python 数据模型对 python 的影响
       </a>
     </li>
@@ -2839,7 +2632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter02/article0203/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter02/article0203/" class="md-nav__link">
         python 魔法函数一览
       </a>
     </li>
@@ -2851,7 +2644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter02/article0204/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter02/article0204/" class="md-nav__link">
         len 函数的特殊性
       </a>
     </li>
@@ -2863,7 +2656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter02/article0205/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter02/article0205/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -2902,7 +2695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0301/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0301/" class="md-nav__link">
         鸭子类型和多态
       </a>
     </li>
@@ -2914,7 +2707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0302/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0302/" class="md-nav__link">
         抽象基类（abc模块）
       </a>
     </li>
@@ -2926,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0303/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0303/" class="md-nav__link">
         isinstance 和 type 的区别
       </a>
     </li>
@@ -2938,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0304/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0304/" class="md-nav__link">
         类变量和实例变量
       </a>
     </li>
@@ -2950,7 +2743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0305/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0305/" class="md-nav__link">
         类和实例属性的查找顺序
       </a>
     </li>
@@ -2962,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0306/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0306/" class="md-nav__link">
         类方法、静态方法和实例方法
       </a>
     </li>
@@ -2974,7 +2767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0307/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0307/" class="md-nav__link">
         数据封装和私有属性
       </a>
     </li>
@@ -2986,7 +2779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0308/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0308/" class="md-nav__link">
         python 对象的自省机制
       </a>
     </li>
@@ -2998,7 +2791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0309/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0309/" class="md-nav__link">
         super 真的是调用父类么？
       </a>
     </li>
@@ -3010,7 +2803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0310/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0310/" class="md-nav__link">
         mixin 继承案例——django rest framework
       </a>
     </li>
@@ -3022,7 +2815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0311/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0311/" class="md-nav__link">
         python 中的 with 语句
       </a>
     </li>
@@ -3034,7 +2827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0312/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0312/" class="md-nav__link">
         contextlib 简化上下文管理器
       </a>
     </li>
@@ -3046,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter03/article0313/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter03/article0313/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3085,7 +2878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0401/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0401/" class="md-nav__link">
         python 中的序列分类
       </a>
     </li>
@@ -3097,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0402/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0402/" class="md-nav__link">
         python 中序列类型的 abc 继承关系
       </a>
     </li>
@@ -3109,7 +2902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0403/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0403/" class="md-nav__link">
         list 中 extend 方法区别
       </a>
     </li>
@@ -3121,7 +2914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0404/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0404/" class="md-nav__link">
         实现可切片的对象
       </a>
     </li>
@@ -3133,7 +2926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0405/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0405/" class="md-nav__link">
         bisect 维护已排序序列
       </a>
     </li>
@@ -3145,7 +2938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0406/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0406/" class="md-nav__link">
         什么时候不应该使用列表？
       </a>
     </li>
@@ -3157,7 +2950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0407/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0407/" class="md-nav__link">
         列表推导式、生成器表达式、字典推导式
       </a>
     </li>
@@ -3169,7 +2962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter04/article0408/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter04/article0408/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3208,7 +3001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0501/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0501/" class="md-nav__link">
         dict 的 abc 继承关系
       </a>
     </li>
@@ -3220,7 +3013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0502/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0502/" class="md-nav__link">
         dict 的常用方法
       </a>
     </li>
@@ -3232,7 +3025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0503/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0503/" class="md-nav__link">
         dict 的子类
       </a>
     </li>
@@ -3244,7 +3037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0504/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0504/" class="md-nav__link">
         set 和 frozenset
       </a>
     </li>
@@ -3256,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0505/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0505/" class="md-nav__link">
         dict 和 set 的实现原理
       </a>
     </li>
@@ -3268,7 +3061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter05/article0506/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter05/article0506/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3307,7 +3100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter06/article0601/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter06/article0601/" class="md-nav__link">
         python 中的变量是什么？
       </a>
     </li>
@@ -3319,7 +3112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter06/article0602/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter06/article0602/" class="md-nav__link">
         == 和 is 的区别
       </a>
     </li>
@@ -3331,7 +3124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter06/article0603/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter06/article0603/" class="md-nav__link">
         del 语句和垃圾回收
       </a>
     </li>
@@ -3343,7 +3136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter06/article0604/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter06/article0604/" class="md-nav__link">
         一个经典的参数错误
       </a>
     </li>
@@ -3355,7 +3148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter06/article0605/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter06/article0605/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3394,7 +3187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0701/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0701/" class="md-nav__link">
         property 动态属性
       </a>
     </li>
@@ -3406,7 +3199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0702/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0702/" class="md-nav__link">
         __getattr__、__getattribute__ 魔法函数
       </a>
     </li>
@@ -3418,7 +3211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0703/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0703/" class="md-nav__link">
         属性描述符和属性查找过程
       </a>
     </li>
@@ -3430,7 +3223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0704/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0704/" class="md-nav__link">
         __new__ 和 __init__ 的区别
       </a>
     </li>
@@ -3442,7 +3235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0705/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0705/" class="md-nav__link">
         自定义元类
       </a>
     </li>
@@ -3454,7 +3247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0706/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0706/" class="md-nav__link">
         通过元类实现 orm
       </a>
     </li>
@@ -3466,7 +3259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter07/article0707/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter07/article0707/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3505,7 +3298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0801/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0801/" class="md-nav__link">
         python 中的迭代协议
       </a>
     </li>
@@ -3517,7 +3310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0802/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0802/" class="md-nav__link">
         什么是迭代器和可迭代对象
       </a>
     </li>
@@ -3529,7 +3322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0803/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0803/" class="md-nav__link">
         生成器函数的使用
       </a>
     </li>
@@ -3541,7 +3334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0804/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0804/" class="md-nav__link">
         python 是如何实现生成器的
       </a>
     </li>
@@ -3553,7 +3346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0805/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0805/" class="md-nav__link">
         生成器在 UserList 中的应用
       </a>
     </li>
@@ -3565,7 +3358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0806/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0806/" class="md-nav__link">
         生成器如何读取大文件
       </a>
     </li>
@@ -3577,7 +3370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter08/article0807/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter08/article0807/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3616,7 +3409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter09/article0901/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter09/article0901/" class="md-nav__link">
         HTTP、Socket、TCP 概念
       </a>
     </li>
@@ -3628,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter09/article0902/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter09/article0902/" class="md-nav__link">
         socket 和 server 实现通信
       </a>
     </li>
@@ -3640,7 +3433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter09/article0903/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter09/article0903/" class="md-nav__link">
         socket 实现聊天和多用户连接
       </a>
     </li>
@@ -3652,7 +3445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter09/article0904/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter09/article0904/" class="md-nav__link">
         socket 模拟 http 请求
       </a>
     </li>
@@ -3664,7 +3457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter09/article0905/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter09/article0905/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3703,7 +3496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1001/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1001/" class="md-nav__link">
         python 中的 GIL
       </a>
     </li>
@@ -3715,7 +3508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1002/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1002/" class="md-nav__link">
         多线程编程 —— threading
       </a>
     </li>
@@ -3727,7 +3520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1003/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1003/" class="md-nav__link">
         线程间通信 —— 共享变量和 Queue
       </a>
     </li>
@@ -3739,7 +3532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1004/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1004/" class="md-nav__link">
         线程同步 —— Lock、RLock
       </a>
     </li>
@@ -3751,7 +3544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1005/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1005/" class="md-nav__link">
         线程同步 —— condition 使用及源码分析
       </a>
     </li>
@@ -3763,7 +3556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1006/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1006/" class="md-nav__link">
         线程同步 —— Semaphore 使用及源码分析
       </a>
     </li>
@@ -3775,7 +3568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1007/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1007/" class="md-nav__link">
         ThreadPoolExecutor 线程池
       </a>
     </li>
@@ -3787,7 +3580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1008/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1008/" class="md-nav__link">
         ThreadPoolExecutor 源码分析
       </a>
     </li>
@@ -3799,7 +3592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1009/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1009/" class="md-nav__link">
         多线程和多进程对比
       </a>
     </li>
@@ -3811,7 +3604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1010/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1010/" class="md-nav__link">
         multiprocessing 多进程编程
       </a>
     </li>
@@ -3823,7 +3616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1011/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1011/" class="md-nav__link">
         进程间通信 —— Queue、Pipe、Manager
       </a>
     </li>
@@ -3835,7 +3628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter10/article1012/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter10/article1012/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -3874,7 +3667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1101/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1101/" class="md-nav__link">
         并发、并行、同步、异步、阻塞、非阻塞
       </a>
     </li>
@@ -3886,7 +3679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1102/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1102/" class="md-nav__link">
         IO 多路复用 (select、poll 和 epoll)
       </a>
     </li>
@@ -3898,7 +3691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1103/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1103/" class="md-nav__link">
         select+回调+事件循环获取 html
       </a>
     </li>
@@ -3910,7 +3703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1104/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1104/" class="md-nav__link">
         回调之痛
       </a>
     </li>
@@ -3922,7 +3715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1105/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1105/" class="md-nav__link">
         协程是什么
       </a>
     </li>
@@ -3934,7 +3727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1106/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1106/" class="md-nav__link">
         生成器进阶 send、close 和 throw 方法
       </a>
     </li>
@@ -3946,7 +3739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1107/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1107/" class="md-nav__link">
         生成器进阶 yield from
       </a>
     </li>
@@ -3958,7 +3751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1108/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1108/" class="md-nav__link">
         生成器实现协程
       </a>
     </li>
@@ -3970,7 +3763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1109/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1109/" class="md-nav__link">
         async和await
       </a>
     </li>
@@ -3982,7 +3775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter11/article1110/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter11/article1110/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -4021,7 +3814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1201/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1201/" class="md-nav__link">
         事件循环
       </a>
     </li>
@@ -4033,7 +3826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1202/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1202/" class="md-nav__link">
         task 取消和子协程调用原理
       </a>
     </li>
@@ -4045,7 +3838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1203/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1203/" class="md-nav__link">
         call_soon、call_at、call_later、call_soon_threadsafe
       </a>
     </li>
@@ -4057,7 +3850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1204/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1204/" class="md-nav__link">
         ThreadPollExecutor 和 asycio 完成阻塞 IO 请求
       </a>
     </li>
@@ -4069,7 +3862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1205/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1205/" class="md-nav__link">
         asyncio 模拟 http 请求
       </a>
     </li>
@@ -4081,7 +3874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1206/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1206/" class="md-nav__link">
         future 和 task
       </a>
     </li>
@@ -4093,7 +3886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1207/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1207/" class="md-nav__link">
         asyncio 同步和通信
       </a>
     </li>
@@ -4105,7 +3898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1208/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1208/" class="md-nav__link">
         aiohttp 实现高并发爬虫
       </a>
     </li>
@@ -4117,7 +3910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part05_core_topic/chapter12/article1209/" class="md-nav__link">
+      <a href="../../../../part05_core_topic/chapter12/article1209/" class="md-nav__link">
         本章小结
       </a>
     </li>
@@ -4165,7 +3958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -4198,7 +3991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/intermediate_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4237,7 +4030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_tricks/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4276,7 +4069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/content_en/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/content_en/" class="md-nav__link">
         英文目录
       </a>
     </li>
@@ -4288,7 +4081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/content_zh/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/content_zh/" class="md-nav__link">
         中文目录
       </a>
     </li>
@@ -4300,7 +4093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter01/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter01/item/" class="md-nav__link">
         01 培养 Pythonic 思维
       </a>
     </li>
@@ -4312,7 +4105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter02/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter02/item/" class="md-nav__link">
         02 列表与字典
       </a>
     </li>
@@ -4324,7 +4117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter03/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter03/item/" class="md-nav__link">
         03 函数
       </a>
     </li>
@@ -4336,7 +4129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter04/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter04/item/" class="md-nav__link">
         04 推导与生成
       </a>
     </li>
@@ -4348,7 +4141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter05/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter05/item/" class="md-nav__link">
         05 类与接口
       </a>
     </li>
@@ -4360,7 +4153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter06/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter06/item/" class="md-nav__link">
         06 元类与属性
       </a>
     </li>
@@ -4372,7 +4165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter07/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter07/item/" class="md-nav__link">
         07 开发与并行
       </a>
     </li>
@@ -4384,7 +4177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter08/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter08/item/" class="md-nav__link">
         08 稳定与性能
       </a>
     </li>
@@ -4396,7 +4189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter09/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter09/item/" class="md-nav__link">
         09 测试与调试
       </a>
     </li>
@@ -4408,7 +4201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/effective_python/chapter10/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/effective_python/chapter10/item/" class="md-nav__link">
         10 协作开发
       </a>
     </li>
@@ -4447,7 +4240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4459,7 +4252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter01/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter01/item/" class="md-nav__link">
         01 数据结构与算法
       </a>
     </li>
@@ -4471,7 +4264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter02/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter02/item/" class="md-nav__link">
         02 字符串和文本
       </a>
     </li>
@@ -4483,7 +4276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter03/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter03/item/" class="md-nav__link">
         03 数字日期和时间
       </a>
     </li>
@@ -4495,7 +4288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter04/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter04/item/" class="md-nav__link">
         04 迭代器与生成器
       </a>
     </li>
@@ -4507,7 +4300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter05/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter05/item/" class="md-nav__link">
         05 文件与 IO
       </a>
     </li>
@@ -4519,7 +4312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter06/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter06/item/" class="md-nav__link">
         06 数据编码和处理
       </a>
     </li>
@@ -4531,7 +4324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter07/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter07/item/" class="md-nav__link">
         07 函数
       </a>
     </li>
@@ -4543,7 +4336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter08/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter08/item/" class="md-nav__link">
         08 类与对象
       </a>
     </li>
@@ -4555,7 +4348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter09/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter09/item/" class="md-nav__link">
         09 元编程
       </a>
     </li>
@@ -4567,7 +4360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter10/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter10/item/" class="md-nav__link">
         10 模块与包
       </a>
     </li>
@@ -4579,7 +4372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter11/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter11/item/" class="md-nav__link">
         11 网络与Web编程
       </a>
     </li>
@@ -4591,7 +4384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter12/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter12/item/" class="md-nav__link">
         12 并发编程
       </a>
     </li>
@@ -4603,7 +4396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter13/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter13/item/" class="md-nav__link">
         13 脚本与系统管理
       </a>
     </li>
@@ -4615,7 +4408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter14/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter14/item/" class="md-nav__link">
         14 测试、调试和异常
       </a>
     </li>
@@ -4627,7 +4420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_cookbook/chapter15/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_cookbook/chapter15/item/" class="md-nav__link">
         15 C 语言扩展
       </a>
     </li>
@@ -4666,7 +4459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4678,7 +4471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter01/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter01/item/" class="md-nav__link">
         01 面向对象设计
       </a>
     </li>
@@ -4690,7 +4483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter02/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter02/item/" class="md-nav__link">
         02 Python对象
       </a>
     </li>
@@ -4702,7 +4495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter03/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter03/item/" class="md-nav__link">
         03 对象相似时
       </a>
     </li>
@@ -4714,7 +4507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter04/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter04/item/" class="md-nav__link">
         04 异常捕获
       </a>
     </li>
@@ -4726,7 +4519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter05/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter05/item/" class="md-nav__link">
         05 何时使用面向对象编程
       </a>
     </li>
@@ -4738,7 +4531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter06/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter06/item/" class="md-nav__link">
         06 Python数据结构
       </a>
     </li>
@@ -4750,7 +4543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter07/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter07/item/" class="md-nav__link">
         07 Python面向对象的捷径
       </a>
     </li>
@@ -4762,7 +4555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter08/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter08/item/" class="md-nav__link">
         08 字符串与序列化
       </a>
     </li>
@@ -4774,7 +4567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter09/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter09/item/" class="md-nav__link">
         09 迭代器模式
       </a>
     </li>
@@ -4786,7 +4579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter10/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter10/item/" class="md-nav__link">
         10 Python设计模式I
       </a>
     </li>
@@ -4798,7 +4591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter11/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter11/item/" class="md-nav__link">
         11 Python设计模式II
       </a>
     </li>
@@ -4810,7 +4603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter12/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter12/item/" class="md-nav__link">
         12 测试面向对象程序
       </a>
     </li>
@@ -4822,7 +4615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python3_oop/chapter13/item/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python3_oop/chapter13/item/" class="md-nav__link">
         13 并发
       </a>
     </li>
@@ -4861,7 +4654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/fluent_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4900,7 +4693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/architecture_patterns_with_python/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/architecture_patterns_with_python/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4939,7 +4732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/pep/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/pep/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -4978,7 +4771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part06_intermediate_reading/python_how_to/content/" class="md-nav__link">
+      <a href="../../../../part06_intermediate_reading/python_how_to/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -5026,7 +4819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5038,7 +4831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/python_web/plotly_dash/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/python_web/plotly_dash/" class="md-nav__link">
         Dash
       </a>
     </li>
@@ -5071,7 +4864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/python_web/flask/structure_of_a_flask_project/" class="md-nav__link">
         项目结构
       </a>
     </li>
@@ -5089,7 +4882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/python_web/django/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/python_web/django/" class="md-nav__link">
         Django
       </a>
     </li>
@@ -5101,7 +4894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/python_web/tornado/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/python_web/tornado/" class="md-nav__link">
         Tornado
       </a>
     </li>
@@ -5113,7 +4906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part07_application_framework/python_web/fastapi/" class="md-nav__link">
+      <a href="../../../../part07_application_framework/python_web/fastapi/" class="md-nav__link">
         FastAPI
       </a>
     </li>
@@ -5155,7 +4948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5188,7 +4981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/content_en/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/content_en/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -5221,7 +5014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson01/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson01/" class="md-nav__link">
         Defining Data Science
       </a>
     </li>
@@ -5233,7 +5026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson02/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson02/" class="md-nav__link">
         Data Science Ethics
       </a>
     </li>
@@ -5245,7 +5038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson03/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson03/" class="md-nav__link">
         Defining Data
       </a>
     </li>
@@ -5257,7 +5050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson04/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/01_introduction/lesson04/" class="md-nav__link">
         Introduction to Statistics and Probability
       </a>
     </li>
@@ -5296,7 +5089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson05/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson05/" class="md-nav__link">
         Relational databases
       </a>
     </li>
@@ -5308,7 +5101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson06/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson06/" class="md-nav__link">
         Non-relational databases
       </a>
     </li>
@@ -5320,7 +5113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson07/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson07/" class="md-nav__link">
         Working with Python
       </a>
     </li>
@@ -5332,7 +5125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson08/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/02_working_with_data/lesson08/" class="md-nav__link">
         Preparing data
       </a>
     </li>
@@ -5371,7 +5164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson09/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson09/" class="md-nav__link">
         Visualizing quantities
       </a>
     </li>
@@ -5383,7 +5176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson10/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson10/" class="md-nav__link">
         Visualizing distribution
       </a>
     </li>
@@ -5395,7 +5188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson11/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson11/" class="md-nav__link">
         Visualizing proportions
       </a>
     </li>
@@ -5407,7 +5200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson12/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson12/" class="md-nav__link">
         Visualizing relationships
       </a>
     </li>
@@ -5419,7 +5212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson13/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/03_data_visualization/lesson13/" class="md-nav__link">
         Making Meaningful Visualizations
       </a>
     </li>
@@ -5458,7 +5251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson14/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson14/" class="md-nav__link">
         Introduction to the Data Science lifecycle
       </a>
     </li>
@@ -5470,7 +5263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson15/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson15/" class="md-nav__link">
         Analyzing
       </a>
     </li>
@@ -5482,7 +5275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson16/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/04_lifecycle/lesson16/" class="md-nav__link">
         Communication
       </a>
     </li>
@@ -5521,7 +5314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson17/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson17/" class="md-nav__link">
         Why use Cloud for Data Science?
       </a>
     </li>
@@ -5533,7 +5326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson18/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson18/" class="md-nav__link">
         Data Science in the Cloud: The "Low code/No code" way
       </a>
     </li>
@@ -5545,7 +5338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19/" class="md-nav__link">
         Data Science in the Cloud: The "Azure ML SDK" way
       </a>
     </li>
@@ -5584,7 +5377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20/" class="md-nav__link">
+      <a href="../../../../part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20/" class="md-nav__link">
         Data Science in the Real World
       </a>
     </li>
@@ -5638,7 +5431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5671,7 +5464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/code_snippets/content/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/code_snippets/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -5689,7 +5482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/precautions_in_development/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/precautions_in_development/" class="md-nav__link">
         技术研发中的注意事项
       </a>
     </li>
@@ -5701,7 +5494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/SWIG_programming/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/SWIG_programming/" class="md-nav__link">
         SWIG 编程实践
       </a>
     </li>
@@ -5713,7 +5506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/garbage_collection/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/garbage_collection/" class="md-nav__link">
         Python 的内存管理和垃圾回收机制
       </a>
     </li>
@@ -5725,7 +5518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
+      <a href="../../../../part09_python_in_action/global_interpreter_lock/" class="md-nav__link">
         Python 中的 GIL
       </a>
     </li>
@@ -5767,7 +5560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part10_data_structure_and_algorithm/" class="md-nav__link">
+      <a href="../../../../part10_data_structure_and_algorithm/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5779,7 +5572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part10_data_structure_and_algorithm/dsa_in_python/" class="md-nav__link">
+      <a href="../../../../part10_data_structure_and_algorithm/dsa_in_python/" class="md-nav__link">
         Python 中的数据结构与算法
       </a>
     </li>
@@ -5821,7 +5614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part11_design_pattern/" class="md-nav__link">
+      <a href="../../../../part11_design_pattern/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5863,7 +5656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -5896,7 +5689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/magic_methods/content/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/magic_methods/content/" class="md-nav__link">
         目录
       </a>
     </li>
@@ -5908,7 +5701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/magic_methods/magic_methods_guide/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/magic_methods/magic_methods_guide/" class="md-nav__link">
         A guide to python's magic methods
       </a>
     </li>
@@ -5920,7 +5713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/magic_methods/magic_methods_cookbook/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/magic_methods/magic_methods_cookbook/" class="md-nav__link">
         Python magic methods cookbook
       </a>
     </li>
@@ -5938,7 +5731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/the_tao_of_python/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/the_tao_of_python/" class="md-nav__link">
         The Tao of Python
       </a>
     </li>
@@ -5950,7 +5743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part12_source_code_analysis/mro_in_python/" class="md-nav__link">
+      <a href="../../../../part12_source_code_analysis/mro_in_python/" class="md-nav__link">
         MRO in Python
       </a>
     </li>
@@ -5992,7 +5785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part13_connection_and_expansion/" class="md-nav__link">
+      <a href="../../../../part13_connection_and_expansion/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -6004,7 +5797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../part13_connection_and_expansion/blog/" class="md-nav__link">
+      <a href="../../../../part13_connection_and_expansion/blog/" class="md-nav__link">
         Blog
       </a>
     </li>
@@ -6046,7 +5839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../CHANGELOG/" class="md-nav__link">
+      <a href="../../../../CHANGELOG/" class="md-nav__link">
         Change Log
       </a>
     </li>
@@ -6058,7 +5851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../REFERENCE/" class="md-nav__link">
+      <a href="../../../../REFERENCE/" class="md-nav__link">
         Reference
       </a>
     </li>
@@ -6070,7 +5863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../LICENSE/" class="md-nav__link">
+      <a href="../../../../LICENSE/" class="md-nav__link">
         License
       </a>
     </li>
@@ -6082,8 +5875,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../FASTAPI/" class="md-nav__link">
-        Backup
+      <a href="../../../../NOTE/" class="md-nav__link">
+        Tips
       </a>
     </li>
   
@@ -6121,309 +5914,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#capitalize" class="md-nav__link">
-    capitalize()
+  <a href="#clear" class="md-nav__link">
+    clear()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#center" class="md-nav__link">
-    center()
+  <a href="#copy" class="md-nav__link">
+    copy()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#casefold" class="md-nav__link">
-    casefold()
+  <a href="#fromkeys" class="md-nav__link">
+    fromkeys()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#count" class="md-nav__link">
-    count()
+  <a href="#get" class="md-nav__link">
+    get()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#endswith" class="md-nav__link">
-    endswith()
+  <a href="#items" class="md-nav__link">
+    items()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#expandtabs" class="md-nav__link">
-    expandtabs()
+  <a href="#keys" class="md-nav__link">
+    keys()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#encode" class="md-nav__link">
-    encode()
+  <a href="#pop" class="md-nav__link">
+    pop()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#find" class="md-nav__link">
-    find()
+  <a href="#popitem" class="md-nav__link">
+    popitem()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    format()
+  <a href="#setdefault" class="md-nav__link">
+    setdefault()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#index" class="md-nav__link">
-    index()
+  <a href="#update" class="md-nav__link">
+    update()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#isalnum" class="md-nav__link">
-    isalnum()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isalpha" class="md-nav__link">
-    isalpha()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isdecimal" class="md-nav__link">
-    isdecimal()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isdigit" class="md-nav__link">
-    isdigit()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isidentifier" class="md-nav__link">
-    isidentifier()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#islower" class="md-nav__link">
-    islower()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isnumeric" class="md-nav__link">
-    isnumeric()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isprintable" class="md-nav__link">
-    isprintable()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isspace" class="md-nav__link">
-    isspace()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#istitle" class="md-nav__link">
-    istitle()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#isupper" class="md-nav__link">
-    isupper()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#join" class="md-nav__link">
-    join()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ljust" class="md-nav__link">
-    ljust()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rjust" class="md-nav__link">
-    rjust()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lower" class="md-nav__link">
-    lower()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upper" class="md-nav__link">
-    upper()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swapcase" class="md-nav__link">
-    swapcase()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lstrip" class="md-nav__link">
-    lstrip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rstrip" class="md-nav__link">
-    rstrip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#strip" class="md-nav__link">
-    strip()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#partition" class="md-nav__link">
-    partition()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maketrans" class="md-nav__link">
-    maketrans()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rpartition" class="md-nav__link">
-    rpartition()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#translate" class="md-nav__link">
-    translate()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replace" class="md-nav__link">
-    replace()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rfind" class="md-nav__link">
-    rfind()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rindex" class="md-nav__link">
-    rindex()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split" class="md-nav__link">
-    split()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rsplit" class="md-nav__link">
-    rsplit()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#splitlines" class="md-nav__link">
-    splitlines()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#startswith" class="md-nav__link">
-    startswith()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#title" class="md-nav__link">
-    title()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zfill" class="md-nav__link">
-    zfill()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#format_map" class="md-nav__link">
-    format_map()
+  <a href="#values" class="md-nav__link">
+    values()
   </a>
   
 </li>
@@ -6451,42 +6013,38 @@
 
                 
                 
-                <h1 id="python-string-methods">Python String Methods<a class="headerlink" href="#python-string-methods" title="Permanent link">&para;</a></h1>
-<h2 id="capitalize">capitalize()<a class="headerlink" href="#capitalize" title="Permanent link">&para;</a></h2>
+                <h1 id="python-dictionary-methods">Python Dictionary Methods<a class="headerlink" href="#python-dictionary-methods" title="Permanent link">&para;</a></h1>
+<h2 id="clear">clear()<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Function</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Function</label><div class="tabbed-content">
+<p><code>clear()</code> 方法从字典中删除所有item。</p>
+</div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="nb">dict</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Return Value</label><div class="tabbed-content"></div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Parameter</label><div class="tabbed-content">
+<p>无参数</p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Return Value</label><div class="tabbed-content">
+<p><code>clear()</code> 方法不返回任何值（返回 <code>None</code>）。</p>
 </div>
 </div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
+</div>
+<details class="note"><summary></summary><div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Example 1</label><div class="tabbed-content">
+<p><code>clear()</code> 方法如何作用于字典？</p>
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;two&quot;</span><span class="p">}</span>
+
+<span class="n">d</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d =&#39;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 <p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre></div>
 </div>
 </div>
 </details>
-<h2 id="center">center()<a class="headerlink" href="#center" title="Permanent link">&para;</a></h2>
+<h2 id="copy">copy()<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Syntax</label><div class="tabbed-content">
@@ -6520,7 +6078,7 @@
 </div>
 </div>
 </details>
-<h2 id="casefold">casefold()<a class="headerlink" href="#casefold" title="Permanent link">&para;</a></h2>
+<h2 id="fromkeys">fromkeys()<a class="headerlink" href="#fromkeys" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="5:4"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Syntax</label><div class="tabbed-content">
@@ -6554,7 +6112,7 @@
 </div>
 </div>
 </details>
-<h2 id="count">count()<a class="headerlink" href="#count" title="Permanent link">&para;</a></h2>
+<h2 id="get">get()<a class="headerlink" href="#get" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Syntax</label><div class="tabbed-content">
@@ -6588,7 +6146,7 @@
 </div>
 </div>
 </details>
-<h2 id="endswith">endswith()<a class="headerlink" href="#endswith" title="Permanent link">&para;</a></h2>
+<h2 id="items">items()<a class="headerlink" href="#items" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Syntax</label><div class="tabbed-content">
@@ -6622,7 +6180,7 @@
 </div>
 </div>
 </details>
-<h2 id="expandtabs">expandtabs()<a class="headerlink" href="#expandtabs" title="Permanent link">&para;</a></h2>
+<h2 id="keys">keys()<a class="headerlink" href="#keys" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="11:4"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Syntax</label><div class="tabbed-content">
@@ -6656,7 +6214,7 @@
 </div>
 </div>
 </details>
-<h2 id="encode">encode()<a class="headerlink" href="#encode" title="Permanent link">&para;</a></h2>
+<h2 id="pop">pop()<a class="headerlink" href="#pop" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="13:4"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><label for="__tabbed_13_2">Syntax</label><div class="tabbed-content">
@@ -6690,7 +6248,7 @@
 </div>
 </div>
 </details>
-<h2 id="find">find()<a class="headerlink" href="#find" title="Permanent link">&para;</a></h2>
+<h2 id="popitem">popitem()<a class="headerlink" href="#popitem" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="15:4"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><label for="__tabbed_15_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><label for="__tabbed_15_2">Syntax</label><div class="tabbed-content">
@@ -6724,7 +6282,7 @@
 </div>
 </div>
 </details>
-<h2 id="format">format()<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
+<h2 id="setdefault">setdefault()<a class="headerlink" href="#setdefault" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="17:4"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><label for="__tabbed_17_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><label for="__tabbed_17_2">Syntax</label><div class="tabbed-content">
@@ -6758,7 +6316,7 @@
 </div>
 </div>
 </details>
-<h2 id="index">index()<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h2 id="update">update()<a class="headerlink" href="#update" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="19:4"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><label for="__tabbed_19_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><label for="__tabbed_19_2">Syntax</label><div class="tabbed-content">
@@ -6792,7 +6350,7 @@
 </div>
 </div>
 </details>
-<h2 id="isalnum">isalnum()<a class="headerlink" href="#isalnum" title="Permanent link">&para;</a></h2>
+<h2 id="values">values()<a class="headerlink" href="#values" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
 <div class="tabbed-set" data-tabs="21:4"><input checked="checked" id="__tabbed_21_1" name="__tabbed_21" type="radio" /><label for="__tabbed_21_1">Function</label><div class="tabbed-content"></div>
 <input id="__tabbed_21_2" name="__tabbed_21" type="radio" /><label for="__tabbed_21_2">Syntax</label><div class="tabbed-content">
@@ -6826,1131 +6384,9 @@
 </div>
 </div>
 </details>
-<h2 id="isalpha">isalpha()<a class="headerlink" href="#isalpha" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="23:4"><input checked="checked" id="__tabbed_23_1" name="__tabbed_23" type="radio" /><label for="__tabbed_23_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_23_2" name="__tabbed_23" type="radio" /><label for="__tabbed_23_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_23_3" name="__tabbed_23" type="radio" /><label for="__tabbed_23_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_23_4" name="__tabbed_23" type="radio" /><label for="__tabbed_23_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="24:3"><input checked="checked" id="__tabbed_24_1" name="__tabbed_24" type="radio" /><label for="__tabbed_24_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_24_2" name="__tabbed_24" type="radio" /><label for="__tabbed_24_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_24_3" name="__tabbed_24" type="radio" /><label for="__tabbed_24_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isdecimal">isdecimal()<a class="headerlink" href="#isdecimal" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="25:4"><input checked="checked" id="__tabbed_25_1" name="__tabbed_25" type="radio" /><label for="__tabbed_25_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_25_2" name="__tabbed_25" type="radio" /><label for="__tabbed_25_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_25_3" name="__tabbed_25" type="radio" /><label for="__tabbed_25_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_25_4" name="__tabbed_25" type="radio" /><label for="__tabbed_25_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="26:3"><input checked="checked" id="__tabbed_26_1" name="__tabbed_26" type="radio" /><label for="__tabbed_26_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_26_2" name="__tabbed_26" type="radio" /><label for="__tabbed_26_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_26_3" name="__tabbed_26" type="radio" /><label for="__tabbed_26_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isdigit">isdigit()<a class="headerlink" href="#isdigit" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="27:4"><input checked="checked" id="__tabbed_27_1" name="__tabbed_27" type="radio" /><label for="__tabbed_27_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_27_2" name="__tabbed_27" type="radio" /><label for="__tabbed_27_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_27_3" name="__tabbed_27" type="radio" /><label for="__tabbed_27_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_27_4" name="__tabbed_27" type="radio" /><label for="__tabbed_27_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="28:3"><input checked="checked" id="__tabbed_28_1" name="__tabbed_28" type="radio" /><label for="__tabbed_28_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_28_2" name="__tabbed_28" type="radio" /><label for="__tabbed_28_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_28_3" name="__tabbed_28" type="radio" /><label for="__tabbed_28_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isidentifier">isidentifier()<a class="headerlink" href="#isidentifier" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="29:4"><input checked="checked" id="__tabbed_29_1" name="__tabbed_29" type="radio" /><label for="__tabbed_29_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_29_2" name="__tabbed_29" type="radio" /><label for="__tabbed_29_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_29_3" name="__tabbed_29" type="radio" /><label for="__tabbed_29_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_29_4" name="__tabbed_29" type="radio" /><label for="__tabbed_29_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="30:3"><input checked="checked" id="__tabbed_30_1" name="__tabbed_30" type="radio" /><label for="__tabbed_30_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_30_2" name="__tabbed_30" type="radio" /><label for="__tabbed_30_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_30_3" name="__tabbed_30" type="radio" /><label for="__tabbed_30_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="islower">islower()<a class="headerlink" href="#islower" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="31:4"><input checked="checked" id="__tabbed_31_1" name="__tabbed_31" type="radio" /><label for="__tabbed_31_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_31_2" name="__tabbed_31" type="radio" /><label for="__tabbed_31_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_31_3" name="__tabbed_31" type="radio" /><label for="__tabbed_31_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_31_4" name="__tabbed_31" type="radio" /><label for="__tabbed_31_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="32:3"><input checked="checked" id="__tabbed_32_1" name="__tabbed_32" type="radio" /><label for="__tabbed_32_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_32_2" name="__tabbed_32" type="radio" /><label for="__tabbed_32_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_32_3" name="__tabbed_32" type="radio" /><label for="__tabbed_32_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isnumeric">isnumeric()<a class="headerlink" href="#isnumeric" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="33:4"><input checked="checked" id="__tabbed_33_1" name="__tabbed_33" type="radio" /><label for="__tabbed_33_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_33_2" name="__tabbed_33" type="radio" /><label for="__tabbed_33_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_33_3" name="__tabbed_33" type="radio" /><label for="__tabbed_33_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_33_4" name="__tabbed_33" type="radio" /><label for="__tabbed_33_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="34:3"><input checked="checked" id="__tabbed_34_1" name="__tabbed_34" type="radio" /><label for="__tabbed_34_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_34_2" name="__tabbed_34" type="radio" /><label for="__tabbed_34_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_34_3" name="__tabbed_34" type="radio" /><label for="__tabbed_34_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isprintable">isprintable()<a class="headerlink" href="#isprintable" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="35:4"><input checked="checked" id="__tabbed_35_1" name="__tabbed_35" type="radio" /><label for="__tabbed_35_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_35_2" name="__tabbed_35" type="radio" /><label for="__tabbed_35_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_35_3" name="__tabbed_35" type="radio" /><label for="__tabbed_35_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_35_4" name="__tabbed_35" type="radio" /><label for="__tabbed_35_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="36:3"><input checked="checked" id="__tabbed_36_1" name="__tabbed_36" type="radio" /><label for="__tabbed_36_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_36_2" name="__tabbed_36" type="radio" /><label for="__tabbed_36_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_36_3" name="__tabbed_36" type="radio" /><label for="__tabbed_36_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isspace">isspace()<a class="headerlink" href="#isspace" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="37:4"><input checked="checked" id="__tabbed_37_1" name="__tabbed_37" type="radio" /><label for="__tabbed_37_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_37_2" name="__tabbed_37" type="radio" /><label for="__tabbed_37_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_37_3" name="__tabbed_37" type="radio" /><label for="__tabbed_37_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_37_4" name="__tabbed_37" type="radio" /><label for="__tabbed_37_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="38:3"><input checked="checked" id="__tabbed_38_1" name="__tabbed_38" type="radio" /><label for="__tabbed_38_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_38_2" name="__tabbed_38" type="radio" /><label for="__tabbed_38_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_38_3" name="__tabbed_38" type="radio" /><label for="__tabbed_38_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="istitle">istitle()<a class="headerlink" href="#istitle" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="39:4"><input checked="checked" id="__tabbed_39_1" name="__tabbed_39" type="radio" /><label for="__tabbed_39_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_39_2" name="__tabbed_39" type="radio" /><label for="__tabbed_39_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_39_3" name="__tabbed_39" type="radio" /><label for="__tabbed_39_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_39_4" name="__tabbed_39" type="radio" /><label for="__tabbed_39_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="40:3"><input checked="checked" id="__tabbed_40_1" name="__tabbed_40" type="radio" /><label for="__tabbed_40_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_40_2" name="__tabbed_40" type="radio" /><label for="__tabbed_40_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_40_3" name="__tabbed_40" type="radio" /><label for="__tabbed_40_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="isupper">isupper()<a class="headerlink" href="#isupper" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="41:4"><input checked="checked" id="__tabbed_41_1" name="__tabbed_41" type="radio" /><label for="__tabbed_41_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_41_2" name="__tabbed_41" type="radio" /><label for="__tabbed_41_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_41_3" name="__tabbed_41" type="radio" /><label for="__tabbed_41_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_41_4" name="__tabbed_41" type="radio" /><label for="__tabbed_41_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="42:3"><input checked="checked" id="__tabbed_42_1" name="__tabbed_42" type="radio" /><label for="__tabbed_42_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_42_2" name="__tabbed_42" type="radio" /><label for="__tabbed_42_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_42_3" name="__tabbed_42" type="radio" /><label for="__tabbed_42_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="join">join()<a class="headerlink" href="#join" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="43:4"><input checked="checked" id="__tabbed_43_1" name="__tabbed_43" type="radio" /><label for="__tabbed_43_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_43_2" name="__tabbed_43" type="radio" /><label for="__tabbed_43_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_43_3" name="__tabbed_43" type="radio" /><label for="__tabbed_43_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_43_4" name="__tabbed_43" type="radio" /><label for="__tabbed_43_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="44:3"><input checked="checked" id="__tabbed_44_1" name="__tabbed_44" type="radio" /><label for="__tabbed_44_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_44_2" name="__tabbed_44" type="radio" /><label for="__tabbed_44_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_44_3" name="__tabbed_44" type="radio" /><label for="__tabbed_44_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="ljust">ljust()<a class="headerlink" href="#ljust" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="45:4"><input checked="checked" id="__tabbed_45_1" name="__tabbed_45" type="radio" /><label for="__tabbed_45_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_45_2" name="__tabbed_45" type="radio" /><label for="__tabbed_45_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_45_3" name="__tabbed_45" type="radio" /><label for="__tabbed_45_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_45_4" name="__tabbed_45" type="radio" /><label for="__tabbed_45_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="46:3"><input checked="checked" id="__tabbed_46_1" name="__tabbed_46" type="radio" /><label for="__tabbed_46_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_46_2" name="__tabbed_46" type="radio" /><label for="__tabbed_46_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_46_3" name="__tabbed_46" type="radio" /><label for="__tabbed_46_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rjust">rjust()<a class="headerlink" href="#rjust" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="47:4"><input checked="checked" id="__tabbed_47_1" name="__tabbed_47" type="radio" /><label for="__tabbed_47_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_47_2" name="__tabbed_47" type="radio" /><label for="__tabbed_47_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_47_3" name="__tabbed_47" type="radio" /><label for="__tabbed_47_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_47_4" name="__tabbed_47" type="radio" /><label for="__tabbed_47_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="48:3"><input checked="checked" id="__tabbed_48_1" name="__tabbed_48" type="radio" /><label for="__tabbed_48_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_48_2" name="__tabbed_48" type="radio" /><label for="__tabbed_48_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_48_3" name="__tabbed_48" type="radio" /><label for="__tabbed_48_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="lower">lower()<a class="headerlink" href="#lower" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="49:4"><input checked="checked" id="__tabbed_49_1" name="__tabbed_49" type="radio" /><label for="__tabbed_49_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_49_2" name="__tabbed_49" type="radio" /><label for="__tabbed_49_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_49_3" name="__tabbed_49" type="radio" /><label for="__tabbed_49_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_49_4" name="__tabbed_49" type="radio" /><label for="__tabbed_49_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="50:3"><input checked="checked" id="__tabbed_50_1" name="__tabbed_50" type="radio" /><label for="__tabbed_50_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_50_2" name="__tabbed_50" type="radio" /><label for="__tabbed_50_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_50_3" name="__tabbed_50" type="radio" /><label for="__tabbed_50_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="upper">upper()<a class="headerlink" href="#upper" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="51:4"><input checked="checked" id="__tabbed_51_1" name="__tabbed_51" type="radio" /><label for="__tabbed_51_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_51_2" name="__tabbed_51" type="radio" /><label for="__tabbed_51_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_51_3" name="__tabbed_51" type="radio" /><label for="__tabbed_51_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_51_4" name="__tabbed_51" type="radio" /><label for="__tabbed_51_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="52:3"><input checked="checked" id="__tabbed_52_1" name="__tabbed_52" type="radio" /><label for="__tabbed_52_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_52_2" name="__tabbed_52" type="radio" /><label for="__tabbed_52_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_52_3" name="__tabbed_52" type="radio" /><label for="__tabbed_52_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="swapcase">swapcase()<a class="headerlink" href="#swapcase" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="53:4"><input checked="checked" id="__tabbed_53_1" name="__tabbed_53" type="radio" /><label for="__tabbed_53_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_53_2" name="__tabbed_53" type="radio" /><label for="__tabbed_53_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_53_3" name="__tabbed_53" type="radio" /><label for="__tabbed_53_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_53_4" name="__tabbed_53" type="radio" /><label for="__tabbed_53_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="54:3"><input checked="checked" id="__tabbed_54_1" name="__tabbed_54" type="radio" /><label for="__tabbed_54_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_54_2" name="__tabbed_54" type="radio" /><label for="__tabbed_54_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_54_3" name="__tabbed_54" type="radio" /><label for="__tabbed_54_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="lstrip">lstrip()<a class="headerlink" href="#lstrip" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="55:4"><input checked="checked" id="__tabbed_55_1" name="__tabbed_55" type="radio" /><label for="__tabbed_55_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_55_2" name="__tabbed_55" type="radio" /><label for="__tabbed_55_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_55_3" name="__tabbed_55" type="radio" /><label for="__tabbed_55_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_55_4" name="__tabbed_55" type="radio" /><label for="__tabbed_55_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="56:3"><input checked="checked" id="__tabbed_56_1" name="__tabbed_56" type="radio" /><label for="__tabbed_56_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_56_2" name="__tabbed_56" type="radio" /><label for="__tabbed_56_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_56_3" name="__tabbed_56" type="radio" /><label for="__tabbed_56_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rstrip">rstrip()<a class="headerlink" href="#rstrip" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="57:4"><input checked="checked" id="__tabbed_57_1" name="__tabbed_57" type="radio" /><label for="__tabbed_57_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_57_2" name="__tabbed_57" type="radio" /><label for="__tabbed_57_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_57_3" name="__tabbed_57" type="radio" /><label for="__tabbed_57_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_57_4" name="__tabbed_57" type="radio" /><label for="__tabbed_57_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="58:3"><input checked="checked" id="__tabbed_58_1" name="__tabbed_58" type="radio" /><label for="__tabbed_58_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_58_2" name="__tabbed_58" type="radio" /><label for="__tabbed_58_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_58_3" name="__tabbed_58" type="radio" /><label for="__tabbed_58_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="strip">strip()<a class="headerlink" href="#strip" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="59:4"><input checked="checked" id="__tabbed_59_1" name="__tabbed_59" type="radio" /><label for="__tabbed_59_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_59_2" name="__tabbed_59" type="radio" /><label for="__tabbed_59_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_59_3" name="__tabbed_59" type="radio" /><label for="__tabbed_59_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_59_4" name="__tabbed_59" type="radio" /><label for="__tabbed_59_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="60:3"><input checked="checked" id="__tabbed_60_1" name="__tabbed_60" type="radio" /><label for="__tabbed_60_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_60_2" name="__tabbed_60" type="radio" /><label for="__tabbed_60_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_60_3" name="__tabbed_60" type="radio" /><label for="__tabbed_60_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="partition">partition()<a class="headerlink" href="#partition" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="61:4"><input checked="checked" id="__tabbed_61_1" name="__tabbed_61" type="radio" /><label for="__tabbed_61_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_61_2" name="__tabbed_61" type="radio" /><label for="__tabbed_61_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_61_3" name="__tabbed_61" type="radio" /><label for="__tabbed_61_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_61_4" name="__tabbed_61" type="radio" /><label for="__tabbed_61_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="62:3"><input checked="checked" id="__tabbed_62_1" name="__tabbed_62" type="radio" /><label for="__tabbed_62_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_62_2" name="__tabbed_62" type="radio" /><label for="__tabbed_62_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_62_3" name="__tabbed_62" type="radio" /><label for="__tabbed_62_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="maketrans">maketrans()<a class="headerlink" href="#maketrans" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="63:4"><input checked="checked" id="__tabbed_63_1" name="__tabbed_63" type="radio" /><label for="__tabbed_63_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_63_2" name="__tabbed_63" type="radio" /><label for="__tabbed_63_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_63_3" name="__tabbed_63" type="radio" /><label for="__tabbed_63_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_63_4" name="__tabbed_63" type="radio" /><label for="__tabbed_63_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="64:3"><input checked="checked" id="__tabbed_64_1" name="__tabbed_64" type="radio" /><label for="__tabbed_64_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_64_2" name="__tabbed_64" type="radio" /><label for="__tabbed_64_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_64_3" name="__tabbed_64" type="radio" /><label for="__tabbed_64_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rpartition">rpartition()<a class="headerlink" href="#rpartition" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="65:4"><input checked="checked" id="__tabbed_65_1" name="__tabbed_65" type="radio" /><label for="__tabbed_65_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_65_2" name="__tabbed_65" type="radio" /><label for="__tabbed_65_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_65_3" name="__tabbed_65" type="radio" /><label for="__tabbed_65_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_65_4" name="__tabbed_65" type="radio" /><label for="__tabbed_65_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="66:3"><input checked="checked" id="__tabbed_66_1" name="__tabbed_66" type="radio" /><label for="__tabbed_66_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_66_2" name="__tabbed_66" type="radio" /><label for="__tabbed_66_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_66_3" name="__tabbed_66" type="radio" /><label for="__tabbed_66_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="translate">translate()<a class="headerlink" href="#translate" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="67:4"><input checked="checked" id="__tabbed_67_1" name="__tabbed_67" type="radio" /><label for="__tabbed_67_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_67_2" name="__tabbed_67" type="radio" /><label for="__tabbed_67_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_67_3" name="__tabbed_67" type="radio" /><label for="__tabbed_67_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_67_4" name="__tabbed_67" type="radio" /><label for="__tabbed_67_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="68:3"><input checked="checked" id="__tabbed_68_1" name="__tabbed_68" type="radio" /><label for="__tabbed_68_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_68_2" name="__tabbed_68" type="radio" /><label for="__tabbed_68_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_68_3" name="__tabbed_68" type="radio" /><label for="__tabbed_68_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="replace">replace()<a class="headerlink" href="#replace" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="69:4"><input checked="checked" id="__tabbed_69_1" name="__tabbed_69" type="radio" /><label for="__tabbed_69_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_69_2" name="__tabbed_69" type="radio" /><label for="__tabbed_69_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_69_3" name="__tabbed_69" type="radio" /><label for="__tabbed_69_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_69_4" name="__tabbed_69" type="radio" /><label for="__tabbed_69_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="70:3"><input checked="checked" id="__tabbed_70_1" name="__tabbed_70" type="radio" /><label for="__tabbed_70_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_70_2" name="__tabbed_70" type="radio" /><label for="__tabbed_70_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_70_3" name="__tabbed_70" type="radio" /><label for="__tabbed_70_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rfind">rfind()<a class="headerlink" href="#rfind" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="71:4"><input checked="checked" id="__tabbed_71_1" name="__tabbed_71" type="radio" /><label for="__tabbed_71_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_71_2" name="__tabbed_71" type="radio" /><label for="__tabbed_71_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_71_3" name="__tabbed_71" type="radio" /><label for="__tabbed_71_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_71_4" name="__tabbed_71" type="radio" /><label for="__tabbed_71_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="72:3"><input checked="checked" id="__tabbed_72_1" name="__tabbed_72" type="radio" /><label for="__tabbed_72_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_72_2" name="__tabbed_72" type="radio" /><label for="__tabbed_72_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_72_3" name="__tabbed_72" type="radio" /><label for="__tabbed_72_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rindex">rindex()<a class="headerlink" href="#rindex" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="73:4"><input checked="checked" id="__tabbed_73_1" name="__tabbed_73" type="radio" /><label for="__tabbed_73_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_73_2" name="__tabbed_73" type="radio" /><label for="__tabbed_73_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_73_3" name="__tabbed_73" type="radio" /><label for="__tabbed_73_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_73_4" name="__tabbed_73" type="radio" /><label for="__tabbed_73_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="74:3"><input checked="checked" id="__tabbed_74_1" name="__tabbed_74" type="radio" /><label for="__tabbed_74_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_74_2" name="__tabbed_74" type="radio" /><label for="__tabbed_74_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_74_3" name="__tabbed_74" type="radio" /><label for="__tabbed_74_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="split">split()<a class="headerlink" href="#split" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="75:4"><input checked="checked" id="__tabbed_75_1" name="__tabbed_75" type="radio" /><label for="__tabbed_75_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_75_2" name="__tabbed_75" type="radio" /><label for="__tabbed_75_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_75_3" name="__tabbed_75" type="radio" /><label for="__tabbed_75_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_75_4" name="__tabbed_75" type="radio" /><label for="__tabbed_75_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="76:3"><input checked="checked" id="__tabbed_76_1" name="__tabbed_76" type="radio" /><label for="__tabbed_76_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_76_2" name="__tabbed_76" type="radio" /><label for="__tabbed_76_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_76_3" name="__tabbed_76" type="radio" /><label for="__tabbed_76_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="rsplit">rsplit()<a class="headerlink" href="#rsplit" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="77:4"><input checked="checked" id="__tabbed_77_1" name="__tabbed_77" type="radio" /><label for="__tabbed_77_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_77_2" name="__tabbed_77" type="radio" /><label for="__tabbed_77_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_77_3" name="__tabbed_77" type="radio" /><label for="__tabbed_77_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_77_4" name="__tabbed_77" type="radio" /><label for="__tabbed_77_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="78:3"><input checked="checked" id="__tabbed_78_1" name="__tabbed_78" type="radio" /><label for="__tabbed_78_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_78_2" name="__tabbed_78" type="radio" /><label for="__tabbed_78_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_78_3" name="__tabbed_78" type="radio" /><label for="__tabbed_78_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="splitlines">splitlines()<a class="headerlink" href="#splitlines" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="79:4"><input checked="checked" id="__tabbed_79_1" name="__tabbed_79" type="radio" /><label for="__tabbed_79_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_79_2" name="__tabbed_79" type="radio" /><label for="__tabbed_79_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_79_3" name="__tabbed_79" type="radio" /><label for="__tabbed_79_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_79_4" name="__tabbed_79" type="radio" /><label for="__tabbed_79_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="80:3"><input checked="checked" id="__tabbed_80_1" name="__tabbed_80" type="radio" /><label for="__tabbed_80_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_80_2" name="__tabbed_80" type="radio" /><label for="__tabbed_80_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_80_3" name="__tabbed_80" type="radio" /><label for="__tabbed_80_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="startswith">startswith()<a class="headerlink" href="#startswith" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="81:4"><input checked="checked" id="__tabbed_81_1" name="__tabbed_81" type="radio" /><label for="__tabbed_81_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_81_2" name="__tabbed_81" type="radio" /><label for="__tabbed_81_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_81_3" name="__tabbed_81" type="radio" /><label for="__tabbed_81_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_81_4" name="__tabbed_81" type="radio" /><label for="__tabbed_81_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="82:3"><input checked="checked" id="__tabbed_82_1" name="__tabbed_82" type="radio" /><label for="__tabbed_82_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_82_2" name="__tabbed_82" type="radio" /><label for="__tabbed_82_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_82_3" name="__tabbed_82" type="radio" /><label for="__tabbed_82_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="title">title()<a class="headerlink" href="#title" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="83:4"><input checked="checked" id="__tabbed_83_1" name="__tabbed_83" type="radio" /><label for="__tabbed_83_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_83_2" name="__tabbed_83" type="radio" /><label for="__tabbed_83_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_83_3" name="__tabbed_83" type="radio" /><label for="__tabbed_83_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_83_4" name="__tabbed_83" type="radio" /><label for="__tabbed_83_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="84:3"><input checked="checked" id="__tabbed_84_1" name="__tabbed_84" type="radio" /><label for="__tabbed_84_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_84_2" name="__tabbed_84" type="radio" /><label for="__tabbed_84_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_84_3" name="__tabbed_84" type="radio" /><label for="__tabbed_84_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="zfill">zfill()<a class="headerlink" href="#zfill" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="85:4"><input checked="checked" id="__tabbed_85_1" name="__tabbed_85" type="radio" /><label for="__tabbed_85_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_85_2" name="__tabbed_85" type="radio" /><label for="__tabbed_85_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_85_3" name="__tabbed_85" type="radio" /><label for="__tabbed_85_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_85_4" name="__tabbed_85" type="radio" /><label for="__tabbed_85_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="86:3"><input checked="checked" id="__tabbed_86_1" name="__tabbed_86" type="radio" /><label for="__tabbed_86_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_86_2" name="__tabbed_86" type="radio" /><label for="__tabbed_86_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_86_3" name="__tabbed_86" type="radio" /><label for="__tabbed_86_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
-<h2 id="format_map">format_map()<a class="headerlink" href="#format_map" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<div class="tabbed-set" data-tabs="87:4"><input checked="checked" id="__tabbed_87_1" name="__tabbed_87" type="radio" /><label for="__tabbed_87_1">Function</label><div class="tabbed-content"></div>
-<input id="__tabbed_87_2" name="__tabbed_87" type="radio" /><label for="__tabbed_87_2">Syntax</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_87_3" name="__tabbed_87" type="radio" /><label for="__tabbed_87_3">Parameter</label><div class="tabbed-content"></div>
-<input id="__tabbed_87_4" name="__tabbed_87" type="radio" /><label for="__tabbed_87_4">Return Value</label><div class="tabbed-content"></div>
-</div>
-</div>
-<details class="note"><summary></summary><div class="tabbed-set" data-tabs="88:3"><input checked="checked" id="__tabbed_88_1" name="__tabbed_88" type="radio" /><label for="__tabbed_88_1">Example 1</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 1</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_88_2" name="__tabbed_88" type="radio" /><label for="__tabbed_88_2">Example 2</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 2</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-<input id="__tabbed_88_3" name="__tabbed_88" type="radio" /><label for="__tabbed_88_3">Example 3</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<p>Result 3</p>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</div>
-</div>
-</details>
 <h2 id="_1">拓展阅读<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://www.programiz.com/python###programming/methods/string">Programiz: Python String Methods</a></li>
+<li><a href="https://www.programiz.com/python-programming/methods/dictionary">Programiz: Python Dictionary Methods</a></li>
 </ul>
                 
               
@@ -7971,7 +6407,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../builtin_functions/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../list_methods/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -7980,19 +6416,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              内置函数
+              list
             </div>
           </div>
         </a>
       
       
-        <a href="../list_methods/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../tuple_methods/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              list
+              tuple
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -8017,6 +6453,64 @@
         
       </div>
       
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="http://106.14.160.45:8080/LICENSE/" target="_blank" rel="noopener" title="106.14.160.45:8080" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="m245.83 214.87-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/baiyongan" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="http://106.14.160.45:8081" target="_blank" rel="noopener" title="106.14.160.45:8081" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="http://106.14.160.45" target="_blank" rel="noopener" title="106.14.160.45" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://bya.cool" target="_blank" rel="noopener" title="bya.cool" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M292.3 311.93c0 42.41-39.72 41.43-43.92 41.43h-80.89v-81.69h80.89c42.56 0 43.92 31.9 43.92 40.26zm-50.15-73.13c.67 0 38.44 1 38.44-36.31 0-15.52-3.51-35.87-38.44-35.87h-74.66v72.18h74.66zM448 106.67v298.66A74.89 74.89 0 0 1 373.33 480H74.67A74.89 74.89 0 0 1 0 405.33V106.67A74.89 74.89 0 0 1 74.67 32h298.66A74.89 74.89 0 0 1 448 106.67zM338.05 317.86c0-21.57-6.65-58.29-49.05-67.35v-.73c22.91-9.78 37.34-28.25 37.34-55.64 0-7 2-64.78-77.6-64.78h-127v261.33c128.23 0 139.87 1.68 163.6-5.71 14.21-4.42 52.71-17.98 52.71-67.12z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://baiyongan.gitbook.io/lsf/" target="_blank" rel="noopener" title="baiyongan.gitbook.io" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v128h128V32H0zm120 120H8V40h112v112zm40-120v128h128V32H160zm120 120H168V40h112v112zm40-120v128h128V32H320zm120 120H328V40h112v112zM0 192v128h128V192H0zm120 120H8V200h112v112zm40-120v128h128V192H160zm120 120H168V200h112v112zm40-120v128h128V192H320zm120 120H328V200h112v112zM0 352v128h128V352H0zm120 120H8V360h112v112zm40-120v128h128V352H160zm120 120H168V360h112v112zm40-120v128h128V352H320z"/></svg>
+      </a>
+    
+  </div>
+
     </div>
   </div>
 </footer>
@@ -8025,16 +6519,16 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["search.suggest", "search.highlight", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
       
-        <script src="../../../assets/js/termynal.js"></script>
+        <script src="../../../../assets/js/termynal.js"></script>
       
-        <script src="../../../assets/js/custom.js"></script>
+        <script src="../../../../assets/js/custom.js"></script>
       
     
   </body>
