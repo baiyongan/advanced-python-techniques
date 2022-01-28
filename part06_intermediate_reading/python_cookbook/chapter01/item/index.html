@@ -6642,9 +6642,71 @@
 <h2 id="15">15 通过某个字段将记录分组<a class="headerlink" href="#15" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>有一个字典或者实例的序列，如何根据某个特定的字段比如 <code>date</code> 来分组迭代访问 ?</p>
+<ul>
+<li><code>itertools.groupby()</code> 函数</li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary></details>
-<details class="summary"><summary>讨论</summary></details>
+<details class="done"><summary>解决方案</summary><p>假设有下列的字典列表，需要在按 <code>date</code> 分组后的数据块上进行迭代。</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">rows</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5412 N CLARK&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5148 N CLARK&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/04/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5800 E 58TH&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;2122 N CLARK&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/03/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5645 N RAVENSWOOD&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;1060 W ADDISON&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;4801 N BROADWAY&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;1039 W GRANVILLE&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/04/2012&#39;</span><span class="p">},</span>
+<span class="p">]</span>
+</code></pre></div>
+首先需要按照指定的字段(这里就是 date )排序， 然后调用 itertools.groupby() 函数：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">groupby</span>
+
+<span class="c1"># Sort by the desired field first</span>
+<span class="n">rows</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">))</span>
+<span class="c1"># Iterate in groups</span>
+<span class="k">for</span> <span class="n">date</span><span class="p">,</span> <span class="n">items</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+<p>运行结果：
+<div class="highlight"><pre><span></span><code><span class="mi">07</span><span class="o">/</span><span class="mi">01</span><span class="o">/</span><span class="mi">2012</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5412 N CLARK&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;4801 N BROADWAY&#39;</span><span class="p">}</span>
+<span class="mi">07</span><span class="o">/</span><span class="mi">02</span><span class="o">/</span><span class="mi">2012</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5800 E 58TH&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5645 N RAVENSWOOD&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/02/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;1060 W ADDISON&#39;</span><span class="p">}</span>
+<span class="mi">07</span><span class="o">/</span><span class="mi">03</span><span class="o">/</span><span class="mi">2012</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/03/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;2122 N CLARK&#39;</span><span class="p">}</span>
+<span class="mi">07</span><span class="o">/</span><span class="mi">04</span><span class="o">/</span><span class="mi">2012</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/04/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5148 N CLARK&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/04/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;1039 W GRANVILLE&#39;</span><span class="p">}</span>
+</code></pre></div></p>
+</details>
+<details class="summary"><summary>讨论</summary><p><code>groupby(</code>) 函数扫描整个序列并且查找连续相同值（或者根据指定 <code>key</code> 函数返回值相同）的元素序列。 在每次迭代的时候，它会返回一个值和一个迭代器对象， 这个迭代器对象可以生成元素值全部等于上面那个值的组中所有对象。</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><code>groupby()</code> 仅仅检查连续的元素，如果事先并没有排序完成的话，分组函数将得不到想要的结果。</p>
+</div>
+<p>如果仅仅只是想根据 <code>date</code> 字段将数据分组到一个大的数据结构中去，并且允许随机访问， 那么最好使用 <code>defaultdict()</code> 来构建一个多值字典，关于多值字典已经在 1.6 小节有过详细的介绍。比如：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="n">rows_by_date</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">rows_by_date</span><span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</code></pre></div>
+<p>如此，可以很轻松的就能对每个指定日期访问对应的记录：</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">rows_by_date</span><span class="p">[</span><span class="s1">&#39;07/01/2012&#39;</span><span class="p">]:</span>
+<span class="o">...</span> <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;5412 N CLARK&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;07/01/2012&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">:</span> <span class="s1">&#39;4801 N BROADWAY&#39;</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+<p>在上面这个例子中，没有必要先将记录排序。因此，<strong>如果对内存占用不是很关心， 这种方式会比先排序然后再通过 groupby() 函数迭代的方式运行得快一些。</strong></p>
+</details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="16">16 过滤序列元素<a class="headerlink" href="#16" title="Permanent link">&para;</a></h2>
 <div class="admonition question">

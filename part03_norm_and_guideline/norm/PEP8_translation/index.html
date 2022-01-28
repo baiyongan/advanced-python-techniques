@@ -6524,7 +6524,7 @@
 <p>许多项目有自己的编码风格，在发生冲突时，这类项目的风格指南应优先考虑。   </p>
 <h2 id="2">2、固执己见必成心灵之魔<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <hr />
-<p>Guido 认为：代码被阅读之频繁远甚于其被编写。所以，这里提供的准则旨在提高代码的可读性并使其在各种 Python 代码中保持一致。如 PEP 20 所述，“可读性至关重要”。   </p>
+<p>Guido 认为：<strong>代码被阅读之频繁远甚于其被编写</strong>。所以，这里提供的准则旨在提高代码的可读性并使其在各种 Python 代码中保持一致。如 PEP 20 所述，“可读性至关重要”。   </p>
 <p>风格指南是有关一致性的重要规约。书写与此风格指南一致的代码很重要，书写与项目风格一致的代码更加重要，在一个模块或函数内, 书写风格一致的代码超级重要。   </p>
 <p>所以，风格指南并不适用于所有情况，要知道什么时候不一致，这需要你运用自己的智慧进行判断。多看一些例子，选择你认为最好的那个，必要的时候要懂得向别人请教。   </p>
 <p>尤其注意：<strong>不要为了满足风格指南而破坏与过去代码风格的兼容性！</strong></p>
@@ -6544,7 +6544,7 @@
 <h3 id="1_1"><strong>（1）缩进</strong><a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>每级缩进对应四个空格。   </p>
 <p>()、[] 或者 {} 可以隐式的换行，三种括号所包裹的代码要么垂直对齐，要么悬挂缩进。当使用悬挂缩进时，应该注意：参数不能放在首行，续行要再缩进一级以便和后边的代码区别开。   </p>
-<div class="admonition note">
+<div class="admonition success">
 <p class="admonition-title">正确写法</p>
 <ul>
 <li>与左括号对齐（垂直对齐写法）</li>
@@ -6568,7 +6568,7 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<div class="admonition error">
+<div class="admonition fail">
 <p class="admonition-title">错误写法</p>
 <ul>
 <li>参数放在第一行而没有垂直对齐</li>
@@ -6586,7 +6586,7 @@
 </code></pre></div>
 </div>
 <div class="admonition attention">
-<p class="admonition-title">Attention</p>
+<p class="admonition-title">注意</p>
 <p>对于续行来说，4个空格的缩进规则可以不必遵守  </p>
 <ul>
 <li>可以不采用是4个空格的缩进方法</li>
@@ -6641,13 +6641,13 @@
 <span class="p">)</span>
 </code></pre></div>
 <h3 id="2tab"><strong>（2）“Tab”还是空格？</strong><a class="headerlink" href="#2tab" title="Permanent link">&para;</a></h3>
-<p>推荐使用空格控制缩进。   </p>
+<p><strong>推荐使用空格控制缩进。</strong>  </p>
 <p>tab 只用于与之前的代码保持一致的情况。</p>
-<p>Python3 不允许混合使用 tab 和空格控制缩进。   </p>
+<p><strong>Python3 不允许混合使用 tab 和空格控制缩进。</strong>   </p>
 <p>Python2 中混合使用 tab 和空格缩进的代码应改成只使用空格缩进。   </p>
 <p>当使用 -t 选项调用 Python2 命令行解释器时，会给出混合使用 tab 和空格的警告。使用 -tt 选项时，这些警告会变为错误。我们推荐使用这些选项。   </p>
 <h3 id="3_1"><strong>（3）单行最大长度</strong><a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
-<p>每行最多 79 个字符。   </p>
+<p><strong>每行最多 79 个字符。</strong>   </p>
 <p>对于具有较少结构限制的长文本块（如文档字符串和注释）每行最多 72 个字符。   </p>
 <p>限制编辑器的窗口宽度可以在屏幕上并排打开多个文件，同时也能更好地使用代码审阅工具（在相邻两列中显示两个版本的代码）。   </p>
 <p>大多数工具默认的换行方式破坏了代码可见的结构，让代码变得难于理解。在窗口大小为 80 的编辑器中，即使换行的代码会在最后一列被打上标记，为了避免自动换行也需要限制每行字符长度。一些基于 Web 的工具可能根本不会自动换行。   </p>
@@ -6664,9 +6664,8 @@
 <p>要确保续行的缩进适当。   </p>
 <h3 id="4"><strong>（4）在二元运算符之前还是之后换行？</strong><a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <p>长期以来，一直推荐的风格是在二元运算符之后换行，但是这会影响代码可读性，一是会使运算符分散在屏幕的不同列上，二是会使每个运算符留在前一行，并远离操作数分离。必须人为地判断应该加上或者减去哪些东西，这就增加了人眼的负担。   </p>
-<blockquote>
-<p>错误写法:   </p>
-</blockquote>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <ul>
 <li>运算符远离操作数</li>
 </ul>
@@ -6676,11 +6675,11 @@
           <span class="n">ira_deduction</span> <span class="o">-</span>
           <span class="n">student_loan_interest</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <p>为了解决这一可读性问题，数学家和出版商遵循了相反的规约。Donald Knuth 在他的《Computers and Typesetting》丛书中解释了这一规约。“虽然段落中的公式总是在二元运算符后换行，但显示公式时总是在二元运算符之前换行。”   </p>
 <p>遵循数学上的传统可以写出可读性更好的代码。   </p>
-<blockquote>
-<p>正确写法:   </p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <ul>
 <li>更容易匹配运算符与操作数</li>
 </ul>
@@ -6690,6 +6689,7 @@
           <span class="o">-</span> <span class="n">ira_deduction</span>
           <span class="o">-</span> <span class="n">student_loan_interest</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <p>在 Python 代码中，只要前后保持一致，在二元操作符之前或之后换行都可以。对于新写的代码，建议使用 Knuth 推荐的风格。   </p>
 <h3 id="5"><strong>（5）空行</strong><a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <p>顶级函数和类的定义前后空两行。   </p>
@@ -6711,34 +6711,33 @@
 <ul>
 <li>导入语句应该分开写，而不是都放到一行，例如：   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<p>!!! success "正确写法</p>
+<div class="codehilite"><pre><span></span><code><span class="sb">``</span><span class="err">`</span><span class="n">python</span>
+<span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
+<span class="sb">``</span><span class="err">`</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
 </code></pre></div>
+</div>
 <p>这种写法也可以：   </p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
 </code></pre></div>
 <ul>
-<li>导入语句一般放在文件开头，在模块注释和文档字符串之后，模块全局变量和常量之前。   </li>
+<li>导之前。 入语句一般放在文件开头，在模块注释和文档字符串之后，模块全局变量和常量 </li>
 </ul>
-<blockquote>
+<div class="admonition quota">
 <p>注意分组导入，并遵循一下顺序：   </p>
-<blockquote>
 <ol>
 <li>标准库导入</li>
 <li>相关的第三方包导入</li>
 <li>本地应用或库的特定导入</li>
 </ol>
-</blockquote>
 <p>不同的组应使用空行分隔</p>
-</blockquote>
+</div>
 <ul>
 <li>推荐绝对路径导入方式，通常这样更有可读性，在系统配置错误时的情况下（比如包里的文件路径有以 sys.path 结尾的。），也会表现得更好（至少会给出更好的错误提示信息）：   </li>
 </ul>
@@ -6768,10 +6767,9 @@
 </ul>
 <p>当使用这种方式重新发布名称时，指南后面关于公共和内部接口的部分仍然适用。   </p>
 <h3 id="8"><strong>（8）模块级双下划线名称</strong><a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
-<p>模块级的双下划线名称（即在名称的开始和结尾处都有两条下划线）如__all__，<strong>author</strong>，<strong>version</strong> 等，应该写在文档字符串之后，除<code>from __future__</code>外其他导入语句之前。Python 要求在模块中<code>future-imports</code>语句要放在除文档字符串外的任何其他代码之前。   </p>
-<blockquote>
-<p>例如：</p>
-</blockquote>
+<p>模块级的双下划线名称（即在名称的开始和结尾处都有两条下划线）如<code>__all__</code>，<code>__author__</code>，<code>__version__</code> 等，应该写在文档字符串之后，除<code>from __future__</code>外其他导入语句之前。Python 要求在模块中<code>future-imports</code>语句要放在除文档字符串外的任何其他代码之前。   </p>
+<div class="admonition example">
+<p class="admonition-title">例如</p>
 <div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;This is the example module.</span>
 <span class="sd">This module does stuff.</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -6785,6 +6783,7 @@
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 </code></pre></div>
+</div>
 <h2 id="4_1">4、字符串引用<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h2>
 <hr />
 <p>在 Python 中，单引号字符串和双引号字符串是一样的。本 PEP 文档在这一点上不做要求，选用一种并坚持下去就好。当字符串本身包含单引号或者双引号时，那就选用未包含的引号来表示字符串，这样可以避免使用<code>\</code>，代码也更易读。   </p>
@@ -6796,105 +6795,105 @@
 <ul>
 <li>括号内部紧挨括号的地方，包括圆括号、方括号和花括号。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">spam</span><span class="p">(</span><span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">{</span><span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">spam</span><span class="p">(</span> <span class="n">ham</span><span class="p">[</span> <span class="mi">1</span> <span class="p">],</span> <span class="p">{</span> <span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span> <span class="p">}</span> <span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>逗号后面跟着右括号。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">foo</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">bar</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>逗号，分号，和冒号之前。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span> <span class="nb">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">4</span> <span class="p">:</span> <span class="nb">print</span> <span class="n">x</span> <span class="p">,</span> <span class="n">y</span> <span class="p">;</span> <span class="n">x</span> <span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="p">,</span> <span class="n">x</span>
 </code></pre></div>
+</div>
 <ul>
 <li>然而，在切片操作中，冒号作为二元运算符，两边应该具有相同数目的空格（可将其视作最低优先级的运算符）。在扩展切片操作中，两个冒号左右两边的空格数都应该相等。当然，如果切片操作省略了参数，那么空白也应该省略。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="n">ham</span><span class="p">[:</span><span class="mi">9</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">3</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">:]</span>
 <span class="n">ham</span><span class="p">[</span><span class="n">lower</span><span class="p">:</span><span class="n">upper</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="n">lower</span><span class="p">:</span><span class="n">upper</span><span class="p">:],</span> <span class="n">ham</span><span class="p">[</span><span class="n">lower</span><span class="p">::</span><span class="n">step</span><span class="p">]</span>
 <span class="n">ham</span><span class="p">[</span><span class="n">lower</span><span class="o">+</span><span class="n">offset</span> <span class="p">:</span> <span class="n">upper</span><span class="o">+</span><span class="n">offset</span><span class="p">]</span>
 <span class="n">ham</span><span class="p">[:</span> <span class="n">upper_fn</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">:</span> <span class="n">step_fn</span><span class="p">(</span><span class="n">x</span><span class="p">)],</span> <span class="n">ham</span><span class="p">[::</span> <span class="n">step_fn</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
 <span class="n">ham</span><span class="p">[</span><span class="n">lower</span> <span class="o">+</span> <span class="n">offset</span> <span class="p">:</span> <span class="n">upper</span> <span class="o">+</span> <span class="n">offset</span><span class="p">]</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">ham</span><span class="p">[</span><span class="n">lower</span> <span class="o">+</span> <span class="n">offset</span><span class="p">:</span><span class="n">upper</span> <span class="o">+</span> <span class="n">offset</span><span class="p">]</span>
 <span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span> <span class="mi">9</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="mi">1</span> <span class="p">:</span><span class="mi">9</span><span class="p">],</span> <span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">ham</span><span class="p">[</span><span class="n">lower</span> <span class="p">:</span> <span class="p">:</span> <span class="n">upper</span><span class="p">]</span>
 <span class="n">ham</span><span class="p">[</span> <span class="p">:</span> <span class="n">upper</span><span class="p">]</span>
 </code></pre></div>
+</div>
 <ul>
 <li>函数调用时，包裹参数列表的左括号之前：   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">spam</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">spam</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>在索引或者切片操作紧挨着的左括号前边：   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">dct</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">dct</span> <span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span> <span class="p">[</span><span class="n">index</span><span class="p">]</span>
 </code></pre></div>
+</div>
 <ul>
 <li>为了对齐，在赋值号或者其他运算符前后加多个空格。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">long_variable</span> <span class="o">=</span> <span class="mi">3</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span>             <span class="o">=</span> <span class="mi">1</span>
 <span class="n">y</span>             <span class="o">=</span> <span class="mi">2</span>
 <span class="n">long_variable</span> <span class="o">=</span> <span class="mi">3</span>
 </code></pre></div>
+</div>
 <h3 id="2_1"><strong>（2）其他建议</strong><a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -6907,100 +6906,99 @@
 <p>如果混用了不同优先级的运算符，可以考虑在低优先级运算符两边增加空格。但不要超过一个，并且要保持二元运算符两边的空格数量相同。   </p>
 </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">submitted</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="n">hypot2</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="o">*</span><span class="n">y</span>
 <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
 <span class="n">submitted</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="n">hypot2</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span>
 <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>当表示关键字参数或者默认参数时，等号两边不加空格。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">complex</span><span class="p">(</span><span class="n">real</span><span class="p">,</span> <span class="n">imag</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">magic</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">real</span><span class="p">,</span> <span class="n">i</span><span class="o">=</span><span class="n">imag</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">complex</span><span class="p">(</span><span class="n">real</span><span class="p">,</span> <span class="n">imag</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">magic</span><span class="p">(</span><span class="n">r</span> <span class="o">=</span> <span class="n">real</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="n">imag</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>函数注释中的冒号遵循一般的加空格的规则，如果有箭头，要在其两边加空格。（更多信息请见下面的函数注释。）   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span> <span class="n">AnyStr</span><span class="p">):</span> <span class="o">...</span>
 <span class="k">def</span> <span class="nf">munge</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AnyStr</span><span class="p">:</span> <span class="o">...</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span><span class="n">AnyStr</span><span class="p">):</span> <span class="o">...</span>
 <span class="k">def</span> <span class="nf">munge</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">PosInt</span><span class="p">:</span> <span class="o">...</span>
 </code></pre></div>
+</div>
 <ul>
 <li>当组合使用参数注释和参数默认值时，赋值号两边要加空格（但仅对既有空格又有默认值的参数成立）。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="n">sep</span><span class="p">:</span> <span class="n">AnyStr</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span> <span class="o">...</span>
 <span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span> <span class="n">AnyStr</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="n">AnyStr</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span> <span class="o">...</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span> <span class="n">AnyStr</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span> <span class="o">...</span>
 <span class="k">def</span> <span class="nf">munge</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span> <span class="n">AnyStr</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">):</span> <span class="o">...</span>
 </code></pre></div>
+</div>
 <ul>
 <li>通常不鼓励使用复合语句（即将多条语句写在一行）。   </li>
 </ul>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span> <span class="o">==</span> <span class="s1">&#39;blah&#39;</span><span class="p">:</span>
   <span class="n">do_blah_thing</span><span class="p">()</span>
 <span class="n">do_one</span><span class="p">()</span>
 <span class="n">do_two</span><span class="p">()</span>
 <span class="n">do_three</span><span class="p">()</span>
 </code></pre></div>
-<blockquote>
-<p>最好不要这样写：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">最好不要这样写</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span> <span class="o">==</span> <span class="s1">&#39;blah&#39;</span><span class="p">:</span> <span class="n">do_blah_thing</span><span class="p">()</span>
 <span class="n">do_one</span><span class="p">();</span> <span class="n">do_two</span><span class="p">();</span> <span class="n">do_three</span><span class="p">()</span>  
 </code></pre></div>
+</div>
 <ul>
 <li>然而，小型的<code>if/for/whiel</code>语句放在一行是可以的。但是有多条分句时不要这样做。也要避免无谓的换行！   </li>
 </ul>
-<blockquote>
-<p>最好不要这样写：</p>
-</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">最好不要这样写</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span> <span class="o">==</span> <span class="s1">&#39;blah&#39;</span><span class="p">:</span> <span class="n">do_blah_thing</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span> <span class="n">total</span> <span class="o">+=</span> <span class="n">x</span>
 <span class="k">while</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span> <span class="n">t</span> <span class="o">=</span> <span class="n">delay</span><span class="p">()</span>
 </code></pre></div>
-<blockquote>
-<p>绝对不要这样写：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">绝对不要这样写</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span> <span class="o">==</span> <span class="s1">&#39;blah&#39;</span><span class="p">:</span> <span class="n">do_blah_thing</span><span class="p">()</span>
 <span class="k">else</span><span class="p">:</span> <span class="n">do_non_blah_thing</span><span class="p">()</span>
 
@@ -7009,41 +7007,42 @@
 <span class="k">finally</span><span class="p">:</span> <span class="n">cleanup</span><span class="p">()</span>
 
 <span class="n">do_one</span><span class="p">();</span> <span class="n">do_two</span><span class="p">();</span> <span class="n">do_three</span><span class="p">(</span><span class="n">long</span><span class="p">,</span> <span class="n">argument</span><span class="p">,</span>
-                           <span class="nb">list</span><span class="p">,</span> <span class="n">like</span><span class="p">,</span> <span class="n">this</span><span class="p">)</span>
+                          <span class="nb">list</span><span class="p">,</span> <span class="n">like</span><span class="p">,</span> <span class="n">this</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">foo</span> <span class="o">==</span> <span class="s1">&#39;blah&#39;</span><span class="p">:</span> <span class="n">one</span><span class="p">();</span> <span class="n">two</span><span class="p">();</span> <span class="n">three</span><span class="p">()</span>
 </code></pre></div>
+</div>
 <h2 id="6_1">6、何时在末尾加逗号<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h2>
 <hr />
 <p>末尾的逗号通常是可选的。但是，在定义单元素元组时是必须的（而且在 Python2 中，逗号对 print 语句有特殊语义）。清楚起见，建议使用括号括起来（在技术上是冗余的）。   </p>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">FILES</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;setup.cfg&#39;</span><span class="p">,)</span>
 </code></pre></div>
-<blockquote>
-<p>也可以，但是难于理解：</p>
-</blockquote>
+</div>
+<div class="admonition success">
+<p class="admonition-title">也可以，但是难于理解</p>
 <div class="highlight"><pre><span></span><code><span class="n">FILES</span> <span class="o">=</span> <span class="s1">&#39;setup.cfg&#39;</span><span class="p">,</span>
 </code></pre></div>
+</div>
 <p>当使用版本控制系统时，在将来有可能扩展的值和参数列表或者导入条目的末尾添加冗余的逗号是有好处的。书写模式：每行只写一个值并且加上逗号，在最后的新行写上右括号。但是，把逗号和右括号写在同一行毫无意义（除了上面提到的单元素元组）。   </p>
-<blockquote>
-<p>正确写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">正确写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">FILES</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;setup.cfg&#39;</span><span class="p">,</span>
     <span class="s1">&#39;tox.ini&#39;</span><span class="p">,</span>
     <span class="p">]</span>
 <span class="n">initialize</span><span class="p">(</span><span class="n">FILES</span><span class="p">,</span>
-           <span class="n">error</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-           <span class="p">)</span>
+          <span class="n">error</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">错误写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;setup.cfg&#39;</span><span class="p">,</span> <span class="s1">&#39;tox.ini&#39;</span><span class="p">,]</span>
 <span class="n">initialize</span><span class="p">(</span><span class="n">FILES</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="kc">True</span><span class="p">,)</span>
 </code></pre></div>
+</div>
 <h2 id="7_1">7、注释<a class="headerlink" href="#7_1" title="Permanent link">&para;</a></h2>
 <hr />
 <p>和代码相矛盾的注释还不如没有注释。当代码更新时，要优先更改注释，使其保持最新状态。   </p>
@@ -7221,16 +7220,16 @@
 <ul>
 <li>建议使用<code>is not</code>运算符，而不是<code>not ... is</code>。虽然两个表达式功能相同，但前者可读性更高，应该被选用。   </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">foo</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 </code></pre></div>
+</div>
 <ul>
 <li>用富比较实现排序操作的时候，最好实现全部六个比较运算符（<code>__eq__</code>，<code>__ne__</code>，<code>__lt__</code>，<code>__le__</code>，<code>__gt__</code>，<code>__ge__</code>），而不是依靠其他代码来进行特定比较。   </li>
 </ul>
@@ -7239,16 +7238,16 @@
 <ul>
 <li>要使用定义语句，而不是利用赋值语句为某个标识符绑定<code>lambda</code>表达式。   </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
 </code></pre></div>
+</div>
 <p>第一种格式意味着生成的函数对象的名称是<code>f</code>而不是通用的<code>&lt;lambda&gt;</code>。通常这对异常追踪和字符串表述是更有用的。使用赋值语句消除了 lambda 表达式唯一优于显式 def 语句的地方，即 lambda 表达式可以嵌入到一个长语句中。   </p>
 <ul>
 <li>应从 Exception 中而不是 BaseException 中继承异常，捕获直接继承自 BaseException 的异常通常都是错误的。   </li>
@@ -7298,9 +7297,8 @@
 <p>另外，对于所有的 try/except 子句，应将 try 子句限制为必要的最小的代码量。再者，可以避免掩盖问题。   </p>
 </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
     <span class="n">value</span> <span class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
 <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
@@ -7308,9 +7306,9 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">handle_value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
     <span class="c1"># Too broad!</span>
     <span class="k">return</span> <span class="n">handle_value</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
@@ -7318,6 +7316,7 @@
     <span class="c1"># Will also catch KeyError raised by handle_value()</span>
     <span class="k">return</span> <span class="n">key_not_found</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>
 <p>当某个资源仅被本地的特定代码段使用时，请使用 with 语句以确保资源使用后可以被及时可靠地清理。也可以使用 try/finally 语句。   </p>
@@ -7326,25 +7325,24 @@
 <p>只要不是获取和释放资源而是执行其他操作，上下文管理器都应该通过独立的函数或方法来调用。   </p>
 </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="n">conn</span><span class="o">.</span><span class="n">begin_transaction</span><span class="p">():</span>
     <span class="n">do_stuff_in_transaction</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="n">conn</span><span class="p">:</span>
     <span class="n">do_stuff_in_transaction</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <p>第二个例子没有提供任何信息来表明：除了在事物处理之后关闭连接，<code>__enter__</code> 和 <code>__exit__</code> 方法会做其他事情。在这种情况下，明确是很重要的。   </p>
 <ul>
 <li>坚持使用 return 语句。函数中的所有 return 语句都应该返回一个表达式或者 None。如果有 return 语句返回了一个表达式，那么，没有返回值的语句都要明确地用<code>return None</code>说明。如果可能的话，应该以一条清晰的 return 语句作为函数的结尾。   </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -7357,9 +7355,9 @@
         <span class="k">return</span> <span class="kc">None</span>
     <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -7370,6 +7368,7 @@
         <span class="k">return</span>
     <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
+</div>
 <ul>
 <li>用字符串方法代替字符串模块。   </li>
 </ul>
@@ -7378,29 +7377,29 @@
 <li>使用<code>''.startswith()</code>和<code>''.endswith()</code>而不是字符串切片操作来检查前缀和后缀。   </li>
 </ul>
 <p><code>startswith()</code> 和 <code>endswith()</code> 更简洁，且不容易出错，例如：   </p>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;bar&#39;</span><span class="p">):</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">foo</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;bar&#39;</span><span class="p">:</span>
 </code></pre></div>
+</div>
 <ul>
 <li>对象类型比较应该用 isinstance() 而不是直接比较。   </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
 </code></pre></div>
+</div>
 <p>当检查一个对象是否为字符串时，注意它也可能是一个 Unicode 字符串。在 Python2 中，str 和 Unicode 有一个公共的基类即 basestring，所以你可以这样做：   </p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">basestring</span><span class="p">):</span>
 </code></pre></div>
@@ -7408,18 +7407,18 @@
 <ul>
 <li>对于序列（字符串、列表、元组）来说，空序列的布尔值为 False。   </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">seq</span><span class="p">:</span>
 <span class="k">if</span> <span class="n">seq</span><span class="p">:</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">):</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">):</span>
 </code></pre></div>
+</div>
 <ul>
 <li>
 <p>书写字符串字面值时，不要依赖尾随的空格。这样的尾随空格在视觉上难以区分，而且一些编辑器会去掉他们（或者，更进一步来说，reindent.py 就会这么做）。   </p>
@@ -7428,21 +7427,22 @@
 <p>不要将布尔量与 True 或 False 用<code>==</code>做比较。   </p>
 </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">greeting</span><span class="p">:</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法</p>
-</blockquote>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">greeting</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
 </code></pre></div>
-<blockquote>
-<p>错误写法：</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">greeting</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+</div>
+<p>!!! fail "错误写法</p>
+<div class="codehilite"><pre><span></span><code><span class="err">```python</span>
+<span class="err">if greeting is True:</span>
+<span class="err">```</span>
 </code></pre></div>
+
 <h3 id="1_5"><strong>（1）函数注解</strong><a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h3>
 <p>随着 PEP 484 被正式接受，函数注解的样式规则正在发生变化。   </p>
 <ul>
@@ -7489,9 +7489,8 @@
 <p>如果赋值号有右值，那么等号两边都应该有一个空格。   </p>
 </li>
 </ul>
-<blockquote>
-<p>推荐写法：</p>
-</blockquote>
+<div class="admonition success">
+<p class="admonition-title">推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">code</span><span class="p">:</span> <span class="nb">int</span>
 
 
@@ -7499,9 +7498,9 @@
     <span class="n">coords</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
     <span class="n">label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&lt;unknown&gt;&#39;</span>
 </code></pre></div>
-<blockquote>
-<p>不推荐写法：</p>
-</blockquote>
+</div>
+<div class="admonition fail">
+<p class="admonition-title">不推荐写法</p>
 <div class="highlight"><pre><span></span><code><span class="n">code</span><span class="p">:</span><span class="nb">int</span>  <span class="c1"># No space after colon</span>
 <span class="n">code</span> <span class="p">:</span> <span class="nb">int</span>  <span class="c1"># Space before colon</span>
 
@@ -7509,13 +7508,14 @@
 <span class="k">class</span> <span class="nc">Test</span><span class="p">:</span>
     <span class="n">result</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">0</span>  <span class="c1"># No spaces around equality sign</span>
 </code></pre></div>
+</div>
 <ul>
 <li>虽然 PEP 526 已被 Python3.6 所接受，但是对于所有 Python 版本中的存根文件，首选变量注解语法（详见 PEP 484）。   </li>
 </ul>
-<blockquote>
-<p>脚注   </p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">脚注</p>
 <p>悬挂缩进是一种排版样式，除第一行外，其段落中的所有行都要缩进。在 Python 文本中，这一术语描述了这样一种样式：对于括号括起来的语句，该行的最后一个非空白字符是左括号，后续行都要缩进，直到右括号。   </p>
+</div>
 <h2 id="10">10、参考文档<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
 <hr />
 <table>
