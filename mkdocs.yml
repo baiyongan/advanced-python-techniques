@@ -401,6 +401,9 @@ nav:
   - Python Tricks: 
     - 目录: part06_intermediate_reading/python_tricks/content.md
 
+  - Powerful Python: 
+    - 目录: part06_intermediate_reading/powerful_python/content.md
+
   - Effective Python: 
     - 英文目录: part06_intermediate_reading/effective_python/content_en.md
     - 中文目录: part06_intermediate_reading/effective_python/content_zh.md
