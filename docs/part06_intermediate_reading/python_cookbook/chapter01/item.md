@@ -761,6 +761,8 @@
 !!! question "问题"
     你想构造一个字典，它是另外一个字典的子集。
 
+    - 字典推导
+
 ??? done "解决方案"
     最简单的方式是使用字典推导。比如：
 
@@ -795,7 +797,7 @@
     tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
     p2 = { key:prices[key] for key in prices.keys() & tech_names }
     ```
-    
+
     !!! attention
         但是，运行时间测试结果显示这种方案大概比第一种方案慢 1.6 倍。 如果对程序运行性能要求比较高的话，需要花点时间去做计时测试。
 
@@ -812,11 +814,69 @@
 ## 19 转换并同时计算数据
 
 !!! question "问题"
+    你需要在数据序列上执行聚集函数（比如 `sum()` , `min()` , `max()` ）， 但是首先你需要先转换或者过滤数据
+
+    - 使用一个生成器表达式参数去结合数据计算与转换
 
 ??? done "解决方案"
+    例如计算平方和：
+
+    ```python
+    nums = [1, 2, 3, 4, 5]
+    s = sum(x * x for x in nums)
+    ```
+
+    又例如：
+    
+    ```python
+    # Determine if any .py files exist in a directory
+    import os
+    files = os.listdir('dirname')
+    if any(name.endswith('.py') for name in files):
+        print('There be python!')
+    else:
+        print('Sorry, no python.')
+    # Output a tuple as CSV
+    s = ('ACME', 50, 123.45)
+    print(','.join(str(x) for x in s))
+    # Data reduction across fields of a data structure
+    portfolio = [
+        {'name':'GOOG', 'shares': 50},
+        {'name':'YHOO', 'shares': 75},
+        {'name':'AOL', 'shares': 20},
+        {'name':'SCOX', 'shares': 65}
+    ]
+    min_shares = min(s['shares'] for s in portfolio)
+    ```
 
 ??? summary "讨论"
+    下面这些语句是等效的：
 
+    ```python
+    s = sum((x * x for x in nums)) # 显式的传递一个生成器表达式对象
+    s = sum(x * x for x in nums) # 更加优雅的实现方式，省略了括号
+    ```
+
+    !!! tips 
+        使用一个生成器表达式作为参数会比先创建一个临时列表更加高效和优雅。
+
+    ```python
+    nums = [1, 2, 3, 4, 5]
+    s = sum([x * x for x in nums])
+    ```
+
+    以上这个方式可以达到想要的效果，但是它会多一个步骤，先创建一个额外的列表。 对于小型列表可能没什么关系，但是如果元素数量非常大的时候， 它会创建一个巨大的仅仅被使用一次就被丢弃的临时数据结构。而生成器方案会以迭代的方式转换数据，因此更省内存。
+
+    在使用一些聚集函数比如 `min()` 和 `max()` 的时候，更加倾向于使用生成器版本，它们接受的一个 key 关键字参数或许会很有帮助。 
+    
+    比如，在上面的证券例子中，你可能会考虑下面的实现版本：
+
+    ```python
+    # Original: Returns 20
+    min_shares = min(s['shares'] for s in portfolio)
+    # Alternative: Returns {'name': 'AOL', 'shares': 20}
+    min_shares = min(portfolio, key=lambda s: s['shares'])
+    ```
 <!-- -------------------------------------------------------------------------- -->
 ## 20 合并多个字典或映射
 
