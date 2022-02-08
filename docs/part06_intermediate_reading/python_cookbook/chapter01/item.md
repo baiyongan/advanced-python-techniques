@@ -751,9 +751,117 @@
 !!! question "问题"
     有一个数据序列，如何利用一些规则从中提取出需要的值或者是缩短序列?
 
+    - 使用列表推导
+    - 使用生成器表达式迭代产生
+    - 自定义过滤函数，并结合 `filter()` 函数使用
+    - `itertools.compress()`
+
 ??? done "解决方案"
 
+    最简单的过滤序列元素的方式是使用列表推导
+
+    ```python
+    >>> mylist = [1, 4, -5, 10, -7, 2, 3, -1]
+    >>> [n for n in mylist if n > 0]
+    [1, 4, 10, 2, 3]
+    >>> [n for n in mylist if n < 0]
+    [-5, -7, -1]
+    >>>
+    ```
+
+    !!! tips ""
+        列表推导的潜在缺陷就是如果输入非常大的时候会产生一个非常大的结果集，占用大量内存。 如果对内存比较敏感，那么可以使用生成器表达式迭代产生过滤的元素。
+
+    ```python
+    >>> pos = (n for n in mylist if n > 0)
+    >>> pos
+    <generator object <genexpr> at 0x1006a0eb0>
+    >>> for x in pos:
+    ... print(x)
+    ...
+    1
+    4
+    10
+    2
+    3
+    >>>
+    ```
+
+    假设过滤的时候需要处理一些异常或者其他复杂情况，可以将过滤代码放到一个函数中， 然后使用内建的 `filter()` 函数。
+
+    ```python
+    values = ['1', '2', '-3', '-', '4', 'N/A', '5']
+    def is_int(val):
+        try:
+            x = int(val)
+            return True
+        except ValueError:
+            return False
+    ivals = list(filter(is_int, values))
+    print(ivals)
+    # Outputs ['1', '2', '-3', '4', '5']
+    ```
+
+    `filter()` 函数创建了一个迭代器，因此如果想得到一个列表的话，就得像示例那样使用 `list()` 去转换。
+
 ??? summary "讨论"
+
+    列表推导和生成器表达式通常情况下是过滤数据最简单的方式。 
+
+    - 在过滤时转换数据
+    ```python
+    >>> mylist = [1, 4, -5, 10, -7, 2, 3, -1]
+    >>> import math
+    >>> [math.sqrt(n) for n in mylist if n > 0]
+    [1.0, 2.0, 3.1622776601683795, 1.4142135623730951, 1.7320508075688772]
+    >>>
+    ```
+
+    - 将不符合条件的值用新的值代替，而不是丢弃它们。
+
+    ```python
+    >>> clip_neg = [n if n > 0 else 0 for n in mylist]
+    >>> clip_neg
+    [1, 4, 0, 10, 0, 2, 3, 0]
+    >>> clip_pos = [n if n < 0 else 0 for n in mylist]
+    >>> clip_pos
+    [0, 0, -5, 0, -7, 0, 0, -1]
+    >>>
+    ```
+    
+    - 以另一个相关联的序列来过滤某序列
+    
+    使用 `itertools.compress()`这个过滤工具，它以一个 `iterable` 对象和一个相对应的 `Boolean` 选择器序列作为输入参数。 然后输出 `iterable` 对象中对应选择器为 `True` 的元素。
+
+    ```python
+    addresses = [
+        '5412 N CLARK',
+        '5148 N CLARK',
+        '5800 E 58TH',
+        '2122 N CLARK',
+        '5645 N RAVENSWOOD',
+        '1060 W ADDISON',
+        '4801 N BROADWAY',
+        '1039 W GRANVILLE',
+    ]
+    counts = [ 0, 3, 10, 4, 1, 7, 6, 1]
+    ```
+
+    想将那些对应 count 值大于5的地址全部输出，可以这样做：
+
+    ```python
+    >>> from itertools import compress
+    >>> more5 = [n > 5 for n in counts]
+    >>> more5
+    [False, False, True, False, False, True, True, False]
+    >>> list(compress(addresses, more5))
+    ['5800 E 58TH', '1060 W ADDISON', '4801 N BROADWAY']
+    >>>
+    ```
+    !!! attention
+        关键点在于先创建一个 `Boolean` 序列，指示哪些元素符合条件。 然后 `compress()` 函数根据这个序列去选择输出对应位置为 `True` 的元素。
+
+        和 `filter()` 函数类似， `compress()` 也是返回的一个迭代器。因此，如果需要得到一个列表， 则需要使用 `list()` 来将结果转换为列表类型。
 
 <!-- -------------------------------------------------------------------------- -->
 ## 17 从字典中提取子集
