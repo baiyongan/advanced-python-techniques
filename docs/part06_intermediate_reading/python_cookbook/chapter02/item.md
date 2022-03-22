@@ -4,11 +4,19 @@
 ## 01 使用多个界定符分割字符串
 
 !!! question "问题"
+    将一个字符串分割为多个字段，但是分隔符(还有周围的空格)并不是固定的。
+
+    - `re.split()`
 
 ??? done "解决方案"
 
-    ```python
+    `string` 对象的 `split()` 方法只适应于非常简单的字符串分割情形， 它并不允许有多个分隔符或者是分隔符周围不确定的空格。 当需要更加灵活的切割字符串的时候，最好使用 `re.split()` 方法
 
+    ```python
+    >>> line = 'asdf fjdk; afed, fjek,asdf, foo'
+    >>> import re
+    >>> re.split(r'[;,\s]\s*', line) # 分隔符可以是逗号，分号或者是空格，并且后面紧跟着任意个的空格。 
+    ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo'] # 返回结果为一个字段列表，这个跟 str.split() 返回值类型是一样的。
     ```
 
     ```python
