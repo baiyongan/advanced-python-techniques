@@ -6181,8 +6181,16 @@
 <h2 id="01">01 使用多个界定符分割字符串<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>将一个字符串分割为多个字段，但是分隔符(还有周围的空格)并不是固定的。</p>
+<ul>
+<li><code>re.split()</code></li>
+</ul>
 </div>
-<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code>
+<details class="done"><summary>解决方案</summary><p><code>string</code> 对象的 <code>split()</code> 方法只适应于非常简单的字符串分割情形， 它并不允许有多个分隔符或者是分隔符周围不确定的空格。 当需要更加灵活的切割字符串的时候，最好使用 <code>re.split()</code> 方法</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">line</span> <span class="o">=</span> <span class="s1">&#39;asdf fjdk; afed, fjek,asdf, foo&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">re</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[;,\s]\s*&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="c1"># 分隔符可以是逗号，分号或者是空格，并且后面紧跟着任意个的空格。 </span>
+<span class="p">[</span><span class="s1">&#39;asdf&#39;</span><span class="p">,</span> <span class="s1">&#39;fjdk&#39;</span><span class="p">,</span> <span class="s1">&#39;afed&#39;</span><span class="p">,</span> <span class="s1">&#39;fjek&#39;</span><span class="p">,</span> <span class="s1">&#39;asdf&#39;</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">]</span> <span class="c1"># 返回结果为一个字段列表，这个跟 str.split() 返回值类型是一样的。</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
