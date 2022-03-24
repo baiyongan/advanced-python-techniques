@@ -535,6 +535,19 @@ nav:
 ## Part10
 - 结构算法:
   - Overview: part10_data_structure_and_algorithm/index.md
+  - part10_data_structure_and_algorithm/lesson01/note.md
+  - part10_data_structure_and_algorithm/lesson02/note.md
+  - part10_data_structure_and_algorithm/lesson03/note.md
+  - part10_data_structure_and_algorithm/lesson04/note.md
+  - part10_data_structure_and_algorithm/lesson05/note.md
+  - part10_data_structure_and_algorithm/lesson06/note.md
+  - part10_data_structure_and_algorithm/lesson07/note.md
+  - part10_data_structure_and_algorithm/lesson08/note.md
+  - part10_data_structure_and_algorithm/lesson09/note.md
+  - part10_data_structure_and_algorithm/lesson10/note.md
+  - part10_data_structure_and_algorithm/lesson11/note.md
+  - part10_data_structure_and_algorithm/lesson12/note.md
+
   - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
 
 ## Part11
