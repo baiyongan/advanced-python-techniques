@@ -19,20 +19,41 @@
     ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo'] # 返回结果为一个字段列表，这个跟 str.split() 返回值类型是一样的。
     ```
 
-    ```python
-
-    ```
-
 ??? summary "讨论"
 
-    ```python
+    !!! attention
+        当你使用 `re.split()` 函数时候，需要特别注意的是正则表达式中是否包含一个括号捕获分组。如果使用了捕获分组，那么被匹配的文本也将出现在结果列表中。
 
+    ```python
+    >>> fields = re.split(r'(;|,|\s)\s*', line)
+    >>> fields
+    ['asdf', ' ', 'fjdk', ';', 'afed', ',', 'fjek', ',', 'asdf', ',', 'foo']
+    >>>
     ```
 
-    ```python
+    如果想保留分割字符串，用来在后面重新构造一个新的输出字符串，可以如下操作：
 
+    ```python
+    >>> values = fields[::2]
+    >>> delimiters = fields[1::2] + ['']
+    >>> values
+    ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
+    >>> delimiters
+    [' ', ';', ',', ',', ',', '']
+    >>> # Reform the line using the same delimiters
+    >>> ''.join(v+d for v,d in zip(values, delimiters))
+    'asdf fjdk;afed,fjek,asdf,foo'
+    >>>
     ```
 
+    如果不想保留分割字符串到结果列表中去，但仍然需要使用到括号来分组正则表达式的话， 确保你的分组是非捕获分组，形如 `(?:...)` 。比如：
+    
+    ```python
+    >>> re.split(r'(?:,|;|\s)\s*', line)
+    ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
+    >>>
+    ```
+    
 <!-- -------------------------------------------------------------------------- -->
 ## 02 字符串开头或结尾匹配
 
