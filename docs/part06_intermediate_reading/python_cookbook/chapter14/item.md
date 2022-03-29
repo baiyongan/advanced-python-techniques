@@ -4,6 +4,8 @@
 ## 01 测试stdout输出
 
 !!! question "问题"
+    - Q: 给定一个输入，相应的输出能正常显示出来
+    - A: 使用 `unittest.mock` 模块中的 `patch()` 函数
 
 ??? done "解决方案"
 

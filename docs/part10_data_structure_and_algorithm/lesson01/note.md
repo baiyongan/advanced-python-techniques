@@ -29,4 +29,4 @@
 
 - 《未来简史》
 - 《超时空接触 Contact 1997
-- 《模拟游戏 The Imitation Game 2014》
+- 《模仿游戏 The Imitation Game 2014》
