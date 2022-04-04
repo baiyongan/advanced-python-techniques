@@ -1,32 +1,45 @@
 # 第十四章：测试、调试和异常
 
 <!-- -------------------------------------------------------------------------- -->
-## 01 测试stdout输出
+## 01 测试 stdout 输出
 
 !!! question "问题"
-    - Q: 给定一个输入，相应的输出能正常显示出来
-    - A: 使用 `unittest.mock` 模块中的 `patch()` 函数
+    给定一个输入，相应的输出能正常显示出来
+
+    - 使用 `unittest.mock` 模块中的 `patch()` 函数，可以为单个测试模拟 sys.stdout 然后回滚， 并且不产生大量的临时变量或在测试用例直接暴露状态变量。
 
 ??? done "解决方案"
 
-    ```python
+    作为一个例子，我们在 mymodule 模块中定义如下一个函数：
 
+    ```python
+    # mymodule.py
+
+    def urlprint(protocol, host, domain):
+        url = '{}://{}.{}'.format(protocol, host, domain)
+        print(url)
     ```
 
     ```python
+    from io import StringIO
+    from unittest import TestCase
+    from unittest.mock import patch
+    import mymodule
 
+    class TestURLPrint(TestCase):
+        def test_url_gets_to_stdout(self):
+            protocol = 'http'
+            host = 'www'
+            domain = 'example.com'
+            expected_url = '{}://{}.{}\n'.format(protocol, host, domain)
+
+            with patch('sys.stdout', new=StringIO()) as fake_out:
+                mymodule.urlprint(protocol, host, domain)
+                self.assertEqual(fake_out.getvalue(), expected_url)
     ```
 
 ??? summary "讨论"
-
-    ```python
-
-    ```
-
-    ```python
-
-    ```
-
+    
 <!-- -------------------------------------------------------------------------- -->
 ## 02 在单元测试中给对象打补丁
 

@@ -4362,7 +4362,7 @@
       
         <li class="md-nav__item">
   <a href="#01-stdout" class="md-nav__link">
-    01 测试stdout输出
+    01 测试 stdout 输出
   </a>
   
 </li>
@@ -6117,7 +6117,7 @@
       
         <li class="md-nav__item">
   <a href="#01-stdout" class="md-nav__link">
-    01 测试stdout输出
+    01 测试 stdout 输出
   </a>
   
 </li>
@@ -6238,24 +6238,39 @@
                 
                 <h1 id="_1">第十四章：测试、调试和异常<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <!-- -------------------------------------------------------------------------- -->
-<h2 id="01-stdout">01 测试stdout输出<a class="headerlink" href="#01-stdout" title="Permanent link">&para;</a></h2>
+<h2 id="01-stdout">01 测试 stdout 输出<a class="headerlink" href="#01-stdout" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">问题</p>
+<p>给定一个输入，相应的输出能正常显示出来</p>
 <ul>
-<li>Q: 给定一个输入，相应的输出能正常显示出来</li>
-<li>A: 使用 <code>unittest.mock</code> 模块中的 <code>patch()</code> 函数</li>
+<li>使用 <code>unittest.mock</code> 模块中的 <code>patch()</code> 函数，可以为单个测试模拟 sys.stdout 然后回滚， 并且不产生大量的临时变量或在测试用例直接暴露状态变量。</li>
 </ul>
 </div>
-<details class="done"><summary>解决方案</summary><div class="highlight"><pre><span></span><code>
+<details class="done"><summary>解决方案</summary><p>作为一个例子，我们在 mymodule 模块中定义如下一个函数：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># mymodule.py</span>
+
+<span class="k">def</span> <span class="nf">urlprint</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">domain</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">://</span><span class="si">{}</span><span class="s1">.</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">patch</span>
+<span class="kn">import</span> <span class="nn">mymodule</span>
+
+<span class="k">class</span> <span class="nc">TestURLPrint</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_url_gets_to_stdout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">protocol</span> <span class="o">=</span> <span class="s1">&#39;http&#39;</span>
+        <span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;www&#39;</span>
+        <span class="n">domain</span> <span class="o">=</span> <span class="s1">&#39;example.com&#39;</span>
+        <span class="n">expected_url</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">://</span><span class="si">{}</span><span class="s1">.</span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="n">patch</span><span class="p">(</span><span class="s1">&#39;sys.stdout&#39;</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="n">StringIO</span><span class="p">())</span> <span class="k">as</span> <span class="n">fake_out</span><span class="p">:</span>
+            <span class="n">mymodule</span><span class="o">.</span><span class="n">urlprint</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fake_out</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(),</span> <span class="n">expected_url</span><span class="p">)</span>
 </code></pre></div>
 </details>
-<details class="summary"><summary>讨论</summary><div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-</details>
+<details class="summary"><summary>讨论</summary></details>
 <!-- -------------------------------------------------------------------------- -->
 <h2 id="02">02 在单元测试中给对象打补丁<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
