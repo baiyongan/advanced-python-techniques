@@ -2,51 +2,44 @@
 
 ## Basic Topics
 
-### Variables
-### Conditions
-### Chained Conditionals
-### Operators
-### Control Flow (If/Else)
-### Loops and Iterables
-### Basic Data Structures
-- string
-- list
-- tuple
-- set
-- dict
-### Functions
-### Mutable vs Immutable
-### Builtin Methods
-### File IO
-### Environments
-### Modules
-### PIP
+- [x] Variables
+- [x] Conditions
+- [x] Chained Conditionals
+- [x] Operators
+- [x] Control Flow (If/Else)
+- [x] Loops and Iterables
+- [x] Basic Data Structures (string | list | tuple | set | dict)
+- [x] Functions
+- [x] Mutable vs Immutable
+- [x] Builtin Methods
+- [x] File IO
+- [x] Environments
+- [x] Modules
+- [x] PIP
 
 ## Intermediate Topics
 
-### Object Oriented Programming
-### Data Structures
-### Comprehensions 
-### Lambda Functions
-### Map, Filter
-### Collections
-### \*args & \*\*kwargs
-### Inheritance
-### Dunder Methods
-### Async IO
+- [x] Object Oriented Programming
+- [x] Data Structures
+- [x] Comprehensions 
+- [x] Lambda Functions
+- [x] Map, Filter
+- [x] Collections
+- [x] \*args & \*\*kwargs
+- [x] Inheritance
+- [x] Dunder Methods
+- [x] Async IO
 
 ## Expert topics
 
-### Decorators
-### Generators 
-### Context Managers
-### Metaclasses
-### Concurrency 
-### Parallelism 
-### Testing
-### Packages
-### Cython
+- [x] Decorators
+- [x] Generators 
+- [x] Context Managers
+- [x] Metaclasses
+- [x] Concurrency 
+- [x] Parallelism 
+- [x] Testing
+- [x] Packages
+- [x] Cython
 
-!!! danger ""
-    to be continued
 
