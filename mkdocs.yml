@@ -93,6 +93,7 @@ extra:
 
 
 extra_css:
+  - assets/css/extra.css
   - assets/css/termynal.css
   - assets/css/custom.css
 extra_javascript:
