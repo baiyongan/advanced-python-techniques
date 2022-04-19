@@ -91,7 +91,6 @@ extra:
     - icon: fontawesome/brands/buromobelexperte
       link: https://baiyongan.gitbook.io/lsf/
 
-
 extra_css:
   - assets/css/extra.css
   - assets/css/termynal.css

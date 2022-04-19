@@ -113,15 +113,15 @@ ul.card-items li {
     align-self: flex-start;
 }
 
-.card.tutorial {
-    border-top: 3.5px solid #C3C5DD;
+.card.roadmap {
+    border-top: 3.5px solid #FFCC99;
 }
 
-.card.how-to-guide {
-    border-top: 3.5px solid #42cceb;
+.card.tool-tutorial {
+    border-top: 3.5px solid #CCCCFF;
 }
 
-.card.how-to-guide.contribute {
+/* .card.card.tool-tutorial.contribute {
     background: repeating-linear-gradient(
       45deg,
       #f6f8f8,
@@ -132,28 +132,56 @@ ul.card-items li {
 
     border: 2px dashed #eee;
     border-top: 3.5px solid #42cceb;
-}
+} */
 
-.card.getting-started {
+.card.norm {
     border-top: 3.5px solid #ef5762;
 }
 
-.card.how-to-videos > ul {
+/* .card.how-to-videos > ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-}
+} */
 
-.card.concepts {
+.card.module {
     border-top: 3.5px solid #6d2867;
 }
 
-.card.operations {
+.card.core-topic {
     background-color: #F8F6F6;
 }
 
-.card.reference {
+.card.reading-note {
     border-top: 3.5px solid #66CC69;
+}
+
+.card.framework {
+    border-top: 3.5px solid #3e869c;
+}
+
+.card.data-analysis {
+    border-top: 3.5px solid #99CCFF;
+}
+
+.card.experience {
+    border-top: 3.5px solid #CCFF99;
+}
+
+.card.dsa {
+    border-top: 3.5px solid #0099FF;
+}
+
+.card.design-pattern {
+    border-top: 3.5px solid #FF9999;
+}
+
+.card.expansion {
+    border-top: 3.5px solid #9966CC;
+}
+
+.card.performance-tuning {
+    border-top: 3.5px solid #FFCC33;
 }
 
 .md-button--top-level {
