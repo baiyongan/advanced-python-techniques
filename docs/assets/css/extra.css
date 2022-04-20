@@ -117,11 +117,11 @@ ul.card-items li {
     border-top: 3.5px solid #FFCC99;
 }
 
-.card.tool-tutorial {
+.card.tool {
     border-top: 3.5px solid #CCCCFF;
 }
 
-/* .card.card.tool-tutorial.contribute {
+/* .card.card.tool.contribute {
     background: repeating-linear-gradient(
       45deg,
       #f6f8f8,
