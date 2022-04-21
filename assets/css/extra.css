@@ -138,7 +138,7 @@ ul.card-items li {
     border-top: 3.5px solid #ef5762;
 }
 
-/* .card.how-to-videos > ul {
+/* .card.norm > ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -152,7 +152,7 @@ ul.card-items li {
     background-color: #F8F6F6;
 }
 
-.card.reading-note {
+.card.booknote {
     border-top: 3.5px solid #66CC69;
 }
 
