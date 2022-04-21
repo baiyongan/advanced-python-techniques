@@ -2,15 +2,105 @@
 
 ## 基础
 
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/intermediate_python/content"><strong>Intermediate Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/intermediate_python/content">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/python_tricks/content"><strong>Python Tricks</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/python_tricks/content">More →</a></span>
+  </div>
+</div>
+
 ## 进阶 
+
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/"><strong>Powerful Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/powerful_python/content"><strong>Effective Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/powerful_python/content">More →</a></span>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/python_cookbook/content"><strong>Python Cookbook</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/python_cookbook/content">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/python3_oop/content"><strong>Python3 OOP</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/python3_oop/content">More →</a></span>
+  </div>
+</div>
 
 ## 应用
 
+### 架构
+
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/architecture_patterns_with_python/content"><strong>Python Architecture Patterns</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/architecture_patterns_with_python/content">More →</a></span>
+  </div>
+</div>
+
+<!-- <div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/"><strong>数据分析</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/"><strong>数据挖掘</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/"><strong>机器学习</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/">More →</a></span>
+  </div>
+</div> -->
+
 ## 高级
 
-## 架构
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/fluent_python/content"><strong>Fluent Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/fluent_python/content">More →</a></span>
+  </div>
+</div>
 
-<!-- No.1 Fluent Python（豆瓣评分：9.6）
+## 官方文档
+
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/pep/content"><strong>PEP</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/pep/content">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/python_how_to/content"><strong>Python HOWTOs</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/python_how_to/content">More →</a></span>
+  </div>
+</div>
+
+<!-- 备选书单
+
+No.1 Fluent Python（豆瓣评分：9.6）
 
 No.2 Hands-On Machine Learning with Scikit-Learn and TensorFlow（豆瓣评分：9.4）
 
@@ -48,4 +138,6 @@ No.18 How to Think Like a Computer Scientist: Learning with Python（豆瓣评�
 
 No.19 Python语言及其应用（豆瓣评分：8.5）
 
-No.20 Learn Python the Hard Way（豆瓣评分：8.4） -->
+No.20 Learn Python the Hard Way（豆瓣评分：8.4）
+
+-->

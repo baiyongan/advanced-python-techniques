@@ -4,21 +4,21 @@
   <div class="card tool">
     <strong>IDE</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/pycharm/  ">Pycharm</a></li>
+      <li><a href="/part02_development_tool/  ">Pycharm</a></li>
     </ul>
   </div>
   <div class="card tool">
     <strong>Editor</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/vs_code/   ">VS Code</a></li>
-      <li><a href="/part02_development_tool/vim/  ">VIM</a></li>
+      <li><a href="/part02_development_tool/   ">VS Code</a></li>
+      <li><a href="/part02_development_tool/  ">VIM</a></li>
     </ul>
   </div>
   <div class="card tool">
     <strong>REPL</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/jupyter_notebook/  ">Jupyter Notebook</a></li>
-      <li><a href="/part02_development_tool/ipython/  ">IPython</a></li>
+      <li><a href="/part02_development_tool/  ">Jupyter Notebook</a></li>
+      <li><a href="/part02_development_tool/  ">IPython</a></li>
     </ul>
   </div>
 </div>
