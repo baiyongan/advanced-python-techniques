@@ -32,10 +32,10 @@
 
 [BYA's Blog](http://bya.cool) 
 
-[BYA's Wiki](http://bya.tiddlyhost.com)
+[BYA's Wiki](http://106.14.160.45:8081)
 
 [LSF Handbook](http://baiyongan.gitbook.io)
 
-[Practical Linux Skills](http://106.14.160.45/#/)
+[Practical Linux Skills](http://106.14.160.45)
 
 [Advanced Python Techniques](http://106.14.160.45:8080)
