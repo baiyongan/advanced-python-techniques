@@ -148,16 +148,24 @@ ul.card-items li {
     border-top: 3.5px solid #6d2867;
 }
 
-.card.core-topic {
-    background-color: #F8F6F6;
+/* .card.core {
+    background-color: #f3c68b;
+} */
+
+.card.core {
+    border-top: 3.5px solid #f3c68b;
 }
 
+.card.empty {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
 .card.booknote {
     border-top: 3.5px solid #66CC69;
 }
 
 .card.framework {
-    border-top: 3.5px solid #3e869c;
+    border-top: 3.5px solid #3cc8f3;
 }
 
 .card.data-analysis {

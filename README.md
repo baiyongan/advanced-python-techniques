@@ -30,12 +30,12 @@
 
 ## 关于作者
 
-[BYA's Blog](http://bya.cool) 
+- [BYA's Blog](http://bya.cool) 
 
-[BYA's Wiki](http://106.14.160.45:8081)
+- [BYA's Wiki](http://106.14.160.45:8081)
 
-[LSF Handbook](http://baiyongan.gitbook.io)
+- [LSF Handbook](http://baiyongan.gitbook.io)
 
-[Practical Linux Skills](http://106.14.160.45)
+- [Practical Linux Skills](http://106.14.160.45)
 
-[Advanced Python Techniques](http://106.14.160.45:8080)
+- [Advanced Python Techniques](http://106.14.160.45:8080)

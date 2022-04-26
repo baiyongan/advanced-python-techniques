@@ -478,7 +478,8 @@ nav:
 - 数据分析:
   - Overview: part08_data_analysis/index.md
   - Data Science For Beginners: 
-    - 目录: part08_data_analysis/data_science_for_beginners/content_en.md
+    - 英文目录: part08_data_analysis/data_science_for_beginners/content_en.md
+    - 中文目录: part08_data_analysis/data_science_for_beginners/content_zh.md
     - 01 Introduction:
       - part08_data_analysis/data_science_for_beginners/01_introduction/lesson01.md
       - part08_data_analysis/data_science_for_beginners/01_introduction/lesson02.md
