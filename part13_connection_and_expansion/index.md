@@ -1,36 +1,12 @@
 # Overview
 
-## golang
+## 语言对比
 
-## javascript
+- golang
 
-## java
+- javascript/typescript
 
-## C/C++
+- java
 
-<!-- ## Blog
+- C/C++
 
-## Website
-
-## Community
-
-## Course
-
-## Publishing House -->
-
-<!-- https://www.packtpub.com/free-learning -->
-
-
-<!-- 
-Self-taught = [
-  Udemy,
-  Udacity,
-  Google, 
-  YouTube, 
-  W3Schools,
-  Odin Project,
-  StackOverflow,
-  Khan Academy, 
-  FreeCodeCamp
-] 
--->
