@@ -19,14 +19,14 @@
 
 <div class="cards">
   <div class="card booknote">
-    <a href="/part06_intermediate_reading/"><strong>Powerful Python</strong></a>
-    <p class="card-body"><small>   </small></p>
-    <span><a href="/part06_intermediate_reading/">More →</a></span>
-  </div>
-  <div class="card booknote">
-    <a href="/part06_intermediate_reading/powerful_python/content"><strong>Effective Python</strong></a>
+    <a href="/part06_intermediate_reading/powerful_python/content"><strong>Powerful Python</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/part06_intermediate_reading/powerful_python/content">More →</a></span>
+  </div>
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/effective_python/content"><strong>Effective Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/effective_python/content">More →</a></span>
   </div>
 </div>
 
