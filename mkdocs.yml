@@ -568,7 +568,6 @@ nav:
 ## Part13
 - 关联拓展:
   - Overview: part13_connection_and_expansion/index.md
-  - Blog: part13_connection_and_expansion/blog.md
 
 ## Record
 - 后记:
@@ -576,5 +575,4 @@ nav:
   - Reference: REFERENCE.md
   - License: LICENSE.md
   - Tips: NOTE.md
-#  - Backup: FASTAPI.md
 
