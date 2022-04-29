@@ -1,7 +1,7 @@
 # Overview
 
 <div class="cards">
-  <div class="card module">
+  <div class="card pattern">
     <strong>创建型模式</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">工厂方法模式</a></li>
@@ -11,7 +11,7 @@
       <li><a href="/part11_design_pattern/  ">单例模式</a></li>
     </ul>
   </div>
-  <div class="card module">
+  <div class="card pattern">
     <strong>结构型模式</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">适配器模式</a></li>
@@ -23,7 +23,7 @@
       <li><a href="/part11_design_pattern/  ">代理模式</a></li>
     </ul>
   </div>
-  <div class="card module">
+  <div class="card pattern">
     <strong>行为模式</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">责任链模式</a></li>
