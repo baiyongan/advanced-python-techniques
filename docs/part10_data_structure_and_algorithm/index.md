@@ -1,7 +1,5 @@
 # Overview
 
-## 数据结构与算法Python版
-
 <div class="cards">
   <div class="card dsa">
     <strong>数据结构与算法Python版</strong>

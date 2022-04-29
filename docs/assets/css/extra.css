@@ -153,15 +153,16 @@ ul.card-items li {
 } */
 
 .card.core {
-    border-top: 3.5px solid #f3c68b;
+    border-top: 3.5px solid #5babca;
 }
 
 .card.empty {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
 }
+
 .card.booknote {
-    border-top: 3.5px solid #66CC69;
+    border-top: 3.5px solid #da619d;
 }
 
 .card.framework {
@@ -169,10 +170,10 @@ ul.card-items li {
 }
 
 .card.data-analysis {
-    border-top: 3.5px solid #99CCFF;
+    border-top: 3.5px solid #f16868;
 }
 
-.card.experience {
+.card.action {
     border-top: 3.5px solid #CCFF99;
 }
 
@@ -180,12 +181,12 @@ ul.card-items li {
     border-top: 3.5px solid #0099FF;
 }
 
-.card.design-pattern {
-    border-top: 3.5px solid #FF9999;
+.card.pattern {
+    border-top: 3.5px solid #d45df8;
 }
 
 .card.expansion {
-    border-top: 3.5px solid #9966CC;
+    border-top: 3.5px solid #f3f17e;
 }
 
 .card.performance-tuning {
