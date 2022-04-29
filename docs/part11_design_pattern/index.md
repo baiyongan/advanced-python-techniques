@@ -24,7 +24,7 @@
     </ul>
   </div>
   <div class="card module">
-    <strong>行为型模式</strong>
+    <strong>行为模式</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">责任链模式</a></li>
       <li><a href="/part11_design_pattern/  ">命令模式</a></li>
