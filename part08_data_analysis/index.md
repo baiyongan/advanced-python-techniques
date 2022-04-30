@@ -1,5 +1,13 @@
 # Overview
 
+<div class="cards">
+  <div class="card data-analysis">
+    <a href="/part08_data_analysis/  "><strong>Data Science for Beginners</strong></a>
+    <p class="card-body"><small>  </small></p>
+    <span><a href="/part08_data_analysis/  ">More →</a></span>
+  </div>
+</div>
+
 ## 拓展阅读
 
 - [Github: microsoft/Data-Science-For-Beginners](https://github.com/Microsoft/Data-Science-For-Beginners)

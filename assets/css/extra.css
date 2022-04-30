@@ -148,17 +148,8 @@ ul.card-items li {
     border-top: 3.5px solid #aa53d3;
 }
 
-/* .card.core {
-    background-color: #f3c68b;
-} */
-
 .card.core {
     border-top: 3.5px solid #5babca;
-}
-
-.card.empty {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
 }
 
 .card.booknote {
@@ -170,7 +161,7 @@ ul.card-items li {
 }
 
 .card.data-analysis {
-    border-top: 3.5px solid #f16868;
+    border-top: 3.5px solid #f19f68;
 }
 
 .card.action {
@@ -185,12 +176,21 @@ ul.card-items li {
     border-top: 3.5px solid #d45df8;
 }
 
-.card.expansion {
-    border-top: 3.5px solid #f3f17e;
+.card.source {
+    border-top: 3.5px solid #318285;
 }
 
-.card.performance-tuning {
+.card.expansion {
     border-top: 3.5px solid #FFCC33;
+}
+
+.card.synopsis {
+    border-top: 3.5px solid #000000;
+}
+
+.card.empty {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .md-button--top-level {

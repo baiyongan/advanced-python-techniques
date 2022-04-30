@@ -1,5 +1,54 @@
 # Overview
 
+<div class="cards">
+  <div class="card source">
+    <a href="/part12_source_code_analysis/  "><strong>A Guide to Python's Magic Methods</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
+  </div>
+  <div class="card source">
+    <a href="/part12_source_code_analysis/  "><strong>Advanced Python Presentations</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card source">
+    <a href="/part12_source_code_analysis/  "><strong>High Performance Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
+  </div>
+  <div class="card source">
+    <a href="/part12_source_code_analysis/  "><strong>500 lines or less</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
+  </div>
+</div>
+
+## 拓展阅读
+
+<!-- 
+<div class="cards">
+  <div class="card source">
+    <a href="/part12_source_code_analysis/python_web_roadmap"><strong>500 lines or less</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/python_web_roadmap">Learn →</a></span>
+  </div>
+  <div class="card source">
+    <a href="/part12_source_code_analysis/python_devops_roadmap"><strong>High Performance Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/python_devops_roadmap">Learn →</a></span>
+  </div>
+  <div class="card source">
+    <a href="/part12_source_code_analysis/python_web_scraping_roadmap"><strong>Advanced Python Presentations</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part12_source_code_analysis/python_web_scraping_roadmap">Learn →</a></span>
+  </div>
+</div> 
+-->
+
+<!-- 
 ## A Guide to Python's Magic Methods
 
 ## 500 lines or less
@@ -10,7 +59,7 @@
 
 ## high performace python 
 
-<!-- ## python 源码剖析 -->
+## python 源码剖析
 
 ## Advanced Python Presentations
 
@@ -23,6 +72,6 @@
 - How to **speedup Python**, without bothering too much, **with numba**
 - How to **make a REST API** using django and django-rest-framework (project and slides).
 - How to **use websockets** in django with channels (slides).
-<!-- - Notes on Git (based on the official Git docs, Pro Git book and the Atlassian Git tutorial) -->
-
+- Notes on Git (based on the official Git docs, Pro Git book and the Atlassian Git tutorial)
+-->
 
