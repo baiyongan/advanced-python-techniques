@@ -572,8 +572,10 @@ nav:
 
 ## Record
 - 后记:
+  - Synopsis: SYNOPSIS.md
   - Change Log: CHANGELOG.md
   - Reference: REFERENCE.md
+  # - Tips: NOTE.md
+  - Contact Author: AUTHOR.md
   - License: LICENSE.md
-  - Tips: NOTE.md
 
