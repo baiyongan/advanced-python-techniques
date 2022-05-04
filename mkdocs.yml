@@ -467,12 +467,17 @@ nav:
 ## Part07
 - 应用框架:
   - Overview: part07_application_framework/index.md
-  - Dash: part07_application_framework/python_web/plotly_dash/index.md
+  - Dash: 
+    - 目录: part07_application_framework/python_web/dash/content.md
   - Flask: 
+    - 目录: part07_application_framework/python_web/flask/content.md
     - 项目结构: part07_application_framework/python_web/flask/structure_of_a_flask_project.md
-  - Django: part07_application_framework/python_web/django/index.md
-  - Tornado: part07_application_framework/python_web/tornado/index.md
-  - FastAPI: part07_application_framework/python_web/fastapi/index.md
+  - Django: 
+    - 目录: part07_application_framework/python_web/django/content.md
+  - Tornado: 
+    - 目录: part07_application_framework/python_web/tornado/content.md
+  - FastAPI: 
+    - 目录: part07_application_framework/python_web/fastapi/content.md
 
 ## Part08
 - 数据分析:
