@@ -88,7 +88,7 @@
 <div class="cards">
   <div class="card booknote">
     <a href="/part06_intermediate_reading/pep/content"><strong>PEP</strong></a>
-    <p class="card-body"><small>Python Enhancement Proposals，Python增强提案 (官方发布)</small></p>
+    <p class="card-body"><small>Python Enhancement Proposals，Python增强提案</small></p>
     <span><a href="/part06_intermediate_reading/pep/content">More →</a></span>
   </div>
   <div class="card booknote">
@@ -104,7 +104,7 @@ No.1 Fluent Python（豆瓣评分：9.6）
 
 No.2 Hands-On Machine Learning with Scikit-Learn and TensorFlow（豆瓣评分：9.4）
 
-No.3 Python编程快速上手（豆瓣评分：9.2
+No.3 Python编程快速上手（豆瓣评分：9.2)
 
 No.4 Python Cookbook（豆瓣评分：9.2）
 

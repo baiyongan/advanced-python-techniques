@@ -35,11 +35,9 @@ PEP的全称是Python Enhancement Proposals，一般翻译为Python增强提案�
 
 - 每个PEP最初都是一个草案（Draft），随后会经历一个过程，因此也就出现了不同的状态。以下是一个流程示意图：
 
-![PEP process flow diagram](resources/picture/part06/PEP_process_flow_diagram.png)
-
-<!-- <div align=center>
-<img src="resources/picture/part06/PEP_process_flow_diagram.png" />
-</div> -->
+<div align=center>
+<img src="https://s2.loli.net/2022/05/04/u3pQiaLoERxbIfF.png" />
+</div>
 
 - 在PEP 0（Index of Python Enhancement Proposals (PEPs)）里，官方列举了所有的PEP，可以按序号、按类型以及按状态进行检索。
 - 在PEP 1（PEP Purpose and Guidelines）里，官方详细说明了PEP的意图、如何提交PEP、如何修复和更新PEP、以及PEP评审的机制等等。

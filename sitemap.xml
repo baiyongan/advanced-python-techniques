@@ -860,7 +860,11 @@
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/plotly_dash/</loc>
+     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/dash/content/</loc>
+     <lastmod>2022-05-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/flask/content/</loc>
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -868,15 +872,15 @@
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/django/</loc>
+     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/django/content/</loc>
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/tornado/</loc>
+     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/tornado/content/</loc>
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/fastapi/</loc>
+     <loc>http://bya.cool/advanced-python-techniques/part07_application_framework/python_web/fastapi/content/</loc>
      <lastmod>2022-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
