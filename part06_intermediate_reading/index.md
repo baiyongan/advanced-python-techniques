@@ -88,7 +88,7 @@
 <div class="cards">
   <div class="card booknote">
     <a href="/part06_intermediate_reading/pep/content"><strong>PEP</strong></a>
-    <p class="card-body"><small>   </small></p>
+    <p class="card-body"><small>Python Enhancement Proposals，Python增强提案 (官方发布)</small></p>
     <span><a href="/part06_intermediate_reading/pep/content">More →</a></span>
   </div>
   <div class="card booknote">
