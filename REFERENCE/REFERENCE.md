@@ -7,6 +7,8 @@
 
 - [Holy Python](https://holypython.com/100-python-tips-tricks/)
 
+- [Powerful Python](https://powerfulpython.com/blog/)
+
 ## Website
 
 ## Community

@@ -16,10 +16,16 @@
   <div class="card module">
     <strong>常用必备</strong>
     <ul class="card-items">
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
+      <li><a href="/part04_module_package_library/  ">os</a></li>
+      <li><a href="/part04_module_package_library/  ">sys</a></li>
+      <li><a href="/part04_module_package_library/  ">time</a></li>
+      <li><a href="/part04_module_package_library/  ">re</a></li>
+      <li><a href="/part04_module_package_library/  ">json</a></li>
+      <li><a href="/part04_module_package_library/  ">random</a></li>
+      <li><a href="/part04_module_package_library/  ">logging</a></li>
+      <li><a href="/part04_module_package_library/  ">argparse</a></li>
+      <li><a href="/part04_module_package_library/  ">datetime</a></li>
+      <li><a href="/part04_module_package_library/  ">subprocess</a></li>
     </ul>
   </div>
   <div class="card module">
