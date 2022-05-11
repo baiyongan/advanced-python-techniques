@@ -569,8 +569,9 @@ nav:
     - 目录: part12_source_code_analysis/magic_methods/content.md
     - A guide to python's magic methods: part12_source_code_analysis/magic_methods/magic_methods_guide.md
     - Python magic methods cookbook: part12_source_code_analysis/magic_methods/magic_methods_cookbook.md
-  - The Tao of Python: part12_source_code_analysis/the_tao_of_python.md
-  - MRO in Python: part12_source_code_analysis/mro_in_python.md
+  - Advanced Python Presentations:
+    - The Tao of Python: part12_source_code_analysis/advanced_python_presentations/the_tao_of_python.md
+    - MRO in Python: part12_source_code_analysis/advanced_python_presentations/mro_in_python.md
 
 ## Part13
 - 关联拓展:
