@@ -24,9 +24,9 @@
     <span><a href="/part06_intermediate_reading/powerful_python/content">More →</a></span>
   </div>
   <div class="card booknote">
-    <a href="/part06_intermediate_reading/effective_python/content"><strong>Effective Python</strong></a>
+    <a href="/part06_intermediate_reading/effective_python/content_zh"><strong>Effective Python</strong></a>
     <p class="card-body"><small>   </small></p>
-    <span><a href="/part06_intermediate_reading/effective_python/content">More →</a></span>
+    <span><a href="/part06_intermediate_reading/effective_python/content_zh">More →</a></span>
   </div>
 </div>
 
