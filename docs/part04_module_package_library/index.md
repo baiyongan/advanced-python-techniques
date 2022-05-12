@@ -1,7 +1,7 @@
 # Overview
 
 <div class="cards">
-  <div class="card module">
+  <div class="card module three-columns">
     <strong>内置基础</strong>
     <ul class="card-items">
       <li><a href="/part04_module_package_library/  ">69 个内置函数</a></li>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="cards">
-  <div class="card module">
+  <div class="card module two-columns">
     <strong>常用必备</strong>
     <ul class="card-items">
       <li><a href="/part04_module_package_library/  ">os</a></li>
@@ -28,28 +28,35 @@
       <li><a href="/part04_module_package_library/  ">subprocess</a></li>
     </ul>
   </div>
-  <div class="card module">
+  <div class="card module two-columns">
     <strong>重难点进阶</strong>
     <ul class="card-items">
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
+      <li><a href="/part04_module_package_library/  ">itertools</a></li>
+      <li><a href="/part04_module_package_library/  ">functools</a></li>
+      <li><a href="/part04_module_package_library/  ">re</a></li>
+      <li><a href="/part04_module_package_library/  ">collections</a></li>
+      <li><a href="/part04_module_package_library/  ">threading</a></li>
+      <li><a href="/part04_module_package_library/  ">multiprocessing</a></li>
       <li><a href="/part04_module_package_library/  ">  </a></li>
     </ul>
   </div>
-  <div class="card module">
+  <div class="card module three-columns">
     <strong>流行第三方库</strong>
     <ul class="card-items">
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
+      <li><a href="/part04_module_package_library/  ">openpyxl</a></li>
+      <li><a href="/part04_module_package_library/  ">requests</a></li>
+      <li><a href="/part04_module_package_library/  ">click</a></li>
+      <li><a href="/part04_module_package_library/  ">rich</a></li>
+      <li><a href="/part04_module_package_library/  ">Jinja2</a></li>
+      <li><a href="/part04_module_package_library/  ">celery</a></li>
+      <li><a href="/part04_module_package_library/  ">faker</a></li>
       <li><a href="/part04_module_package_library/  ">  </a></li>
     </ul>
   </div>
 </div>
 
 <div class="cards">
-  <div class="card module">
+  <div class="card module three-columns">
     <strong>PyMOTW3 系列</strong>
     <ul class="card-items">
       <li><a href="/part04_module_package_library/  ">  </a></li>
