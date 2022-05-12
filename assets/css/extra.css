@@ -113,6 +113,30 @@ ul.card-items li {
     align-self: flex-start;
 }
 
+.card.multi-columns > ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.card.two-columns > ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.card.three-columns > ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+.card.four-columns > ul {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+}
+
 .card.roadmap {
     border-top: 3.5px solid #FFCC99;
 }
@@ -137,12 +161,6 @@ ul.card-items li {
 .card.norm {
     border-top: 3.5px solid #ef5762;
 }
-
-/* .card.norm > ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-} */
 
 .card.module {
     border-top: 3.5px solid #aa53d3;
