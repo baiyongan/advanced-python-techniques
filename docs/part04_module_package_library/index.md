@@ -40,7 +40,7 @@
       <li><a href="/part04_module_package_library/  ">  </a></li>
     </ul>
   </div>
-  <div class="card module three-columns">
+  <div class="card module two-columns">
     <strong>流行第三方库</strong>
     <ul class="card-items">
       <li><a href="/part04_module_package_library/  ">openpyxl</a></li>
@@ -59,10 +59,28 @@
   <div class="card module three-columns">
     <strong>PyMOTW3 系列</strong>
     <ul class="card-items">
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
-      <li><a href="/part04_module_package_library/  ">  </a></li>
+      <li><a href="/part04_module_package_library/  ">目录</a></li>
+      <li><a href="/part04_module_package_library/  ">01 文本</a></li>
+      <li><a href="/part04_module_package_library/  ">02 数据结构</a></li>
+      <li><a href="/part04_module_package_library/  ">03 算法</a></li>
+      <li><a href="/part04_module_package_library/  ">04 日期与时间</a></li>
+      <li><a href="/part04_module_package_library/  ">05 数学运算</a></li>
+      <li><a href="/part04_module_package_library/  ">06 文件系统</a></li>
+      <li><a href="/part04_module_package_library/  ">07 数据持久化与转换</a></li>
+      <li><a href="/part04_module_package_library/  ">08 数据压缩与归档</a></li>
+      <li><a href="/part04_module_package_library/  ">09 加密</a></li>
+      <li><a href="/part04_module_package_library/  ">10 进程、线程与协程的并发</a></li>
+      <li><a href="/part04_module_package_library/  ">11 网络</a></li>
+      <li><a href="/part04_module_package_library/  ">12 互联网</a></li>
+      <li><a href="/part04_module_package_library/  ">13 邮件</a></li>
+      <li><a href="/part04_module_package_library/  ">14 应用程序构建组件</a></li>
+      <li><a href="/part04_module_package_library/  ">15 国际化与本地化</a></li>
+      <li><a href="/part04_module_package_library/  ">16 开发者工具</a></li>
+      <li><a href="/part04_module_package_library/  ">17 运行时特征</a></li>
+      <li><a href="/part04_module_package_library/  ">18 语言工具</a></li>
+      <li><a href="/part04_module_package_library/  ">19 模块与包</a></li>
+      <li><a href="/part04_module_package_library/  ">20 Unix 专属服务</a></li>
+      <li><a href="/part04_module_package_library/  ">附录</a></li>
     </ul>
   </div>
 </div>
