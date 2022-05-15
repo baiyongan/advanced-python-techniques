@@ -77,7 +77,7 @@
     <strong>Linter</strong>
     <ul class="card-items">
       <li><a href="/part02_development_tool/  ">pylint</a></li>
-      <li><a href="/part02_development_tool/  ">  </a></li>
+      <li><a href="/part02_development_tool/  ">mypy</a></li>
       <li><a href="/part02_development_tool/  ">  </a></li>
       <li><a href="/part02_development_tool/  ">  </a></li>
     </ul>
@@ -164,3 +164,7 @@ https://www.edureka.co/blog/best-ide-for-python/ -->
     每种计算机高级语言都有其对应的：编辑器、调试器、编译器
 
     Python 作为一种解释型语言，有多种解释器可用。
+
+## 拓展阅读
+- [jobbole/awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
+- [typeddjango/awesome-python-typing](https://github.com/typeddjango/awesome-python-typing)
