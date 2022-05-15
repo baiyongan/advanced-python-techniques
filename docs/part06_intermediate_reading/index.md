@@ -98,6 +98,11 @@
   </div>
 </div>
 
+
+## 拓展阅读
+- [junnplus/awesome-python-books](https://github.com/junnplus/awesome-python-books)
+
+
 <!-- 备选书单
 
 No.1 Fluent Python（豆瓣评分：9.6）

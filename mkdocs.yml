@@ -518,6 +518,8 @@ nav:
   - Overview: part09_python_in_action/index.md
   - Code Snippets: 
     - 目录: part09_python_in_action/code_snippets/content.md
+  - Python 工匠: 
+    - 目录: part09_python_in_action/one_python_craftsman/content.md
   - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
   - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
   - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
