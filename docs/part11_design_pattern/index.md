@@ -1,8 +1,50 @@
 # Overview
 
+## 设计原则与思想
+
 <div class="cards">
   <div class="card pattern">
-    <strong>创建型模式</strong>
+    <strong>面相对象</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+  <div class="card pattern">
+    <strong>设计原则</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+  <div class="card pattern">
+    <strong>规范与重构</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+</div>
+
+## 设计模式与范式
+<div class="cards">
+  <div class="card pattern">
+    <strong>创建型</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">工厂方法模式</a></li>
       <li><a href="/part11_design_pattern/  ">抽象工厂模式</a></li>
@@ -12,7 +54,7 @@
     </ul>
   </div>
   <div class="card pattern">
-    <strong>结构型模式</strong>
+    <strong>结构型</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">适配器模式</a></li>
       <li><a href="/part11_design_pattern/  ">桥接模式</a></li>
@@ -24,7 +66,7 @@
     </ul>
   </div>
   <div class="card pattern">
-    <strong>行为模式</strong>
+    <strong>行为型</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">责任链模式</a></li>
       <li><a href="/part11_design_pattern/  ">命令模式</a></li>
@@ -40,8 +82,47 @@
   </div>
 </div>
 
+## 开源与项目实战
+<div class="cards">
+  <div class="card pattern">
+    <strong>开源实战</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+  <div class="card pattern">
+    <strong>项目实战</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+</div>
+
+## 总结
+<div class="cards">
+  <div class="card pattern">
+    <strong>总结拓展</strong>
+    <ul class="card-items">
+      <li><a href="/part11_design_pattern/  ">  </a></li>
+    </ul>
+  </div>
+</div>
+
 ## 拓展阅读
 
+- [设计模式之美](https://time.geekbang.org/column/intro/100039001)
 - [Refactoringguru](https://refactoringguru.cn/design-patterns/catalog)
 - [Head First 设计模式（中文版）](https://book.douban.com/subject/2243615/)
 - [Java设计模式](https://book.douban.com/subject/30173863/)
