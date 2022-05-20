@@ -459,6 +459,9 @@ nav:
   - Python Architecture Patterns: 
     - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
 
+  - High Performance Python: 
+    - 目录: part06_intermediate_reading/high_performance_python/content.md
+    
   - PEP: 
     - 目录: part06_intermediate_reading/pep/content.md
   

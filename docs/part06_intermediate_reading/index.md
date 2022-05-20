@@ -55,6 +55,15 @@
   </div>
 </div>
 
+### 性能分析
+<div class="cards">
+  <div class="card booknote">
+    <a href="/part06_intermediate_reading/high_performance_python/content"><strong>High Performance Python</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part06_intermediate_reading/high_performance_python/content">More →</a></span>
+  </div>
+</div>
+
 <!-- <div class="cards">
   <div class="card booknote">
     <a href="/part06_intermediate_reading/"><strong>数据分析</strong></a>

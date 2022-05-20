@@ -4,7 +4,7 @@
 
 <div class="cards">
   <div class="card pattern">
-    <strong>面相对象</strong>
+    <strong>面向对象</strong>
     <ul class="card-items">
       <li><a href="/part11_design_pattern/  ">  </a></li>
       <li><a href="/part11_design_pattern/  ">  </a></li>
