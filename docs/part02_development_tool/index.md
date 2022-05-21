@@ -168,3 +168,4 @@ https://www.edureka.co/blog/best-ide-for-python/ -->
 ## 拓展阅读
 - [jobbole/awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
 - [typeddjango/awesome-python-typing](https://github.com/typeddjango/awesome-python-typing)
+- [vinta/awesome-python](https://github.com/vinta/awesome-python)
