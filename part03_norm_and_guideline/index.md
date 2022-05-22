@@ -1,12 +1,13 @@
 # Overview
 
 <div class="cards">
-  <div class="card norm">
+  <div class="card norm two-columns">
     <strong>Python 编码规范</strong>
     <ul class="card-items">
       <li><a href="/part03_norm_and_guideline/norm/PEP8_brief_summary">PEP8 要点总结</a></li>
       <li><a href="/part03_norm_and_guideline/norm/PEP8_translation">PEP8 中文翻译</a></li>
       <li><a href="/part03_norm_and_guideline/norm/google_python_style_guide">Google Python Style Guide</a></li>
+      <li><a href="/part03_norm_and_guideline/norm/why_python_style_guide">Python 代码规范的重要性</a></li>
     </ul>
   </div>
 </div>
@@ -34,6 +35,7 @@
   </div>
 </div>
 
+<!-- 
 <div class="cards">
   <div class="card norm">
     <strong>其他</strong>
@@ -41,7 +43,8 @@
       <li><a href="/part03_norm_and_guideline/norm/why_python_style_guide">Python 代码规范的重要性</a></li>
     </ul>
   </div>
-</div>
+</div> 
+-->
 
 
 !!! info "说明"
