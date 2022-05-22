@@ -171,10 +171,24 @@ nav:
 ## Part03
 - 规范准则:  
   - Overview: part03_norm_and_guideline/index.md
-  - Python 代码规范的重要性: part03_norm_and_guideline/norm/why_python_style_guide.md
-  - PEP8 要点总结: part03_norm_and_guideline/norm/PEP8_brief_summary.md
-  - PEP8 中文翻译: part03_norm_and_guideline/norm/PEP8_translation.md
-  - Google Python Style Guide: part03_norm_and_guideline/norm/google_python_style_guide.md
+  - Python 编码规范:
+    - Python 代码规范的重要性: part03_norm_and_guideline/python_norm/why_python_style_guide.md
+    - PEP8 要点总结: part03_norm_and_guideline/python_norm/PEP8_brief_summary.md
+    - PEP8 中文翻译: part03_norm_and_guideline/python_norm/PEP8_translation.md
+    - Google Python Style Guide: part03_norm_and_guideline/python_norm/google_python_style_guide.md
+
+  - 非编码类规范:
+    - part03_norm_and_guideline/non_coding_norm/open_source.md
+    - part03_norm_and_guideline/non_coding_norm/document.md
+    - part03_norm_and_guideline/non_coding_norm/version.md
+    - part03_norm_and_guideline/non_coding_norm/commit.md
+    - part03_norm_and_guideline/non_coding_norm/deployment.md
+  - 编码类规范:
+    - part03_norm_and_guideline/coding_norm/content.md
+    - part03_norm_and_guideline/coding_norm/coding.md
+    - part03_norm_and_guideline/coding_norm/api.md
+    - part03_norm_and_guideline/coding_norm/log.md
+    - part03_norm_and_guideline/coding_norm/error.md
 
 ## Part04
 - 功能模块:
