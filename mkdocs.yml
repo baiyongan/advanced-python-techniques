@@ -594,7 +594,7 @@ nav:
 ## Part11
 - 设计模式:
   - Overview: part11_design_pattern/index.md
-  - 目录: part11_design_pattern/the_beauty_of_design_pattern/content.md
+  # - 目录: part11_design_pattern/the_beauty_of_design_pattern/content.md
   - 学习导读:
     - part11_design_pattern/the_beauty_of_design_pattern/chapter01/article001.md
     - part11_design_pattern/the_beauty_of_design_pattern/chapter01/article002.md
