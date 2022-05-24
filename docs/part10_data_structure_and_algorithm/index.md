@@ -1,7 +1,7 @@
 # Overview
 
 <div class="cards">
-  <div class="card dsa">
+  <div class="card dsa three-columns">
     <strong>数据结构与算法Python版</strong>
     <ul class="card-items">
       <li><a href="/part10_data_structure_and_algorithm/content">目录</a></li>
