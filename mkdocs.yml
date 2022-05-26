@@ -589,7 +589,8 @@ nav:
     - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson10/note.md
     - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson11/note.md
     - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson12/note.md
-
+  - 数据结构与算法之美:
+    - 目录: part10_data_structure_and_algorithm/the_beauty_of_dsa/content.md
   - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
 
 ## Part11

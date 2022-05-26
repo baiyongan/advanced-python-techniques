@@ -1,6 +1,6 @@
 # Overview
-
 ## 数据结构与算法Python版
+
 <div class="cards">
   <div class="card dsa three-columns">
     <strong></strong>
@@ -22,9 +22,48 @@
   </div>
 </div>
 
+## 数据结构与算法之美
+
+<div class="cards">
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>入门</strong></a>
+    <p class="card-body"><small>  </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>基础</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>高级</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>实战</strong></a>
+    <p class="card-body"><small>  </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>练习</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+  <div class="card dsa">
+    <a href="/part10_data_structure_and_algorithm/  "><strong>补充</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part10_data_structure_and_algorithm/  ">More →</a></span>
+  </div>
+</div>
+
 ## 拓展阅读
 
 - [【北京大学】数据结构与算法Python版（完整版)](https://www.bilibili.com/video/BV1VC4y1x7uv?p=2)
+- [数据结构与算法之美](https://time.geekbang.org/column/intro/100017301)
 - [算法图解](https://book.douban.com/subject/26979890/)
 - [Data Structures and Algorithms in Python](https://book.douban.com/subject/10607365/)
 - [算法导论（原书第3版）](https://book.douban.com/subject/20432061/)
