@@ -1,22 +1,23 @@
 # Overview
 
+## 数据结构与算法Python版
 <div class="cards">
   <div class="card dsa three-columns">
-    <strong>数据结构与算法Python版</strong>
+    <strong></strong>
     <ul class="card-items">
-      <li><a href="/part10_data_structure_and_algorithm/content">目录</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson01/note">一、概述</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson02/note">二、算法分析</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson03/note">三、基本结构（上）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson04/note">四、基本结构（下）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson05/note">五、递归（上）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson06/note">六、递归（下）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson07/note">七、排序与查找（上）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson08/note">八、排序与查找（下）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson09/note">九、树及算法（上）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson10/note">十、树及算法（下）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson11/note">十一、图及算法（上）</a></li>
-      <li><a href="/part10_data_structure_and_algorithm/lesson12/note">十二、图及算法（下）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/content">目录</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson01/note">一、概述</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson02/note">二、算法分析</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson03/note">三、基本结构（上）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson04/note">四、基本结构（下）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson05/note">五、递归（上）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson06/note">六、递归（下）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson07/note">七、排序与查找（上）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson08/note">八、排序与查找（下）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson09/note">九、树及算法（上）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson10/note">十、树及算法（下）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson11/note">十一、图及算法（上）</a></li>
+      <li><a href="/part10_data_structure_and_algorithm/peking_university_python_dsa/lesson12/note">十二、图及算法（下）</a></li>
     </ul>
   </div>
 </div>

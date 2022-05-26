@@ -575,19 +575,20 @@ nav:
 ## Part10
 - 结构算法:
   - Overview: part10_data_structure_and_algorithm/index.md
-  - 目录: part10_data_structure_and_algorithm/content.md
-  - part10_data_structure_and_algorithm/lesson01/note.md
-  - part10_data_structure_and_algorithm/lesson02/note.md
-  - part10_data_structure_and_algorithm/lesson03/note.md
-  - part10_data_structure_and_algorithm/lesson04/note.md
-  - part10_data_structure_and_algorithm/lesson05/note.md
-  - part10_data_structure_and_algorithm/lesson06/note.md
-  - part10_data_structure_and_algorithm/lesson07/note.md
-  - part10_data_structure_and_algorithm/lesson08/note.md
-  - part10_data_structure_and_algorithm/lesson09/note.md
-  - part10_data_structure_and_algorithm/lesson10/note.md
-  - part10_data_structure_and_algorithm/lesson11/note.md
-  - part10_data_structure_and_algorithm/lesson12/note.md
+  - 数据结构与算法Python版:
+    - 目录: part10_data_structure_and_algorithm/peking_university_python_dsa/content.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson01/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson02/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson03/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson04/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson05/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson06/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson07/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson08/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson09/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson10/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson11/note.md
+    - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson12/note.md
 
   - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
 
