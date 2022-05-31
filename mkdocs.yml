@@ -550,11 +550,11 @@ nav:
     - part09_python_in_action/one_python_craftsman/chapter11/item.md
     - part09_python_in_action/one_python_craftsman/chapter12/item.md
     - part09_python_in_action/one_python_craftsman/chapter13/item.md
-
-  - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
-  - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
-  - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
-  - Python 中的 GIL: part09_python_in_action/global_interpreter_lock.md
+  - Python 实际开发经验总结:
+    - 技术研发中的注意事项: part09_python_in_action/precautions_in_development.md
+    - SWIG 编程实践: part09_python_in_action/SWIG_programming.md
+    - Python 的内存管理和垃圾回收机制: part09_python_in_action/garbage_collection.md
+    - Python 中的 GIL: part09_python_in_action/global_interpreter_lock.md
 
   # - Performance Marketing Report:
   #   - introduction: part09_python_in_action/performance_marketing_report/01_introduction.md
@@ -575,6 +575,7 @@ nav:
 ## Part10
 - 结构算法:
   - Overview: part10_data_structure_and_algorithm/index.md
+  - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
   - 数据结构与算法Python版:
     - 目录: part10_data_structure_and_algorithm/peking_university_python_dsa/content.md
     - part10_data_structure_and_algorithm/peking_university_python_dsa/lesson01/note.md
@@ -678,8 +679,6 @@ nav:
       - part10_data_structure_and_algorithm/the_beauty_of_dsa/chapter06/article79.md
       - part10_data_structure_and_algorithm/the_beauty_of_dsa/chapter06/article80.md
   
-  - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
-
 ## Part11
 - 设计模式:
   - Overview: part11_design_pattern/index.md
