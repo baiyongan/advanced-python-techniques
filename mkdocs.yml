@@ -471,7 +471,7 @@ nav:
     - 目录: part06_intermediate_reading/fluent_python/content.md
   
   - Python Architecture Patterns: 
-    - 目录: part06_intermediate_reading/architecture_patterns_with_python/content.md
+    - 英文目录: part06_intermediate_reading/architecture_patterns_with_python/content_en.md
 
   - High Performance Python: 
     - 目录: part06_intermediate_reading/high_performance_python/content.md
