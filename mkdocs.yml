@@ -472,6 +472,22 @@ nav:
   
   - Python Architecture Patterns: 
     - 英文目录: part06_intermediate_reading/architecture_patterns_with_python/content_en.md
+    - 中文目录: part06_intermediate_reading/architecture_patterns_with_python/content_zh.md
+    - part06_intermediate_reading/architecture_patterns_with_python/introduction/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter01/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter02/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter03/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter04/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter05/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter06/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter07/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter08/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter09/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter10/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter11/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter12/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/chapter13/item.md
+    - part06_intermediate_reading/architecture_patterns_with_python/appendix/item.md
 
   - High Performance Python: 
     - 目录: part06_intermediate_reading/high_performance_python/content.md
