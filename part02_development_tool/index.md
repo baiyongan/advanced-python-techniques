@@ -39,11 +39,11 @@
     </ul>
   </div>
   <div class="card tool">
-    <strong>Document</strong>
+    <strong>DevOps</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/  ">markdown</a></li>
-      <li><a href="/part02_development_tool/  ">Sphinx</a></li>
-      <li><a href="/part02_development_tool/  ">Mkdocs</a></li>
+      <li><a href="/part02_development_tool/  ">Jenkins</a></li>
+      <li><a href="/part02_development_tool/  ">Docker Compose</a></li>
+      <li><a href="/part02_development_tool/  ">ansible</a></li>
     </ul>
   </div>
 </div>
@@ -59,8 +59,7 @@
   <div class="card tool">
     <strong>Compiler</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/  ">  </a></li>
-      <li><a href="/part02_development_tool/  ">  </a></li>
+      <li><a href="/part02_development_tool/  ">Cython</a></li>
     </ul>
   </div>
   <div class="card tool">
@@ -76,10 +75,9 @@
   <div class="card tool">
     <strong>Linter</strong>
     <ul class="card-items">
+      <li><a href="/part02_development_tool/  ">autopep8</a></li>
       <li><a href="/part02_development_tool/  ">pylint</a></li>
       <li><a href="/part02_development_tool/  ">mypy</a></li>
-      <li><a href="/part02_development_tool/  ">  </a></li>
-      <li><a href="/part02_development_tool/  ">  </a></li>
     </ul>
   </div>
   <div class="card tool">
@@ -90,61 +88,38 @@
     </ul>
   </div>
   <div class="card tool">
-    <strong>Deployment</strong>
+    <strong>Profiler</strong>
     <ul class="card-items">
-      <li><a href="/part02_development_tool/  ">  </a></li>
-      <li><a href="/part02_development_tool/  ">  </a></li>
+      <li><a href="/part02_development_tool/  ">lineprofiler</a></li>
     </ul>
   </div>
 </div>
 
-<!-- ## IDE
-
-- PyCharm
-
-## REPL
-
-- IPython
-- Jupyter Notebook
-
-## Editor
-
-- VS Code
-- vim
-
-## Debugger
-
-- PySnooper
-- pdb
-
-## Compiler
-
-## Interpreter
-
-- CPython
-- IPython
-- PyPy
-- Jython
-- IronPython
-
-## Package Management
-
-- Anaconda
-- pip
-
-## Linter
-- pylint
-- flask8
-- pycodestyle
-- autopep8
-
-## Testing
-- Pytest
-- Coverage
-
-## Deployment
-
-## Version Control -->
+<div class="cards">
+  <div class="card tool">
+    <strong>CLI</strong>
+    <ul class="card-items">
+      <li><a href="/part02_development_tool/  ">click</a></li>
+      <li><a href="/part02_development_tool/  ">rich</a></li>
+      <li><a href="/part02_development_tool/  ">cookiecutter</a></li>
+    </ul>
+  </div>
+  <div class="card tool">
+    <strong>GUI</strong>
+    <ul class="card-items">
+      <li><a href="/part02_development_tool/  ">tkinter</a></li>
+      <li><a href="/part02_development_tool/  ">PySimpleGUI</a></li>
+    </ul>
+  </div>
+  <div class="card tool">
+    <strong>Document</strong>
+    <ul class="card-items">
+      <li><a href="/part02_development_tool/  ">markdown</a></li>
+      <li><a href="/part02_development_tool/  ">Sphinx</a></li>
+      <li><a href="/part02_development_tool/  ">Mkdocs</a></li>
+    </ul>
+  </div>
+</div>
 
 
 <!-- Top 10 Best IDE for Python: How to choose the best Python IDE?
