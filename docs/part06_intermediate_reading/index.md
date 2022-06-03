@@ -49,7 +49,7 @@
 
 <div class="cards">
   <div class="card booknote">
-    <a href="/part06_intermediate_reading/architecture_patterns_with_python/content"><strong>Python Architecture Patterns</strong></a>
+    <a href="/part06_intermediate_reading/architecture_patterns_with_python/content_en"><strong>Architecture Patterns With Python</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/part06_intermediate_reading/architecture_patterns_with_python/content_en">More →</a></span>
   </div>
