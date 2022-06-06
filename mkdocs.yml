@@ -151,9 +151,9 @@ nav:
   - IDE:
     - 目录: part02_development_tool/ide/content.md
     - Pycharm: 
-      - 快速上手: part02_development_tool/pycharm/brief_tutorial.md
-      - 42 Tips and Tricks: part02_development_tool/pycharm/42_tips_and_tricks.md
-      - 详细教程: part02_development_tool/pycharm/detailed_tutorial.md
+      - 快速上手: part02_development_tool/ide/pycharm/brief_tutorial.md
+      - 42 Tips and Tricks: part02_development_tool/ide/pycharm/42_tips_and_tricks.md
+      - 详细教程: part02_development_tool/ide/pycharm/detailed_tutorial.md
 
   - Editor:
     - 目录: part02_development_tool/editor/content.md
@@ -161,18 +161,18 @@ nav:
   - REPL:
     - 目录: part02_development_tool/repl/content.md
     - IPython: 
-      - 快速上手: part02_development_tool/ipython/brief_tutorial.md
-      - 详细教程: part02_development_tool/ipython/detailed_tutorial.md
+      - 快速上手: part02_development_tool/repl/ipython/brief_tutorial.md
+      - 详细教程: part02_development_tool/repl/ipython/detailed_tutorial.md
     - Jupyter Notebook: 
-      - 快速上手: part02_development_tool/jupyter_notebook/brief_tutorial.md
-      - 详细教程: part02_development_tool/jupyter_notebook/detailed_tutorial.md
-      - 50 IPython Tips: part02_development_tool/jupyter_notebook/50_ipython_tricks.ipynb
+      - 快速上手: part02_development_tool/repl/jupyter_notebook/brief_tutorial.md
+      - 详细教程: part02_development_tool/repl/jupyter_notebook/detailed_tutorial.md
+      - 50 IPython Tips: part02_development_tool/repl/jupyter_notebook/50_ipython_tricks.ipynb
 
   - Package Management:
     - 目录: part02_development_tool/package_management/content.md
     - pip: 
-      - 快速上手: part02_development_tool/pip/brief_tutorial.md
-      - 详细教程: part02_development_tool/pip/detailed_tutorial.md
+      - 快速上手: part02_development_tool/package_management/pip/brief_tutorial.md
+      - 详细教程: part02_development_tool/package_management/pip/detailed_tutorial.md
 
   - SCM:
     - 目录: part02_development_tool/scm/content.md
@@ -183,11 +183,11 @@ nav:
   - Debugger:
     - 目录: part02_development_tool/debugger/content.md
     - pdb: 
-      - 快速上手: part02_development_tool/pdb/brief_tutorial.md
-      - 详细教程: part02_development_tool/pdb/detailed_tutorial.md
+      - 快速上手: part02_development_tool/debugger/pdb/brief_tutorial.md
+      - 详细教程: part02_development_tool/debugger/pdb/detailed_tutorial.md
     - PySnooper: 
-      - 快速上手: part02_development_tool/pysnooper/brief_tutorial.md
-      - 详细教程: part02_development_tool/pysnooper/detailed_tutorial.md
+      - 快速上手: part02_development_tool/debugger/pysnooper/brief_tutorial.md
+      - 详细教程: part02_development_tool/debugger/pysnooper/detailed_tutorial.md
 
   - Compiler:
     - 目录: part02_development_tool/compiler/content.md
@@ -211,7 +211,7 @@ nav:
     - 目录: part02_development_tool/gui/content.md
 
   - Document: 
-    - 目录: part02_development_tool/docment/content.md
+    - 目录: part02_development_tool/document/content.md
 
 ## Part03
 - 规范准则:  
