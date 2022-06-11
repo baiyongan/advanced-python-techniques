@@ -546,6 +546,9 @@ nav:
 ## Part07
 - 应用框架:
   - Overview: part07_application_framework/index.md
+  - Data Science For Beginners: 
+    - 英文目录: part07_application_framework/web_development_for_beginners/content_en.md
+    - 中文目录: part07_application_framework/web_development_for_beginners/content_zh.md
   - Dash: 
     - 目录: part07_application_framework/python_web/dash/content.md
   - Flask: 
