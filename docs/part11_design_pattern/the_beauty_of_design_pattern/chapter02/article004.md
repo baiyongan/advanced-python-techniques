@@ -2,6 +2,9 @@
 
 ## 什么是面向对象编程和面向对象编程语言?
 
+!!! tips
+    - 面向对象编程的英文缩写是 OOP,全称是 Object Oriented Programming。
+    - 面向对象编程语言的英文缩写是 OOPL,全称是 Object Oriented Programming Language。
 ## 如何判定某编程语言是否是面向对象编程语言?
 
 ## 什么是面向对象分析和面向对象设计?
