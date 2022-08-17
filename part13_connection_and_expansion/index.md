@@ -1,25 +1,30 @@
 # Overview
 
+## 语言对比
+
 <div class="cards">
   <div class="card expansion">
-    <strong>语言对比</strong>
-    <ul class="card-items">
-      <li><a href="/part03_norm_and_guideline/  ">vs golang</a></li>
-      <li><a href="/part03_norm_and_guideline/  ">vs java</a></li>
-      <li><a href="/part03_norm_and_guideline/  ">vs js/ts</a></li>
-      <li><a href="/part03_norm_and_guideline/  ">vs C/C++</a></li>
-      <li><a href="/part03_norm_and_guideline/  ">vs shell</a></li>
-    </ul>
+    <a href="/part13_connection_and_expansion/  "><strong>Python vs Java</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part13_connection_and_expansion/  ">More →</a></span>
   </div>
-  <div class="card empty">
-    <strong>  </strong>
-    <ul class="card-items">
-      <li><a href="/part03_norm_and_guideline/  ">  </a></li>
-      <li><a href="/part03_norm_and_guideline/  ">  </a></li>
-      <li><a href="/part03_norm_and_guideline/  ">  </a></li>
-      <li><a href="/part03_norm_and_guideline/  ">  </a></li>
-      <li><a href="/part03_norm_and_guideline/  ">  </a></li>
-    </ul>
+  <div class="card expansion">
+    <a href="/part13_connection_and_expansion/  "><strong>Python vs C/C++</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part13_connection_and_expansion/  ">More →</a></span>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card expansion">
+    <a href="/part13_connection_and_expansion/  "><strong>Python vs Go</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part13_connection_and_expansion/  ">More →</a></span>
+  </div>
+  <div class="card expansion">
+    <a href="/part13_connection_and_expansion/  "><strong>Python vs Shell</strong></a>
+    <p class="card-body"><small>   </small></p>
+    <span><a href="/part13_connection_and_expansion/  ">More →</a></span>
   </div>
 </div>
 

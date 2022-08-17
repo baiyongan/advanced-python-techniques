@@ -1,4 +1,4 @@
-# Go vs. Python 
+# Go vs Python 
 
 ## 拓展阅读
 
