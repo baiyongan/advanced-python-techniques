@@ -15,11 +15,6 @@
 
 <div class="cards">
   <div class="card source">
-    <a href="/part12_source_code_analysis/  "><strong>High Performance Python</strong></a>
-    <p class="card-body"><small>   </small></p>
-    <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
-  </div>
-  <div class="card source">
     <a href="/part12_source_code_analysis/  "><strong>500 lines or less</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>

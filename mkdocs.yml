@@ -116,6 +116,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid
@@ -125,10 +128,13 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+  - pymdownx.snippets
+  - tables
+
 
 # Page tree
 nav:
-- Home: README.md
+- 首页: README.md
 
 ## Part01
 - 方向路线:
@@ -496,7 +502,7 @@ nav:
     - 14 测试、调试和异常: part06_intermediate_reading/python_cookbook/chapter14/item.md
     - 15 C 语言扩展: part06_intermediate_reading/python_cookbook/chapter15/item.md
   
-  - Python3 OOP: 
+  - Python3 Object Oriented Programming: 
     - 目录: part06_intermediate_reading/python3_oop/content.md
     - 01 面向对象设计: part06_intermediate_reading/python3_oop/chapter01/item.md
     - 02 Python对象: part06_intermediate_reading/python3_oop/chapter02/item.md
@@ -881,6 +887,8 @@ nav:
   - Advanced Python Presentations:
     - The Tao of Python: part12_source_code_analysis/advanced_python_presentations/the_tao_of_python.md
     - MRO in Python: part12_source_code_analysis/advanced_python_presentations/mro_in_python.md
+  - 500 Lines or Less:
+    - 目录: part12_source_code_analysis/500_lines_or_less/content.md
 
 ## Part13
 - 关联拓展:
@@ -892,7 +900,7 @@ nav:
   - Change Log: CHANGELOG.md
   - Reference: REFERENCE.md
   - Schedule: SCHEDULE.md
-  - Tips: NOTE.md
+  - Setup: SETUP.md
   - Contact Author: AUTHOR.md
   - License: LICENSE.md
 
