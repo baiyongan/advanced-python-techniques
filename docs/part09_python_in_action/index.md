@@ -42,4 +42,4 @@
 
 ## 拓展阅读
 - [Python Snippets](https://www.30secondsofcode.org/python/p/1)
-- [piglei/one-python-craftsman](https://github.com/piglei/one-python-craftsman)
+- [Github: piglei/one-python-craftsman](https://github.com/piglei/one-python-craftsman)

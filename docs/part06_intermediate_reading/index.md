@@ -109,8 +109,9 @@
 
 
 ## 拓展阅读
-- [junnplus/awesome-python-books](https://github.com/junnplus/awesome-python-books)
-- [jobbole/awesome-python-books](https://github.com/jobbole/awesome-python-books)
+
+- [Github: junnplus/awesome-python-books](https://github.com/junnplus/awesome-python-books)
+- [Github: jobbole/awesome-python-books](https://github.com/jobbole/awesome-python-books)
 
 <!-- 备选书单
 
