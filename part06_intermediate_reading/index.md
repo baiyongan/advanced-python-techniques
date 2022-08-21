@@ -37,7 +37,7 @@
     <span><a href="/part06_intermediate_reading/python_cookbook/content">More →</a></span>
   </div>
   <div class="card booknote">
-    <a href="/part06_intermediate_reading/python3_oop/content"><strong>Python3 OOP</strong></a>
+    <a href="/part06_intermediate_reading/python3_oop/content"><strong>Python3 Object Oriented Programming</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/part06_intermediate_reading/python3_oop/content">More →</a></span>
   </div>
@@ -109,8 +109,9 @@
 
 
 ## 拓展阅读
-- [junnplus/awesome-python-books](https://github.com/junnplus/awesome-python-books)
-- [jobbole/awesome-python-books](https://github.com/jobbole/awesome-python-books)
+
+- [Github: junnplus/awesome-python-books](https://github.com/junnplus/awesome-python-books)
+- [Github: jobbole/awesome-python-books](https://github.com/jobbole/awesome-python-books)
 
 <!-- 备选书单
 

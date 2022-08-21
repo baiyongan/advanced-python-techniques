@@ -15,38 +15,20 @@
 
 <div class="cards">
   <div class="card source">
-    <a href="/part12_source_code_analysis/  "><strong>High Performance Python</strong></a>
+    <a href="/part12_source_code_analysis/  "><strong>500 Lines or Less</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
   </div>
   <div class="card source">
-    <a href="/part12_source_code_analysis/  "><strong>500 lines or less</strong></a>
-    <p class="card-body"><small>   </small></p>
+    <a href="/part12_source_code_analysis/  "><strong>Excellent Packages</strong></a>
+    <p class="card-body"><small>bottle</small></p>
+    <p class="card-body"><small>request</small></p>
     <span><a href="/part12_source_code_analysis/  ">Learn →</a></span>
   </div>
 </div>
 
 ## 拓展阅读
 
-<!-- 
-<div class="cards">
-  <div class="card source">
-    <a href="/part12_source_code_analysis/python_web_roadmap"><strong>500 lines or less</strong></a>
-    <p class="card-body"><small>   </small></p>
-    <span><a href="/part12_source_code_analysis/python_web_roadmap">Learn →</a></span>
-  </div>
-  <div class="card source">
-    <a href="/part12_source_code_analysis/python_devops_roadmap"><strong>High Performance Python</strong></a>
-    <p class="card-body"><small>   </small></p>
-    <span><a href="/part12_source_code_analysis/python_devops_roadmap">Learn →</a></span>
-  </div>
-  <div class="card source">
-    <a href="/part12_source_code_analysis/python_web_scraping_roadmap"><strong>Advanced Python Presentations</strong></a>
-    <p class="card-body"><small>   </small></p>
-    <span><a href="/part12_source_code_analysis/python_web_scraping_roadmap">Learn →</a></span>
-  </div>
-</div> 
--->
 
 <!-- 
 ## A Guide to Python's Magic Methods

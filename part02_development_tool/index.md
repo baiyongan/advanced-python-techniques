@@ -141,6 +141,6 @@ https://www.edureka.co/blog/best-ide-for-python/ -->
     Python 作为一种解释型语言，有多种解释器可用。
 
 ## 拓展阅读
-- [jobbole/awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
-- [typeddjango/awesome-python-typing](https://github.com/typeddjango/awesome-python-typing)
-- [vinta/awesome-python](https://github.com/vinta/awesome-python)
+- [Github: jobbole/awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
+- [Github: typeddjango/awesome-python-typing](https://github.com/typeddjango/awesome-python-typing)
+- [Github: vinta/awesome-python](https://github.com/vinta/awesome-python)
