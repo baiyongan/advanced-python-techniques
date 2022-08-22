@@ -145,7 +145,7 @@ ul.card-items li {
     border-top: 3.5px solid #CCCCFF;
 }
 
-/* .card.card.tool.contribute {
+.card.card.tool.ignore {
     background: repeating-linear-gradient(
       45deg,
       #f6f8f8,
@@ -155,8 +155,8 @@ ul.card-items li {
     );
 
     border: 2px dashed #eee;
-    border-top: 3.5px solid #42cceb;
-} */
+    border-top: 3.5px solid #CCCCFF;
+}
 
 .card.norm {
     border-top: 3.5px solid #ef5762;

@@ -62,7 +62,7 @@
       <li><a href="/part02_development_tool/  ">Cython</a></li>
     </ul>
   </div>
-  <div class="card tool">
+  <div class="card tool ignore">
     <strong>Interpreter</strong>
     <ul class="card-items">
       <li><a href="/part02_development_tool/  ">  </a></li>
