@@ -3,6 +3,7 @@
 ## 参数设置
 
 ### Color parameters 
+
 - red
 - pink
 - purple
@@ -26,6 +27,7 @@
 - white
 
 ### Admonitions
+
 - note
 - abstract, summary, tldr
 - info, todo
@@ -81,6 +83,7 @@ def bubble_sort(items):
 </div> -->
 
 ### Content tabs
+
 === "C"
 
     ``` c
@@ -104,6 +107,7 @@ def bubble_sort(items):
     ```
 
 ## 拓展阅读
+
 - [Changing the colors](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 - [Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 - [Mkdocs's Wiki](https://github.com/mkdocs/mkdocs/wiki)

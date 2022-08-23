@@ -20,15 +20,15 @@
     <span><a href="/REFERENCE">Detail →</a></span>
   </div>
   <div class="card synopsis">
-    <a href="/NOTE"><strong>格式样例</strong></a>
+    <a href="/SETUP"><strong>格式样例</strong></a>
     <p class="card-body"><small>   </small></p>
-    <span><a href="/NOTE">Detail →</a></span>
+    <span><a href="/SETUP">Detail →</a></span>
   </div>
 </div>
 
 <div class="cards">
   <div class="card synopsis">
-    <a href="/AUTHOR"><strong>联系作者</strong></a>
+    <a href="/AUTHOR"><strong>关于作者</strong></a>
     <p class="card-body"><small>   </small></p>
     <span><a href="/AUTHOR">Detail →</a></span>
   </div>
