@@ -15,8 +15,10 @@ edit_uri: ''
 copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a> <br> Copyright &copy; 2022 Bai Yongan 
 
 # Theme Configuration
+docs_dir: "docs"
 theme:
   name: material
+  language: en
   custom_dir: overrides
   palette:
   - scheme: default
@@ -54,17 +56,6 @@ theme:
       quote: octicons/quote-16
   logo: assets/image/icon-white.svg
   favicon: assets/image/favicon.png
-  language: en
-
-# Plugins
-plugins:
-  - search
-  - markdownextradata:
-      data: data
-  - mkdocs-jupyter:
-      execute: False
-      include_source: True
-      kernel_name: python3
     
 # Customization
 extra:
@@ -111,14 +102,15 @@ markdown_extensions:
       guess_lang: false
   - markdown_include.include:
       base_path: docs
-  - codehilite
   - extra
   - admonition
+  - codehilite 
+  - footnotes
   - pymdownx.details
   - pymdownx.inlinehilite
+  - pymdownx.highlight
   - attr_list
   - md_in_html
-  - pymdownx.superfences
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid
@@ -131,6 +123,15 @@ markdown_extensions:
   - pymdownx.snippets
   - tables
 
+# Plugins
+plugins:
+  - search
+  - markdownextradata:
+      data: data
+  - mkdocs-jupyter:
+      execute: False
+      include_source: True
+      kernel_name: python3
 
 # Page tree
 nav:
