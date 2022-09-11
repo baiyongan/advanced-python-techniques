@@ -24,4 +24,4 @@
 - [ ] 开发大型项目
 ## 拓展阅读
 
-- [piglei/one-python-craftsman](https://github.com/piglei/one-python-craftsman)
+- [Github: piglei/one-python-craftsman](https://github.com/piglei/one-python-craftsman)
