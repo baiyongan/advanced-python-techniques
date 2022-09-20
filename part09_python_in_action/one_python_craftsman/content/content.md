@@ -21,7 +21,7 @@
 
 ## 总结与延伸
 - [ ] 数据模型与描述符
-- [ ] 开发大型项目
+- [x] 开发大型项目
 ## 拓展阅读
 
 - [Github: piglei/one-python-craftsman](https://github.com/piglei/one-python-craftsman)
