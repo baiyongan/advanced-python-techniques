@@ -36,8 +36,9 @@ theme:
   features:
     - search.suggest
     - search.highlight
-    #- navigation.sections
+    - navigation.sections
     - navigation.tabs
+    - navigation.top
     #- content.code.annotate
   icon:
     repo: fontawesome/brands/github-alt
