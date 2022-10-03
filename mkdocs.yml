@@ -126,9 +126,9 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - search
   - markdownextradata:
       data: data
+  - search
   - mkdocs-jupyter:
       execute: False
       include_source: True
