@@ -7,7 +7,16 @@
 
 
 ## Hello World
+在 Java 中,所有的代码都必须写在类里面,所以,定义一个 HelloWorld 类。main() 函数是程序执行的入口。
 
+```java
+/*hello world 程序 */
+public class HelloWorld {
+    public static void main(String []args) {
+        System.out.println("Hello World"); // 打印 Hello World
+    }
+}
+```
 
 ## 基本数据类型
 
@@ -40,3 +49,4 @@
 
 
 ## 总结
+

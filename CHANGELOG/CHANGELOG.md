@@ -1,7 +1,15 @@
 # 变更日志
 
 <!---------------------------------------------------------->
+### 0.1.72 (2022-10-05)
+#### Articles
+- 新增 part14 software architecture
+- 更新 design pattern article004
+  
+<!---------------------------------------------------------->
 ### 0.1.71 (2022-09-23)
+#### Features
+- 注释 navigation.sections
 #### Articles
 - 更新 design pattern article106
   
