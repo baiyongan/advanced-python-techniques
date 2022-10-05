@@ -27,7 +27,6 @@
 | [**LSF Handbook**](http://baiyongan.github.io/lsf-handbook)  | LSF 官方文档的部分翻译，及个人经验总结与资源分享。           | ![GitHub last commit](https://img.shields.io/github/last-commit/baiyongan/lsf-handbook?logo=github&style=for-the-badge) |
 | [**Practical Linux Skills**](http://106.14.160.45)           | 关于 Linux 的实用技能总结，框架已建好，择时填坑。            | ![GitHub last commit](https://img.shields.io/github/last-commit/baiyongan/practical-linux-skills?color=blue&logo=github&style=for-the-badge) |
 | [**Advanced Python Techniques**](http://106.14.160.45:8080)  | 关于 Python 的进阶及高级知识点总结，日拱一卒，重点投入。     | ![GitHub last commit](https://img.shields.io/github/last-commit/baiyongan/advanced-python-techniques?color=gold&logo=github&style=for-the-badge) |
-<!-- | [**IC Design Platform Best Practices**](http://106.14.160.45:8090) | 关于 IC 行业设计平台设计、构建、优化的最佳实践。             | ![GitHub last commit](https://img.shields.io/github/last-commit/baiyongan/ic-design-platform-best-practices?color=grey&logo=github&style=for-the-badge) | -->
 
 
 ## 版权信息
