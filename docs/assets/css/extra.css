@@ -202,6 +202,10 @@ ul.card-items li {
     border-top: 3.5px solid #FFCC33;
 }
 
+.card.arch {
+    border-top: 3.5px solid #e68ed5;
+}
+
 .card.synopsis {
     border-top: 3.5px solid #000000;
 }

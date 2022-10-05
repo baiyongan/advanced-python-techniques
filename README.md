@@ -1,5 +1,10 @@
 # Advanced Python Techniques
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/baiyongan/advanced-python-techniques/pages%20build%20and%20deployment?logo=github&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/baiyongan/advanced-python-techniques?logo=github&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/baiyongan/advanced-python-techniques?color=gold&logo=github&style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/baiyongan/advanced-python-techniques?color=cyan&logo=github&style=for-the-badge)
+
 ## 章节说明
 | 序号 | 章节         | 主要内容 | 综合评分 |
 | ---- | ------------ | -------- | -------- |
@@ -16,6 +21,7 @@
 | 十一 | **设计模式** |          | ⭐⭐⭐⭐     |
 | 十二 | **源码剖析** |          | ⭐⭐       |
 | 十三 | **关联拓展** |          | ⭐        |
+| 十四 | **软件架构** |          | ⭐⭐⭐⭐     |
 
 ## 关于作者
 
