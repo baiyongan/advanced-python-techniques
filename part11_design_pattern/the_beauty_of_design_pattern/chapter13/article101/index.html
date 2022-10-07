@@ -9957,6 +9957,40 @@
     流程控制
   </a>
   
+    <nav class="md-nav" aria-label="流程控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    if-else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-case" class="md-nav__link">
+    switch-case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forwhile" class="md-nav__link">
+    for、while 循环
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuebreakreturn" class="md-nav__link">
+    continue、break、return
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -10665,6 +10699,40 @@
     流程控制
   </a>
   
+    <nav class="md-nav" aria-label="流程控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    if-else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-case" class="md-nav__link">
+    switch-case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forwhile" class="md-nav__link">
+    for、while 循环
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuebreakreturn" class="md-nav__link">
+    continue、break、return
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -10744,6 +10812,10 @@
 <p>如果你熟悉的是 Python、Go、Ruby、JavaScript,这些语言的语法可能跟 Java 的区别稍微有些大,但是,通过这篇文章,做到能看懂也不是难事儿。</p>
 <h2 id="hello-world">Hello World<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h2>
 <p>在 Java 中,所有的代码都必须写在类里面,所以,定义一个 HelloWorld 类。main() 函数是程序执行的入口。</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>Java 中有两种代码注释方式,第一种是“// 注释...”双斜杠,表示后面的字符串都是注释,第二种是“/<em> 注释... </em>/”, 表示中间的内容都是注释。</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="cm">/*hello world 程序 */</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="o">[]</span><span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -10752,10 +10824,98 @@
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="_1">基本数据类型<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Java 语言中的基本数据类型,主要有下面几种:
+- 整型类型:byte(字节)、short(短整型)、int(整型)、long(长整型) 
+- 浮点类型:float(单精度浮点)、double(双精度浮点)
+- 字符型:char
+- 布尔型:boolean</p>
+<p>除此之外,为了方便使用,Java 还提供了一些封装这些基本数据类型的类,这些类实现了一些常用的功能函数,可以直接拿来使用。常用的有下面几个类:
+- Integer:对应封装了基本类型 int; 
+- Long:对应封装了基本类型 long; 
+- Float:对应封装了基本类型 float; 
+- Double:对应封装了基本类型 double; 
+- Boolean:对应封装了基本类型 boolean; 
+- String:对应封装了字符串类型 char[]。</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 定义一个基本类型变量</span>
+<span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+<span class="c1">// 定义一个 Integer 对象</span>
+<span class="n">Integer</span> <span class="n">oa</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+</code></pre></div>
 <h2 id="_2">数组<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">a</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">]</span><span class="p">;</span> <span class="c1">// 定义一个长度是 10 的 int 类型数组</span>
+
+<span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// 将下标是 1 的数组元素赋值为 3</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span> <span class="c1">// 打印下标是 2 的数组元素值</span>
+</code></pre></div>
 <h2 id="_3">流程控制<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="if-else">if-else<a class="headerlink" href="#if-else" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// 用法一</span>
+<span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 执行代码块</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 执行代码块</span>
+<span class="p">}</span>
+
+<span class="c1">// 用法二</span>
+<span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 执行代码块</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 执行代码块</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// 执行代码块</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="switch-case">switch-case<a class="headerlink" href="#switch-case" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="c1">// 执行代码块</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="c1">// 执行代码块 </span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="p">:</span>
+      <span class="c1">// 默认执行代码   </span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="forwhile">for、while 循环<a class="headerlink" href="#forwhile" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 循环执行 10 次此代码块</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 循环执行 10 次此代码块</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="continuebreakreturn">continue、break、return<a class="headerlink" href="#continuebreakreturn" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">continue</span><span class="p">;</span> <span class="c1">// 跳过本次循环，不会打印出 4 这个值</span>
+    <span class="p">}</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">break</span><span class="p">;</span> <span class="c1">// 提前终止循环，只会打印 0、1、2、3</span>
+    <span class="p">}</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">func</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span> <span class="c1">// 结束一个函数，从此处返回</span>
+    <span class="p">}</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 <h2 id="_4">类、对象<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h2 id="_5">权限修饰符<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>权限修饰符可以修饰函数、成员变量。</p>
 <h2 id="_6">继承<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h2 id="_7">接口<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h2 id="_8">容器<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
