@@ -893,9 +893,9 @@ nav:
   - 500 Lines or Less:
     - 目录: part12_source_code_analysis/500_lines_or_less/content.md
 
-## Part13
-- 关联拓展:
-  - Overview: part13_connection_and_expansion/index.md
+# ## Part13
+# - 关联拓展:
+#   - Overview: part13_connection_and_expansion/index.md
 
 ## Part14
 - 软件架构:
