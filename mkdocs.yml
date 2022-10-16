@@ -1,25 +1,25 @@
-# Site Information
-site_name: Pythonista to Pythoneer
-site_url: http://bya.cool/advanced-python-techniques
-site_author: Bai Yongan
+#================================ Site Information =======================================
+site_name: "Pythonista to Pythoneer"
+site_url: "http://bya.cool/advanced-python-techniques"
+site_author: "baiyongan"
 site_description: >-
-  Summary of core skills and knowledge points of python programming.
-  A practical programming guide for intermediate programmers focusing on the python grammar itself.
+  "Summary of core skills and knowledge points of python programming."
+  "A practical programming guide for intermediate programmers focusing on the python grammar itself."
 
-# Repository
-repo_name: advanced-python-techniques
-repo_url: https://github.com/baiyongan/advanced-python-techniques
-edit_uri: ''
+#================================ Repository =============================================
+repo_name: "advanced-python-techniques"
+repo_url: "https://github.com/baiyongan/advanced-python-techniques"
+edit_uri: ""
 
-# Copyright
+#================================ Copyright ==============================================
 copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a> <br> Copyright &copy; 2022 Bai Yongan 
 
-# Theme Configuration
+#================================ Theme Configuration ====================================
 docs_dir: "docs"
 theme:
   name: material
-  language: en
   custom_dir: overrides
+  language: en
   palette:
   - scheme: default
     primary: teal 
@@ -38,7 +38,10 @@ theme:
     - search.highlight
     # - navigation.sections
     - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.top
+    # - navigation.expand
+    # - toc.integrate
     #- content.code.annotate
   icon:
     repo: fontawesome/brands/github-alt
@@ -55,10 +58,13 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
   logo: assets/image/icon-white.svg
   favicon: assets/image/favicon.png
     
-# Customization
+#================================ Customization ==========================================
 extra:
 #  analytics:
 #    provider: google
@@ -70,6 +76,9 @@ extra:
     # github personal page
     - icon: fontawesome/brands/github
       link: https://github.com/baiyongan
+    # python website
+    - icon: fontawesome/brands/python
+      link: http://106.14.160.45:8080
     # tiddly wiki
     - icon: fontawesome/brands/wordpress
       link: http://106.14.160.45:8081
@@ -95,36 +104,42 @@ extra_javascript:
   - assets/js/termynal.js
   - assets/js/custom.js
 
-# Extensions
+#================================ Extensions =============================================
 markdown_extensions:
   - toc:
+      # baselevel: 4
       permalink: true
+      # separator: "_"
   - markdown.extensions.codehilite:
       guess_lang: false
   - markdown_include.include:
       base_path: docs
+  - tables
   - extra
   - admonition
   - codehilite 
   - footnotes
-  - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.highlight
   - attr_list
   - md_in_html
+  - mdx_math:
+      enable_dollar_delimiter: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_div_format ''
-  - pymdownx.tabbed
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
-  - pymdownx.snippets
-  - tables
 
-# Plugins
+#================================ Plugins ================================================
 plugins:
   - markdownextradata:
       data: data
@@ -134,11 +149,12 @@ plugins:
       include_source: True
       kernel_name: python3
 
-# Page tree
+#================================ Page tree ==============================================
+#========== Preface =============
 nav:
 - 首页: README.md
 
-## Part01
+#========== Part01 ==============
 - 方向路线:
   - Overview: part01_direction_and_roadmap/index.md
   - 语言专题: part01_direction_and_roadmap/python_language.md
@@ -152,7 +168,7 @@ nav:
     - Top Python Developer Skills: part01_direction_and_roadmap/top_python_developer_skills.md
     - Levels of Python Code: part01_direction_and_roadmap/levels_of_python_code.md
 
-## Part02
+#========== Part02 ==============
 - 开发工具:
   - Overview: part02_development_tool/index.md
 
@@ -221,7 +237,7 @@ nav:
   - Document: 
     - 目录: part02_development_tool/document/content.md
 
-## Part03
+#========== Part03 ==============
 - 规范准则:  
   - Overview: part03_norm_and_guideline/index.md
   - Python 编码规范:
@@ -243,7 +259,7 @@ nav:
     - part03_norm_and_guideline/coding_norm/log.md
     - part03_norm_and_guideline/coding_norm/error.md
 
-## Part04
+#========== Part04 ==============
 - 功能模块:
   - Overview: part04_module_package_library/index.md
   - 内置基础:
@@ -341,7 +357,7 @@ nav:
 
     - 附录: part04_module_package_library/PyMOTW3/appendix.md
 
-## Part05
+#========== Part05 ==============
 - 核心专题:
   - Overview: part05_core_topic/index.md
 
@@ -460,7 +476,7 @@ nav:
     - aiohttp 实现高并发爬虫: part05_core_topic/chapter12/article1208.md
     - 本章小结: part05_core_topic/chapter12/article1209.md  
 
-## Part06
+#========== Part06 ==============
 - 进阶阅读:
   - Overview: part06_intermediate_reading/index.md
   
@@ -552,7 +568,7 @@ nav:
   - Python HOWTOs: 
     - 目录: part06_intermediate_reading/python_how_to/content.md
 
-## Part07
+#========== Part07 ==============
 - 应用框架:
   - Overview: part07_application_framework/index.md
   - Web Development For Beginners: 
@@ -570,7 +586,7 @@ nav:
   - FastAPI: 
     - 目录: part07_application_framework/python_web/fastapi/content.md
 
-## Part08
+#========== Part08 ==============
 - 数据分析:
   - Overview: part08_data_analysis/index.md
   - Data Science For Beginners: 
@@ -603,7 +619,7 @@ nav:
     - 06 In the Wild:
       - part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20.md
 
-## Part09
+#========== Part09 ==============
 - 工程实践:
   - Overview: part09_python_in_action/index.md
   - Code Snippets: 
@@ -645,7 +661,7 @@ nav:
   #   - wrapping up: part09_python_in_action/performance_marketing_report/13_wrapping_up.md
   #   - resources: part09_python_in_action/performance_marketing_report/14_resources.md
     
-## Part10
+#========== Part10 ==============
 - 结构算法:
   - Overview: part10_data_structure_and_algorithm/index.md
   - Python 中的数据结构与算法: part10_data_structure_and_algorithm/dsa_in_python.md
@@ -752,7 +768,7 @@ nav:
       - part10_data_structure_and_algorithm/the_beauty_of_dsa/chapter06/article79.md
       - part10_data_structure_and_algorithm/the_beauty_of_dsa/chapter06/article80.md
   
-## Part11
+#========== Part11 ==============
 - 设计模式:
   - Overview: part11_design_pattern/index.md
   # - 目录: part11_design_pattern/the_beauty_of_design_pattern/content.md
@@ -880,7 +896,7 @@ nav:
     - part11_design_pattern/the_beauty_of_design_pattern/chapter13/article109.md
     - part11_design_pattern/the_beauty_of_design_pattern/chapter13/article110.md
 
-## Part12
+#========== Part12 ==============
 - 源码剖析:
   - Overview: part12_source_code_analysis/index.md
   - Python Magic Methods: 
@@ -893,11 +909,11 @@ nav:
   - 500 Lines or Less:
     - 目录: part12_source_code_analysis/500_lines_or_less/content.md
 
-# ## Part13
+#========== Part13 ==============
 # - 关联拓展:
 #   - Overview: part13_connection_and_expansion/index.md
 
-## Part14
+#========== Part14 ==============
 - 软件架构:
   - Overview: part14_software_architecture/index.md
   - 从零开始学架构:
@@ -905,13 +921,13 @@ nav:
   - 凤凰架构:
     - 目录: part14_software_architecture/the_fenix_project/content.md
 
-## Record
+#========== Afterword ===========
 - 后记: 
   - Synopsis: SYNOPSIS.md
-  - Change Log: CHANGELOG.md
-  - Reference: REFERENCE.md
-  - Schedule: SCHEDULE.md
-  - Setup: SETUP.md
-  - About Author: AUTHOR.md
-  - License: LICENSE.md
+  - 关于作者: AUTHOR.md
+  - 许可证: LICENSE.md
+  - 进度安排: SCHEDULE.md
+  - 变更日志: CHANGELOG.md
+  - 附录资料: APPENDIX.md
+  - 格式参考: SETUP.md
 
