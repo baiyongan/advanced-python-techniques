@@ -190,7 +190,7 @@ nav:
     - Jupyter Notebook: 
       - 快速上手: part02_development_tool/repl/jupyter_notebook/brief_tutorial.md
       - 详细教程: part02_development_tool/repl/jupyter_notebook/detailed_tutorial.md
-      - 50 IPython Tips: part02_development_tool/repl/jupyter_notebook/50_ipython_tricks.ipynb
+      # - 50 IPython Tips: part02_development_tool/repl/jupyter_notebook/50_ipython_tricks.ipynb
 
   - Package Management:
     - 目录: part02_development_tool/package_management/content.md
