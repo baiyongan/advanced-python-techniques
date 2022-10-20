@@ -1,1 +1,0 @@
-# Data Science in the Cloud: The "Azure ML SDK" way

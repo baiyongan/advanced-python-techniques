@@ -1,1 +1,0 @@
-# django rest framework 中对多继承使用的经验
