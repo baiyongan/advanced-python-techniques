@@ -618,6 +618,8 @@ nav:
       - part08_data_analysis/data_science_for_beginners/05_cloud_data/lesson19.md
     - 06 In the Wild:
       - part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20.md
+  - 深入浅出 Pandas: 
+    - 目录: part08_data_analysis/dive_into_pandas/content.md
 
 #========== Part09 ==============
 - 工程实践:
