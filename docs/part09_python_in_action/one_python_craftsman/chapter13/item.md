@@ -4,10 +4,12 @@
 
 ### flake8
 
+flake8 作为代码 Linter 工具，可以检验代码是否遵循 PEP8 规范，保持项目风格统一。
+
 - flake8 的 PEP8 检查功能，是由集成在 flake8 内的另一个 Linter 工具 —— pycodestyle 实现的。
 - flake8 还集成了另一个重要的 Linter —— pyflakes，它更专注于检查代码的正确性，比如语法错误、变量名未定义等等。
-- flake8 为每类错误都定义了不同的错误代码，如 F401、E111 等，首字母代表了不同的错误来源。
-- mccabe 模块可以扫描代码的圈复杂度。
+- flake8 为每类错误都定义了不同的错误代码，如 F401、E111 等，**首字母代表了不同的错误来源**。
+- mccabe 模块集成在 flake8 里面，可以扫描代码的圈复杂度。
 
 !!! tips 
     ```python
@@ -16,14 +18,98 @@
     ```
     其中， `--max-complexity` 参数可以修改允许的最大圈复杂度，建议该值不要超过 10。
 
-- flake8 支持用户自定义插件，可参考官网教程，可学习下 wemake-python-styleguide 这个插件。
+- flake8 支持用户自定义插件，可参考官网教程，可学习下 **wemake-python-styleguide** 这个插件，非常严格。
+  
 ### isort
+
+isort 工具，可用来整理 import 语句。
+
+!!! tips
+    PEP8 关于 import 语句的建议：
+    1. 导入 Python 标准库的 import 语句；
+    2. 导入相关联的第三方包的 import 语句；
+    3. 与当前应用（或当前库）相关的 import 语句
+
+    其中，不同的 import 语句组之间，应该用空格分开。
+
+源码文件：isort_demo.py 
+```python
+import os
+import requests
+import myweb.models 
+from myweb.views import menu
+from urllib import parse
+import django
+```
+
+执行 `isort isort_demo.py` 之后，import 语句会被排列整齐：
+
+- 第一部分：标准库包
+- 第二部分：第三方包
+- 第三部分：本地包
+
+```python
+import os 
+from urllib import parse
+
+import django 
+import requests
+
+import myweb.models 
+from myweb.views import menu
+```
 
 ### black
 
+black 是一款更为激进的代码格式化工具。
+
+black 的最大特点，在于其不可配置。它能让开发者不需要在各种编码风格之间纠结，整体来看，大型项目中引入 black，利大于弊。
+
 ### pre-commit
 
+pre-commit 是一个基于钩子功能开发的工具，专门用于预提交阶段。
+
+如要最大限度地发挥工具地能力，必须让其融入到所有人地开发流程里。
+
+但是，统一 IDE 不现实，不过对版本控制工具—— git 可以进行配置，git 有个特殊的钩子功能，它允许你给每个仓库配置一些钩子程序（hook）。
+
+配置文件 —— `pre-commit-config.yaml`
+
+```python
+fail_fast: true
+repos:
+- repo: https://github.com/timothycrosley/isort
+  rev: 5.7.0
+  hooks:
+  - id: isort
+    additional_dependencies: [toml]
+- repo: https://github.com/psf/black
+  rev: 20.8b1
+  hooks:
+  - id: black
+    args: [--config=./pyproject.toml]
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+  - id: flake8
+```
+
+  如此一来，每次 git commit、git push 时，都会需要触发定义的 isort、black、flake8 三个插件，完成代码检查及格式化工作，否则就会提交中断。
+
+
 ### mypy
+
+mypy 是一款静态类型检查工具。
+
+Python 是一门动态类型语言。它让我们不必声明每个变量的类型，不用关心太多类型问题，只专注于用代码实现功能就好。但**现实情况是，我们写的程序里的许多bug和类型系统息息相关**。
+
+!!! tips
+    在大型项目中，类型注解与mypy的组合能大大提升项目代码的可读性与正确性。
+
+    mypy 让动态类型的 Python 拥有了部分静态类型语言才有的能力，值得在大型项目中推广使用。
+
+
+---
 
 ## 单元测试 
 
@@ -31,6 +117,7 @@
 
 ### pytest
 
+---
 
 ## 单元测试建议
 

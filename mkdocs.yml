@@ -144,10 +144,10 @@ plugins:
   - markdownextradata:
       data: data
   - search
-  - mkdocs-jupyter:
-      execute: False
-      include_source: True
-      kernel_name: python3
+  # - mkdocs-jupyter:
+  #     execute: False
+  #     include_source: True
+  #     kernel_name: python3
 
 #================================ Page tree ==============================================
 #========== Preface =============
