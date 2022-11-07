@@ -620,6 +620,30 @@ nav:
       - part08_data_analysis/data_science_for_beginners/06_in_the_wild/lesson20.md
   - 深入浅出 Pandas: 
     - 目录: part08_data_analysis/dive_into_pandas/content.md
+    - Pandas 入门:
+      - part08_data_analysis/dive_into_pandas/chapter01/item.md
+      - part08_data_analysis/dive_into_pandas/chapter02/item.md
+    - Pandas 数据分析基础:
+      - part08_data_analysis/dive_into_pandas/chapter03/item.md
+      - part08_data_analysis/dive_into_pandas/chapter04/item.md
+      - part08_data_analysis/dive_into_pandas/chapter05/item.md
+    - 数据形式变化:
+      - part08_data_analysis/dive_into_pandas/chapter06/item.md
+      - part08_data_analysis/dive_into_pandas/chapter07/item.md
+      - part08_data_analysis/dive_into_pandas/chapter08/item.md
+      - part08_data_analysis/dive_into_pandas/chapter09/item.md
+    - 数据清洗:
+      - part08_data_analysis/dive_into_pandas/chapter10/item.md
+      - part08_data_analysis/dive_into_pandas/chapter11/item.md
+      - part08_data_analysis/dive_into_pandas/chapter12/item.md
+    - 时序数据分析:
+      - part08_data_analysis/dive_into_pandas/chapter13/item.md
+      - part08_data_analysis/dive_into_pandas/chapter14/item.md
+    - 可视化:
+      - part08_data_analysis/dive_into_pandas/chapter15/item.md
+      - part08_data_analysis/dive_into_pandas/chapter16/item.md
+    - 实战案例:
+      - part08_data_analysis/dive_into_pandas/chapter17/item.md
 
 #========== Part09 ==============
 - 工程实践:
