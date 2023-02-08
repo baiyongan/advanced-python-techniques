@@ -8648,10 +8648,10 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    单元测试建议
+    有关单元测试的建议
   </a>
   
-    <nav class="md-nav" aria-label="单元测试建议">
+    <nav class="md-nav" aria-label="有关单元测试的建议">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -8663,8 +8663,21 @@
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    不要总想着补测试
+    不要总想着“补”测试
   </a>
+  
+    <nav class="md-nav" aria-label="不要总想着“补”测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tddtest-driven-development" class="md-nav__link">
+    TDD（test-driven development，测试驱动开发）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -8691,6 +8704,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    总结
+  </a>
   
 </li>
       
@@ -13072,10 +13092,10 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    单元测试建议
+    有关单元测试的建议
   </a>
   
-    <nav class="md-nav" aria-label="单元测试建议">
+    <nav class="md-nav" aria-label="有关单元测试的建议">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -13087,8 +13107,21 @@
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    不要总想着补测试
+    不要总想着“补”测试
   </a>
+  
+    <nav class="md-nav" aria-label="不要总想着“补”测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tddtest-driven-development" class="md-nav__link">
+    TDD（test-driven development，测试驱动开发）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -13115,6 +13148,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    总结
+  </a>
   
 </li>
       
@@ -13230,18 +13270,49 @@
 <h3 id="unittest">unittest<a class="headerlink" href="#unittest" title="Permanent link">&para;</a></h3>
 <h3 id="pytest">pytest<a class="headerlink" href="#pytest" title="Permanent link">&para;</a></h3>
 <hr />
-<h2 id="_4">单元测试建议<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">有关单元测试的建议<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="_5">写单元测试不是浪费时间<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>缺少单元测试的帮助，你需要耐心找到改动可能会影响到的每个模块，手动验证它们是否正常工作。所有这些事所花费的时间，足够你写好几十遍单元测试。</p>
 <p>在项目上线新功能，和对项目做大规模重构时，尤其能体现单元测试的价值。</p>
-<h3 id="_6">不要总想着补测试<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">不要总想着“补”测试<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>很多开发者都是把单元测试，当成一种验证正确性的事后工具，但实际上，单元测试不仅能验证程序的正确性，也能极大帮助改进代码设计。不过前提是必须在编写代码的同时，编写单元测试。</p>
+<p>当开发功能与编写测试同步进行时，你会来回切换自己的角色，分别作为代码的设计者和使用者，不断从代码里找出问题，调整设计。</p>
+<h4 id="tddtest-driven-development">TDD（test-driven development，测试驱动开发）<a class="headerlink" href="#tddtest-driven-development" title="Permanent link">&para;</a></h4>
+<p>TDD的工作流大致如下：</p>
+<ul>
+<li>（1）写测试用例（哪怕测试用例引用的模块根本不存在）；</li>
+<li>（2）执行测试用例，让其失败；</li>
+<li>（3）编写最简单的代码（此时只关心实现功能，不关心代码整洁度）；</li>
+<li>（4）执行测试用例，让测试通过；</li>
+<li>（5）重构代码，删除重复内容，让代码变得更整洁；</li>
+<li>（6）执行测试用例，验证重构；</li>
+<li>（7）重复整个过程。</li>
+</ul>
+<p>实际开发中，其实并不一定要严格遵循 TDD 标准流程，了解其理念，并找到最适合自己的开发流程即可。</p>
 <h3 id="_7">难测试的代码就是烂代码<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>当模块依赖了一个全局对象时，写单元测试就会变得很难。全局对象的基本特征决定了它在内存中永远只会存在一份。而在编写单元测试时，为了验证代码在不同场景下的行为，我们需要用到多份不同的全局对象。这时，全局对象的唯一性就会成为写测试最大的阻碍。</p>
+</div>
+<p><strong>单元测试是评估代码质量的标尺。</strong>每当你发现很难为代码编写测试时，就应该意识到代码设计可能存在问题，需要努力调整设计，让代码变得更容易测试。</p>
 <h3 id="_8">像应用代码一样对待测试代码<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>在大部分人看来，测试代码更像是代码世界里的“二等公民”。人们很少关心测试代码的执行效率，也很少会想办法提升它的质量。<strong>但这样其实是不对的。</strong></p>
+<p>你应该像学习项目 Web 开发框架一样，深入学习测试框架，而不只是每天重复使用测试框架最简单的功能。只有在了解工具后，你才能写出更好的测试代码。</p>
+<p><strong>在开发项目时，所有人能更快、更频繁地从测试中获得反馈，写代码的节奏才会变得更好。</strong></p>
 <h3 id="_9">避免教条主义<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>单元测试里的单元（unit）其实并不严格地指某个方法、函数，其实指的是软件模块的一个行为单元，或者说功能单元。</p>
+<p>所有的自动化测试只要能满足几条基本特征：快、用例间互相隔离、没有副作用，这样就够了。</p>
+<h2 id="_10">总结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>开发大型的 Python 项目，请使用 Linter 工具，编写规范的单元测试。</p>
 <div class="admonition tips">
 <p class="admonition-title">Tips</p>
 <p>要开发一个成功的大型项目（此处仅指工程意义上的成功，非商业意义上），不仅仅需要做好 Linter 工具和单元测试，还需要注重与团队成员间的沟通，积极推行代码审查，营造更好的合作氛围，等等。</p>
-<p>建议除了本章内容之外，继续深入学习一些敏捷编程、领域驱动设计、整洁架构等方面的内容。这些知识对于大型项目开发有着很好的启发作用。</p>
+<p>建议除了本章内容之外，继续深入学习一些<strong>敏捷编程、领域驱动设计、整洁架构</strong>等方面的内容。这些知识对于大型项目开发有着很好的启发作用。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p><strong>不要掉进完美主义的陷阱。</strong></p>
+<p>写代码不是什么纯粹的艺术创作，完美的代码是不存在的。有时，代码只要能满足当前需求，又为未来扩展留了空间就足够了。</p>
 </div>
 
 

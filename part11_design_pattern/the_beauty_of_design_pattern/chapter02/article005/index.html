@@ -10462,9 +10462,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encapsulation" class="md-nav__link">
+    封装（Encapsulation）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    抽象（Abstraction）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    继承（Inheritance）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polymorphism" class="md-nav__link">
+    多态（Polymorphism）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    重点回顾
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -12842,6 +12901,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encapsulation" class="md-nav__link">
+    封装（Encapsulation）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstraction" class="md-nav__link">
+    抽象（Abstraction）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    继承（Inheritance）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polymorphism" class="md-nav__link">
+    多态（Polymorphism）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    重点回顾
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -12859,6 +12961,27 @@
 
 
 <h1 id="05">05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？<a class="headerlink" href="#05" title="Permanent link">&para;</a></h1>
+<h2 id="encapsulation">封装（Encapsulation）<a class="headerlink" href="#encapsulation" title="Permanent link">&para;</a></h2>
+<h2 id="abstraction">抽象（Abstraction）<a class="headerlink" href="#abstraction" title="Permanent link">&para;</a></h2>
+<h2 id="inheritance">继承（Inheritance）<a class="headerlink" href="#inheritance" title="Permanent link">&para;</a></h2>
+<h2 id="polymorphism">多态（Polymorphism）<a class="headerlink" href="#polymorphism" title="Permanent link">&para;</a></h2>
+<h2 id="_1">重点回顾<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>关于封装特性</li>
+</ol>
+<p>封装也叫作信息隐藏或者数据访问保护。类通过暴露有限的访问接口，授权外部仅能通过类提供的方式来访问内部信息或者数据。它需要编程语言提供权限访问控制语法来支持，例如 Java 中的 private、protected、public 关键字。封装特性存在的意义，一方面是保护数据不被随意修改，提高代码的可维护性；另一方面是仅暴露有限的必要接口，提高类的易用性。</p>
+<ol>
+<li>关于抽象特性</li>
+</ol>
+<p>封装主要讲如何隐藏信息、保护数据，那抽象就是讲如何隐藏方法的具体实现，让使用者只需要关心方法提供了哪些功能，不需要知道这些功能是如何实现的。抽象可以通过接口类或者抽象类来实现，但也并不需要特殊的语法机制来支持。抽象存在的意义，一方面是提高代码的可扩展性、维护性，修改实现不需要改变定义，减少代码的改动范围；另一方面，它也是处理复杂系统的有效手段，能有效地过滤掉不必要关注的信息。</p>
+<ol>
+<li>关于继承特性</li>
+</ol>
+<p>继承是用来表示类之间的 is-a 关系，分为两种模式：单继承和多继承。单继承表示一个子类只继承一个父类，多继承表示一个子类可以继承多个父类。为了实现继承这个特性，编程语言需要提供特殊的语法机制来支持。继承主要是用来解决代码复用的问题。</p>
+<ol>
+<li>关于多态特性</li>
+</ol>
+<p>多态是指子类可以替换父类，在实际的代码运行过程中，调用子类的方法实现。多态这种特性也需要编程语言提供特殊的语法机制来实现，比如继承、接口类、duck-typing。多态可以提高代码的扩展性和复用性，是很多设计模式、设计原则、编程技巧的代码实现基础。</p>
 
 
 
